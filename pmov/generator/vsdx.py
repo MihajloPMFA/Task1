@@ -176,6 +176,9 @@ def emit_page():
                   style=(4 if d.get('pk') else 0),
                   line_pat=(2 if d.get('der') else 1),
                   name='Atribut', tscale=(0.84, 0.86))
+            if d.get('mv'):
+                p.box(x, y, w - 0.11, h - 0.11, 'ellipse', '', fill=WHITE,
+                      name='Viseznacni')
         elif t == 'diamond':
             p.box(x, y, w, h, 'diamond', tx, fill=WHITE, size=7.6, style=0,
                   name='Veza', tscale=(0.66, 0.62))
@@ -183,7 +186,8 @@ def emit_page():
             p.box(x, y, w, h, 'diamond', tx, fill=WHITE, size=8.5, style=1,
                   name='Specijalizacija', tscale=(0.8, 0.8))
         elif t == 'circle':
-            p.box(x, y, w, h, 'ellipse', '', fill=WHITE, name='Krug')
+            p.box(x, y, w, h, 'ellipse', tx, fill=WHITE, size=6.5,
+                  name='Krug', tscale=(0.9, 0.9))
         elif t == 'card':
             p.label(x, y, w, h, tx, size=6.8)
         elif t == 'title':

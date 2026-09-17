@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Racuna konkretnu geometriju svih oblika PMOV dijagrama i proverava kolizije."""
 from geom import *
-from mdl_ent import ENT, ORDER
+from mdl_ent import ENT, ORDER, COMPOSITE
 from mdl_rel import REL, SPEC
 
 PAGE_W, PAGE_H = 112.0, 106.0
@@ -30,7 +30,7 @@ def build():
             dx, dy = slot_xy(pos)
             ax, ay = x + dx, y + dy
             sh('ellipse', ax, ay, AW, AH, nm, key=k+':'+nm, pk=(typ in ('pk', 'pd')),
-               der=(typ == 'der'))
+               der=(typ == 'der'), mv=(typ == 'mv'))
             # linija entitet -> atribut (zavrsava na ivici reda atributa)
             if pos.startswith('N') and pos[-1].isdigit():
                 sx = min(max(ax, x - EW/2 + 0.12), x + EW/2 - 0.12)
@@ -46,6 +46,15 @@ def build():
                     side = -1 if 'W' in pos else 1
                     ln([(x + side*EW/2, y + (0.22 if 'N' in pos else -0.22)),
                         (ax - side*AW/2, ay)], k, k+':'+nm)
+    for ek, par, kids in COMPOSITE:
+        e = ENT[ek]
+        pos = next(a[1] for a in e['attrs'] if a[0] == par)
+        pdx, pdy = slot_xy(pos)
+        px, py = e['x'] + pdx, e['y'] + pdy
+        for cn, cdx, cdy in kids:
+            cx, cy = px + cdx, py + cdy
+            sh('ellipse', cx, cy, AW, AH, cn, key=ek+':'+par+':'+cn, comp=True)
+            ln([(px, py - AH/2), (cx, cy + AH/2)], ek+':'+par, ek+':'+par+':'+cn)
     return S, L, sh, ln
 
 def port(k, p):
@@ -121,8 +130,13 @@ def build_all():
         sy = sup['y'] - s['dy']
         sid = 'S%d' % j
         sh('sdiamond', x, sy, SW, SH, 'S', key=sid)
-        sh('circle', x, sy - SH/2 - CR - 0.06, 2*CR, 2*CR, '', key=sid+'o')
-        ln([(x, ytop), (x, sy + SH/2)], s['sup'], sid)
+        sh('circle', x, sy - SH/2 - CR - 0.06, 2*CR, 2*CR,
+           'd' if s.get('disj', True) else 'o', key=sid+'o')
+        if s.get('total', True):
+            ln([(x - 0.05, ytop), (x - 0.05, sy + SH/2)], s['sup'], sid)
+            ln([(x + 0.05, ytop), (x + 0.05, sy + SH/2)], s['sup'], sid)
+        else:
+            ln([(x, ytop), (x, sy + SH/2)], s['sup'], sid)
         cy = sy - SH/2 - 2*CR - 0.12
         for sk in s['subs']:
             sb = ENT[sk]
@@ -221,11 +235,12 @@ def add_title(S, L):
        'Obuhvat: emitovanje, produkcija, marketing i prodaja, nabavka, administracija',
        key='STL')
     # okvir legende
-    bx, by, bw, bh = LEG_X + 21.0, LEG_Y - 10.6, 42.0, 7.0
+    bx, by, bw, bh = LEG_X + 21.0, LEG_Y - 11.4, 42.0, 8.6
     sh('frame', bx, by, bw, bh, '', key='LEGF')
     sh('legend', bx, by + bh/2 - 0.55, bw, 0.7, 'LEGENDA  (sintaksa PMOV notacije)', key='LEGT')
     col = [LEG_X + 1.4, LEG_X + 15.2, LEG_X + 29.0]
-    row = [by + bh/2 - 2.0, by + bh/2 - 3.3, by + bh/2 - 4.6, by + bh/2 - 5.9]
+    row = [by + bh/2 - 2.0, by + bh/2 - 3.3, by + bh/2 - 4.6,
+           by + bh/2 - 5.9, by + bh/2 - 7.2]
     def item(c, r, kind, label):
         x, y = col[c], row[r]
         if kind == 'ent':   sh('rect', x, y, 1.5, 0.66, '', key='LG%s%d%d' % (kind, c, r))
@@ -242,8 +257,22 @@ def add_title(S, L):
         elif kind == 'der':  sh('ellipse', x, y, 1.5, 0.52, '', key='LGd%d%d' % (c, r), der=True)
         elif kind == 'spec':
             sh('sdiamond', x - 0.4, y, 0.62, 0.44, 'S', key='LGp%d%d' % (c, r))
-            sh('circle', x + 0.35, y, 0.26, 0.26, '', key='LGpc%d%d' % (c, r))
+            sh('circle', x + 0.35, y, 0.26, 0.26, 'd', key='LGpc%d%d' % (c, r))
             ln([(x - 0.09, y), (x + 0.22, y)])
+        elif kind == 'spec2':
+            sh('sdiamond', x - 0.4, y, 0.62, 0.44, 'S', key='LGq%d%d' % (c, r))
+            sh('circle', x + 0.35, y, 0.26, 0.26, 'o', key='LGqc%d%d' % (c, r))
+            ln([(x - 0.09, y), (x + 0.22, y)])
+            ln([(x - 0.86, y + 0.05), (x - 0.71, y + 0.05)])
+            ln([(x - 0.86, y - 0.05), (x - 0.71, y - 0.05)])
+        elif kind == 'mv':
+            sh('ellipse', x, y, 1.5, 0.52, '', key='LGm%d%d' % (c, r), mv=True)
+        elif kind == 'comp':
+            sh('ellipse', x - 0.45, y + 0.13, 1.1, 0.4, '', key='LGz%d%d' % (c, r))
+            sh('ellipse', x + 0.62, y + 0.26, 0.7, 0.26, '', key='LGz1%d%d' % (c, r))
+            sh('ellipse', x + 0.62, y - 0.10, 0.7, 0.26, '', key='LGz2%d%d' % (c, r))
+            ln([(x + 0.10, y + 0.16), (x + 0.27, y + 0.26)])
+            ln([(x + 0.10, y + 0.08), (x + 0.27, y - 0.10)])
         elif kind == 'card': sh('cardbig', x, y, 1.5, 0.52, '(min, max)', key='LGc%d%d' % (c, r))
         elif kind == 'ent2':
             sh('rect', x, y, 1.5, 0.66, '', key='LGe2%d%d' % (c, r))
@@ -258,10 +287,13 @@ def add_title(S, L):
     item(0, 2, 'sub',  'podtip (specijalizacija)')
     item(1, 0, 'rel',  'veza (odnos)')
     item(1, 1, 'irel', 'identifikujuća veza')
-    item(1, 2, 'spec', 'specijalizacija (disjunktna)')
+    item(1, 2, 'spec', 'parcijalna specijalizacija, disjunktna „d\u201c')
     item(2, 0, 'attr', 'atribut')
     item(2, 1, 'key',  'primarni / parcijalni ključ')
     item(2, 2, 'der',  'izvedeni (izračunati) atribut')
-    item(2, 3, 'card', 'kardinalnost veze (min, max)')
+    item(2, 3, 'mv',   'višeznačni atribut')
+    item(2, 4, 'comp', 'kompozitni (složeni) atribut')
     item(0, 3, 'ent2', 'jaki entitet nosi primarni ključ')
+    item(0, 4, 'card', 'kardinalnost veze (min, max)')
     item(1, 3, 'rel2', 'veza sa sopstvenim atributima')
+    item(1, 4, 'spec2','totalna (dvostruka linija) / preklapajuća „o\u201c')

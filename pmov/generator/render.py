@@ -53,6 +53,9 @@ def main():
                 dr.ellipse(bb, outline='#777777', fill=WHITE, width=1)
             else:
                 dr.ellipse(bb, outline=BLACK, fill=WHITE, width=1)
+            if d.get('mv'):
+                k = 0.055*DPI
+                dr.ellipse([bb[0]+k, bb[1]+k, bb[2]-k, bb[3]-k], outline=BLACK, width=1)
             txt(x, y, d['text'], 6.6, ul=d.get('pk', False), w=w*0.90)
         elif t in ('diamond', 'sdiamond'):
             pl = [(X(x), Y(y+h/2)), (X(x+w/2), Y(y)), (X(x), Y(y-h/2)), (X(x-w/2), Y(y))]
@@ -60,6 +63,7 @@ def main():
             if d['text']: txt(x, y, d['text'], 8.0 if t == 'diamond' else 9.0, w=w*0.80)
         elif t == 'circle':
             dr.ellipse(bb, outline=BLACK, fill=WHITE, width=1)
+            if d['text']: txt(x, y, d['text'], 6.5)
         elif t == 'card':
             txt(x, y, d['text'], 6.8)
         elif t == 'title':

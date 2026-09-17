@@ -111,7 +111,7 @@ E('ZAPISEM', 'ZAPIS O\nEMITOVANJU', C(3), BC, 'weak', [
 
 E('EMISIJA', 'EMISIJA', C(4), BC, 'strong', [
     ('ŠIFRA EMISIJE','N0','pk'),      ('NAZIV EMISIJE','N3',''),
-    ('ŽANR','NW',''),                 ('FORMAT EMISIJE','NE',''),
+    ('ŽANR','NW','mv'),               ('FORMAT EMISIJE','NE',''),
     ('PREDVIĐENO TRAJANJE','S0',''),  ('CILJNA PUBLIKA','S3',''),
     ('STATUS EMISIJE','SW',''),       ('PROGRAMSKI ELABORAT','SE','')],
   'DFD: Podaci o emisijama, Informacije o emisijama; IDEF0: Emisija, Format emisije')
@@ -124,7 +124,7 @@ E('MSADRZAJ', 'MEDIJSKI\nSADRŽAJ', C(5), BC, 'strong', [
 E('MSPROD','PRODUCIRANI\nSADRŽAJ', C(5)-SUB_DX, BC-SUB_DY, 'sub',
   [('DATUM PRODUKCIJE','SL',''), ('VERZIJA MASTERA','SR','')], 'IDEF0: Produciran TV sadrzaj')
 E('MSNAB', 'NABAVLJENI\nSADRŽAJ', C(5), BC-SUB_DY, 'sub',
-  [('IZVOR NABAVKE','SL',''), ('CENA NABAVKE','SR','')], 'DFD: Spisak nabavljenih TV sadrzaja')
+  [('ZEMLJA POREKLA','SL',''), ('CENA NABAVKE','SR','')], 'DFD: Spisak nabavljenih TV sadrzaja')
 E('MSREK', 'REKLAMNI\nSADRŽAJ', C(5)+SUB_DX, BC-SUB_DY, 'sub',
   [('DATUM PRIJEMA','SL',''), ('STATUS PROVERE','SR','')], 'DFD: Reklamni materijali')
 
@@ -191,7 +191,7 @@ E('UGNAB', 'UGOVOR O\nNABAVCI', C(6)+2.2, BD-SUB_DY, 'sub',
 E('KLIJENT', 'KLIJENT', C(7), BD, 'strong', [
     ('ŠIFRA KLIJENTA','N0','pk'), ('NAZIV KLIJENTA','N3',''),
     ('PIB','NW',''),              ('MATIČNI BROJ','NE',''),
-    ('ADRESA','S0',''),           ('KONTAKT OSOBA','S3','')],
+    ('ADRESA','S0','cmp'),        ('KONTAKT OSOBA','S3','mv')],
   'DFD: Klijenti i oglasivaci; eksterni entitet OGLASIVACI')
 E('OGLASIV','OGLAŠIVAČ', C(7)-2.6, BD-2*SUB_DY+1.4, 'sub',
   [('BRANŠA','SL',''), ('GODIŠNJI BUDŽET','SR','')], 'DFD: eksterni entitet OGLASIVACI')
@@ -278,7 +278,7 @@ E('REKLAMAC', 'REKLAMACIJA', C(5), BF, 'strong', [
     ('BROJ REKLAMACIJE','N0','pk'),  ('DATUM REKLAMACIJE','N3',''),
     ('RAZLOG REKLAMACIJE','NW',''),  ('OPIS NEDOSTATKA','NE',''),
     ('STATUS REKLAMACIJE','S0',''),  ('DATUM REŠENJA','S1',''),
-    ('NAČIN REŠAVANJA','S2',''),     ('REKLAMIRANI IZNOS','S3','')],
+    ('REKLAMIRANI IZNOS','S3',''),   ('NAČIN REŠAVANJA','SE','')],
   'DFD: Evidencija reklamacija, Evidentirana reklamacija, Odgovor na reklamaciju')
 
 E('PRIJEMN', 'PRIJEMNICA', C(6), BF, 'strong', [
@@ -292,3 +292,11 @@ E('STNARUD', 'STAVKA\nNARUDŽBENICE', C(7), BF, 'weak', [
     ('KOLIČINA','NW',''),             ('JEDINIČNA CENA','NE',''),
     ('STATUS STAVKE','S0',''),       ('VREDNOST STAVKE','S3','der')],
   'DFD: Podaci sa narudzbenice, Spisak artikala za nabavku')
+
+
+# ---- kompozitni atributi: (entitet, roditeljski atribut, [(naziv, dx, dy), ...]) ----
+COMPOSITE = [
+    ('KLIJENT', 'ADRESA', [('ULICA I BROJ', -2.10, -1.50),
+                           ('GRAD',          0.00, -1.50),
+                           ('POŠTANSKI BROJ', 2.10, -1.50)]),
+]

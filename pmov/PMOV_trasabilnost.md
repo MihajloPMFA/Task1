@@ -1,15 +1,14 @@
 # PMOV – trasabilnost prema DFD i IDEF0 modelu
 
-Dijagram: `PMOV_TV_stanica.vsdx` (Microsoft Visio 2013+).
+Dijagram: `PMOV_TV_stanica.vsdx` (Microsoft Visio 2013+). Verzija 2 (posle revizije).
 Izvori: `DFD_16_09_2026__v12.bp1`, `IDEF0_16_09_2026__v11.bp1` (BPwin).
 
-U DFD modelu je prepoznato: 88 procesa, 78 skladišta podataka, 8 eksternih
-entiteta i 647 tokova podataka; u IDEF0 modelu 90 aktivnosti i 554 strelice
-(ulazi, izlazi, upravljanja i mehanizmi). PMOV je izveden tako što su
-skladišta podataka i eksterni entiteti preslikani u tipove objekata, a tokovi
-podataka i mehanizmi u atribute i veze.
+U DFD modelu je prepoznato 88 procesa, 78 skladišta podataka, 8 eksternih entiteta
+i 647 tokova podataka; u IDEF0 modelu 90 aktivnosti i 554 strelice. Skladišta i
+eksterni entiteti su preslikani u tipove objekata, tokovi u atribute i veze, a
+mehanizmi iz IDEF0-a u specijalizacije.
 
-## 1. Tipovi objekata (entiteti)
+## 1. Tipovi objekata
 
 | # | Tip objekta | Vrsta | Br. atributa | Izvor u DFD / IDEF0 |
 |---|---|---|---|---|
@@ -71,65 +70,65 @@ podataka i mehanizmi u atribute i veze.
 
 | # | Veza | Objekti i kardinalnosti | Atributi veze | Izvor u DFD / IDEF0 |
 |---|---|---|---|---|
-| 1 | **PODREĐENA** | ORGANIZACIONA JEDINICA (0, N) — ORGANIZACIONA JEDINICA (0, 1) | – | IDEF0: Hijerarhijska struktura TV stanice |
-| 2 | **RADI U** | ZAPOSLENI (1, 1) — ORGANIZACIONA JEDINICA (1, N) | – | IDEF0: Pravilnik o organizaciji i sistematizaciji |
-| 3 | **ZADUŽENA** | ZAPOSLENI (0, N) — OPREMA (0, N) | DATUM ZADUŽENJA, DATUM RAZDUŽENJA, STANJE PRI VRAĆANJU | DFD: Zaduzenje i razduzenje, Zaduzena oprema i osobe, Razduzenje opreme |
-| 4 | **ANGAŽUJE** | ZAPOSLENI (0, N) — AKTIVNOST PRODUKCIJE (0, N) | ULOGA NA SNIMANJU, DATUM OD, DATUM DO, BROJ ANGAŽOVANIH SATI | DFD: Angazovanja ljudi i opreme, Evidencija angazovanja resursa, Raspored angazovanja ljudi |
-| 5 | **ZADUŽUJE** | OPREMA (0, N) — AKTIVNOST PRODUKCIJE (0, N) | DATUM REZERVACIJE, TRAJANJE ZADUŽENJA | DFD: Rezervacija opreme za snimanje, Spisak opreme za produkciju |
-| 6 | **ODOBRAVA** | UREDNIK (0, N) — PROJEKAT PRODUKCIJE (1, 1) | – | IDEF0: Urednicke odluke i odobrenja; DFD: Odobrenje za proizvodnju sadrzaja |
-| 7 | **SASTOJI SE OD** *(identifikujuća)* | PROJEKAT PRODUKCIJE (1, N) — AKTIVNOST PRODUKCIJE (1, 1) | – | IDEF0: DEFINISANJE AKTIVNOSTI PROJEKTA |
-| 8 | **IZAZIVA** *(identifikujuća)* | AKTIVNOST PRODUKCIJE (1, N) — TROŠAK PRODUKCIJE (1, 1) | – | IDEF0: EVIDENCIJA TROSKOVA PRODUKCIJE; DFD: Trosak po aktivnosti |
-| 9 | **SNIMLJEN NA** | SIROVI SNIMAK (1, 1) — AKTIVNOST PRODUKCIJE (0, N) | – | IDEF0: SNIMANJE I EVIDENCIJA REALIZACIJE; DFD: Evidencija realizacije snimanja |
-| 10 | **PROIZVODI** | PROJEKAT PRODUKCIJE (1, 1) — EMISIJA (0, 1) | – | DFD: Otvoren projekat produkcije, Producirana emisija |
-| 11 | **MONTIRAN U** | SIROVI SNIMAK (0, N) — MEDIJSKI SADRŽAJ (1, 1) | – | DFD: Montaza i obrada materijala, Montazna lista, Montiran video materijal |
-| 12 | **UGRAĐEN U** | GRAFIČKI I MUZIČKI ELEMENT (0, N) — MEDIJSKI SADRŽAJ (0, N) | VREME POJAVLJIVANJA, NAČIN KORIŠĆENJA | IDEF0: GRAFICKA OBRADA I OZVUCENJE; DFD: Materijal sa grafikom i tonom |
-| 13 | **SADRŽI** *(identifikujuća)* | PROGRAMSKA ŠEMA (1, N) — PROGRAMSKA CELINA (1, 1) | – | DFD: Definisanje programskih celina, Zapis programskih celina |
-| 14 | **OBUHVATA** *(identifikujuća)* | PROGRAMSKA CELINA (1, N) — TERMIN EMITOVANJA (1, 1) | – | IDEF0: RASPOREDJIVANJE TERMINA EMITOVANJA |
-| 15 | **REALIZOVAN** *(identifikujuća)* | TERMIN EMITOVANJA (1, N) — ZAPIS O EMITOVANJU (1, 1) | – | DFD: Evidencija emitovanja, Izvestaj o emitovanom programu |
-| 16 | **PLANIRANA** | ZAPIS O EMITOVANJU (1, 1) — EMISIJA (0, N) | – | DFD: Spisak TV programa za emitovanje, Raspored emisija |
-| 17 | **ČINI** | EMISIJA (1, N) — MEDIJSKI SADRŽAJ (0, N) | REDNI BROJ U EMISIJI | DFD: Podaci i snimci programskih sadrzaja, Gotov materijal za emitovanje |
-| 18 | **POKRIVENO** | MEDIJSKI SADRŽAJ (1, N) — PRAVO KORIŠĆENJA (1, 1) | – | IDEF0: PROVERA PRAVA I PODOBNOSTI SADRZAJA; DFD: Provera prava za termin |
-| 19 | **EMITUJE** | ZAPIS O EMITOVANJU (1, 1) — MEDIJSKI SADRŽAJ (0, N) | – | DFD: Zapis o emitovanom sadrzaju, Arhivirani sadrzaj za emitovanje |
-| 20 | **MERENA** | MERENJE GLEDANOSTI (1, N) — EMISIJA (1, N) | OSTVARENI RATING, UDEO U TERMINU | IDEF0: ANALIZA GLEDANOSTI EMISIJA I REKLAMA; DFD: Izvestaj o gledanosti TV emisija |
-| 21 | **ODNOSI SE NA** | POVRATNA INFO. GLEDALACA (0, N) — EMISIJA (0, 1) | – | DFD: Pregled zalbi po emisijama, Povratne informacije o emisijama |
-| 22 | **ZAKUPLJEN U** | REKLAMNI BLOK (1, 1) — TERMIN EMITOVANJA (1, N) | – | DFD: Programska sema sa reklamnim blokovima, Podaci o raspolozivim terminima |
-| 23 | **PRIKAZUJE** | EMITOVANJE REKLAME (1, N) — REKLAMNI SADRŽAJ (1, 1) | – | DFD: Preuzimanje i priprema reklamnog materijala, Spreman reklamni materijal |
-| 24 | **PODNOSI** | POVRATNA INFO. GLEDALACA (1, N) — MERENJE GLEDANOSTI (0, N) | UDEO U UZORKU | IDEF0: PRIKUPLJANJE MERENJA I ANKETA; DFD: Objedinjene povratne informacije gledalaca |
-| 25 | **TARIFIRAN** | CENOVNIK REKL. TERMINA (1, N) — REKLAMNI BLOK (1, 1) | – | DFD: Planiranje reklamnog prostora i cenovnika, Definisani blokovi i cene |
-| 26 | **SADRŽI SPOT** *(identifikujuća)* | REKLAMNI BLOK (1, N) — EMITOVANJE REKLAME (1, 1) | – | DFD: Rezervisani reklamni blokovi, Plan emitovanja reklama |
-| 27 | **UGOVOREN** | EMITOVANJE REKLAME (1, 1) — STAVKA UGOVORA (0, N) | – | DFD: Ugovoreni termini, Evidencija emitovanja reklama i naplata |
-| 28 | **PRECIZIRA** *(identifikujuća)* | UGOVOR (1, N) — STAVKA UGOVORA (1, 1) | – | DFD: Ugovorena cena i uslovi placanja |
-| 29 | **SKLAPA** | KLIJENT (1, N) — UGOVOR (1, 1) | – | DFD: Izrada i zakljucivanje ugovora, Zakljucen ugovor sa klijentom |
-| 30 | **USTUPA** | UGOVOR O PRODAJI TV SADRŽAJA (1, N) — PRODUCIRANI SADRŽAJ (0, N) | UGOVORENA CENA, OBIM USTUPANJA | DFD: Prodaja TV sadrzaja, Ponuda TV emisije, Prodat TV sadrzaj |
-| 31 | **DOSTAVLJA** | OGLAŠIVAČ (1, N) — REKLAMNI SADRŽAJ (1, 1) | – | DFD: Reklamni materijal oglasivaca, Preuzeta reklama |
-| 32 | **UGOVARA** | DOBAVLJAČ (1, N) — UGOVOR O NABAVCI (1, 1) | – | DFD: Ugovori sa dobavljacima, Potpisan ugovor za nabavku |
-| 33 | **NABAVLJEN PO** | NABAVLJENI SADRŽAJ (1, 1) — UGOVOR O NABAVCI (1, N) | DATUM PREUZIMANJA, UGOVORENA NAKNADA | IDEF0: IZBOR IZVORA SADRZAJA I UGOVARANJE PRAVA, PREUZIMANJE SADRZAJA I UPIS U KATALOG |
-| 34 | **UVRŠTEN U** | ZAHTEV ZA NABAVKU (1, 1) — PLAN NABAVKE (0, N) | – | IDEF0: Planiranje i iniciranje nabavke; DFD: Plan nabavke |
-| 35 | **SADRŽI** *(identifikujuća)* | PLAN NABAVKE (1, N) — STAVKA PLANA NABAVKE (1, 1) | – | DFD: Spisak artikala za nabavku, Spisak opreme za nabavku |
-| 36 | **PONUĐENA** | STAVKA PLANA NABAVKE (0, N) — PONUDA DOBAVLJAČA (1, N) | PONUĐENA CENA, ROK ZA STAVKU | IDEF0: PRIKUPLJANJE I VREDNOVANJE PONUDA |
-| 37 | **VREDNUJE SE** | PONUDA DOBAVLJAČA (1, N) — KRITERIJUM VREDNOVANJA (1, N) | BROJ BODOVA, KOMENTAR OCENE | DFD: Kriterijumi vrednovanja ponuda, Vrednovane ponude |
-| 38 | **BIRA** | PONUDA DOBAVLJAČA (1, 1) — ODLUKA O IZBORU DOBAVLJAČA (0, 1) | – | IDEF0: IZBOR NAJPOVOLJNIJEG DOBAVLJACA; DFD: Odluka o izboru dobavljaca |
-| 39 | **DOSTAVIO** | DOBAVLJAČ (1, N) — PONUDA DOBAVLJAČA (1, 1) | – | DFD: Ponude dobavljaca, Ranije ponude dobavljaca |
-| 40 | **NARUČENO OD** | DOBAVLJAČ (1, N) — NARUDŽBENICA (1, 1) | – | DFD: Narudzbenice, Izdata narudzbenica |
-| 41 | **SADRŽI** *(identifikujuća)* | NARUDŽBENICA (1, N) — STAVKA NARUDŽBENICE (1, 1) | – | DFD: Podaci sa narudzbenice |
-| 42 | **PRAĆENA** | NARUDŽBENICA (1, N) — PRIJEMNICA (1, 1) | – | DFD: Prijemnice, Zapis o prijemu robe, Obavestenje o dostigloj opremi |
-| 43 | **OBUHVATA** | PRIJEMNICA (1, N) — STAVKA NARUDŽBENICE (1, N) | PRIMLJENA KOLIČINA, UTVRĐENO ODSTUPANJE | DFD: Zapis o prijemu robe, Otpremnica |
-| 44 | **REKLAMIRANA** | PRIJEMNICA (0, N) — REKLAMACIJA (1, 1) | – | DFD: Evidencija reklamacija, Reklamacija, Odgovor na reklamaciju |
-| 45 | **FAKTURISANA** | PRIJEMNICA (1, 1) — FAKTURA (0, N) | – | DFD: Obrada faktura i placanja, Kontrolisana faktura za placanje |
-| 46 | **SADRŽI** *(identifikujuća)* | FAKTURA (1, N) — STAVKA FAKTURE (1, 1) | – | DFD: Fakture, Evidentirana faktura |
-| 47 | **PLAĆENA** | FAKTURA (1, N) — NALOG ZA PLAĆANJE (1, 1) | – | DFD: Evidencija naloga za placanje, Evidencija realizovanih placanja, Potvrde o uplati |
-| 48 | **NAPLAĆUJE** | UGOVOR (1, N) — FAKTURA (0, N) | – | DFD: Faktura za reklamiranje, Izvestaji i fakture oglasivacima, Podaci za fakturisanje oglasivaca |
+| 1 | **PODREĐENA** | ORGANIZACIONA JEDINICA (0, N) — (0, 1) ORGANIZACIONA JEDINICA | – | IDEF0: Hijerarhijska struktura TV stanice |
+| 2 | **RADI U** | ZAPOSLENI (1, 1) — (0, N) ORGANIZACIONA JEDINICA | – | IDEF0: Pravilnik o organizaciji i sistematizaciji |
+| 3 | **ZADUŽENA** | ZAPOSLENI (0, N) — (0, N) OPREMA | DATUM ZADUŽENJA, DATUM RAZDUŽENJA, STANJE PRI VRAĆANJU | DFD: Zaduzenje i razduzenje, Zaduzena oprema i osobe, Razduzenje opreme |
+| 4 | **ANGAŽUJE** | ZAPOSLENI (0, N) — (0, N) AKTIVNOST PRODUKCIJE | ULOGA NA SNIMANJU, DATUM OD, DATUM DO, BROJ ANGAŽOVANIH SATI | DFD: Angazovanja ljudi i opreme, Evidencija angazovanja resursa, Raspored angazovanja ljudi |
+| 5 | **ZADUŽUJE** | OPREMA (0, N) — (0, N) AKTIVNOST PRODUKCIJE | DATUM REZERVACIJE, TRAJANJE ZADUŽENJA | DFD: Rezervacija opreme za snimanje, Spisak opreme za produkciju |
+| 6 | **ODOBRAVA** | UREDNIK (0, N) — (1, 1) PROJEKAT PRODUKCIJE | – | IDEF0: Urednicke odluke i odobrenja; DFD: Odobrenje za proizvodnju sadrzaja |
+| 7 | **SASTOJI SE OD** *(identifikujuća)* | PROJEKAT PRODUKCIJE (1, N) — (1, 1) AKTIVNOST PRODUKCIJE | – | IDEF0: DEFINISANJE AKTIVNOSTI PROJEKTA |
+| 8 | **IZAZIVA** *(identifikujuća)* | AKTIVNOST PRODUKCIJE (0, N) — (1, 1) TROŠAK PRODUKCIJE | – | IDEF0: EVIDENCIJA TROSKOVA PRODUKCIJE; DFD: Trosak po aktivnosti |
+| 9 | **SNIMLJEN NA** | SIROVI SNIMAK (1, 1) — (0, N) AKTIVNOST PRODUKCIJE | – | IDEF0: SNIMANJE I EVIDENCIJA REALIZACIJE; DFD: Evidencija realizacije snimanja |
+| 10 | **PROIZVODI** | PROJEKAT PRODUKCIJE (0, 1) — (0, N) EMISIJA | – | DFD: Otvoren projekat produkcije, Producirana emisija |
+| 11 | **MONTIRAN U** | SIROVI SNIMAK (0, N) — (0, N) MEDIJSKI SADRŽAJ | – | DFD: Montaza i obrada materijala, Montazna lista, Montiran video materijal |
+| 12 | **UGRAĐEN U** | GRAFIČKI I MUZIČKI ELEMENT (0, N) — (0, N) MEDIJSKI SADRŽAJ | VREME POJAVLJIVANJA, NAČIN KORIŠĆENJA | IDEF0: GRAFICKA OBRADA I OZVUCENJE; DFD: Materijal sa grafikom i tonom |
+| 13 | **SADRŽI CELINE** *(identifikujuća)* | PROGRAMSKA ŠEMA (1, N) — (1, 1) PROGRAMSKA CELINA | – | DFD: Definisanje programskih celina, Zapis programskih celina |
+| 14 | **OBUHVATA** | PROGRAMSKA CELINA (1, N) — (1, 1) TERMIN EMITOVANJA | – | IDEF0: RASPOREDJIVANJE TERMINA EMITOVANJA |
+| 15 | **REALIZOVAN** *(identifikujuća)* | TERMIN EMITOVANJA (0, 1) — (1, 1) ZAPIS O EMITOVANJU | – | DFD: Evidencija emitovanja, Izvestaj o emitovanom programu |
+| 16 | **PLANIRANA** | TERMIN EMITOVANJA (1, 1) — (0, N) EMISIJA | – | DFD: Spisak TV programa za emitovanje, Raspored emisija, Detaljan TV program |
+| 17 | **ČINI** | EMISIJA (1, N) — (0, N) MEDIJSKI SADRŽAJ | REDNI BROJ U EMISIJI | DFD: Podaci i snimci programskih sadrzaja, Gotov materijal za emitovanje |
+| 18 | **POKRIVENO** | MEDIJSKI SADRŽAJ (0, N) — (1, N) PRAVO KORIŠĆENJA | – | IDEF0: PROVERA PRAVA I PODOBNOSTI SADRZAJA; DFD: Provera prava za termin |
+| 19 | **EMITUJE** | ZAPIS O EMITOVANJU (1, 1) — (0, N) MEDIJSKI SADRŽAJ | – | DFD: Zapis o emitovanom sadrzaju, Arhivirani sadrzaj za emitovanje |
+| 20 | **MERENA** | MERENJE GLEDANOSTI (1, N) — (0, N) EMISIJA | OSTVARENI RATING, UDEO U TERMINU | IDEF0: ANALIZA GLEDANOSTI EMISIJA I REKLAMA; DFD: Izvestaj o gledanosti TV emisija |
+| 21 | **ODNOSI SE NA** | POVRATNA INFO. GLEDALACA (0, 1) — (0, N) EMISIJA | – | DFD: Pregled zalbi po emisijama, Povratne informacije o emisijama |
+| 22 | **ZAKUPLJEN U** | REKLAMNI BLOK (1, 1) — (0, N) TERMIN EMITOVANJA | – | DFD: Programska sema sa reklamnim blokovima, Podaci o raspolozivim terminima |
+| 23 | **PRIKAZUJE** | EMITOVANJE REKLAME (1, 1) — (0, N) REKLAMNI SADRŽAJ | – | DFD: Preuzimanje i priprema reklamnog materijala, Spreman reklamni materijal |
+| 24 | **TARIFIRAN** | CENOVNIK REKL. TERMINA (1, N) — (1, 1) REKLAMNI BLOK | – | DFD: Planiranje reklamnog prostora i cenovnika, Definisani blokovi i cene |
+| 25 | **SADRŽI SPOT** *(identifikujuća)* | REKLAMNI BLOK (1, N) — (1, 1) EMITOVANJE REKLAME | – | DFD: Rezervisani reklamni blokovi, Plan emitovanja reklama |
+| 26 | **UGOVOREN** | EMITOVANJE REKLAME (1, 1) — (0, N) STAVKA UGOVORA | – | DFD: Ugovoreni termini, Evidencija emitovanja reklama i naplata |
+| 27 | **PRECIZIRA** *(identifikujuća)* | UGOVOR (1, N) — (1, 1) STAVKA UGOVORA | – | DFD: Ugovorena cena i uslovi placanja |
+| 28 | **SKLAPA** | KLIJENT (0, N) — (0, 1) UGOVOR | – | DFD: Izrada i zakljucivanje ugovora, Zakljucen ugovor sa klijentom |
+| 29 | **USTUPA** | UGOVOR O PRODAJI TV SADRŽAJA (1, N) — (0, N) PRODUCIRANI SADRŽAJ | UGOVORENA CENA, OBIM USTUPANJA | DFD: Prodaja TV sadrzaja, Ponuda TV emisije, Prodat TV sadrzaj |
+| 30 | **DOSTAVLJA** | OGLAŠIVAČ (1, N) — (1, 1) REKLAMNI SADRŽAJ | – | DFD: Reklamni materijal oglasivaca, Preuzeta reklama |
+| 31 | **UGOVARA** | DOBAVLJAČ (0, N) — (1, 1) UGOVOR O NABAVCI | – | DFD: Ugovori sa dobavljacima, Potpisan ugovor za nabavku |
+| 32 | **NABAVLJEN PO** | NABAVLJENI SADRŽAJ (1, 1) — (1, N) UGOVOR O NABAVCI | DATUM PREUZIMANJA, UGOVORENA NAKNADA | IDEF0: IZBOR IZVORA SADRZAJA I UGOVARANJE PRAVA, PREUZIMANJE SADRZAJA I UPIS U KATALOG |
+| 33 | **UVRŠTEN U** | ZAHTEV ZA NABAVKU (0, 1) — (0, N) PLAN NABAVKE | – | IDEF0: Planiranje i iniciranje nabavke; DFD: Plan nabavke |
+| 34 | **SADRŽI STAVKE PLANA** *(identifikujuća)* | PLAN NABAVKE (1, N) — (1, 1) STAVKA PLANA NABAVKE | – | DFD: Spisak artikala za nabavku, Spisak opreme za nabavku |
+| 35 | **PONUĐENA** | STAVKA PLANA NABAVKE (0, N) — (0, N) PONUDA DOBAVLJAČA | PONUĐENA CENA, ROK ZA STAVKU | IDEF0: PRIKUPLJANJE I VREDNOVANJE PONUDA |
+| 36 | **VREDNUJE SE** | PONUDA DOBAVLJAČA (1, N) — (1, N) KRITERIJUM VREDNOVANJA | BROJ BODOVA, KOMENTAR OCENE | DFD: Kriterijumi vrednovanja ponuda, Vrednovane ponude |
+| 37 | **BIRA** | PONUDA DOBAVLJAČA (0, 1) — (0, 1) ODLUKA O IZBORU DOBAVLJAČA | – | IDEF0: IZBOR NAJPOVOLJNIJEG DOBAVLJACA; DFD: Odluka o izboru dobavljaca |
+| 38 | **DOSTAVIO** | DOBAVLJAČ (0, N) — (1, 1) PONUDA DOBAVLJAČA | – | DFD: Ponude dobavljaca, Ranije ponude dobavljaca |
+| 39 | **NARUČENO OD** | DOBAVLJAČ (0, N) — (1, 1) NARUDŽBENICA | – | DFD: Narudzbenice, Izdata narudzbenica |
+| 40 | **SADRŽI STAVKE NARUDŽBINE** *(identifikujuća)* | NARUDŽBENICA (1, N) — (1, 1) STAVKA NARUDŽBENICE | – | DFD: Podaci sa narudzbenice |
+| 41 | **PRAĆENA** | NARUDŽBENICA (0, N) — (1, 1) PRIJEMNICA | – | DFD: Prijemnice, Zapis o prijemu robe, Obavestenje o dostigloj opremi |
+| 42 | **PRIMLJENO PO** | PRIJEMNICA (1, N) — (0, N) STAVKA NARUDŽBENICE | PRIMLJENA KOLIČINA, UTVRĐENO ODSTUPANJE | DFD: Zapis o prijemu robe, Otpremnica |
+| 43 | **REKLAMIRANA** | PRIJEMNICA (0, N) — (1, 1) REKLAMACIJA | – | DFD: Evidencija reklamacija, Reklamacija, Odgovor na reklamaciju |
+| 44 | **FAKTURISANA** | PRIJEMNICA (0, 1) — (0, N) FAKTURA | – | DFD: Obrada faktura i placanja, Kontrolisana faktura za placanje |
+| 45 | **SADRŽI STAVKE FAKTURE** *(identifikujuća)* | FAKTURA (1, N) — (1, 1) STAVKA FAKTURE | – | DFD: Fakture, Evidentirana faktura |
+| 46 | **PLAĆENA** | FAKTURA (0, N) — (1, 1) NALOG ZA PLAĆANJE | – | DFD: Evidencija naloga za placanje, Evidencija realizovanih placanja, Potvrde o uplati |
+| 47 | **NAPLAĆUJE** | UGOVOR (0, N) — (0, 1) FAKTURA | – | DFD: Faktura za reklamiranje, Izvestaji i fakture oglasivacima, Podaci za fakturisanje oglasivaca |
+| 48 | **TIČE SE** | REKLAMACIJA (1, N) — (0, N) STAVKA NARUDŽBENICE | – | DFD: Evidencija reklamacija, Reklamacija, Podaci sa narudzbenice |
 
-## 3. Specijalizacije (proširenje MOV-a u PMOV)
+## 3. Specijalizacije
 
-| # | Nadtip | Podtipovi | Izvor u DFD / IDEF0 |
-|---|---|---|---|
-| 1 | **ZAPOSLENI** | UREDNIK, NOVINAR / REPORTER, SNIMATELJ, REFERENT | IDEF0 mehanizmi: Urednik, Novinari/Reporter, Snimatelji, Referent za nabavku/oglasavanje |
-| 2 | **OPREMA** | SNIMATELJSKA OPREMA, STUDIJSKA I EMISIONA OPREMA | IDEF0: Snimateljska oprema, TV studio i kontrolna soba, Hardver i oprema |
-| 3 | **MEDIJSKI SADRŽAJ** | PRODUCIRANI SADRŽAJ, NABAVLJENI SADRŽAJ, REKLAMNI SADRŽAJ | DFD: Produciran TV sadrzaj / Spisak nabavljenih TV sadrzaja / Reklamni materijali |
-| 4 | **UGOVOR** | UGOVOR O OGLAŠAVANJU, UGOVOR O PRODAJI TV SADRŽAJA, UGOVOR O NABAVCI | DFD: Ugovori oglasivaca / Ugovor o prenosu vlasnistva tv emisije / Ugovori sa dobavljacima |
-| 5 | **KLIJENT** | OGLAŠIVAČ, KUPAC SADRŽAJA | DFD: Klijenti i oglasivaci; eksterni entitet OGLASIVACI; Prodaja TV sadrzaja |
-| 6 | **DOBAVLJAČ** | DOBAVLJAČ TV SADRŽAJA, DOBAVLJAČ OPREME I MATERIJALA | DFD: Dobavljaci, Registar dobavljaca; Nabavka TV sadrzaja / Spisak opreme za nabavku |
+| # | Nadtip | Vrsta | Podtipovi | Izvor u DFD / IDEF0 |
+|---|---|---|---|---|
+| 1 | **ZAPOSLENI** | parcijalna, disjunktna (d) | UREDNIK, NOVINAR / REPORTER, SNIMATELJ, REFERENT | IDEF0 mehanizmi: Urednik, Novinari/Reporter, Snimatelji, Referent za nabavku/oglasavanje |
+| 2 | **OPREMA** | parcijalna, disjunktna (d) | SNIMATELJSKA OPREMA, STUDIJSKA I EMISIONA OPREMA | IDEF0: Snimateljska oprema, TV studio i kontrolna soba, Hardver i oprema |
+| 3 | **MEDIJSKI SADRŽAJ** | totalna, disjunktna (d) | PRODUCIRANI SADRŽAJ, NABAVLJENI SADRŽAJ, REKLAMNI SADRŽAJ | DFD: Produciran TV sadrzaj / Spisak nabavljenih TV sadrzaja / Reklamni materijali |
+| 4 | **UGOVOR** | totalna, disjunktna (d) | UGOVOR O OGLAŠAVANJU, UGOVOR O PRODAJI TV SADRŽAJA, UGOVOR O NABAVCI | DFD: Ugovori oglasivaca / Ugovor o prenosu vlasnistva tv emisije / Ugovori sa dobavljacima |
+| 5 | **KLIJENT** | totalna, preklapajuća (o) | OGLAŠIVAČ, KUPAC SADRŽAJA | DFD: Klijenti i oglasivaci; eksterni entitet OGLASIVACI; Prodaja TV sadrzaja |
+| 6 | **DOBAVLJAČ** | totalna, preklapajuća (o) | DOBAVLJAČ TV SADRŽAJA, DOBAVLJAČ OPREME I MATERIJALA | DFD: Dobavljaci, Registar dobavljaca; Nabavka TV sadrzaja / Spisak opreme za nabavku |
 
 ## 4. Atributi po tipu objekta
 
@@ -151,10 +150,10 @@ podataka i mehanizmi u atribute i veze.
 - **PROGRAMSKA CELINA**: RB CELINE *(parcijalni ključ)*, NAZIV CELINE, TIP CELINE, DAN U NEDELJI, VREME OD, VREME DO
 - **TERMIN EMITOVANJA**: ŠIFRA TERMINA *(primarni ključ)*, DATUM, VREME POČETKA, TRAJANJE TERMINA, TIP TERMINA, ZONA GLEDANOSTI, STATUS TERMINA, REDNI BROJ REPRIZE
 - **ZAPIS O EMITOVANJU**: RB EMITOVANJA *(parcijalni ključ)*, STATUS REALIZACIJE, STVARNO VREME POČ., STVARNO TRAJANJE, NAPOMENA O SMETNJAMA, OPERATER EMITOVANJA
-- **EMISIJA**: ŠIFRA EMISIJE *(primarni ključ)*, NAZIV EMISIJE, ŽANR, FORMAT EMISIJE, PREDVIĐENO TRAJANJE, CILJNA PUBLIKA, STATUS EMISIJE, PROGRAMSKI ELABORAT
+- **EMISIJA**: ŠIFRA EMISIJE *(primarni ključ)*, NAZIV EMISIJE, ŽANR *(višeznačni)*, FORMAT EMISIJE, PREDVIĐENO TRAJANJE, CILJNA PUBLIKA, STATUS EMISIJE, PROGRAMSKI ELABORAT
 - **MEDIJSKI SADRŽAJ**: ŠIFRA SADRŽAJA *(primarni ključ)*, NAZIV SADRŽAJA, TRAJANJE, FORMAT ZAPISA, DATUM ARHIVIRANJA, LOKACIJA U ARHIVI
 - **PRODUCIRANI SADRŽAJ**: DATUM PRODUKCIJE, VERZIJA MASTERA
-- **NABAVLJENI SADRŽAJ**: IZVOR NABAVKE, CENA NABAVKE
+- **NABAVLJENI SADRŽAJ**: ZEMLJA POREKLA, CENA NABAVKE
 - **REKLAMNI SADRŽAJ**: DATUM PRIJEMA, STATUS PROVERE
 - **PRAVO KORIŠĆENJA**: BROJ LICENCE *(primarni ključ)*, VRSTA PRAVA, DATUM OD, DATUM DO, DOZVOLJENO EMITOVANJA, ISKORIŠĆENO EMITOVANJA *(izvedeni)*, TERITORIJA, NOSILAC PRAVA
 - **POVRATNA INFO. GLEDALACA**: BROJ PRIJAVE *(primarni ključ)*, DATUM PRIJEMA, VRSTA PRIJAVE, KANAL PRIJEMA, SADRŽAJ PRIJAVE, STATUS OBRADE, DATUM ODGOVORA, PROFIL GLEDAOCA
@@ -167,7 +166,7 @@ podataka i mehanizmi u atribute i veze.
 - **UGOVOR O OGLAŠAVANJU**: UGOVORENI TERMINI, VRSTA REKLAMIRANJA
 - **UGOVOR O PRODAJI TV SADRŽAJA**: PRENOS VLASNIŠTVA, OBIM USTUPLJENIH PRAVA
 - **UGOVOR O NABAVCI**: ROK ISPORUKE, USLOVI PLAĆANJA
-- **KLIJENT**: ŠIFRA KLIJENTA *(primarni ključ)*, NAZIV KLIJENTA, PIB, MATIČNI BROJ, ADRESA, KONTAKT OSOBA
+- **KLIJENT**: ŠIFRA KLIJENTA *(primarni ključ)*, NAZIV KLIJENTA, PIB, MATIČNI BROJ, ADRESA *(kompozitni)*, KONTAKT OSOBA *(višeznačni)*  [ADRESA → ULICA I BROJ, GRAD, POŠTANSKI BROJ]
 - **OGLAŠIVAČ**: BRANŠA, GODIŠNJI BUDŽET
 - **KUPAC SADRŽAJA**: TIP MEDIJA, TERITORIJA EMITOVANJA
 - **ZAHTEV ZA NABAVKU**: BROJ ZAHTEVA *(primarni ključ)*, DATUM ZAHTEVA, VRSTA NABAVKE, PREDMET ZAHTEVA, OBRAZLOŽENJE, STATUS ZAHTEVA, PRIORITET, PROCENJENA VREDNOST
@@ -183,6 +182,6 @@ podataka i mehanizmi u atribute i veze.
 - **NALOG ZA PLAĆANJE**: BROJ NALOGA *(primarni ključ)*, DATUM NALOGA, IZNOS NALOGA, SVRHA PLAĆANJA, DATUM REALIZACIJE, STATUS NALOGA, RAČUN PRIMAOCA, ODOBRIO
 - **STAVKA FAKTURE**: RB STAVKE *(parcijalni ključ)*, OPIS STAVKE, KOLIČINA, JEDINIČNA CENA, STOPA PDV, VREDNOST STAVKE *(izvedeni)*
 - **FAKTURA**: BROJ FAKTURE *(primarni ključ)*, DATUM IZDAVANJA, ROK PLAĆANJA, SMER (ULAZNA/IZLAZNA), OSNOVICA, IZNOS PDV, STATUS PLAĆANJA, IZNOS ZA PLAĆANJE *(izvedeni)*
-- **REKLAMACIJA**: BROJ REKLAMACIJE *(primarni ključ)*, DATUM REKLAMACIJE, RAZLOG REKLAMACIJE, OPIS NEDOSTATKA, STATUS REKLAMACIJE, DATUM REŠENJA, NAČIN REŠAVANJA, REKLAMIRANI IZNOS
+- **REKLAMACIJA**: BROJ REKLAMACIJE *(primarni ključ)*, DATUM REKLAMACIJE, RAZLOG REKLAMACIJE, OPIS NEDOSTATKA, STATUS REKLAMACIJE, DATUM REŠENJA, REKLAMIRANI IZNOS, NAČIN REŠAVANJA
 - **PRIJEMNICA**: BROJ PRIJEMNICE *(primarni ključ)*, DATUM PRIJEMA, BROJ OTPREMNICE, PRIMIO (MAGACIONER), ISPRAVNOST ISPORUKE, NAPOMENA
 - **STAVKA NARUDŽBENICE**: RB STAVKE *(parcijalni ključ)*, NAZIV ARTIKLA, KOLIČINA, JEDINIČNA CENA, STATUS STAVKE, VREDNOST STAVKE *(izvedeni)*

@@ -9,6 +9,7 @@ Glavni rezultat: **`../PMOV_TV_stanica.vsdx`** – otvara se u Microsoft Visio 2
 | `../PMOV_TV_stanica.vsdx` | PMOV dijagram za Visio |
 | `PMOV_TV_stanica_pregled.png` | rasterski pregled istog dijagrama |
 | `PMOV_trasabilnost.md` | veza svakog objekta/veze sa DFD i IDEF0 modelom |
+| `PMOV_ispravke.md` | spisak ispravki iz revizije v1 → v2 i obrazloženja |
 | `generator/` | skriptovi kojima je dijagram generisan i proveren |
 
 ## Kako je model izveden
@@ -33,4 +34,7 @@ python3 -c "import layout; S,L=layout.build_all(); print(layout.check(S,L))"   #
 python3 verify_vsdx.py ../../PMOV_TV_stanica.vsdx ../PMOV_TV_stanica_pregled.png 42
 ```
 `layout.check` prijavljuje svako preklapanje oblika i svako sečenje oblika linijom;
-trenutno stanje je **0 konflikata** na 578 oblika i 431 liniji.
+trenutno stanje je **0 konflikata** na 588 oblika i 442 linije.
+
+Model sadrži 37 tipova objekata (9 slabih), 16 podtipova u 6 specijalizacija,
+48 tipova veza i 289 atributa.
