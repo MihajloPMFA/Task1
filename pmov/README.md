@@ -1,7 +1,11 @@
 # PMOV – Prošireni model objekti–veze (IS Televizijske stanice)
 
 Glavni rezultat: **`../PMOV_TV_stanica.vsdx`** – otvara se u Microsoft Visio 2013+
-(jedna stranica, 112 × 106 inča).
+(jedna stranica, 105 × 105 inča).
+
+Legenda notacije i natpisi funkcionalnih celina su isključeni. Vraćaju se
+postavljanjem `SHOW_LEGEND = True` odnosno `SHOW_BANDS = True` na vrhu
+`generator/layout.py` i ponovnim pokretanjem generatora.
 
 ## Sadržaj
 | Fajl | Opis |
@@ -34,7 +38,7 @@ python3 -c "import layout; S,L=layout.build_all(); print(layout.check(S,L))"   #
 python3 verify_vsdx.py ../../PMOV_TV_stanica.vsdx ../PMOV_TV_stanica_pregled.png 42
 ```
 `layout.check` prijavljuje svako preklapanje oblika i svako sečenje oblika linijom;
-trenutno stanje je **0 konflikata** na 588 oblika i 442 linije.
+trenutno stanje je **0 konflikata** na 542 oblika i 435 linija.
 
 Model sadrži 37 tipova objekata (9 slabih), 16 podtipova u 6 specijalizacija,
 48 tipova veza i 289 atributa.

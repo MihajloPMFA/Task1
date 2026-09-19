@@ -4,8 +4,9 @@ from geom import *
 from mdl_ent import ENT, ORDER, COMPOSITE
 from mdl_rel import REL, SPEC
 
-PAGE_W, PAGE_H = 112.0, 106.0
-XOFF = 7.0            # leva margina za nazive funkcionalnih celina
+PAGE_W, PAGE_H = 105.0, 105.0
+XOFF = 1.5            # leva margina crteza
+SHOW_TITLE, SHOW_LEGEND, SHOW_BANDS = True, False, False
 CARD_W, CARD_H = 0.78, 0.30
 
 def build():
@@ -155,6 +156,8 @@ BANDS = ((96.0, 'ORGANIZACIJA,\nKADROVI I OPREMA'), (78.0, 'PRODUKCIJA'),
          (28.0, 'NABAVKA'), (11.0, 'FINANSIJSKA\nDOKUMENTACIJA'))
 
 def add_bands(S):
+    if not SHOW_BANDS:
+        return
     for y, nm in BANDS:
         S.append(dict(t='bandlbl', x=3.4, y=y, w=6.0, h=1.9, text=nm, key='BL%d' % int(y)))
 
@@ -228,12 +231,16 @@ def add_title(S, L):
         d = dict(t=t, x=x, y=y, w=w, h=h, text=text, **kw); S.append(d); return d
     def ln(pts):
         L.append(dict(pts=[(round(a,4), round(b,4)) for a, b in pts], owner=('LEG','LEG')))
+    if not SHOW_TITLE:
+        return
     sh('title', LEG_X + 21.0, LEG_Y - 1.1, 42.0, 2.2,
        'PMOV – PROŠIRENI MODEL OBJEKTI–VEZE\nINFORMACIONI SISTEM TELEVIZIJSKE STANICE', key='TTL')
     sh('subtitle', LEG_X + 21.0, LEG_Y - 3.1, 42.0, 1.4,
        'Izvedeno iz DFD (DFD_16_09_2026__v12) i IDEF0 (IDEF0_16_09_2026__v11) modela\n'
        'Obuhvat: emitovanje, produkcija, marketing i prodaja, nabavka, administracija',
        key='STL')
+    if not SHOW_LEGEND:
+        return
     # okvir legende
     bx, by, bw, bh = LEG_X + 21.0, LEG_Y - 11.4, 42.0, 8.6
     sh('frame', bx, by, bw, bh, '', key='LEGF')

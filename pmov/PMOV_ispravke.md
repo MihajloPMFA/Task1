@@ -1,7 +1,7 @@
 # PMOV v2 – spisak ispravki posle revizije modela
 
 Sve izmene su primenjene nad `PMOV_TV_stanica.vsdx`. Provera rasporeda i dalje
-prijavljuje **0 preklapanja** oblika i linija (588 oblika, 442 linije).
+prijavljuje **0 preklapanja** oblika i linija (542 oblika, 435 linija).
 
 ## A. Otklonjene kontradikcije
 
@@ -76,7 +76,8 @@ sada dobija putanjom NABAVLJENI SADRŽAJ → `NABAVLJEN PO` → UGOVOR O NABAVCI
 | KLIJENT → OGLAŠIVAČ, KUPAC SADRŽAJA | totalna, preklapajuća |
 | DOBAVLJAČ → TV SADRŽAJA, OPREME I MATERIJALA | totalna, preklapajuća |
 
-Legenda na dijagramu je proširena novim simbolima.
+Legenda na dijagramu je proširena novim simbolima, a zatim naknadno uklonjena sa
+crteža na zahtev (opis notacije ostaje u ovom dokumentu).
 
 ---
 
