@@ -114,6 +114,21 @@ za svaku vezu tacno koji je strani kljuc nosi, pa je preimenovanje mehanicko.
   izaberite ODBC/Generic kao target.
 * `TRAJANJE` je svuda `INTEGER` (sekunde odnosno minuti, pise u komentaru kolone),
   a ne `TIME`, jer u PMOV-u to je duzina a ne trenutak.
+* **Rezervisane reci.** ERwin-ov parser skripta odbija kolonu koja se zove kao SQL
+  kljucna rec — cela `CREATE TABLE` naredba tada padne, a za njom i svi strani
+  kljucevi koji pokazuju na tu tabelu (`RES-1: Syntax error` pa `REP-39: ... Failed.
+  Unable to find Table ...`). Zato su tri kolone preimenovane:
+
+  | PMOV atribut | Tabela | Kolona u semi |
+  |---|---|---|
+  | FORMAT | `GRAFICKI_I_MUZICKI_ELEMENT` | `FORMAT_ELEMENTA` |
+  | MODEL | `OPREMA` | `MODEL_OPREME` |
+  | SHARE | `MERENJE_GLEDANOSTI` | `SHARE_UDEO` |
+
+  Skript se sada proverava prema uniji rezervisanih reci ANSI SQL-92/99/2003,
+  SQL Server-a, Oracle-a, DB2 i ODBC-a (`er/generator/reserved.py`) — nijedno ime
+  tabele ni kolone se ne poklapa ni sa jednom.
+
 * Izvedeni atributi (`BROJ_ZAPOSLENIH`, `ZAKUPLJENO_SEKUNDI`, `ISKORISCENOST`,
   `UKUPNA_VREDNOST`, `OSNOVICA`, `IZNOS_PDV`, `IZNOS_ZA_PLACANJE`,
   `VREDNOST_STAVKE`, `UKUPAN_IZNOS`, `UKUPNO_BODOVA`, `OCENA_DOBAVLJACA`,

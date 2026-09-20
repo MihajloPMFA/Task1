@@ -110,7 +110,7 @@ CREATE TABLE OPREMA
 (
     INVENTARSKI_BROJ  CHAR(18)       NOT NULL,            /* PK - INVENTARSKI BROJ */
     NAZIV_OPREME      VARCHAR(60)    NOT NULL,            /* NAZIV OPREME */
-    MODEL             VARCHAR(60),                        /* MODEL */
+    MODEL_OPREME      VARCHAR(60),                        /* MODEL (MODEL je rezervisana rec -> MODEL_OPREME) */
     PROIZVODJAC       VARCHAR(60),                        /* PROIZVODJAC */
     STATUS_OPREME     VARCHAR(20),                        /* STATUS OPREME */
     DATUM_NABAVKE     DATE,                               /* DATUM NABAVKE */
@@ -305,7 +305,7 @@ CREATE TABLE GRAFICKI_I_MUZICKI_ELEMENT
     NAZIV_ELEMENTA    VARCHAR(60)   NOT NULL,                               /* NAZIV ELEMENTA */
     TIP_ELEMENTA      VARCHAR(30),                                          /* TIP ELEMENTA */
     AUTOR             VARCHAR(60),                                          /* AUTOR */
-    FORMAT            VARCHAR(30),                                          /* FORMAT */
+    FORMAT_ELEMENTA   VARCHAR(30),                                          /* FORMAT (FORMAT je rezervisana rec -> FORMAT_ELEMENTA) */
     USLOV_KORISCENJA  VARCHAR(255),                                         /* USLOV KORISCENJA */
     CONSTRAINT PK_GRAFICKI_I_MUZICKI_ELEMENT PRIMARY KEY (SIFRA_ELEMENTA)
 );
@@ -547,7 +547,7 @@ CREATE TABLE MERENJE_GLEDANOSTI
     IZVOR_MERENJA      VARCHAR(60),                                /* IZVOR MERENJA */
     CILJNA_GRUPA       VARCHAR(60),                                /* CILJNA GRUPA */
     RATING             DECIMAL(5,2),                               /* RATING */
-    SHARE              DECIMAL(5,2),                               /* SHARE */
+    SHARE_UDEO         DECIMAL(5,2),                               /* SHARE (SHARE je rezervisana rec -> SHARE_UDEO) */
     BROJ_GLEDALACA     INTEGER,                                    /* BROJ GLEDALACA */
     PROSECNO_GLEDANJE  INTEGER,                                    /* PROSECNO GLEDANJE (minuta) */
     CONSTRAINT PK_MERENJE_GLEDANOSTI PRIMARY KEY (SIFRA_MERENJA)

@@ -30,6 +30,8 @@ atribut ni veza iz primera nisu preuzeti.
 * svih 69 `CREATE TABLE` naredbi prihvata pravi SQL parser (SQLite);
 * svih 84 stranih kljuceva nezavisno reparsirano iz gotovog `.sql` fajla —
   svaka kolona postoji, svaki FK gadja pun primarni kljuc roditelja, arnost se poklapa;
+* nijedno ime tabele ni kolone nije rezervisana SQL rec (provereno prema uniji
+  lista ANSI SQL-92/99/2003, SQL Server, Oracle, DB2, ODBC);
 * nema izolovanih tabela;
 * nema ciklusa obaveznih (NOT NULL) stranih kljuceva — sema se moze napuniti podacima
   (topoloski poredak pokriva svih 69 tabela);

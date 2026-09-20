@@ -318,16 +318,16 @@ pa slab entitet ne bi imao smisla. Sa `(0,N)` jedan termin moze imati vise zapis
 
 *PMOV:* jak entitet OPREMA
 
-| Kolona             | Tip           | Obavezno | Kljuc | Poreklo iz PMOV-a     |
-|--------------------|---------------|----------|-------|-----------------------|
-| `INVENTARSKI_BROJ` | CHAR(18)      | NOT NULL | PK    | PK - INVENTARSKI BROJ |
-| `NAZIV_OPREME`     | VARCHAR(60)   | NOT NULL |       | NAZIV OPREME          |
-| `MODEL`            | VARCHAR(60)   |          |       | MODEL                 |
-| `PROIZVODJAC`      | VARCHAR(60)   |          |       | PROIZVODJAC           |
-| `STATUS_OPREME`    | VARCHAR(20)   |          |       | STATUS OPREME         |
-| `DATUM_NABAVKE`    | DATE          |          |       | DATUM NABAVKE         |
-| `GARANCIJA_DO`     | DATE          |          |       | GARANCIJA DO          |
-| `NABAVNA_VREDNOST` | DECIMAL(12,2) |          |       | NABAVNA VREDNOST      |
+| Kolona             | Tip           | Obavezno | Kljuc | Poreklo iz PMOV-a                                |
+|--------------------|---------------|----------|-------|--------------------------------------------------|
+| `INVENTARSKI_BROJ` | CHAR(18)      | NOT NULL | PK    | PK - INVENTARSKI BROJ                            |
+| `NAZIV_OPREME`     | VARCHAR(60)   | NOT NULL |       | NAZIV OPREME                                     |
+| `MODEL_OPREME`     | VARCHAR(60)   |          |       | MODEL (MODEL je rezervisana rec -> MODEL_OPREME) |
+| `PROIZVODJAC`      | VARCHAR(60)   |          |       | PROIZVODJAC                                      |
+| `STATUS_OPREME`    | VARCHAR(20)   |          |       | STATUS OPREME                                    |
+| `DATUM_NABAVKE`    | DATE          |          |       | DATUM NABAVKE                                    |
+| `GARANCIJA_DO`     | DATE          |          |       | GARANCIJA DO                                     |
+| `NABAVNA_VREDNOST` | DECIMAL(12,2) |          |       | NABAVNA VREDNOST                                 |
 
 ### `SNIMATELJSKA_OPREMA`
 
@@ -485,14 +485,14 @@ pa slab entitet ne bi imao smisla. Sa `(0,N)` jedan termin moze imati vise zapis
 
 *PMOV:* jak entitet GRAFICKI I MUZICKI ELEMENT
 
-| Kolona             | Tip          | Obavezno | Kljuc | Poreklo iz PMOV-a   |
-|--------------------|--------------|----------|-------|---------------------|
-| `SIFRA_ELEMENTA`   | CHAR(18)     | NOT NULL | PK    | PK - SIFRA ELEMENTA |
-| `NAZIV_ELEMENTA`   | VARCHAR(60)  | NOT NULL |       | NAZIV ELEMENTA      |
-| `TIP_ELEMENTA`     | VARCHAR(30)  |          |       | TIP ELEMENTA        |
-| `AUTOR`            | VARCHAR(60)  |          |       | AUTOR               |
-| `FORMAT`           | VARCHAR(30)  |          |       | FORMAT              |
-| `USLOV_KORISCENJA` | VARCHAR(255) |          |       | USLOV KORISCENJA    |
+| Kolona             | Tip          | Obavezno | Kljuc | Poreklo iz PMOV-a                                     |
+|--------------------|--------------|----------|-------|-------------------------------------------------------|
+| `SIFRA_ELEMENTA`   | CHAR(18)     | NOT NULL | PK    | PK - SIFRA ELEMENTA                                   |
+| `NAZIV_ELEMENTA`   | VARCHAR(60)  | NOT NULL |       | NAZIV ELEMENTA                                        |
+| `TIP_ELEMENTA`     | VARCHAR(30)  |          |       | TIP ELEMENTA                                          |
+| `AUTOR`            | VARCHAR(60)  |          |       | AUTOR                                                 |
+| `FORMAT_ELEMENTA`  | VARCHAR(30)  |          |       | FORMAT (FORMAT je rezervisana rec -> FORMAT_ELEMENTA) |
+| `USLOV_KORISCENJA` | VARCHAR(255) |          |       | USLOV KORISCENJA                                      |
 
 ### `PROGRAMSKA_SEMA`
 
@@ -694,16 +694,16 @@ pa slab entitet ne bi imao smisla. Sa `(0,N)` jedan termin moze imati vise zapis
 
 *PMOV:* jak entitet MERENJE GLEDANOSTI
 
-| Kolona              | Tip          | Obavezno | Kljuc | Poreklo iz PMOV-a          |
-|---------------------|--------------|----------|-------|----------------------------|
-| `SIFRA_MERENJA`     | CHAR(18)     | NOT NULL | PK    | PK - SIFRA MERENJA         |
-| `DATUM_MERENJA`     | DATE         |          |       | DATUM MERENJA              |
-| `IZVOR_MERENJA`     | VARCHAR(60)  |          |       | IZVOR MERENJA              |
-| `CILJNA_GRUPA`      | VARCHAR(60)  |          |       | CILJNA GRUPA               |
-| `RATING`            | DECIMAL(5,2) |          |       | RATING                     |
-| `SHARE`             | DECIMAL(5,2) |          |       | SHARE                      |
-| `BROJ_GLEDALACA`    | INTEGER      |          |       | BROJ GLEDALACA             |
-| `PROSECNO_GLEDANJE` | INTEGER      |          |       | PROSECNO GLEDANJE (minuta) |
+| Kolona              | Tip          | Obavezno | Kljuc | Poreklo iz PMOV-a                              |
+|---------------------|--------------|----------|-------|------------------------------------------------|
+| `SIFRA_MERENJA`     | CHAR(18)     | NOT NULL | PK    | PK - SIFRA MERENJA                             |
+| `DATUM_MERENJA`     | DATE         |          |       | DATUM MERENJA                                  |
+| `IZVOR_MERENJA`     | VARCHAR(60)  |          |       | IZVOR MERENJA                                  |
+| `CILJNA_GRUPA`      | VARCHAR(60)  |          |       | CILJNA GRUPA                                   |
+| `RATING`            | DECIMAL(5,2) |          |       | RATING                                         |
+| `SHARE_UDEO`        | DECIMAL(5,2) |          |       | SHARE (SHARE je rezervisana rec -> SHARE_UDEO) |
+| `BROJ_GLEDALACA`    | INTEGER      |          |       | BROJ GLEDALACA                                 |
+| `PROSECNO_GLEDANJE` | INTEGER      |          |       | PROSECNO GLEDANJE (minuta)                     |
 
 ### `MERENJE_EMISIJE`
 

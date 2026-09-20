@@ -3,6 +3,7 @@
 import sys, os, io, re
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from schema import TABLES
+from reserved import RESERVED
 
 BY = {t['name']: t for t in TABLES}
 err = []
@@ -49,6 +50,13 @@ for t in TABLES:
             pt = [c['t'] for c in p['cols'] if c['n'] == pc]
             if ct and pt and ct[0] != pt[0]:
                 err.append('%s.%s (%s) != %s.%s (%s)' % (t['name'], cc, ct[0], p['name'], pc, pt[0]))
+
+for t in TABLES:
+    if t['name'] in RESERVED:
+        err.append('%s: ime tabele je rezervisana SQL rec' % t['name'])
+    for c in t['cols']:
+        if c['n'] in RESERVED:
+            err.append('%s.%s: ime kolone je rezervisana SQL rec' % (t['name'], c['n']))
 
 fkn = [f['name'] for t in TABLES for f in t['fks']]
 for n in set(fkn):
