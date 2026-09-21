@@ -1,10 +1,16 @@
-# UML dijagrami aktivnosti — informacioni sistem TV stanice
+# UML dijagrami — informacioni sistem TV stanice
 
-Tri dijagrama aktivnosti za procese koji su nosivi u ovom projektu i koji su već
-modelovani u PMOV-u i ER šemi: **nabavka**, **produkcija** i **emitovanje**.
-Svaka aktivnost na dijagramima vezuje se za konkretan entitet, atribut ili vezu iz
-`PMOV_TV_stanica_2_1_1.vsdx` odnosno iz `er/ER_TV_stanica.sql` — tabele u odeljku
-„Traživost" ispod.
+Dva kompleta: **dijagrami aktivnosti** (tok posla) i **dijagrami slučajeva
+korišćenja** (ko šta radi sa sistemom). Sve je izvedeno iz
+`PMOV_TV_stanica_2_1_1.vsdx` i `er/ER_TV_stanica.sql`.
+
+---
+
+## Dio 1 — dijagrami aktivnosti
+
+Tri dijagrama aktivnosti za nosive procese: **nabavka**, **produkcija** i
+**emitovanje**. Svaka aktivnost vezuje se za konkretan entitet, atribut ili vezu —
+tabele u odeljku „Traživost" ispod.
 
 | Fajl | Sadržaj |
 |------|---------|
@@ -100,3 +106,107 @@ Particije: `Urednik programa` · `Marketing i prodaja` · `Tehnička služba`
 * svaki prelaz je u `.drawio` fajlu **zakačen za oba čvora** (provereno automatski:
   nema slobodnih krajeva), pa se pomeranjem kutije veza pomera s njom;
 * XML `.drawio` fajla je proveren parserom.
+
+
+---
+
+## Dio 2 — dijagrami slučajeva korišćenja
+
+Tri dijagrama, iste tri oblasti gledane iz ugla korisnika sistema.
+
+| Fajl | Sadržaj |
+|------|---------|
+| `UC_TV_stanica.drawio` | sva tri dijagrama, svaki na svom listu |
+| `UC_1_nabavka.png` | Nabavka i snabdevanje |
+| `UC_2_produkcija.png` | Produkcija i arhiviranje sadržaja |
+| `UC_3_emitovanje.png` | Emitovanje programa i prodaja reklamnog prostora |
+
+Notacija: figura = akter, elipsa = slučaj korišćenja, puna linija = asocijacija,
+isprekidana strelica sa `«include»` = obavezno uključivanje, isprekidana strelica sa
+`«extend»` = proširenje (strelica pokazuje **na** osnovni slučaj).
+
+Napomena: na primerima koje ste poslali stereotipi su ispisani kao `include` / `extend`.
+Po UML standardu idu u francuskim navodnicima — `«include»`, `«extend»` — pa je tako i
+urađeno. Ako treba kao na primerima, to je jedna izmena u `generator/uc.py`.
+
+### Akteri i odakle dolaze
+
+| Akter | Poreklo u PMOV/ER modelu |
+|---|---|
+| Organizaciona jedinica | entitet ORGANIZACIONA JEDINICA (veza PODNOSI) |
+| Referent nabavke | podtip REFERENT (TIP REFERENTA, NIVO OVLAŠĆENJA) |
+| Finansijska služba | ORGANIZACIONA JEDINICA tipa finansije; FAKTURA, NALOG ZA PLAĆANJE |
+| Dobavljač | entitet DOBAVLJAČ i podtipovi |
+| Urednik / Urednik programa | podtip UREDNIK (veze UREĐUJE, ODOBRAVA) |
+| Novinar / reporter | podtip NOVINAR / REPORTER (veza ANGAŽUJE) |
+| Tehničko osoblje | podtip TEHNIČKO OSOBLJE (SPECIJALIZACIJA, TIP EKIPE) |
+| Serviser | podtip SERVISERI (veza SERVISIRANJE) |
+| Referent marketinga | podtip REFERENT; UGOVOR O OGLAŠAVANJU, REKLAMNI BLOK |
+| Oglašivač | podtip OGLAŠIVAČ entiteta KLIJENT (veza DOSTAVLJA) |
+| Gledalac | entitet POVRATNA INFO. GLEDALACA (KANAL PRIJEMA, PROFIL GLEDAOCA) |
+
+### UC 1 — Nabavka i snabdevanje
+
+| Slučaj korišćenja | PMOV / ER oslonac |
+|---|---|
+| Podnošenje zahteva za nabavku | ZAHTEV ZA NABAVKU; veza PODNOSI |
+| ⤷ «include» Provera procenjene vrednosti | ZAHTEV.PROCENJENA VREDNOST; REFERENT.NIVO OVLAŠĆENJA |
+| Izrada plana nabavke | PLAN NABAVKE, STAVKA PLANA NABAVKE; veza UVRŠTEN U |
+| Prikupljanje ponuda dobavljača | PONUDA DOBAVLJAČA; veze DOSTAVIO, PONUĐENA |
+| Vrednovanje ponuda | veza VREDNUJE SE |
+| ⤷ «include» Bodovanje po kriterijumima | KRITERIJUM VREDNOVANJA; `OCENA_PONUDE.BROJ_BODOVA` |
+| Izdavanje narudžbenice | NARUDŽBENICA, STAVKA NARUDŽBENICE; veza NARUČENO OD |
+| Prijem isporuke | PRIJEMNICA; veze PRAĆENA, PRIMLJENO PO |
+| ⤷ «include» Izrada prijemnice | `PRIJEMNICA.BROJ_OTPREMNICE`, `.PRIMIO_MAGACIONER` |
+| ⤷ «extend» Podnošenje reklamacije | REKLAMACIJA; veze REKLAMIRANA, ODNOSI SE NA |
+| Knjiženje ulazne fakture | FAKTURA (SMER = ULAZNA); veza FAKTURISANA |
+| Izdavanje naloga za plaćanje | NALOG ZA PLAĆANJE; veza PLAĆENA |
+| ⤷ «include» Evidentiranje plaćanja | `NALOG_ZA_PLACANJE.DATUM_REALIZACIJE` |
+
+### UC 2 — Produkcija i arhiviranje sadržaja
+
+| Slučaj korišćenja | PMOV / ER oslonac |
+|---|---|
+| Predlaganje projekta produkcije | PROJEKAT PRODUKCIJE |
+| Odobravanje projekta produkcije | veza UREĐUJE (UREDNIK – PROJEKAT) |
+| ⤷ «include» Provera odobrenog budžeta | `PROJEKAT_PRODUKCIJE.ODOBREN_BUDZET` |
+| Planiranje aktivnosti produkcije | AKTIVNOST PRODUKCIJE; veza SASTOJI SE OD |
+| ⤷ «include» Angažovanje članova ekipe | veza ANGAŽUJE; `ANGAZOVANJE_NA_AKTIVNOSTI` |
+| Zaduživanje opreme za snimanje | OPREMA; veza ZADUŽUJE |
+| ⤷ «include» Provera raspoloživosti opreme | `OPREMA.STATUS_OPREME`; `REZERVACIJA_OPREME` |
+| Snimanje materijala | AKTIVNOST.LOKACIJA SNIMANJA |
+| ⤷ «include» Evidentiranje sirovog snimka | SIROVI SNIMAK; veza SNIMLJEN NA |
+| ⤷ «extend» Ponovno snimanje | `SIROVI_SNIMAK.OCENA_KVALITETA` |
+| Montaža medijskog sadržaja | MEDIJSKI SADRŽAJ; veza MONTIRAN U |
+| ⤷ «include» Ugradnja grafičkih i muzičkih elemenata | veza UGRAĐEN U; `UGRADNJA_ELEMENTA` |
+| Evidentiranje troškova produkcije | TROŠAK PRODUKCIJE; veze IZAZIVA, DOKUMENTOVAN |
+| Arhiviranje medijskog sadržaja | `MEDIJSKI_SADRZAJ.DATUM_ARHIVIRANJA`, `.LOKACIJA_U_ARHIVI` |
+| Servisiranje opreme | veza SERVISIRANJE; `SERVISIRANJE_OPREME` (TROŠAK, OPIS RADOVA) |
+
+### UC 3 — Emitovanje programa i prodaja reklamnog prostora
+
+| Slučaj korišćenja | PMOV / ER oslonac |
+|---|---|
+| Izrada programske šeme | PROGRAMSKA ŠEMA |
+| ⤷ «include» Provera prava korišćenja | PRAVO KORIŠĆENJA; veza POKRIVA |
+| Odobravanje programske šeme | veza ODOBRAVA; `PROGRAMSKA_SEMA.DATUM_USVAJANJA` |
+| Planiranje termina emitovanja | TERMIN EMITOVANJA; veze OBUHVATA, PLANIRANA |
+| ⤷ «include» Raspoređivanje programskih celina | PROGRAMSKA CELINA; veza SADRŽI CELINE |
+| Zakup reklamnog bloka | REKLAMNI BLOK; veze ZAKUPLJEN U, TARIFIRAN, UGOVOREN |
+| ⤷ «include» Provera dostupnosti termina | `REKLAMNI_BLOK.SLOBODNO_SEKUNDI`, `.ISKORISCENOST` |
+| Provera reklamnog sadržaja | REKLAMNI SADRŽAJ (STATUS); veza DOSTAVLJA |
+| Emitovanje programa | `TERMIN_EMITOVANJA.STATUS_TERMINA` |
+| ⤷ «include» Kreiranje zapisa o emitovanju | ZAPIS O EMITOVANJU; veze REALIZOVAN, EVIDENTIRA |
+| ⤷ «extend» Upis napomene o smetnjama | `ZAPIS_O_EMITOVANJU.NAPOMENA_O_SMETNJAMA` |
+| Naplata emitovanih spotova | `EMITOVANJE_REKLAME.NAPLACENI_IZNOS`, `.STATUS_NAPLATE` |
+| ⤷ «include» Izdavanje fakture oglašivaču | FAKTURA; veza IZDATA PO |
+| Obrada povratnih informacija gledalaca | POVRATNA INFO. GLEDALACA; veza ODNOSI SE NA |
+| ⤷ «include» Preuzimanje rezultata merenja gledanosti | MERENJE GLEDANOSTI; veza MERENA |
+
+### Provere nad use case dijagramima
+
+* **nijedna linija ne prolazi kroz elipsu ni kroz figuru aktera** — provereno
+  automatski, uzorkovanjem svakog segmenta po pikselu (`uc.py: collisions()`);
+* svaki prelaz je u `.drawio` fajlu zakačen za oba čvora — nema slobodnih krajeva;
+* XML `.drawio` fajla je proveren parserom;
+* slike i `.drawio` se crtaju iz istog modela, pa ne mogu da se raziđu.
