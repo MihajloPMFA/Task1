@@ -21,6 +21,8 @@ zatim snimite kao `.erwin`. Rezultat je isti model, samo nastao kroz ERwin.
 | `ER_TV_stanica.sql` | glavni skript — 69 tabela, 405 kolona, 84 strana kljuca, sa komentarima koji za svaku kolonu kazu iz kog PMOV elementa je nastala |
 | `ER_TV_stanica_bez_komentara.sql` | isti skript bez ijednog komentara — rezerva, ako parser zapne na `/* */` |
 | `ER_mapiranje_PMOV.md` | preslikavanje PMOV → sema: entitet po entitet, veza po veza, tabela po tabela |
+| `ER_TV_stanica_dijagram.vsdx` | gotov kompaktan ER dijagram (Visio), 25,4 × 14,2 in, sve na jednoj strani |
+| `ER_TV_stanica_dijagram.png` / `.pdf` | isti dijagram za gledanje i stampu bez Visio-a |
 
 ---
 
@@ -48,6 +50,30 @@ Posle toga u *Model Explorer*-u treba da stoji **69 tabela**. Ako ih je manje,
 skript nije procitan do kraja — probajte `ER_TV_stanica_bez_komentara.sql`.
 
 ## 2. Razmestaj dijagrama
+
+**Skript je namerno poredjan po tematskim celinama** (`-- CELINA: ...` u komentarisanoj
+verziji). ERwin postavlja tabele redom kojim ih cita, pa vec pocetni raspored dolazi
+grupisan - povezane tabele su jedna do druge umesto razbacane po celom platnu.
+
+### Kako smanjiti kutije i tekst
+
+Ovo su podesavanja samog ERwin-a; skript na njih ne moze da utice. Nazivi menija su iz
+r7.x - ako se kod tebe zovu malo drugacije, sve ovo stoji i na **desni klik na prazan
+deo dijagrama**.
+
+| Cilj | Gde |
+|------|-----|
+| manje kutije | **Format → Table Display** (u logickom modelu *Entity Display*) → `Primary Key` umesto `Column`; kutija se svede na ime + kljuc. `Column` vraca pun spisak. |
+| sitniji tekst | oznaci sve (`Ctrl+A`) → **Format → Font**… → 6–7 pt |
+| bez tipova podataka | **Format → Table Display → Datatype** iskljuciti |
+| gusci raspored | **Format → Layout → Layout Settings…** → smanji *node spacing*, pa **Format → Layout → Auto Layout** |
+| manje linija odjednom | **Model → Subject Areas** (tabela ispod) i **Model → Stored Displays** za vise sacuvanih pogleda |
+| sve na ekran | **View → Zoom → Fit to Window** |
+
+Najveci efekat ima kombinacija: *Subject Areas* + `Primary Key` prikaz + font 6 pt.
+Na 69 tabela je jedan dijagram sa svim kolonama uvek velik - zato je uz skript
+prilozen i gotov dijagram (`ER_TV_stanica_dijagram.vsdx` / `.png` / `.pdf`) koji
+sve to drzi na 25,4 × 14,2 inca.
 
 Odmah po ucitavanju sve tabele su nagomilane. **Format → Layout → Auto Layout**
 (ili dugme *Layout* na traci) ih razvuce. Za citljivost od 69 tabela vredi napraviti

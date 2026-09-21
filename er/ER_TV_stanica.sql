@@ -9,6 +9,11 @@
 --  69 tabela, 405 kolona, 84 stranih kljuceva
 -- =====================================================================
 
+
+-- =====================================================================
+-- CELINA: ORGANIZACIJA I KADROVI (7 tabela)
+-- =====================================================================
+
 -- ---------------------------------------------------------------------
 -- ORGANIZACIONA_JEDINICA
 -- PMOV: jak entitet ORGANIZACIONA JEDINICA + rekurzivna veza PODREDJENA (0,N)-(0,1)
@@ -102,6 +107,11 @@ CREATE TABLE SERVISERI
     CONSTRAINT PK_SERVISERI PRIMARY KEY (SIFRA_ZAPOSLENOG)
 );
 
+
+-- =====================================================================
+-- CELINA: OPREMA (7 tabela)
+-- =====================================================================
+
 -- ---------------------------------------------------------------------
 -- OPREMA
 -- PMOV: jak entitet OPREMA
@@ -194,6 +204,11 @@ CREATE TABLE SERVISIRANJE_OPREME
     TROSAK            DECIMAL(12,2),                                                                    /* atribut veze TROSAK */
     CONSTRAINT PK_SERVISIRANJE_OPREME PRIMARY KEY (SIFRA_ZAPOSLENOG, INVENTARSKI_BROJ, DATUM_SERVISA)
 );
+
+
+-- =====================================================================
+-- CELINA: PRODUKCIJA (7 tabela)
+-- =====================================================================
 
 -- ---------------------------------------------------------------------
 -- PROJEKAT_PRODUKCIJE
@@ -310,6 +325,11 @@ CREATE TABLE GRAFICKI_I_MUZICKI_ELEMENT
     CONSTRAINT PK_GRAFICKI_I_MUZICKI_ELEMENT PRIMARY KEY (SIFRA_ELEMENTA)
 );
 
+
+-- =====================================================================
+-- CELINA: PROGRAM I EMITOVANJE (17 tabela)
+-- =====================================================================
+
 -- ---------------------------------------------------------------------
 -- PROGRAMSKA_SEMA
 -- PMOV: jak entitet PROGRAMSKA SEMA + veza ODOBRAVA: UREDNIK (0,N) - PROGRAMSKA SEMA (1,1)
@@ -345,23 +365,6 @@ CREATE TABLE PROGRAMSKA_CELINA
 );
 
 -- ---------------------------------------------------------------------
--- EMISIJA
--- PMOV: jak entitet EMISIJA
--- ---------------------------------------------------------------------
-CREATE TABLE EMISIJA
-(
-    SIFRA_EMISIJE         CHAR(18)      NOT NULL,       /* PK - SIFRA EMISIJE */
-    NAZIV_EMISIJE         VARCHAR(60)   NOT NULL,       /* NAZIV EMISIJE */
-    ZANR                  VARCHAR(30),                  /* ZANR */
-    FORMAT_EMISIJE        VARCHAR(30),                  /* FORMAT EMISIJE */
-    PREDVIDJENO_TRAJANJE  INTEGER,                      /* PREDVIDJENO TRAJANJE (minuta) */
-    CILJNA_PUBLIKA        VARCHAR(60),                  /* CILJNA PUBLIKA */
-    STATUS_EMISIJE        VARCHAR(20),                  /* STATUS EMISIJE */
-    PROGRAMSKI_ELABORAT   VARCHAR(255),                 /* PROGRAMSKI ELABORAT */
-    CONSTRAINT PK_EMISIJA PRIMARY KEY (SIFRA_EMISIJE)
-);
-
--- ---------------------------------------------------------------------
 -- TERMIN_EMITOVANJA
 -- PMOV: jak entitet TERMIN EMITOVANJA + OBUHVATA: PROGRAMSKA CELINA (1,N)-(1,1) + PLANIRANA: TERMIN (1,1) - EMISIJA (0,N)
 -- ---------------------------------------------------------------------
@@ -379,6 +382,23 @@ CREATE TABLE TERMIN_EMITOVANJA
     STATUS_TERMINA      VARCHAR(20),                              /* STATUS TERMINA */
     REDNI_BROJ_REPRIZE  INTEGER,                                  /* REDNI BROJ REPRIZE */
     CONSTRAINT PK_TERMIN_EMITOVANJA PRIMARY KEY (SIFRA_TERMINA)
+);
+
+-- ---------------------------------------------------------------------
+-- EMISIJA
+-- PMOV: jak entitet EMISIJA
+-- ---------------------------------------------------------------------
+CREATE TABLE EMISIJA
+(
+    SIFRA_EMISIJE         CHAR(18)      NOT NULL,       /* PK - SIFRA EMISIJE */
+    NAZIV_EMISIJE         VARCHAR(60)   NOT NULL,       /* NAZIV EMISIJE */
+    ZANR                  VARCHAR(30),                  /* ZANR */
+    FORMAT_EMISIJE        VARCHAR(30),                  /* FORMAT EMISIJE */
+    PREDVIDJENO_TRAJANJE  INTEGER,                      /* PREDVIDJENO TRAJANJE (minuta) */
+    CILJNA_PUBLIKA        VARCHAR(60),                  /* CILJNA PUBLIKA */
+    STATUS_EMISIJE        VARCHAR(20),                  /* STATUS EMISIJE */
+    PROGRAMSKI_ELABORAT   VARCHAR(255),                 /* PROGRAMSKI ELABORAT */
+    CONSTRAINT PK_EMISIJA PRIMARY KEY (SIFRA_EMISIJE)
 );
 
 -- ---------------------------------------------------------------------
@@ -566,6 +586,11 @@ CREATE TABLE MERENJE_EMISIJE
     CONSTRAINT PK_MERENJE_EMISIJE PRIMARY KEY (SIFRA_MERENJA, SIFRA_EMISIJE)
 );
 
+
+-- =====================================================================
+-- CELINA: MARKETING I PRODAJA (12 tabela)
+-- =====================================================================
+
 -- ---------------------------------------------------------------------
 -- CENOVNIK_REKL_TERMINA
 -- PMOV: jak entitet CENOVNIK REKL. TERMINA
@@ -742,6 +767,11 @@ CREATE TABLE USTUPANJE_SADRZAJA
     OBIM_USTUPANJA  VARCHAR(255),                                                 /* atribut veze OBIM USTUPANJA */
     CONSTRAINT PK_USTUPANJE_SADRZAJA PRIMARY KEY (BROJ_UGOVORA, SIFRA_SADRZAJA)
 );
+
+
+-- =====================================================================
+-- CELINA: NABAVKA (16 tabela)
+-- =====================================================================
 
 -- ---------------------------------------------------------------------
 -- PLAN_NABAVKE
@@ -982,6 +1012,11 @@ CREATE TABLE REKLAMIRANA_STAVKA
     RB_STAVKE          INTEGER   NOT NULL,                                                          /* PK/FK ka STAVKA_NARUDZBENICE */
     CONSTRAINT PK_REKLAMIRANA_STAVKA PRIMARY KEY (BROJ_REKLAMACIJE, BROJ_NARUDZBENICE, RB_STAVKE)
 );
+
+
+-- =====================================================================
+-- CELINA: FINANSIJE (3 tabela)
+-- =====================================================================
 
 -- ---------------------------------------------------------------------
 -- FAKTURA

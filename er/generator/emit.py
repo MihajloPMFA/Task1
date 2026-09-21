@@ -4,6 +4,7 @@ import sys, os, io, re
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from schema import TABLES
 from reserved import RESERVED
+from areas import AREAS, ORDER
 
 BY = {t['name']: t for t in TABLES}
 err = []
@@ -90,28 +91,33 @@ HDR = """-- ====================================================================
 def ddl():
     out = io.StringIO()
     out.write(HDR % (len(TABLES), sum(len(t['cols']) for t in TABLES), len(fkn)))
-    for t in TABLES:
-        out.write('-- %s\n' % ('-' * 69))
-        out.write('-- %s\n' % t['name'])
-        out.write('-- PMOV: %s\n' % t['src'])
-        out.write('-- %s\n' % ('-' * 69))
-        w = max(len(c['n']) for c in t['cols'])
-        wt = max(len(c['t']) for c in t['cols'])
-        rows = []
-        for c in t['cols']:
-            rows.append((('    %-*s  %-*s  %-8s' % (
-                w, c['n'], wt, c['t'], '' if c['null'] else 'NOT NULL')).rstrip(), c['d']))
-        rows.append(('    CONSTRAINT PK_%s PRIMARY KEY (%s)' % (t['name'][:27], ', '.join(t['pk'])), ''))
-        wl = max(len(r[0]) for r in rows) + 1
-        lines = []
-        for i, (txt, note) in enumerate(rows):
-            sep = ',' if i < len(rows) - 1 else ''
-            com = ('  /* %s */' % note) if note else ''
-            lines.append('%-*s%s' % (wl, txt + sep, com) if com else txt + sep)
-        out.write('CREATE TABLE %s\n(\n%s\n);\n\n' % (t['name'], '\n'.join(lines)))
+    for area, tnames in AREAS:
+        out.write('\n-- %s\n-- CELINA: %s (%d tabela)\n-- %s\n\n'
+                  % ('=' * 69, area.upper(), len(tnames), '=' * 69))
+        for tn in tnames:
+            t = BY[tn]
+            out.write('-- %s\n' % ('-' * 69))
+            out.write('-- %s\n' % t['name'])
+            out.write('-- PMOV: %s\n' % t['src'])
+            out.write('-- %s\n' % ('-' * 69))
+            w = max(len(c['n']) for c in t['cols'])
+            wt = max(len(c['t']) for c in t['cols'])
+            rows = []
+            for c in t['cols']:
+                rows.append((('    %-*s  %-*s  %-8s' % (
+                    w, c['n'], wt, c['t'], '' if c['null'] else 'NOT NULL')).rstrip(), c['d']))
+            rows.append(('    CONSTRAINT PK_%s PRIMARY KEY (%s)' % (t['name'][:27], ', '.join(t['pk'])), ''))
+            wl = max(len(r[0]) for r in rows) + 1
+            lines = []
+            for i, (txt, note) in enumerate(rows):
+                sep = ',' if i < len(rows) - 1 else ''
+                com = ('  /* %s */' % note) if note else ''
+                lines.append('%-*s%s' % (wl, txt + sep, com) if com else txt + sep)
+            out.write('CREATE TABLE %s\n(\n%s\n);\n\n' % (t['name'], '\n'.join(lines)))
     out.write('\n-- %s\n-- STRANI KLJUCEVI (veze iz PMOV dijagrama)\n-- %s\n\n'
               % ('=' * 69, '=' * 69))
-    for t in TABLES:
+    for tn in ORDER:
+        t = BY[tn]
         for f in t['fks']:
             out.write('ALTER TABLE %s\n    ADD CONSTRAINT %s FOREIGN KEY (%s)\n'
                       '    REFERENCES %s (%s);\n\n'
