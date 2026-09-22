@@ -1,4 +1,11 @@
-# Forme korisničkog interfejsa — TV Panorama
+# Korisnički interfejs — TV Panorama
+
+Dva kompleta ekrana u istom dizajn sistemu: **tri forme** (unos) i **tri izveštaja**
+(analitika, tab *Izveštaji*). Zajednički stilovi su u `ui.css`.
+
+---
+
+## Deo 1 — forme
 
 Tri ekrana iz istog sistema koji je modelovan u PMOV-u i ER šemi. Svako polje na
 formama odgovara konkretnoj koloni iz `er/ER_TV_stanica.sql` — tabele ispod.
@@ -8,8 +15,7 @@ formama odgovara konkretnoj koloni iz `er/ER_TV_stanica.sql` — tabele ispod.
 | `Forma_1_Projekat_produkcije.png` | Projekat produkcije (master–detail sa karticama) | Produkcija |
 | `Forma_2_Zakup_reklamnog_termina.png` | Zakup reklamnog termina (rezervacija + obračun) | Marketing i prodaja |
 | `Forma_3_Vrednovanje_ponuda.png` | Vrednovanje ponuda dobavljača (matrica ocenjivanja) | Nabavka |
-| `forme.html` | izvor svih ekrana — otvara se u pregledaču, lako se menja |
-| `shot.py` | pravi `.png` iz `forme.html` (headless Chromium, 2× rezolucija) |
+| `forme.html` | izvor formi — otvara se u pregledaču, lako se menja |
 
 Ekrani su namerno različitog tipa da pokriju tri obrasca koja se u ovom sistemu
 najviše ponavljaju: **zaglavlje + stavke**, **unos sa živim obračunom** i
@@ -116,3 +122,69 @@ python3 ui/shot.py
 ```
 
 što ponovo napravi sve tri slike u 2× rezoluciji (2880 px široke).
+
+
+---
+
+## Deo 2 — izveštaji (tab *Izveštaji*)
+
+Ista navigacija, isti dizajn sistem, aktivna stavka **Izveštaji**.
+
+| Fajl | Izveštaj | Oblast | Tip |
+|------|----------|--------|-----|
+| `Izvestaj_1_Realizacija_seme_i_gledanost.png` | Realizacija programske šeme i gledanost | Program i emitovanje | kontrolna tabla |
+| `Izvestaj_2_Prihodi_od_oglasavanja.png` | Prihodi od oglašavanja | Marketing i prodaja | kontrolna tabla |
+| `Izvestaj_3_Realizacija_plana_nabavke.png` | Realizacija plana nabavke | Nabavka | overen dokument za štampu |
+| `izvestaji.html` | izvor sva tri izveštaja |
+| `gen_izvestaji.py` | generiše `izvestaji.html` — grafikoni su inline SVG sa izračunatim koordinatama |
+| `ui.css` | zajednički dizajn sistem za forme i izveštaje |
+
+Treći je namerno drugačiji: izveštaj koji se overava i štampa, sa zaglavljem,
+brojem izveštaja, periodom, napomenama i mestom za potpise — za razliku od prva
+dva koja su ekrani za rad.
+
+### Odakle dolaze podaci
+
+| Izveštaj | ER tabele i kolone |
+|---|---|
+| **1 — Realizacija šeme** | `TERMIN_EMITOVANJA` (planirani termini), `ZAPIS_O_EMITOVANJU` (`STATUS_REALIZACIJE`, `STVARNO_TRAJANJE`, `NAPOMENA_O_SMETNJAMA`), `MERENJE_EMISIJE.OSTVARENI_RATING` i `.UDEO_U_TERMINU` (atributi veze MERENA), `EMISIJA.NAZIV_EMISIJE`, `PROGRAMSKA_SEMA` |
+| **2 — Prihodi od oglašavanja** | `EMITOVANJE_REKLAME` (`NAPLACENI_IZNOS`, `STATUS_NAPLATE`, `TRAJANJE_SPOTA`), `FAKTURA` (`IZNOS_ZA_PLACANJE`, `STATUS_PLACANJA`), `UGOVOR_O_OGLASAVANJU`, `OGLASIVAC` → `KLIJENT.NAZIV_KLIJENTA`, `REKLAMNI_BLOK.ISKORISCENOST` po `TERMIN_EMITOVANJA.ZONA_GLEDANOSTI` |
+| **3 — Plan nabavke** | `PLAN_NABAVKE`, `STAVKA_PLANA_NABAVKE` (`PROCENJENA_CENA`, `PLANIRANI_KVARTAL`), `NARUDZBENICA.UKUPAN_IZNOS`, `PRIJEM_STAVKE`, `FAKTURA`, `REKLAMACIJA` (napomene), `ZAHTEV_ZA_NABAVKU.STATUS_ZAHTEVA` |
+
+### Odluke o grafikonima
+
+Forma grafikona je birana prema poslu koji podatak obavlja, a ne prema izgledu:
+
+| Grafikon | Forma | Zašto |
+|---|---|---|
+| Rejting po danu | linija, jedna serija | trend kroz vreme; jedna serija ne traži legendu — naslov kaže šta je nacrtano |
+| Najgledanije emisije | vodoravne trake, **jedna boja** | poređenje veličine; boja po vrednosti bi dva puta kodirala istu stvar |
+| Fakturisano po mesecima | složeni stubovi, dve serije | deo–celina (naplaćeno + za naplatu = fakturisano); ista jedinica, **jedna osa** |
+| Popunjenost po zoni | merači | jedan odnos prema cilju — nije grafikon nego tri broja |
+| Odstupanje od plana | divergentne trake | polaritet oko nule: plavo ispod plana, crveno iznad |
+
+Paleta je **proverena skriptom**, ne na oko, nad podlogom `#ffffff`:
+
+```
+#2a78d6, #eb6834   -> sve provere PASS (CVD ΔE 24,7 · normalan vid ΔE 33,6 · kontrast ≥ 3:1)
+#2a78d6 <-> #e34948 -> sve provere PASS (divergentni par, neutralna sredina)
+```
+
+Primenjena pravila: nikad dve y-ose; trake najviše 24px debele sa 4px zaobljenim
+krajem podatka i ravnim dnom na osnovici; linija 2px; 2px razmak u boji podloge
+između segmenata složenog stuba; mreža tanka i puna (nikad isprekidana);
+legenda čim ima dve serije; oznake vrednosti samo na krajnjoj, najvišoj i
+najnižoj tački — nikad na svakoj; tekst uvek u bojama teksta, nikad u boji
+serije. Sve vrednosti koje grafikon ne ispisuje stoje u tabeli ispod njega.
+
+### Kako se menjaju
+
+```
+python3 ui/gen_izvestaji.py   # ponovo napravi izvestaji.html (podaci i grafikoni)
+python3 ui/shot.py            # napravi svih 6 slika u 2x rezoluciji
+```
+
+Podaci za grafikone su liste na vrhu `gen_izvestaji.py` (`REJTING`, `TOP`,
+`NAPL`, `DUG`, `ODST`) — promena vrednosti automatski pomera i marke i oznake.
+Prosečan rejting u KPI polju se računa iz iste liste, pa izveštaj ne može da
+protivreči svom grafikonu.
