@@ -22,6 +22,7 @@ def para(pel):
     if not txt.strip(): return ''
     if s.startswith('Heading1'): return '<h1>%s</h1>' % txt
     if s.startswith('Heading2'): return '<h2>%s</h2>' % txt
+    if pel.find(W + 'pPr/' + W + 'numPr') is not None: return '<p class="b">%s</p>' % txt
     return '<p>%s</p>' % txt
 
 def shade(tc):
@@ -60,7 +61,9 @@ def build(src, out_html):
     p{font-size:11pt;line-height:1.5;margin:0 0 8px;text-align:justify}
     table{border-collapse:collapse;width:100%;margin:6px 0 4px;table-layout:fixed}
     td{border:1px solid #aab4c4;padding:5px 7px;vertical-align:top}
-    td p{font-size:10pt;line-height:1.35;margin:0;text-align:left}"""
+    td p{font-size:10pt;line-height:1.35;margin:0;text-align:left}
+    p.b{position:relative;padding-left:20px;margin-bottom:5px}
+    p.b:before{content:'\\2022';position:absolute;left:5px;color:#333}"""
     open(out_html, 'w', encoding='utf-8').write(
         '<!DOCTYPE html><html lang="sr"><head><meta charset="utf-8"><style>%s</style>'
         '</head><body><div class="page">%s</div></body></html>' % (css, ''.join(parts)))
