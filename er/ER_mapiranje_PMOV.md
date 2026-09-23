@@ -608,16 +608,16 @@ pa slab entitet ne bi imao smisla. Sa `(0,N)` jedan termin moze imati vise zapis
 
 *PMOV:* slab entitet ZAPIS O EMITOVANJU; identifikujuca veza REALIZOVAN: TERMIN (0,N) - ZAPIS (1,1); EVIDENTIRA: ZAPIS (1,1) - MEDIJSKI SADRZAJ (0,N)
 
-| Kolona                  | Tip          | Obavezno | Kljuc                       | Poreklo iz PMOV-a                   |
-|-------------------------|--------------|----------|-----------------------------|-------------------------------------|
-| `SIFRA_TERMINA`         | CHAR(18)     | NOT NULL | PK, FK -> TERMIN_EMITOVANJA | PK/FK - identifikujuci vlasnik      |
-| `RB_EMITOVANJA`         | INTEGER      | NOT NULL | PK                          | PK - parcijalni kljuc RB EMITOVANJA |
-| `SIFRA_SADRZAJA`        | CHAR(18)     | NOT NULL | FK -> MEDIJSKI_SADRZAJ      | FK - veza EVIDENTIRA                |
-| `STATUS_REALIZACIJE`    | VARCHAR(20)  |          |                             | STATUS REALIZACIJE                  |
-| `STVARNO_VREME_POCETKA` | TIME         |          |                             | STVARNO VREME POC.                  |
-| `STVARNO_TRAJANJE`      | INTEGER      |          |                             | STVARNO TRAJANJE (sekundi)          |
-| `NAPOMENA_O_SMETNJAMA`  | VARCHAR(255) |          |                             | NAPOMENA O SMETNJAMA                |
-| `OPERATER_EMITOVANJA`   | VARCHAR(60)  |          |                             | OPERATER EMITOVANJA                 |
+| Kolona                  | Tip          | Obavezno | Kljuc                       | Poreklo iz PMOV-a                                    |
+|-------------------------|--------------|----------|-----------------------------|------------------------------------------------------|
+| `SIFRA_TERMINA`         | CHAR(18)     | NOT NULL | PK, FK -> TERMIN_EMITOVANJA | PK/FK - identifikujuci vlasnik                       |
+| `RB_EMITOVANJA`         | INTEGER      | NOT NULL | PK                          | PK - parcijalni kljuc RB EMITOVANJA                  |
+| `SIFRA_SADRZAJA`        | CHAR(18)     | NOT NULL | FK -> MEDIJSKI_SADRZAJ      | FK - veza EVIDENTIRA                                 |
+| `STATUS_REALIZACIJE`    | VARCHAR(20)  |          |                             | STATUS REALIZACIJE                                   |
+| `STVARNO_VREME_POCETKA` | TIME         |          |                             | STVARNO VREME POC.                                   |
+| `STVARNO_TRAJANJE`      | INTEGER      |          |                             | STVARNO TRAJANJE (minuta, isto kao TRAJANJE_TERMINA) |
+| `NAPOMENA_O_SMETNJAMA`  | VARCHAR(255) |          |                             | NAPOMENA O SMETNJAMA                                 |
+| `OPERATER_EMITOVANJA`   | VARCHAR(60)  |          |                             | OPERATER EMITOVANJA                                  |
 
 ### `MONTAZA_SNIMKA`
 

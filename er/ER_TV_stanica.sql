@@ -467,7 +467,7 @@ CREATE TABLE ZAPIS_O_EMITOVANJU
     SIFRA_SADRZAJA         CHAR(18)      NOT NULL,                                /* FK - veza EVIDENTIRA */
     STATUS_REALIZACIJE     VARCHAR(20),                                           /* STATUS REALIZACIJE */
     STVARNO_VREME_POCETKA  TIME,                                                  /* STVARNO VREME POC. */
-    STVARNO_TRAJANJE       INTEGER,                                               /* STVARNO TRAJANJE (sekundi) */
+    STVARNO_TRAJANJE       INTEGER,                                               /* STVARNO TRAJANJE (minuta, isto kao TRAJANJE_TERMINA) */
     NAPOMENA_O_SMETNJAMA   VARCHAR(255),                                          /* NAPOMENA O SMETNJAMA */
     OPERATER_EMITOVANJA    VARCHAR(60),                                           /* OPERATER EMITOVANJA */
     CONSTRAINT PK_ZAPIS_O_EMITOVANJU PRIMARY KEY (SIFRA_TERMINA, RB_EMITOVANJA)
