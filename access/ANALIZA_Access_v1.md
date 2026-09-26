@@ -159,6 +159,23 @@ Kod izveštaja 6 parametar prihvata i šifru i deo naziva klijenta
   podnožju grupe se koristi `Max(...)` umesto `Sum(...)` za vrednosti koje
   su konstantne u okviru grupe.
 
+## Ugrađena provera
+
+Modul na kraju `KreirajIzvestaje` sam pokrene proveru (a može se pokrenuti i
+posebno, procedurom `Provera`):
+
+- otvori **svaki `qIzv` upit** i prebroji redove; parametre popuni sam (najširi
+  mogući period za datume, prvu šifru oglašivača za tekst)
+- otvori **svaki `rptIzv` izveštaj** skriveno u pregledu i pročita `HasData`,
+  pa ga zatvori bez čuvanja
+- dva parametarska izveštaja se ne otvaraju automatski (tražili bi unos), ali
+  se njihovi upiti proveravaju
+
+Rezultat je spisak u kome svaki red počinje sa `U REDU`, `PRAZNO` (radi, ali bez
+podataka) ili `GRESKA` (sa Access-ovim opisom greške), plus zbirna poruka.
+Tako se posle jednog pokretanja odmah vidi šta je dobro a šta nije, bez
+otvaranja izveštaja jednog po jednog.
+
 ## Šta nije dirano
 
 - ni jedna od **69 tabela** (ni struktura ni podaci)

@@ -34,10 +34,16 @@ pa se modul može pokretati više puta bez rizika.
    engine Object Library* (DAO), ako već nije uključena.
 4. Klikni bilo gde u proceduru **`KreirajIzvestaje`** i pritisni **F5**.
 
-Na kraju iskoči poruka sa brojem dodatih objekata. Dnevnik (uključujući
-eventualna upozorenja) je u *Immediate* prozoru (`Ctrl+G`), a može se ponovo
-prikazati procedurom `Dnevnik`. Izveštaji se posle pokreću dvoklikom u oknu
-objekata ili preko forme `frmIzvestaji`.
+Na kraju procedura **sama proveri sve što je napravila**: otvori svaki upit i
+svaki izveštaj i u poruci prikaže koliko ih je u redu, koliko radi ali nema
+podataka i koliko ih je vratilo grešku. Detaljan spisak (red po red, sa brojem
+redova po upitu) je u *Immediate* prozoru — `Ctrl+G`, ili procedura `Dnevnik`.
+
+Provera se može pokrenuti i posebno, kad god: klikni u proceduru **`Provera`**
+i pritisni F5.
+
+Izveštaji se posle pokreću dvoklikom u oknu objekata ili preko forme
+`frmIzvestaji`.
 
 ## Izveštaji
 

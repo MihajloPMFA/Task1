@@ -36,6 +36,7 @@ Private Const P_IZV As String = "rptIzv"
 Private Const P_FORMA As String = "frmIzvestaji"
 
 Private gUpit As Long, gIzv As Long, gForm As Long, gGreske As Long
+Private gOk As Long, gPrazno As Long, gLose As Long
 Private gPoruke As String
 
 ' ---------------------------------------------------------------- srpska slova
@@ -320,5 +321,116 @@ Greska:
     On Error Resume Next
     DoCmd.Close acReport, priv, acSaveNo
     Err.Clear
+End Sub
+
+' ================================================================
+'  PROVERA - otvara svaki upit i svaki izvestaj i kaze sta radi
+'  a sta ne.  Pokrece se i sama na kraju procedure KreirajIzvestaje.
+' ================================================================
+Private Function ImaParametre(ByVal izvestaj As String) As Boolean
+    ImaParametre = (izvestaj = "rptIzv2" Or izvestaj = "rptIzv6")
+End Function
+
+Private Function ProveriUpit(ByVal ime As String) As String
+    Dim db As DAO.Database, qd As DAO.QueryDef, rs As DAO.Recordset
+    Dim i As Long, n As Long, par As String
+    On Error GoTo Greska
+    Set db = CurrentDb
+    Set qd = db.QueryDefs(ime)
+    For i = 0 To qd.Parameters.Count - 1
+        If qd.Parameters(i).Type = dbDate Then
+            If InStr(1, qd.Parameters(i).Name, "do:", vbBinaryCompare) > 0 Then
+                qd.Parameters(i) = DateSerial(2100, 12, 31)
+            Else
+                qd.Parameters(i) = DateSerial(1900, 1, 1)
+            End If
+        Else
+            qd.Parameters(i) = Nz(DMin("SIFRA_KLIJENTA", "OGLASIVAC"), "")
+        End If
+        par = par & " [" & qd.Parameters(i).Name & "=" & qd.Parameters(i) & "]"
+    Next i
+    Set rs = qd.OpenRecordset(dbOpenSnapshot)
+    n = 0
+    If Not rs.EOF Then
+        rs.MoveLast
+        n = rs.RecordCount
+    End If
+    rs.Close
+    If n > 0 Then
+        gOk = gOk + 1
+        ProveriUpit = "  U REDU  " & ime & " - " & n & T(" redova") & par
+    Else
+        gPrazno = gPrazno + 1
+        ProveriUpit = "  PRAZNO  " & ime & T(" - upit radi, ali ne vraca ni jedan red") & par
+    End If
+    Exit Function
+Greska:
+    gLose = gLose + 1
+    ProveriUpit = "  GRESKA  " & ime & " - " & Err.Description
+    Err.Clear
+End Function
+
+Private Function ProveriIzvestaj(ByVal ime As String) As String
+    Dim rpt As Report, ima As Boolean
+    On Error GoTo Greska
+    If ImaParametre(ime) Then
+        gOk = gOk + 1
+        ProveriIzvestaj = "  U REDU  " & ime & _
+            T(" - parametarski; pokreni ga rucno i unesi vrednosti")
+        Exit Function
+    End If
+    DoCmd.OpenReport ime, acViewPreview, , , acHidden
+    Set rpt = Reports(ime)
+    ima = (rpt.HasData <> 0)
+    DoCmd.Close acReport, ime, acSaveNo
+    If ima Then
+        gOk = gOk + 1
+        ProveriIzvestaj = "  U REDU  " & ime & T(" - otvara se i ima podatke")
+    Else
+        gPrazno = gPrazno + 1
+        ProveriIzvestaj = "  PRAZNO  " & ime & T(" - otvara se, ali nema podataka")
+    End If
+    Exit Function
+Greska:
+    gLose = gLose + 1
+    ProveriIzvestaj = "  GRESKA  " & ime & " - " & Err.Description
+    Err.Clear
+    On Error Resume Next
+    DoCmd.Close acReport, ime, acSaveNo
+    Err.Clear
+End Function
+
+Private Function ProveriSve() As String
+    Dim db As DAO.Database, i As Long, s As String, ime As String
+    gOk = 0: gPrazno = 0: gLose = 0
+    Set db = CurrentDb
+    s = T("UPITI") & vbCrLf
+    For i = 0 To db.QueryDefs.Count - 1
+        ime = db.QueryDefs(i).Name
+        If Left(ime, Len(P_UPIT)) = P_UPIT Then s = s & ProveriUpit(ime) & vbCrLf
+    Next i
+    s = s & vbCrLf & T("IZVESTAJI") & vbCrLf
+    For i = 0 To CurrentProject.AllReports.Count - 1
+        ime = CurrentProject.AllReports(i).Name
+        If Left(ime, Len(P_IZV)) = P_IZV Then s = s & ProveriIzvestaj(ime) & vbCrLf
+    Next i
+    ProveriSve = s
+End Function
+
+Public Sub Provera()
+    Dim s As String
+    On Error Resume Next
+    DoCmd.SetWarnings False
+    Err.Clear
+    s = ProveriSve()
+    DoCmd.SetWarnings True
+    Debug.Print s
+    gPoruke = gPoruke & vbCrLf & s
+    MsgBox T("Provera upita i izvestaja") & vbCrLf & vbCrLf & _
+           T("u redu: ") & gOk & vbCrLf & _
+           T("prazno (radi, ali bez podataka): ") & gPrazno & vbCrLf & _
+           T("greska: ") & gLose & vbCrLf & vbCrLf & _
+           T("Detaljan spisak je u Immediate prozoru (Ctrl+G),") & vbCrLf & _
+           T("a ispisuje se i procedurom Dnevnik."), vbInformation, APP_NAZIV
 End Sub
 '''

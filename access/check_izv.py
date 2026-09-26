@@ -52,6 +52,16 @@ ok('Private Const P_UPIT As String = "qIzv"' in txt and
    'prefiksi su definisani kao konstante')
 ok('DoCmd.DeleteObject acTable' not in txt and 'TableDefs.Delete' not in txt,
    'nijedna tabela se ne brise')
+ok('DoCmd.Close acReport, ime, acSaveYes' not in txt,
+   'provera zatvara izvestaje bez cuvanja (acSaveNo)')
+
+print('== provera koja se izvrsava u Access-u')
+ok('Public Sub Provera()' in txt, 'procedura Provera je javna')
+ok('    Beleska ProveriSve()' in txt, 'KreirajIzvestaje sam pokrece proveru')
+ok(txt.count('ProveriUpit(ime)') == 1 and txt.count('ProveriIzvestaj(ime)') == 1,
+   'provera obilazi i upite i izvestaje')
+ok('ImaParametre = (izvestaj = "rptIzv2" Or izvestaj = "rptIzv6")' in txt,
+   'parametarski izvestaji se ne otvaraju automatski (ne bi imali parametre)')
 napravljeni = re.findall(r'Upit "([^"]+)"', txt)
 ok(all(n.startswith('qIzv') for n in napravljeni),
    'svi upiti nose prefiks qIzv (%d)' % len(napravljeni))
