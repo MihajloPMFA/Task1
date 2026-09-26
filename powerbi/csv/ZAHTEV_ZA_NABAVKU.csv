@@ -1,0 +1,21 @@
+DATUM_ZAHTEVA;PROCENJENA_VREDNOST;BROJ_ZAHTEVA;SIFRA_JEDINICE;SIFRA_PLANA;VRSTA_NABAVKE;PREDMET_ZAHTEVA;OBRAZLOZENJE;STATUS_ZAHTEVA;PRIORITET
+2026-01-10;363131.00;ZN-001;OJ-001;PN-001;Oprema;Predmet zahteva za nabavku 1;Obrazloženje zahteva 1;Podnet;Visok
+2026-01-21;576262.00;ZN-002;OJ-002;PN-002;Usluge;Predmet zahteva za nabavku 2;Obrazloženje zahteva 2;Odobren;Srednji
+2026-02-01;789393.00;ZN-003;OJ-003;PN-003;Programski sadržaj;Predmet zahteva za nabavku 3;Obrazloženje zahteva 3;Odobren;Nizak
+2026-02-12;1002524.00;ZN-004;OJ-004;PN-004;Potrošni materijal;Predmet zahteva za nabavku 4;Obrazloženje zahteva 4;Odbijen;Visok
+2026-02-23;1215655.00;ZN-005;OJ-005;PN-005;Oprema;Predmet zahteva za nabavku 5;Obrazloženje zahteva 5;Podnet;Srednji
+2026-03-06;1428786.00;ZN-006;OJ-006;PN-006;Usluge;Predmet zahteva za nabavku 6;Obrazloženje zahteva 6;Odobren;Nizak
+2026-03-17;1641917.00;ZN-007;OJ-007;PN-007;Programski sadržaj;Predmet zahteva za nabavku 7;Obrazloženje zahteva 7;Odobren;Visok
+2026-03-28;1855048.00;ZN-008;OJ-008;PN-008;Potrošni materijal;Predmet zahteva za nabavku 8;Obrazloženje zahteva 8;Odbijen;Srednji
+2026-04-08;2068179.00;ZN-009;OJ-009;PN-009;Oprema;Predmet zahteva za nabavku 9;Obrazloženje zahteva 9;Podnet;Nizak
+2026-04-19;2281310.00;ZN-010;OJ-010;PN-010;Usluge;Predmet zahteva za nabavku 10;Obrazloženje zahteva 10;Odobren;Visok
+2026-04-30;2494441.00;ZN-011;OJ-011;PN-011;Programski sadržaj;Predmet zahteva za nabavku 11;Obrazloženje zahteva 11;Odobren;Srednji
+2026-05-11;2707572.00;ZN-012;OJ-012;PN-012;Potrošni materijal;Predmet zahteva za nabavku 12;Obrazloženje zahteva 12;Odbijen;Nizak
+2026-05-22;2920703.00;ZN-013;OJ-013;PN-013;Oprema;Predmet zahteva za nabavku 13;Obrazloženje zahteva 13;Podnet;Visok
+2026-06-02;3133834.00;ZN-014;OJ-014;PN-014;Usluge;Predmet zahteva za nabavku 14;Obrazloženje zahteva 14;Odobren;Srednji
+2026-06-13;3346965.00;ZN-015;OJ-015;PN-015;Programski sadržaj;Predmet zahteva za nabavku 15;Obrazloženje zahteva 15;Odobren;Nizak
+2026-06-24;3560096.00;ZN-016;OJ-016;PN-016;Potrošni materijal;Predmet zahteva za nabavku 16;Obrazloženje zahteva 16;Odbijen;Visok
+2026-07-05;3773227.00;ZN-017;OJ-017;PN-017;Oprema;Predmet zahteva za nabavku 17;Obrazloženje zahteva 17;Podnet;Srednji
+2026-07-16;3986358.00;ZN-018;OJ-018;PN-018;Usluge;Predmet zahteva za nabavku 18;Obrazloženje zahteva 18;Odobren;Nizak
+2026-07-27;199489.00;ZN-019;OJ-019;PN-019;Programski sadržaj;Predmet zahteva za nabavku 19;Obrazloženje zahteva 19;Odobren;Visok
+2026-08-07;412620.00;ZN-020;OJ-020;PN-020;Potrošni materijal;Predmet zahteva za nabavku 20;Obrazloženje zahteva 20;Odbijen;Srednji

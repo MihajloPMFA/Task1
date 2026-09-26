@@ -1,0 +1,21 @@
+SIFRA_KRITERIJUMA;NAZIV_KRITERIJUMA;NACIN_BODOVANJA;OPIS_KRITERIJUMA
+KR-001;Ponuđena cena 01;Skala 1-10;Ponder 6%
+KR-002;Rok isporuke 02;Skala 1-10;Ponder 7%
+KR-003;Uslovi plaćanja 03;Skala 1-10;Ponder 8%
+KR-004;Garantni rok i servis 04;Skala 1-10;Ponder 9%
+KR-005;Ocena dobavljača 05;Skala 1-10;Ponder 10%
+KR-006;Tehnička podrška 06;Skala 1-10;Ponder 11%
+KR-007;Reference 07;Skala 1-10;Ponder 12%
+KR-008;Ponuđena cena 08;Skala 1-10;Ponder 13%
+KR-009;Rok isporuke 09;Skala 1-10;Ponder 14%
+KR-010;Uslovi plaćanja 10;Skala 1-10;Ponder 15%
+KR-011;Garantni rok i servis 11;Skala 1-10;Ponder 16%
+KR-012;Ocena dobavljača 12;Skala 1-10;Ponder 17%
+KR-013;Tehnička podrška 13;Skala 1-10;Ponder 18%
+KR-014;Reference 14;Skala 1-10;Ponder 19%
+KR-015;Ponuđena cena 15;Skala 1-10;Ponder 20%
+KR-016;Rok isporuke 16;Skala 1-10;Ponder 21%
+KR-017;Uslovi plaćanja 17;Skala 1-10;Ponder 22%
+KR-018;Garantni rok i servis 18;Skala 1-10;Ponder 23%
+KR-019;Ocena dobavljača 19;Skala 1-10;Ponder 24%
+KR-020;Tehnička podrška 20;Skala 1-10;Ponder 25%

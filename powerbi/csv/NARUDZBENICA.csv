@@ -1,0 +1,21 @@
+DATUM_IZDAVANJA;ROK_ISPORUKE;UKUPAN_IZNOS;BROJ_NARUDZBENICE;SIFRA_DOBAVLJACA;MESTO_ISPORUKE;STATUS_NARUDZBINE
+2026-01-20;2026-02-19;339933.00;NR-001;DOB-021;TV Panorama, Kragujevac;Poslata
+2026-01-31;2026-03-02;539866.00;NR-002;DOB-022;TV Panorama, Kragujevac;Realizovana
+2026-02-11;2026-03-13;739799.00;NR-003;DOB-023;TV Panorama, Kragujevac;Delimično realizovan
+2026-02-22;2026-03-24;939732.00;NR-004;DOB-024;TV Panorama, Kragujevac;Otkazana
+2026-03-05;2026-04-04;1139665.00;NR-005;DOB-025;TV Panorama, Kragujevac;Poslata
+2026-03-16;2026-04-15;1339598.00;NR-006;DOB-026;TV Panorama, Kragujevac;Realizovana
+2026-03-27;2026-04-26;1539531.00;NR-007;DOB-027;TV Panorama, Kragujevac;Delimično realizovan
+2026-04-07;2026-05-07;1739464.00;NR-008;DOB-028;TV Panorama, Kragujevac;Otkazana
+2026-04-18;2026-05-18;1939397.00;NR-009;DOB-029;TV Panorama, Kragujevac;Poslata
+2026-04-29;2026-05-29;2139330.00;NR-010;DOB-030;TV Panorama, Kragujevac;Realizovana
+2026-05-10;2026-06-09;2339263.00;NR-011;DOB-031;TV Panorama, Kragujevac;Delimično realizovan
+2026-05-21;2026-06-20;2539196.00;NR-012;DOB-032;TV Panorama, Kragujevac;Otkazana
+2026-06-01;2026-07-01;2739129.00;NR-013;DOB-033;TV Panorama, Kragujevac;Poslata
+2026-06-12;2026-07-12;2939062.00;NR-014;DOB-034;TV Panorama, Kragujevac;Realizovana
+2026-06-23;2026-07-23;3138995.00;NR-015;DOB-035;TV Panorama, Kragujevac;Delimično realizovan
+2026-07-04;2026-08-03;3338928.00;NR-016;DOB-036;TV Panorama, Kragujevac;Otkazana
+2026-07-15;2026-08-14;3538861.00;NR-017;DOB-037;TV Panorama, Kragujevac;Poslata
+2026-07-26;2026-08-25;3738794.00;NR-018;DOB-038;TV Panorama, Kragujevac;Realizovana
+2026-08-06;2026-09-05;3938727.00;NR-019;DOB-039;TV Panorama, Kragujevac;Delimično realizovan
+2026-08-17;2026-09-16;4138660.00;NR-020;DOB-040;TV Panorama, Kragujevac;Otkazana

@@ -1,0 +1,21 @@
+RB_STAVKE;KOLICINA;PROCENJENA_CENA;SIFRA_PLANA;OPIS_ARTIKLA;JEDINICA_MERE;PLANIRANI_KVARTAL
+1;2;363131.00;PN-001;Studijska kamera;kom;Q1
+1;3;576262.00;PN-002;Rasveta;sat;Q2
+1;4;789393.00;PN-003;Audio miks pult;paket;Q3
+1;5;1002524.00;PN-004;Servis opreme;licenca;Q4
+1;6;1215655.00;PN-005;Prava emitovanja;usluga;Q1
+1;7;1428786.00;PN-006;Potrošni materijal;kom;Q2
+1;8;1641917.00;PN-007;Kancelarijski materijal;sat;Q3
+1;9;1855048.00;PN-008;Kablovi;paket;Q4
+1;10;2068179.00;PN-009;Monitori;licenca;Q1
+1;11;2281310.00;PN-010;Stativi;usluga;Q2
+1;12;2494441.00;PN-011;Baterije;kom;Q3
+1;1;2707572.00;PN-012;Memorijske kartice;sat;Q4
+1;2;2920703.00;PN-013;Softver;paket;Q1
+1;3;3133834.00;PN-014;Rezervni delovi;licenca;Q2
+1;4;3346965.00;PN-015;Slušalice;usluga;Q3
+1;5;3560096.00;PN-016;Objektivi;kom;Q4
+1;6;3773227.00;PN-017;Napajanje;sat;Q1
+1;7;3986358.00;PN-018;Torbe za opremu;paket;Q2
+1;8;199489.00;PN-019;Adapteri;licenca;Q3
+1;9;412620.00;PN-020;Alat;usluga;Q4

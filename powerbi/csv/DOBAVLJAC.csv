@@ -1,0 +1,41 @@
+OCENA_DOBAVLJACA;SIFRA_DOBAVLJACA;NAZIV_DOBAVLJACA;PIB;MATICNI_BROJ;ADRESA
+5.80;DOB-001;Film Distribution;120000011;30000017;Adresa 1, Kragujevac
+6.10;DOB-002;Content House;120000022;30000034;Adresa 2, Kragujevac
+6.40;DOB-003;Global Media Rights;120000033;30000051;Adresa 3, Kragujevac
+6.70;DOB-004;Docu Partners;120000044;30000068;Adresa 4, Kragujevac
+7.00;DOB-005;Sport Rights Agency;120000055;30000085;Adresa 5, Kragujevac
+7.30;DOB-006;Kids Content;120000066;30000102;Adresa 6, Kragujevac
+7.60;DOB-007;Music Licensing;120000077;30000119;Adresa 7, Kragujevac
+7.90;DOB-008;Archive Media;120000088;30000136;Adresa 8, Kragujevac
+8.20;DOB-009;Cinema Group;120000099;30000153;Adresa 9, Kragujevac
+8.50;DOB-010;Series Distribution;120000110;30000170;Adresa 10, Kragujevac
+8.80;DOB-011;Film Distribution;120000121;30000187;Adresa 11, Kragujevac
+9.10;DOB-012;Content House;120000132;30000204;Adresa 12, Kragujevac
+9.40;DOB-013;Global Media Rights;120000143;30000221;Adresa 13, Kragujevac
+9.70;DOB-014;Docu Partners;120000154;30000238;Adresa 14, Kragujevac
+5.50;DOB-015;Sport Rights Agency;120000165;30000255;Adresa 15, Kragujevac
+5.80;DOB-016;Kids Content;120000176;30000272;Adresa 16, Kragujevac
+6.10;DOB-017;Music Licensing;120000187;30000289;Adresa 17, Kragujevac
+6.40;DOB-018;Archive Media;120000198;30000306;Adresa 18, Kragujevac
+6.70;DOB-019;Cinema Group;120000209;30000323;Adresa 19, Kragujevac
+7.00;DOB-020;Series Distribution;120000220;30000340;Adresa 20, Kragujevac
+7.30;DOB-021;Tehnika doo;120000231;30000357;Adresa 21, Kragujevac
+7.60;DOB-022;Kamera Shop;120000242;30000374;Adresa 22, Kragujevac
+7.90;DOB-023;Audio Pro;120000253;30000391;Adresa 23, Kragujevac
+8.20;DOB-024;Light Tech;120000264;30000408;Adresa 24, Kragujevac
+8.50;DOB-025;Broadcast Systems;120000275;30000425;Adresa 25, Kragujevac
+8.80;DOB-026;Studio Oprema;120000286;30000442;Adresa 26, Kragujevac
+9.10;DOB-027;Servis Elektronik;120000297;30000459;Adresa 27, Kragujevac
+9.40;DOB-028;Kablovi doo;120000308;30000476;Adresa 28, Kragujevac
+9.70;DOB-029;IT Oprema;120000319;30000493;Adresa 29, Kragujevac
+5.50;DOB-030;Energo doo;120000330;30000510;Adresa 30, Kragujevac
+5.80;DOB-031;Tehnika doo;120000341;30000527;Adresa 31, Kragujevac
+6.10;DOB-032;Kamera Shop;120000352;30000544;Adresa 32, Kragujevac
+6.40;DOB-033;Audio Pro;120000363;30000561;Adresa 33, Kragujevac
+6.70;DOB-034;Light Tech;120000374;30000578;Adresa 34, Kragujevac
+7.00;DOB-035;Broadcast Systems;120000385;30000595;Adresa 35, Kragujevac
+7.30;DOB-036;Studio Oprema;120000396;30000612;Adresa 36, Kragujevac
+7.60;DOB-037;Servis Elektronik;120000407;30000629;Adresa 37, Kragujevac
+7.90;DOB-038;Kablovi doo;120000418;30000646;Adresa 38, Kragujevac
+8.20;DOB-039;IT Oprema;120000429;30000663;Adresa 39, Kragujevac
+8.50;DOB-040;Energo doo;120000440;30000680;Adresa 40, Kragujevac

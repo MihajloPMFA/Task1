@@ -1,0 +1,41 @@
+SIFRA_KLIJENTA;NAZIV_KLIJENTA;PIB;MATICNI_BROJ;ULICA_I_BROJ;GRAD;POSTANSKI_BROJ;KONTAKT_OSOBA
+KL-001;Šumadija banka;110000007;20000013;Ulica 1, broj 2;Kragujevac;11100;Kontakt osoba 1
+KL-002;Market Plus;110000014;20000026;Ulica 2, broj 4;Beograd;11200;Kontakt osoba 2
+KL-003;Auto centar;110000021;20000039;Ulica 3, broj 6;Novi Sad;11300;Kontakt osoba 3
+KL-004;Turistička organizacija;110000028;20000052;Ulica 4, broj 8;Niš;11400;Kontakt osoba 4
+KL-005;Zdravlje apoteke;110000035;20000065;Ulica 5, broj 10;Čačak;11500;Kontakt osoba 5
+KL-006;Telekomunikacije AD;110000042;20000078;Ulica 6, broj 12;Kraljevo;11600;Kontakt osoba 6
+KL-007;Osiguranje Sigurno;110000049;20000091;Ulica 7, broj 14;Užice;11700;Kontakt osoba 7
+KL-008;Restoran Stari grad;110000056;20000104;Ulica 8, broj 16;Jagodina;11800;Kontakt osoba 8
+KL-009;Sportski centar;110000063;20000117;Ulica 9, broj 18;Kragujevac;11900;Kontakt osoba 9
+KL-010;Energetika doo;110000070;20000130;Ulica 10, broj 20;Beograd;12000;Kontakt osoba 10
+KL-011;Građevinar AD;110000077;20000143;Ulica 11, broj 22;Novi Sad;12100;Kontakt osoba 11
+KL-012;Mlekara Šumadija;110000084;20000156;Ulica 12, broj 24;Niš;12200;Kontakt osoba 12
+KL-013;IT Solutions;110000091;20000169;Ulica 13, broj 26;Čačak;12300;Kontakt osoba 13
+KL-014;Fitnes klub;110000098;20000182;Ulica 14, broj 28;Kraljevo;12400;Kontakt osoba 14
+KL-015;Knjižara Prosveta;110000105;20000195;Ulica 15, broj 30;Užice;12500;Kontakt osoba 15
+KL-016;Hotel Zvezda;110000112;20000208;Ulica 16, broj 32;Jagodina;12600;Kontakt osoba 16
+KL-017;Agencija Putnik;110000119;20000221;Ulica 17, broj 34;Kragujevac;12700;Kontakt osoba 17
+KL-018;Gradska čistoča;110000126;20000234;Ulica 18, broj 36;Beograd;12800;Kontakt osoba 18
+KL-019;Univerzitet;110000133;20000247;Ulica 19, broj 38;Novi Sad;12900;Kontakt osoba 19
+KL-020;Gradska biblioteka;110000140;20000260;Ulica 20, broj 40;Niš;13000;Kontakt osoba 20
+KL-021;RTV Kanal Plus;110000147;20000273;Ulica 21, broj 42;Čačak;13100;Kontakt osoba 21
+KL-022;TV Šumadija;110000154;20000286;Ulica 22, broj 44;Kraljevo;13200;Kontakt osoba 22
+KL-023;Regionalna TV Morava;110000161;20000299;Ulica 23, broj 46;Užice;13300;Kontakt osoba 23
+KL-024;Gradska televizija;110000168;20000312;Ulica 24, broj 48;Jagodina;13400;Kontakt osoba 24
+KL-025;Kablovska mreža Jug;110000175;20000325;Ulica 25, broj 50;Kragujevac;13500;Kontakt osoba 25
+KL-026;Portal Vesti;110000182;20000338;Ulica 26, broj 52;Beograd;13600;Kontakt osoba 26
+KL-027;Striming platforma Gledaj;110000189;20000351;Ulica 27, broj 54;Novi Sad;13700;Kontakt osoba 27
+KL-028;TV Zapad;110000196;20000364;Ulica 28, broj 56;Niš;13800;Kontakt osoba 28
+KL-029;Medijska kuča Sever;110000203;20000377;Ulica 29, broj 58;Čačak;13900;Kontakt osoba 29
+KL-030;TV Istok;110000210;20000390;Ulica 30, broj 60;Kraljevo;14000;Kontakt osoba 30
+KL-031;RTV Kanal Plus;110000217;20000403;Ulica 31, broj 62;Užice;14100;Kontakt osoba 31
+KL-032;TV Šumadija;110000224;20000416;Ulica 32, broj 64;Jagodina;14200;Kontakt osoba 32
+KL-033;Regionalna TV Morava;110000231;20000429;Ulica 33, broj 66;Kragujevac;14300;Kontakt osoba 33
+KL-034;Gradska televizija;110000238;20000442;Ulica 34, broj 68;Beograd;14400;Kontakt osoba 34
+KL-035;Kablovska mreža Jug;110000245;20000455;Ulica 35, broj 70;Novi Sad;14500;Kontakt osoba 35
+KL-036;Portal Vesti;110000252;20000468;Ulica 36, broj 72;Niš;14600;Kontakt osoba 36
+KL-037;Striming platforma Gledaj;110000259;20000481;Ulica 37, broj 74;Čačak;14700;Kontakt osoba 37
+KL-038;TV Zapad;110000266;20000494;Ulica 38, broj 76;Kraljevo;14800;Kontakt osoba 38
+KL-039;Medijska kuča Sever;110000273;20000507;Ulica 39, broj 78;Užice;14900;Kontakt osoba 39
+KL-040;TV Istok;110000280;20000520;Ulica 40, broj 80;Jagodina;15000;Kontakt osoba 40

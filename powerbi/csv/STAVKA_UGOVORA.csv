@@ -1,0 +1,61 @@
+RB_STAVKE;KOLICINA_SEKUNDE;JEDINICNA_CENA;POPUST;VREDNOST_STAVKE;BROJ_UGOVORA;OPIS_STAVKE
+1;360;1270.00;10.00;613131.00;UG-001;TV spot 30 sekundi
+1;420;1440.00;15.00;826262.00;UG-002;TV spot 15 sekundi
+1;480;1610.00;5.00;1039393.00;UG-003;Sponzorstvo emisije
+1;540;1780.00;10.00;1252524.00;UG-004;Reklamni blok u udarnom terminu
+1;600;1950.00;15.00;1465655.00;UG-005;TV spot 30 sekundi
+1;660;2120.00;5.00;1678786.00;UG-006;TV spot 15 sekundi
+1;720;2290.00;10.00;1891917.00;UG-007;Sponzorstvo emisije
+1;780;2460.00;15.00;2105048.00;UG-008;Reklamni blok u udarnom terminu
+1;840;2630.00;5.00;2318179.00;UG-009;TV spot 30 sekundi
+1;900;2800.00;10.00;2531310.00;UG-010;TV spot 15 sekundi
+1;960;2970.00;15.00;2744441.00;UG-011;Sponzorstvo emisije
+1;1020;3140.00;5.00;2957572.00;UG-012;Reklamni blok u udarnom terminu
+1;1080;3310.00;10.00;3170703.00;UG-013;TV spot 30 sekundi
+1;1140;3480.00;15.00;3383834.00;UG-014;TV spot 15 sekundi
+1;1200;3650.00;5.00;3596965.00;UG-015;Sponzorstvo emisije
+1;1260;3820.00;10.00;3810096.00;UG-016;Reklamni blok u udarnom terminu
+1;1320;3990.00;15.00;4023227.00;UG-017;TV spot 30 sekundi
+1;1380;4160.00;5.00;4236358.00;UG-018;TV spot 15 sekundi
+1;1440;4330.00;10.00;4449489.00;UG-019;Sponzorstvo emisije
+1;1500;4500.00;15.00;4662620.00;UG-020;Reklamni blok u udarnom terminu
+1;1560;1170.00;5.00;4875751.00;UG-021;Ustupanje prava emitovanja
+1;1620;1340.00;10.00;5088882.00;UG-022;Prodaja epizode
+1;1680;1510.00;15.00;5302013.00;UG-023;Prodaja serijala
+1;1740;1680.00;5.00;5515144.00;UG-024;Ustupanje arhivskog snimka
+1;1800;1850.00;10.00;5728275.00;UG-025;Ustupanje prava emitovanja
+1;1860;2020.00;15.00;5941406.00;UG-026;Prodaja epizode
+1;1920;2190.00;5.00;6154537.00;UG-027;Prodaja serijala
+1;1980;2360.00;10.00;6367668.00;UG-028;Ustupanje arhivskog snimka
+1;2040;2530.00;15.00;6580799.00;UG-029;Ustupanje prava emitovanja
+1;2100;2700.00;5.00;6793930.00;UG-030;Prodaja epizode
+1;2160;2870.00;10.00;7007061.00;UG-031;Prodaja serijala
+1;2220;3040.00;15.00;7220192.00;UG-032;Ustupanje arhivskog snimka
+1;2280;3210.00;5.00;7433323.00;UG-033;Ustupanje prava emitovanja
+1;2340;3380.00;10.00;7646454.00;UG-034;Prodaja epizode
+1;2400;3550.00;15.00;7859585.00;UG-035;Prodaja serijala
+1;2460;3720.00;5.00;8072716.00;UG-036;Ustupanje arhivskog snimka
+1;2520;3890.00;10.00;8285847.00;UG-037;Ustupanje prava emitovanja
+1;2580;4060.00;15.00;8498978.00;UG-038;Prodaja epizode
+1;2640;4230.00;5.00;8712109.00;UG-039;Prodaja serijala
+1;300;4400.00;10.00;8925240.00;UG-040;Ustupanje arhivskog snimka
+1;360;4570.00;15.00;9138371.00;UG-041;Nabavka opreme
+1;420;1240.00;5.00;9351502.00;UG-042;Nabavka programskog sadržaja
+1;480;1410.00;10.00;564633.00;UG-043;Servisiranje opreme
+1;540;1580.00;15.00;777764.00;UG-044;Nabavka licence
+1;600;1750.00;5.00;990895.00;UG-045;Nabavka opreme
+1;660;1920.00;10.00;1204026.00;UG-046;Nabavka programskog sadržaja
+1;720;2090.00;15.00;1417157.00;UG-047;Servisiranje opreme
+1;780;2260.00;5.00;1630288.00;UG-048;Nabavka licence
+1;840;2430.00;10.00;1843419.00;UG-049;Nabavka opreme
+1;900;2600.00;15.00;2056550.00;UG-050;Nabavka programskog sadržaja
+1;960;2770.00;5.00;2269681.00;UG-051;Servisiranje opreme
+1;1020;2940.00;10.00;2482812.00;UG-052;Nabavka licence
+1;1080;3110.00;15.00;2695943.00;UG-053;Nabavka opreme
+1;1140;3280.00;5.00;2909074.00;UG-054;Nabavka programskog sadržaja
+1;1200;3450.00;10.00;3122205.00;UG-055;Servisiranje opreme
+1;1260;3620.00;15.00;3335336.00;UG-056;Nabavka licence
+1;1320;3790.00;5.00;3548467.00;UG-057;Nabavka opreme
+1;1380;3960.00;10.00;3761598.00;UG-058;Nabavka programskog sadržaja
+1;1440;4130.00;15.00;3974729.00;UG-059;Servisiranje opreme
+1;1500;4300.00;5.00;4187860.00;UG-060;Nabavka licence

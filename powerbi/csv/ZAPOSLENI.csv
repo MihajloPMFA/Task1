@@ -1,0 +1,121 @@
+DATUM_ZAPOSLENJA;OSNOVNA_ZARADA;SIFRA_ZAPOSLENOG;SIFRA_JEDINICE;JMBG;IME;PREZIME;RADNO_MESTO;STATUS_ZAPOSLENJA
+2026-01-05;62917.00;ZAP-001;OJ-010;1010985700001;Marko;Anđelković;Glavni urednik;Aktivan
+2026-01-16;63834.00;ZAP-002;OJ-011;1010985700002;Jelena;Davčić;Odgovorni urednik;Aktivan
+2026-01-27;64751.00;ZAP-003;OJ-012;1010985700003;Nikola;Mirković;Urednik rubrike;Aktivan
+2026-02-07;65668.00;ZAP-004;OJ-009;1010985700004;Ana;Kojić;Urednik redakcije;Aktivan
+2026-02-18;66585.00;ZAP-005;OJ-010;1010985700005;Stefan;Simović;Glavni urednik;Na bolovanju
+2026-03-01;67502.00;ZAP-006;OJ-011;1010985700006;Milica;Petrović;Odgovorni urednik;Honorarni
+2026-03-12;68419.00;ZAP-007;OJ-012;1010985700007;Dušan;Jovanović;Urednik rubrike;Aktivan
+2026-03-23;69336.00;ZAP-008;OJ-009;1010985700008;Ivana;Nikolić;Urednik redakcije;Aktivan
+2026-04-03;70253.00;ZAP-009;OJ-010;1010985700009;Nemanja;Marković;Glavni urednik;Aktivan
+2026-04-14;71170.00;ZAP-010;OJ-011;1010985700010;Sara;Ilić;Odgovorni urednik;Aktivan
+2026-04-25;72087.00;ZAP-011;OJ-012;1010985700011;Luka;Pavlović;Urednik rubrike;Na bolovanju
+2026-05-06;73004.00;ZAP-012;OJ-009;1010985700012;Katarina;Stanković;Urednik redakcije;Honorarni
+2026-05-17;73921.00;ZAP-013;OJ-010;1010985700013;Vuk;Lukić;Glavni urednik;Aktivan
+2026-05-28;74838.00;ZAP-014;OJ-011;1010985700014;Teodora;Ristić;Odgovorni urednik;Aktivan
+2026-06-08;75755.00;ZAP-015;OJ-012;1010985700015;Filip;Todorović;Urednik rubrike;Aktivan
+2026-06-19;76672.00;ZAP-016;OJ-009;1010985700016;Jovana;Milošević;Urednik redakcije;Aktivan
+2026-06-30;77589.00;ZAP-017;OJ-010;1010985700017;Uroš;Živković;Glavni urednik;Na bolovanju
+2026-07-11;78506.00;ZAP-018;OJ-011;1010985700018;Tijana;Krstić;Odgovorni urednik;Honorarni
+2026-07-22;79423.00;ZAP-019;OJ-012;1010985700019;Aleksa;Savić;Urednik rubrike;Aktivan
+2026-08-02;80340.00;ZAP-020;OJ-009;1010985700020;Marija;Anđelković;Urednik redakcije;Aktivan
+2026-08-13;81257.00;ZAP-021;OJ-010;1010985700021;Marko;Davčić;Novinar;Aktivan
+2026-08-24;82174.00;ZAP-022;OJ-011;1010985700022;Jelena;Mirković;Reporter;Aktivan
+2026-09-04;83091.00;ZAP-023;OJ-012;1010985700023;Nikola;Kojić;Dopisnik;Na bolovanju
+2026-09-15;84008.00;ZAP-024;OJ-009;1010985700024;Ana;Simović;Novinar saradnik;Honorarni
+2026-09-26;84925.00;ZAP-025;OJ-010;1010985700025;Stefan;Petrović;Novinar;Aktivan
+2026-10-07;85842.00;ZAP-026;OJ-011;1010985700026;Milica;Jovanović;Reporter;Aktivan
+2026-10-18;86759.00;ZAP-027;OJ-012;1010985700027;Dušan;Nikolić;Dopisnik;Aktivan
+2026-10-29;87676.00;ZAP-028;OJ-009;1010985700028;Ivana;Marković;Novinar saradnik;Aktivan
+2026-11-09;88593.00;ZAP-029;OJ-010;1010985700029;Nemanja;Ilić;Novinar;Na bolovanju
+2026-11-20;89510.00;ZAP-030;OJ-011;1010985700030;Sara;Pavlović;Reporter;Honorarni
+2026-12-01;90427.00;ZAP-031;OJ-012;1010985700031;Luka;Stanković;Dopisnik;Aktivan
+2026-12-12;91344.00;ZAP-032;OJ-009;1010985700032;Katarina;Lukić;Novinar saradnik;Aktivan
+2026-12-23;92261.00;ZAP-033;OJ-010;1010985700033;Vuk;Ristić;Novinar;Aktivan
+2027-01-03;93178.00;ZAP-034;OJ-011;1010985700034;Teodora;Todorović;Reporter;Aktivan
+2027-01-14;94095.00;ZAP-035;OJ-012;1010985700035;Filip;Milošević;Dopisnik;Na bolovanju
+2027-01-25;95012.00;ZAP-036;OJ-009;1010985700036;Jovana;Živković;Novinar saradnik;Honorarni
+2027-02-05;95929.00;ZAP-037;OJ-010;1010985700037;Uroš;Krstić;Novinar;Aktivan
+2027-02-16;96846.00;ZAP-038;OJ-011;1010985700038;Tijana;Savić;Reporter;Aktivan
+2027-02-27;97763.00;ZAP-039;OJ-012;1010985700039;Aleksa;Đorđević;Dopisnik;Aktivan
+2027-03-10;98680.00;ZAP-040;OJ-009;1010985700040;Marija;Davčić;Novinar saradnik;Aktivan
+2027-03-21;99597.00;ZAP-041;OJ-014;1010985700041;Marko;Mirković;Tehničar emitovanja;Na bolovanju
+2027-04-01;100514.00;ZAP-042;OJ-015;1010985700042;Jelena;Kojić;Kamerman;Honorarni
+2027-04-12;101431.00;ZAP-043;OJ-016;1010985700043;Nikola;Simović;Snimatelj;Aktivan
+2027-04-23;102348.00;ZAP-044;OJ-013;1010985700044;Ana;Petrović;Ton majstor;Aktivan
+2027-05-04;103265.00;ZAP-045;OJ-014;1010985700045;Stefan;Jovanović;Montažer;Aktivan
+2027-05-15;104182.00;ZAP-046;OJ-015;1010985700046;Milica;Nikolić;Rasvetljivač;Aktivan
+2027-05-26;105099.00;ZAP-047;OJ-016;1010985700047;Dušan;Marković;Tehničar emitovanja;Na bolovanju
+2027-06-06;106016.00;ZAP-048;OJ-013;1010985700048;Ivana;Ilić;Kamerman;Honorarni
+2027-06-17;106933.00;ZAP-049;OJ-014;1010985700049;Nemanja;Pavlović;Snimatelj;Aktivan
+2027-06-28;107850.00;ZAP-050;OJ-015;1010985700050;Sara;Stanković;Ton majstor;Aktivan
+2027-07-09;108767.00;ZAP-051;OJ-016;1010985700051;Luka;Lukić;Montažer;Aktivan
+2027-07-20;109684.00;ZAP-052;OJ-013;1010985700052;Katarina;Ristić;Rasvetljivač;Aktivan
+2027-07-31;110601.00;ZAP-053;OJ-014;1010985700053;Vuk;Todorović;Tehničar emitovanja;Na bolovanju
+2027-08-11;111518.00;ZAP-054;OJ-015;1010985700054;Teodora;Milošević;Kamerman;Honorarni
+2027-08-22;112435.00;ZAP-055;OJ-016;1010985700055;Filip;Živković;Snimatelj;Aktivan
+2027-09-02;113352.00;ZAP-056;OJ-013;1010985700056;Jovana;Krstić;Ton majstor;Aktivan
+2027-09-13;114269.00;ZAP-057;OJ-014;1010985700057;Uroš;Savić;Montažer;Aktivan
+2027-09-24;115186.00;ZAP-058;OJ-015;1010985700058;Tijana;Đorđević;Rasvetljivač;Aktivan
+2027-10-05;116103.00;ZAP-059;OJ-016;1010985700059;Aleksa;Anđelković;Tehničar emitovanja;Na bolovanju
+2027-10-16;117020.00;ZAP-060;OJ-013;1010985700060;Marija;Mirković;Kamerman;Honorarni
+2027-10-27;117937.00;ZAP-061;OJ-005;1010985700061;Marko;Kojić;Referent nabavke;Aktivan
+2027-11-07;118854.00;ZAP-062;OJ-006;1010985700062;Jelena;Simović;Referent finansija;Aktivan
+2027-11-18;119771.00;ZAP-063;OJ-007;1010985700063;Nikola;Petrović;Referent kadrova;Aktivan
+2027-11-29;120688.00;ZAP-064;OJ-008;1010985700064;Ana;Jovanović;Referent marketinga;Aktivan
+2027-12-10;121605.00;ZAP-065;OJ-004;1010985700065;Stefan;Nikolić;Referent nabavke;Na bolovanju
+2027-12-21;122522.00;ZAP-066;OJ-005;1010985700066;Milica;Marković;Referent finansija;Honorarni
+2028-01-01;123439.00;ZAP-067;OJ-006;1010985700067;Dušan;Ilić;Referent kadrova;Aktivan
+2028-01-12;124356.00;ZAP-068;OJ-007;1010985700068;Ivana;Pavlović;Referent marketinga;Aktivan
+2028-01-23;125273.00;ZAP-069;OJ-008;1010985700069;Nemanja;Stanković;Referent nabavke;Aktivan
+2028-02-03;126190.00;ZAP-070;OJ-004;1010985700070;Sara;Lukić;Referent finansija;Aktivan
+2028-02-14;127107.00;ZAP-071;OJ-005;1010985700071;Luka;Ristić;Referent kadrova;Na bolovanju
+2028-02-25;128024.00;ZAP-072;OJ-006;1010985700072;Katarina;Todorović;Referent marketinga;Honorarni
+2028-03-07;128941.00;ZAP-073;OJ-007;1010985700073;Vuk;Milošević;Referent nabavke;Aktivan
+2028-03-18;129858.00;ZAP-074;OJ-008;1010985700074;Teodora;Živković;Referent finansija;Aktivan
+2028-03-29;130775.00;ZAP-075;OJ-004;1010985700075;Filip;Krstić;Referent kadrova;Aktivan
+2028-04-09;131692.00;ZAP-076;OJ-005;1010985700076;Jovana;Savić;Referent marketinga;Aktivan
+2028-04-20;132609.00;ZAP-077;OJ-006;1010985700077;Uroš;Đorđević;Referent nabavke;Na bolovanju
+2028-05-01;133526.00;ZAP-078;OJ-007;1010985700078;Tijana;Anđelković;Referent finansija;Honorarni
+2028-05-12;134443.00;ZAP-079;OJ-008;1010985700079;Aleksa;Davčić;Referent kadrova;Aktivan
+2028-05-23;135360.00;ZAP-080;OJ-004;1010985700080;Marija;Kojić;Referent marketinga;Aktivan
+2028-06-03;136277.00;ZAP-081;OJ-013;1010985700081;Marko;Simović;Serviser rasvete;Aktivan
+2028-06-14;137194.00;ZAP-082;OJ-020;1010985700082;Jelena;Petrović;Serviser opreme;Aktivan
+2028-06-25;138111.00;ZAP-083;OJ-013;1010985700083;Nikola;Jovanović;Serviser elektronike;Na bolovanju
+2028-07-06;139028.00;ZAP-084;OJ-020;1010985700084;Ana;Nikolić;Serviser rasvete;Honorarni
+2028-07-17;139945.00;ZAP-085;OJ-013;1010985700085;Stefan;Marković;Serviser opreme;Aktivan
+2028-07-28;140862.00;ZAP-086;OJ-020;1010985700086;Milica;Ilić;Serviser elektronike;Aktivan
+2028-08-08;141779.00;ZAP-087;OJ-013;1010985700087;Dušan;Pavlović;Serviser rasvete;Aktivan
+2028-08-19;142696.00;ZAP-088;OJ-020;1010985700088;Ivana;Stanković;Serviser opreme;Aktivan
+2028-08-30;143613.00;ZAP-089;OJ-013;1010985700089;Nemanja;Lukić;Serviser elektronike;Na bolovanju
+2028-09-10;144530.00;ZAP-090;OJ-020;1010985700090;Sara;Ristić;Serviser rasvete;Honorarni
+2028-09-21;145447.00;ZAP-091;OJ-013;1010985700091;Luka;Todorović;Serviser opreme;Aktivan
+2028-10-02;146364.00;ZAP-092;OJ-020;1010985700092;Katarina;Milošević;Serviser elektronike;Aktivan
+2028-10-13;147281.00;ZAP-093;OJ-013;1010985700093;Vuk;Živković;Serviser rasvete;Aktivan
+2028-10-24;148198.00;ZAP-094;OJ-020;1010985700094;Teodora;Krstić;Serviser opreme;Aktivan
+2028-11-04;149115.00;ZAP-095;OJ-013;1010985700095;Filip;Savić;Serviser elektronike;Na bolovanju
+2028-11-15;150032.00;ZAP-096;OJ-020;1010985700096;Jovana;Đorđević;Serviser rasvete;Honorarni
+2028-11-26;150949.00;ZAP-097;OJ-013;1010985700097;Uroš;Anđelković;Serviser opreme;Aktivan
+2028-12-07;151866.00;ZAP-098;OJ-020;1010985700098;Tijana;Davčić;Serviser elektronike;Aktivan
+2028-12-18;152783.00;ZAP-099;OJ-013;1010985700099;Aleksa;Mirković;Serviser rasvete;Aktivan
+2028-12-29;153700.00;ZAP-100;OJ-020;1010985700100;Marija;Simović;Serviser opreme;Aktivan
+2029-01-09;154617.00;ZAP-101;OJ-006;1010985700101;Marko;Petrović;Producent;Na bolovanju
+2029-01-20;155534.00;ZAP-102;OJ-007;1010985700102;Jelena;Jovanović;Voditelj;Honorarni
+2029-01-31;156451.00;ZAP-103;OJ-008;1010985700103;Nikola;Nikolić;Režiser;Aktivan
+2029-02-11;157368.00;ZAP-104;OJ-001;1010985700104;Ana;Marković;Lektor;Aktivan
+2029-02-22;158285.00;ZAP-105;OJ-002;1010985700105;Stefan;Ilić;Sekretar;Aktivan
+2029-03-05;159202.00;ZAP-106;OJ-003;1010985700106;Milica;Pavlović;Magacioner;Aktivan
+2029-03-16;160119.00;ZAP-107;OJ-004;1010985700107;Dušan;Stanković;Analitičar;Na bolovanju
+2029-03-27;161036.00;ZAP-108;OJ-005;1010985700108;Ivana;Lukić;Dizajner;Honorarni
+2029-04-07;161953.00;ZAP-109;OJ-006;1010985700109;Nemanja;Ristić;Pravnik;Aktivan
+2029-04-18;162870.00;ZAP-110;OJ-007;1010985700110;Sara;Todorović;Knjigovođa;Aktivan
+2029-04-29;163787.00;ZAP-111;OJ-008;1010985700111;Luka;Milošević;Producent;Aktivan
+2029-05-10;164704.00;ZAP-112;OJ-001;1010985700112;Katarina;Živković;Voditelj;Aktivan
+2029-05-21;165621.00;ZAP-113;OJ-002;1010985700113;Vuk;Krstić;Režiser;Na bolovanju
+2029-06-01;166538.00;ZAP-114;OJ-003;1010985700114;Teodora;Savić;Lektor;Honorarni
+2029-06-12;167455.00;ZAP-115;OJ-004;1010985700115;Filip;Đorđević;Sekretar;Aktivan
+2029-06-23;168372.00;ZAP-116;OJ-005;1010985700116;Jovana;Anđelković;Magacioner;Aktivan
+2029-07-04;169289.00;ZAP-117;OJ-006;1010985700117;Uroš;Davčić;Analitičar;Aktivan
+2029-07-15;170206.00;ZAP-118;OJ-007;1010985700118;Tijana;Mirković;Dizajner;Aktivan
+2029-07-26;171123.00;ZAP-119;OJ-008;1010985700119;Aleksa;Kojić;Pravnik;Na bolovanju
+2029-08-06;172040.00;ZAP-120;OJ-001;1010985700120;Marija;Petrović;Knjigovođa;Honorarni

@@ -1,0 +1,21 @@
+PREDVIDJENO_TRAJANJE;SIFRA_EMISIJE;NAZIV_EMISIJE;ZANR;FORMAT_EMISIJE;CILJNA_PUBLIKA;STATUS_EMISIJE;PROGRAMSKI_ELABORAT
+27;EM-001;Jutro na TV;Informativni;Studijska;Opšta populacija;Aktivna;Programski elaborat emisije 1
+34;EM-002;Dnevnik u 19;Informativni;Terenska;18-49;Aktivna;Programski elaborat emisije 2
+41;EM-003;Sport plus;Sportski;Kombinovana;25-54;Aktivna;Programski elaborat emisije 3
+48;EM-004;Kulturni krug;Kulturni;Studijska;35+;U produkciji;Programski elaborat emisije 4
+55;EM-005;Zdravo i tačno;Obrazovni;Terenska;4-12;Arhivirana;Programski elaborat emisije 5
+62;EM-006;Kviz 5;Zabavni;Kombinovana;Opšta populacija;Aktivna;Programski elaborat emisije 6
+69;EM-007;Dokumentarac nedelje;Dokumentarni;Studijska;18-49;Aktivna;Programski elaborat emisije 7
+76;EM-008;Razgovor sa povodom;Informativni;Terenska;25-54;Aktivna;Programski elaborat emisije 8
+83;EM-009;Muzički izlog;Zabavni;Kombinovana;35+;U produkciji;Programski elaborat emisije 9
+90;EM-010;Dečje carstvo;Dečji;Studijska;4-12;Arhivirana;Programski elaborat emisije 10
+97;EM-011;Vremenska prognoza;Informativni;Terenska;Opšta populacija;Aktivna;Programski elaborat emisije 11
+104;EM-012;Politički presek;Informativni;Kombinovana;18-49;Aktivna;Programski elaborat emisije 12
+111;EM-013;Agro magazin;Obrazovni;Studijska;25-54;Aktivna;Programski elaborat emisije 13
+118;EM-014;Nauka danas;Obrazovni;Terenska;35+;U produkciji;Programski elaborat emisije 14
+125;EM-015;Turistički vodič;Zabavni;Kombinovana;4-12;Arhivirana;Programski elaborat emisije 15
+132;EM-016;Humanitarni sat;Dokumentarni;Studijska;Opšta populacija;Aktivna;Programski elaborat emisije 16
+139;EM-017;Istorija Srbije;Dokumentarni;Terenska;18-49;Aktivna;Programski elaborat emisije 17
+146;EM-018;Filmski kutak;Zabavni;Kombinovana;25-54;Aktivna;Programski elaborat emisije 18
+153;EM-019;Vesti u podne;Informativni;Studijska;35+;U produkciji;Programski elaborat emisije 19
+160;EM-020;Veče sa gostom;Zabavni;Terenska;4-12;Arhivirana;Programski elaborat emisije 20

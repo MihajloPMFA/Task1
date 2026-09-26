@@ -1,0 +1,1958 @@
+{
+  "name": "TV_Panorama.SemanticModel",
+  "compatibilityLevel": 1550,
+  "model": {
+    "culture": "en-US",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "Kalendar",
+        "columns": [
+          {
+            "name": "Datum",
+            "dataType": "dateTime",
+            "sourceColumn": "Datum",
+            "summarizeBy": "none",
+            "isKey": true
+          },
+          {
+            "name": "Godina",
+            "dataType": "int64",
+            "sourceColumn": "Godina",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Kvartal",
+            "dataType": "string",
+            "sourceColumn": "Kvartal",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Mesec",
+            "dataType": "int64",
+            "sourceColumn": "Mesec",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "Naziv meseca",
+            "dataType": "string",
+            "sourceColumn": "Naziv meseca",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Godina-mesec",
+            "dataType": "string",
+            "sourceColumn": "Godina-mesec",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Dan",
+            "dataType": "int64",
+            "sourceColumn": "Dan",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "Naziv dana",
+            "dataType": "string",
+            "sourceColumn": "Naziv dana",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Kalendar",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Od = #date(2025, 1, 1),",
+                "    Do = #date(2028, 12, 31),",
+                "    Meseci = {\"januar\", \"februar\", \"mart\", \"april\", \"maj\", \"jun\", \"jul\",",
+                "        \"avgust\", \"septembar\", \"oktobar\", \"novembar\", \"decembar\"},",
+                "    ImenaDana = {\"ponedeljak\", \"utorak\", \"sreda\", \"četvrtak\", \"petak\",",
+                "        \"subota\", \"nedelja\"},",
+                "    Lista = List.Dates(Od, Duration.Days(Do - Od) + 1, #duration(1, 0, 0, 0)),",
+                "    Osnov = Table.TransformColumnTypes(",
+                "        Table.FromList(Lista, Splitter.SplitByNothing(), {\"Datum\"}),",
+                "        {{\"Datum\", type date}}),",
+                "    K1 = Table.AddColumn(Osnov, \"Godina\", each Date.Year([Datum]), Int64.Type),",
+                "    K2 = Table.AddColumn(K1, \"Kvartal\",",
+                "        each \"Q\" & Text.From(Date.QuarterOfYear([Datum])), type text),",
+                "    K3 = Table.AddColumn(K2, \"Mesec\", each Date.Month([Datum]), Int64.Type),",
+                "    K4 = Table.AddColumn(K3, \"Naziv meseca\",",
+                "        each Meseci{Date.Month([Datum]) - 1}, type text),",
+                "    K5 = Table.AddColumn(K4, \"Godina-mesec\",",
+                "        each Text.From(Date.Year([Datum])) & \"-\" &",
+                "            Text.PadStart(Text.From(Date.Month([Datum])), 2, \"0\"), type text),",
+                "    K6 = Table.AddColumn(K5, \"Dan\", each Date.Day([Datum]), Int64.Type),",
+                "    K7 = Table.AddColumn(K6, \"Naziv dana\",",
+                "        each ImenaDana{Date.DayOfWeek([Datum], Day.Monday)}, type text)",
+                "in",
+                "    K7"
+              ]
+            }
+          }
+        ],
+        "description": "Dimenzija datuma (2025-2028).",
+        "dataCategory": "Time"
+      },
+      {
+        "name": "Emisije",
+        "columns": [
+          {
+            "name": "Šifra emisije",
+            "dataType": "string",
+            "sourceColumn": "Šifra emisije",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Naziv emisije",
+            "dataType": "string",
+            "sourceColumn": "Naziv emisije",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Žanr",
+            "dataType": "string",
+            "sourceColumn": "Žanr",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Format emisije",
+            "dataType": "string",
+            "sourceColumn": "Format emisije",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Predviđeno trajanje",
+            "dataType": "int64",
+            "sourceColumn": "Predviđeno trajanje",
+            "summarizeBy": "sum",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Ciljna publika",
+            "dataType": "string",
+            "sourceColumn": "Ciljna publika",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Status emisije",
+            "dataType": "string",
+            "sourceColumn": "Status emisije",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Emisije",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Osnov = Tabela(\"EMISIJA\"),",
+                "    Odabir = Table.SelectColumns(Osnov, {\"SIFRA_EMISIJE\", \"NAZIV_EMISIJE\", \"ZANR\", \"FORMAT_EMISIJE\", \"PREDVIDJENO_TRAJANJE\", \"CILJNA_PUBLIKA\", \"STATUS_EMISIJE\"}),",
+                "    Izlaz = Table.RenameColumns(Odabir, {{\"SIFRA_EMISIJE\", \"Šifra emisije\"}, {\"NAZIV_EMISIJE\", \"Naziv emisije\"}, {\"ZANR\", \"Žanr\"}, {\"FORMAT_EMISIJE\", \"Format emisije\"}, {\"PREDVIDJENO_TRAJANJE\", \"Predviđeno trajanje\"}, {\"CILJNA_PUBLIKA\", \"Ciljna publika\"}, {\"STATUS_EMISIJE\", \"Status emisije\"}})",
+                "in",
+                "    Izlaz"
+              ]
+            }
+          }
+        ],
+        "description": "Dimenzija: emisije iz programske šeme."
+      },
+      {
+        "name": "Projekti",
+        "columns": [
+          {
+            "name": "Šifra projekta",
+            "dataType": "string",
+            "sourceColumn": "Šifra projekta",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Naziv projekta",
+            "dataType": "string",
+            "sourceColumn": "Naziv projekta",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Vrsta produkcije",
+            "dataType": "string",
+            "sourceColumn": "Vrsta produkcije",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Status projekta",
+            "dataType": "string",
+            "sourceColumn": "Status projekta",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Datum početka",
+            "dataType": "dateTime",
+            "sourceColumn": "Datum početka",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Datum završetka",
+            "dataType": "dateTime",
+            "sourceColumn": "Datum završetka",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Odobren budžet",
+            "dataType": "decimal",
+            "sourceColumn": "Odobren budžet",
+            "summarizeBy": "sum",
+            "formatString": "#,##0.00"
+          },
+          {
+            "name": "Urednik",
+            "dataType": "string",
+            "sourceColumn": "Urednik",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Emisija",
+            "dataType": "string",
+            "sourceColumn": "Emisija",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Opis projekta",
+            "dataType": "string",
+            "sourceColumn": "Opis projekta",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Projekti",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    P = Tabela(\"PROJEKAT_PRODUKCIJE\"),",
+                "    Z = Tabela(\"ZAPOSLENI\"),",
+                "    E = Tabela(\"EMISIJA\"),",
+                "    S1 = Table.NestedJoin(P, {\"SIFRA_UREDNIKA\"}, Z, {\"SIFRA_ZAPOSLENOG\"},",
+                "        \"z\", JoinKind.LeftOuter),",
+                "    S2 = Table.ExpandTableColumn(S1, \"z\", {\"IME\", \"PREZIME\"},",
+                "        {\"IME_U\", \"PREZIME_U\"}),",
+                "    S3 = Table.AddColumn(S2, \"UREDNIK\",",
+                "        each [PREZIME_U] & \" \" & [IME_U], type text),",
+                "    S4 = Table.NestedJoin(S3, {\"SIFRA_EMISIJE\"}, E, {\"SIFRA_EMISIJE\"},",
+                "        \"e\", JoinKind.LeftOuter),",
+                "    S5 = Table.ExpandTableColumn(S4, \"e\", {\"NAZIV_EMISIJE\"}),",
+                "    Odabir = Table.SelectColumns(S5, {\"SIFRA_PROJEKTA\", \"NAZIV_PROJEKTA\", \"VRSTA_PRODUKCIJE\", \"STATUS_PROJEKTA\", \"DATUM_POCETKA\", \"DATUM_ZAVRSETKA\", \"ODOBREN_BUDZET\", \"UREDNIK\", \"NAZIV_EMISIJE\", \"OPIS_PROJEKTA\"}),",
+                "    Izlaz = Table.RenameColumns(Odabir, {{\"SIFRA_PROJEKTA\", \"Šifra projekta\"}, {\"NAZIV_PROJEKTA\", \"Naziv projekta\"}, {\"VRSTA_PRODUKCIJE\", \"Vrsta produkcije\"}, {\"STATUS_PROJEKTA\", \"Status projekta\"}, {\"DATUM_POCETKA\", \"Datum početka\"}, {\"DATUM_ZAVRSETKA\", \"Datum završetka\"}, {\"ODOBREN_BUDZET\", \"Odobren budžet\"}, {\"UREDNIK\", \"Urednik\"}, {\"NAZIV_EMISIJE\", \"Emisija\"}, {\"OPIS_PROJEKTA\", \"Opis projekta\"}})",
+                "in",
+                "    Izlaz"
+              ]
+            }
+          }
+        ],
+        "description": "Dimenzija: projekti produkcije sa odobrenim budžetom.",
+        "measures": [
+          {
+            "name": "Odobren budžet (ukupno)",
+            "expression": [
+              "SUM(Projekti[Odobren budžet])"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "#,##0.00"
+          },
+          {
+            "name": "% iskorišćenja budžeta",
+            "expression": [
+              "DIVIDE([Ukupno troškova], [Odobren budžet (ukupno)])"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "0.0%"
+          }
+        ]
+      },
+      {
+        "name": "Ugovori",
+        "columns": [
+          {
+            "name": "Broj ugovora",
+            "dataType": "string",
+            "sourceColumn": "Broj ugovora",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Šifra oglašivača",
+            "dataType": "string",
+            "sourceColumn": "Šifra oglašivača",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Oglašivač",
+            "dataType": "string",
+            "sourceColumn": "Oglašivač",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PIB",
+            "dataType": "string",
+            "sourceColumn": "PIB",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Kontakt osoba",
+            "dataType": "string",
+            "sourceColumn": "Kontakt osoba",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Grad",
+            "dataType": "string",
+            "sourceColumn": "Grad",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Branša",
+            "dataType": "string",
+            "sourceColumn": "Branša",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Godišnji budžet",
+            "dataType": "decimal",
+            "sourceColumn": "Godišnji budžet",
+            "summarizeBy": "sum",
+            "formatString": "#,##0.00"
+          },
+          {
+            "name": "Datum sklapanja",
+            "dataType": "dateTime",
+            "sourceColumn": "Datum sklapanja",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Važi od",
+            "dataType": "dateTime",
+            "sourceColumn": "Važi od",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Važi do",
+            "dataType": "dateTime",
+            "sourceColumn": "Važi do",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Status ugovora",
+            "dataType": "string",
+            "sourceColumn": "Status ugovora",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Vrednost ugovora",
+            "dataType": "decimal",
+            "sourceColumn": "Vrednost ugovora",
+            "summarizeBy": "sum",
+            "formatString": "#,##0.00"
+          },
+          {
+            "name": "Ugovoreni termini",
+            "dataType": "string",
+            "sourceColumn": "Ugovoreni termini",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Fakturisano (iznos)",
+            "dataType": "decimal",
+            "sourceColumn": "Fakturisano (iznos)",
+            "summarizeBy": "sum",
+            "formatString": "#,##0.00"
+          },
+          {
+            "name": "Status fakture",
+            "dataType": "string",
+            "sourceColumn": "Status fakture",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Ugovori",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    U = Tabela(\"UGOVOR\"),",
+                "    UO = Tabela(\"UGOVOR_O_OGLASAVANJU\"),",
+                "    Kl = Tabela(\"KLIJENT\"),",
+                "    OG = Tabela(\"OGLASIVAC\"),",
+                "    F = Tabela(\"FAKTURA\"),",
+                "    S1 = Table.NestedJoin(U, {\"BROJ_UGOVORA\"}, UO, {\"BROJ_UGOVORA\"},",
+                "        \"uo\", JoinKind.Inner),",
+                "    S2 = Table.ExpandTableColumn(S1, \"uo\", {\"UGOVORENI_TERMINI\"}),",
+                "    S3 = Table.NestedJoin(S2, {\"SIFRA_KLIJENTA\"}, Kl, {\"SIFRA_KLIJENTA\"},",
+                "        \"k\", JoinKind.Inner),",
+                "    S4 = Table.ExpandTableColumn(S3, \"k\",",
+                "        {\"NAZIV_KLIJENTA\", \"PIB\", \"KONTAKT_OSOBA\", \"GRAD\"}),",
+                "    S5 = Table.NestedJoin(S4, {\"SIFRA_KLIJENTA\"}, OG, {\"SIFRA_KLIJENTA\"},",
+                "        \"og\", JoinKind.Inner),",
+                "    S6 = Table.ExpandTableColumn(S5, \"og\", {\"BRANSA\", \"GODISNJI_BUDZET\"}),",
+                "    Fak = Table.Group(Table.SelectRows(F, each [BROJ_UGOVORA] <> null),",
+                "        {\"BROJ_UGOVORA\"},",
+                "        {{\"FAKTURISANO\", each List.Sum([IZNOS_ZA_PLACANJE]), Currency.Type},",
+                "         {\"STATUS_FAKTURE\", each List.Min([STATUS_PLACANJA]), type text}}),",
+                "    S7 = Table.NestedJoin(S6, {\"BROJ_UGOVORA\"}, Fak, {\"BROJ_UGOVORA\"},",
+                "        \"f\", JoinKind.LeftOuter),",
+                "    S8 = Table.ExpandTableColumn(S7, \"f\",",
+                "        {\"FAKTURISANO\", \"STATUS_FAKTURE\"}),",
+                "    Odabir = Table.SelectColumns(S8, {\"BROJ_UGOVORA\", \"SIFRA_KLIJENTA\", \"NAZIV_KLIJENTA\", \"PIB\", \"KONTAKT_OSOBA\", \"GRAD\", \"BRANSA\", \"GODISNJI_BUDZET\", \"DATUM_SKLAPANJA\", \"VAZI_OD\", \"VAZI_DO\", \"STATUS_UGOVORA\", \"UKUPNA_VREDNOST\", \"UGOVORENI_TERMINI\", \"FAKTURISANO\", \"STATUS_FAKTURE\"}),",
+                "    Izlaz = Table.RenameColumns(Odabir, {{\"BROJ_UGOVORA\", \"Broj ugovora\"}, {\"SIFRA_KLIJENTA\", \"Šifra oglašivača\"}, {\"NAZIV_KLIJENTA\", \"Oglašivač\"}, {\"KONTAKT_OSOBA\", \"Kontakt osoba\"}, {\"GRAD\", \"Grad\"}, {\"BRANSA\", \"Branša\"}, {\"GODISNJI_BUDZET\", \"Godišnji budžet\"}, {\"DATUM_SKLAPANJA\", \"Datum sklapanja\"}, {\"VAZI_OD\", \"Važi od\"}, {\"VAZI_DO\", \"Važi do\"}, {\"STATUS_UGOVORA\", \"Status ugovora\"}, {\"UKUPNA_VREDNOST\", \"Vrednost ugovora\"}, {\"UGOVORENI_TERMINI\", \"Ugovoreni termini\"}, {\"FAKTURISANO\", \"Fakturisano (iznos)\"}, {\"STATUS_FAKTURE\", \"Status fakture\"}})",
+                "in",
+                "    Izlaz"
+              ]
+            }
+          }
+        ],
+        "description": "Dimenzija: ugovori o oglašavanju sa podacima o oglašivaču.",
+        "measures": [
+          {
+            "name": "Fakturisano",
+            "expression": [
+              "SUM(Ugovori[Fakturisano (iznos)])"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "#,##0.00"
+          },
+          {
+            "name": "Broj ugovora (broj)",
+            "expression": [
+              "DISTINCTCOUNT(Ugovori[Broj ugovora])"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Razlika sekundi",
+            "expression": [
+              "[Ugovoreno sekundi] - [Realizovano sekundi]"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "% realizacije sekundi",
+            "expression": [
+              "DIVIDE([Realizovano sekundi], [Ugovoreno sekundi])"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "0.0%"
+          },
+          {
+            "name": "% naplate",
+            "expression": [
+              "DIVIDE([Naplaćeno], [Ugovorena vrednost])"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "0.0%"
+          }
+        ]
+      },
+      {
+        "name": "Planovi",
+        "columns": [
+          {
+            "name": "Šifra plana",
+            "dataType": "string",
+            "sourceColumn": "Šifra plana",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Godina plana",
+            "dataType": "int64",
+            "sourceColumn": "Godina plana",
+            "summarizeBy": "none",
+            "formatString": "0"
+          },
+          {
+            "name": "Datum donošenja",
+            "dataType": "dateTime",
+            "sourceColumn": "Datum donošenja",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Status plana",
+            "dataType": "string",
+            "sourceColumn": "Status plana",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Donosilac plana",
+            "dataType": "string",
+            "sourceColumn": "Donosilac plana",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Vrednost plana",
+            "dataType": "decimal",
+            "sourceColumn": "Vrednost plana",
+            "summarizeBy": "sum",
+            "formatString": "#,##0.00"
+          },
+          {
+            "name": "Broj zahteva",
+            "dataType": "string",
+            "sourceColumn": "Broj zahteva",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Datum zahteva",
+            "dataType": "dateTime",
+            "sourceColumn": "Datum zahteva",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Status zahteva",
+            "dataType": "string",
+            "sourceColumn": "Status zahteva",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Prioritet",
+            "dataType": "string",
+            "sourceColumn": "Prioritet",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Planovi",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    P = Tabela(\"PLAN_NABAVKE\"),",
+                "    Z = Tabela(\"ZAHTEV_ZA_NABAVKU\"),",
+                "    Z1 = Table.SelectRows(Z, each [SIFRA_PLANA] <> null),",
+                "    Zg = Table.Group(Z1, {\"SIFRA_PLANA\"}, {{\"prvi\",",
+                "        each Table.FirstN(Table.Sort(_,",
+                "            {{\"BROJ_ZAHTEVA\", Order.Ascending}}), 1), type table}}),",
+                "    Ze = Table.ExpandTableColumn(Zg, \"prvi\",",
+                "        {\"BROJ_ZAHTEVA\", \"DATUM_ZAHTEVA\", \"STATUS_ZAHTEVA\", \"PRIORITET\"}),",
+                "    S1 = Table.NestedJoin(P, {\"SIFRA_PLANA\"}, Ze, {\"SIFRA_PLANA\"},",
+                "        \"z\", JoinKind.LeftOuter),",
+                "    S2 = Table.ExpandTableColumn(S1, \"z\",",
+                "        {\"BROJ_ZAHTEVA\", \"DATUM_ZAHTEVA\", \"STATUS_ZAHTEVA\", \"PRIORITET\"}),",
+                "    Odabir = Table.SelectColumns(S2, {\"SIFRA_PLANA\", \"GODINA_PLANA\", \"DATUM_DONOSENJA\", \"STATUS_PLANA\", \"DONOSILAC_PLANA\", \"UKUPNA_VREDNOST\", \"BROJ_ZAHTEVA\", \"DATUM_ZAHTEVA\", \"STATUS_ZAHTEVA\", \"PRIORITET\"}),",
+                "    Izlaz = Table.RenameColumns(Odabir, {{\"SIFRA_PLANA\", \"Šifra plana\"}, {\"GODINA_PLANA\", \"Godina plana\"}, {\"DATUM_DONOSENJA\", \"Datum donošenja\"}, {\"STATUS_PLANA\", \"Status plana\"}, {\"DONOSILAC_PLANA\", \"Donosilac plana\"}, {\"UKUPNA_VREDNOST\", \"Vrednost plana\"}, {\"BROJ_ZAHTEVA\", \"Broj zahteva\"}, {\"DATUM_ZAHTEVA\", \"Datum zahteva\"}, {\"STATUS_ZAHTEVA\", \"Status zahteva\"}, {\"PRIORITET\", \"Prioritet\"}})",
+                "in",
+                "    Izlaz"
+              ]
+            }
+          }
+        ],
+        "description": "Dimenzija: planovi nabavke sa povezanim zahtevom."
+      },
+      {
+        "name": "Dobavljaci",
+        "columns": [
+          {
+            "name": "Šifra dobavljača",
+            "dataType": "string",
+            "sourceColumn": "Šifra dobavljača",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Naziv dobavljača",
+            "dataType": "string",
+            "sourceColumn": "Naziv dobavljača",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PIB",
+            "dataType": "string",
+            "sourceColumn": "PIB",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Adresa",
+            "dataType": "string",
+            "sourceColumn": "Adresa",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Ocena dobavljača",
+            "dataType": "double",
+            "sourceColumn": "Ocena dobavljača",
+            "summarizeBy": "average",
+            "formatString": "0.00"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Dobavljaci",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Osnov = Tabela(\"DOBAVLJAC\"),",
+                "    Odabir = Table.SelectColumns(Osnov, {\"SIFRA_DOBAVLJACA\", \"NAZIV_DOBAVLJACA\", \"PIB\", \"ADRESA\", \"OCENA_DOBAVLJACA\"}),",
+                "    Izlaz = Table.RenameColumns(Odabir, {{\"SIFRA_DOBAVLJACA\", \"Šifra dobavljača\"}, {\"NAZIV_DOBAVLJACA\", \"Naziv dobavljača\"}, {\"ADRESA\", \"Adresa\"}, {\"OCENA_DOBAVLJACA\", \"Ocena dobavljača\"}})",
+                "in",
+                "    Izlaz"
+              ]
+            }
+          }
+        ],
+        "description": "Dimenzija: dobavljači koji su dostavili ponude."
+      },
+      {
+        "name": "Playout",
+        "columns": [
+          {
+            "name": "Datum",
+            "dataType": "dateTime",
+            "sourceColumn": "Datum",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Stvarno vreme početka",
+            "dataType": "dateTime",
+            "sourceColumn": "Stvarno vreme početka",
+            "summarizeBy": "none",
+            "formatString": "hh:nn:ss"
+          },
+          {
+            "name": "Šifra emisije",
+            "dataType": "string",
+            "sourceColumn": "Šifra emisije",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "Medijski sadržaj",
+            "dataType": "string",
+            "sourceColumn": "Medijski sadržaj",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Format zapisa",
+            "dataType": "string",
+            "sourceColumn": "Format zapisa",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Planirano trajanje",
+            "dataType": "int64",
+            "sourceColumn": "Planirano trajanje",
+            "summarizeBy": "sum",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Stvarno trajanje",
+            "dataType": "int64",
+            "sourceColumn": "Stvarno trajanje",
+            "summarizeBy": "sum",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Odstupanje",
+            "dataType": "int64",
+            "sourceColumn": "Odstupanje",
+            "summarizeBy": "sum",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Status realizacije",
+            "dataType": "string",
+            "sourceColumn": "Status realizacije",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Broj licence",
+            "dataType": "string",
+            "sourceColumn": "Broj licence",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Vrsta prava",
+            "dataType": "string",
+            "sourceColumn": "Vrsta prava",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Operater emitovanja",
+            "dataType": "string",
+            "sourceColumn": "Operater emitovanja",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Napomena o smetnjama",
+            "dataType": "string",
+            "sourceColumn": "Napomena o smetnjama",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Ima smetnju",
+            "dataType": "int64",
+            "sourceColumn": "Ima smetnju",
+            "summarizeBy": "sum",
+            "formatString": "#,##0",
+            "isHidden": true
+          },
+          {
+            "name": "Šifra termina",
+            "dataType": "string",
+            "sourceColumn": "Šifra termina",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Rb emitovanja",
+            "dataType": "int64",
+            "sourceColumn": "Rb emitovanja",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Tip termina",
+            "dataType": "string",
+            "sourceColumn": "Tip termina",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Zona gledanosti",
+            "dataType": "string",
+            "sourceColumn": "Zona gledanosti",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Playout",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    ZE = Tabela(\"ZAPIS_O_EMITOVANJU\"),",
+                "    TE = Tabela(\"TERMIN_EMITOVANJA\"),",
+                "    MS = Tabela(\"MEDIJSKI_SADRZAJ\"),",
+                "    PP = Tabela(\"POKRIVENOST_PRAVOM\"),",
+                "    PK = Tabela(\"PRAVO_KORISCENJA\"),",
+                "    S1 = Table.NestedJoin(ZE, {\"SIFRA_TERMINA\"}, TE, {\"SIFRA_TERMINA\"},",
+                "        \"te\", JoinKind.Inner),",
+                "    S2 = Table.ExpandTableColumn(S1, \"te\", {\"DATUM\", \"VREME_POCETKA\",",
+                "        \"TRAJANJE_TERMINA\", \"SIFRA_EMISIJE\", \"TIP_TERMINA\",",
+                "        \"ZONA_GLEDANOSTI\", \"STATUS_TERMINA\"}),",
+                "    S3 = Table.NestedJoin(S2, {\"SIFRA_SADRZAJA\"}, MS, {\"SIFRA_SADRZAJA\"},",
+                "        \"ms\", JoinKind.Inner),",
+                "    S4 = Table.ExpandTableColumn(S3, \"ms\",",
+                "        {\"NAZIV_SADRZAJA\", \"FORMAT_ZAPISA\"}),",
+                "    // jedno pravo po sadrzaju, da spajanje ne umnozi redove",
+                "    Pr1 = Table.NestedJoin(PP, {\"BROJ_LICENCE\"}, PK, {\"BROJ_LICENCE\"},",
+                "        \"pk\", JoinKind.Inner),",
+                "    Pr2 = Table.ExpandTableColumn(Pr1, \"pk\", {\"VRSTA_PRAVA\"}),",
+                "    Pr3 = Table.Group(Pr2, {\"SIFRA_SADRZAJA\"},",
+                "        {{\"BROJ_LICENCE\", each List.Min([BROJ_LICENCE]), type text},",
+                "         {\"VRSTA_PRAVA\", each List.Min([VRSTA_PRAVA]), type text}}),",
+                "    S5 = Table.NestedJoin(S4, {\"SIFRA_SADRZAJA\"}, Pr3, {\"SIFRA_SADRZAJA\"},",
+                "        \"pr\", JoinKind.LeftOuter),",
+                "    S6 = Table.ExpandTableColumn(S5, \"pr\",",
+                "        {\"BROJ_LICENCE\", \"VRSTA_PRAVA\"}),",
+                "    S7 = Table.AddColumn(S6, \"ODSTUPANJE\",",
+                "        each [STVARNO_TRAJANJE] - [TRAJANJE_TERMINA], Int64.Type),",
+                "    S8 = Table.AddColumn(S7, \"IMA_SMETNJU\",",
+                "        each if [NAPOMENA_O_SMETNJAMA] = null",
+                "            or [NAPOMENA_O_SMETNJAMA] = \"\" then 0 else 1, Int64.Type),",
+                "    Odabir = Table.SelectColumns(S8, {\"DATUM\", \"STVARNO_VREME_POCETKA\", \"SIFRA_EMISIJE\", \"NAZIV_SADRZAJA\", \"FORMAT_ZAPISA\", \"TRAJANJE_TERMINA\", \"STVARNO_TRAJANJE\", \"ODSTUPANJE\", \"STATUS_REALIZACIJE\", \"BROJ_LICENCE\", \"VRSTA_PRAVA\", \"OPERATER_EMITOVANJA\", \"NAPOMENA_O_SMETNJAMA\", \"IMA_SMETNJU\", \"SIFRA_TERMINA\", \"RB_EMITOVANJA\", \"TIP_TERMINA\", \"ZONA_GLEDANOSTI\"}),",
+                "    Izlaz = Table.RenameColumns(Odabir, {{\"DATUM\", \"Datum\"}, {\"STVARNO_VREME_POCETKA\", \"Stvarno vreme početka\"}, {\"SIFRA_EMISIJE\", \"Šifra emisije\"}, {\"NAZIV_SADRZAJA\", \"Medijski sadržaj\"}, {\"FORMAT_ZAPISA\", \"Format zapisa\"}, {\"TRAJANJE_TERMINA\", \"Planirano trajanje\"}, {\"STVARNO_TRAJANJE\", \"Stvarno trajanje\"}, {\"ODSTUPANJE\", \"Odstupanje\"}, {\"STATUS_REALIZACIJE\", \"Status realizacije\"}, {\"BROJ_LICENCE\", \"Broj licence\"}, {\"VRSTA_PRAVA\", \"Vrsta prava\"}, {\"OPERATER_EMITOVANJA\", \"Operater emitovanja\"}, {\"NAPOMENA_O_SMETNJAMA\", \"Napomena o smetnjama\"}, {\"IMA_SMETNJU\", \"Ima smetnju\"}, {\"SIFRA_TERMINA\", \"Šifra termina\"}, {\"RB_EMITOVANJA\", \"Rb emitovanja\"}, {\"TIP_TERMINA\", \"Tip termina\"}, {\"ZONA_GLEDANOSTI\", \"Zona gledanosti\"}})",
+                "in",
+                "    Izlaz"
+              ]
+            }
+          }
+        ],
+        "description": "Izveštaj 2: evidencija stvarno emitovanog sadržaja.",
+        "measures": [
+          {
+            "name": "Broj emitovanja",
+            "expression": [
+              "COUNTROWS(Playout)"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Stvarno trajanje (min)",
+            "expression": [
+              "SUM(Playout[Stvarno trajanje])"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Planirano trajanje (min)",
+            "expression": [
+              "SUM(Playout[Planirano trajanje])"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Odstupanje (min)",
+            "expression": [
+              "SUM(Playout[Odstupanje])"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Emitovanja sa smetnjama",
+            "expression": [
+              "SUM(Playout[Ima smetnju])"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "% realizovanih",
+            "expression": [
+              "DIVIDE(",
+              "    CALCULATE(COUNTROWS(Playout), Playout[Status realizacije] = \"Realizovano\"),",
+              "    COUNTROWS(Playout)",
+              ")"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "0.0%"
+          }
+        ]
+      },
+      {
+        "name": "Gledanost",
+        "columns": [
+          {
+            "name": "Šifra merenja",
+            "dataType": "string",
+            "sourceColumn": "Šifra merenja",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Šifra emisije",
+            "dataType": "string",
+            "sourceColumn": "Šifra emisije",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "Datum merenja",
+            "dataType": "dateTime",
+            "sourceColumn": "Datum merenja",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Izvor merenja",
+            "dataType": "string",
+            "sourceColumn": "Izvor merenja",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Ciljna grupa",
+            "dataType": "string",
+            "sourceColumn": "Ciljna grupa",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Ostvareni rejting",
+            "dataType": "double",
+            "sourceColumn": "Ostvareni rejting",
+            "summarizeBy": "average",
+            "formatString": "0.00"
+          },
+          {
+            "name": "Udeo u terminu",
+            "dataType": "double",
+            "sourceColumn": "Udeo u terminu",
+            "summarizeBy": "average",
+            "formatString": "0.00"
+          },
+          {
+            "name": "Broj gledalaca",
+            "dataType": "int64",
+            "sourceColumn": "Broj gledalaca",
+            "summarizeBy": "sum",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Prosečno gledanje",
+            "dataType": "int64",
+            "sourceColumn": "Prosečno gledanje",
+            "summarizeBy": "average",
+            "formatString": "0.0"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Gledanost",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    ME = Tabela(\"MERENJE_EMISIJE\"),",
+                "    MG = Tabela(\"MERENJE_GLEDANOSTI\"),",
+                "    S1 = Table.NestedJoin(ME, {\"SIFRA_MERENJA\"}, MG, {\"SIFRA_MERENJA\"},",
+                "        \"mg\", JoinKind.Inner),",
+                "    S2 = Table.ExpandTableColumn(S1, \"mg\", {\"DATUM_MERENJA\",",
+                "        \"IZVOR_MERENJA\", \"CILJNA_GRUPA\", \"BROJ_GLEDALACA\",",
+                "        \"PROSECNO_GLEDANJE\"}),",
+                "    Odabir = Table.SelectColumns(S2, {\"SIFRA_MERENJA\", \"SIFRA_EMISIJE\", \"DATUM_MERENJA\", \"IZVOR_MERENJA\", \"CILJNA_GRUPA\", \"OSTVARENI_RATING\", \"UDEO_U_TERMINU\", \"BROJ_GLEDALACA\", \"PROSECNO_GLEDANJE\"}),",
+                "    Izlaz = Table.RenameColumns(Odabir, {{\"SIFRA_MERENJA\", \"Šifra merenja\"}, {\"SIFRA_EMISIJE\", \"Šifra emisije\"}, {\"DATUM_MERENJA\", \"Datum merenja\"}, {\"IZVOR_MERENJA\", \"Izvor merenja\"}, {\"CILJNA_GRUPA\", \"Ciljna grupa\"}, {\"OSTVARENI_RATING\", \"Ostvareni rejting\"}, {\"UDEO_U_TERMINU\", \"Udeo u terminu\"}, {\"BROJ_GLEDALACA\", \"Broj gledalaca\"}, {\"PROSECNO_GLEDANJE\", \"Prosečno gledanje\"}})",
+                "in",
+                "    Izlaz"
+              ]
+            }
+          }
+        ],
+        "description": "Izveštaj 3: merenja gledanosti po emisiji i žanru.",
+        "measures": [
+          {
+            "name": "Broj merenja",
+            "expression": [
+              "COUNTROWS(Gledanost)"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Prosečan rejting",
+            "expression": [
+              "AVERAGE(Gledanost[Ostvareni rejting])"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "0.00"
+          },
+          {
+            "name": "Prosečan udeo",
+            "expression": [
+              "AVERAGE(Gledanost[Udeo u terminu])"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "0.00"
+          },
+          {
+            "name": "Prosečno gledalaca",
+            "expression": [
+              "AVERAGE(Gledanost[Broj gledalaca])"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Prosečno gledanje (min)",
+            "expression": [
+              "AVERAGE(Gledanost[Prosečno gledanje])"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "0.0"
+          }
+        ]
+      },
+      {
+        "name": "Troskovi",
+        "columns": [
+          {
+            "name": "Šifra projekta",
+            "dataType": "string",
+            "sourceColumn": "Šifra projekta",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "Rb aktivnosti",
+            "dataType": "int64",
+            "sourceColumn": "Rb aktivnosti",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Aktivnost",
+            "dataType": "string",
+            "sourceColumn": "Aktivnost",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Vrsta aktivnosti",
+            "dataType": "string",
+            "sourceColumn": "Vrsta aktivnosti",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Lokacija snimanja",
+            "dataType": "string",
+            "sourceColumn": "Lokacija snimanja",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Status aktivnosti",
+            "dataType": "string",
+            "sourceColumn": "Status aktivnosti",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Aktivnost od",
+            "dataType": "dateTime",
+            "sourceColumn": "Aktivnost od",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Aktivnost do",
+            "dataType": "dateTime",
+            "sourceColumn": "Aktivnost do",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Rb troška",
+            "dataType": "int64",
+            "sourceColumn": "Rb troška",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Vrsta troška",
+            "dataType": "string",
+            "sourceColumn": "Vrsta troška",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Opis troška",
+            "dataType": "string",
+            "sourceColumn": "Opis troška",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Datum nastanka",
+            "dataType": "dateTime",
+            "sourceColumn": "Datum nastanka",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Iznos",
+            "dataType": "decimal",
+            "sourceColumn": "Iznos",
+            "summarizeBy": "sum",
+            "formatString": "#,##0.00"
+          },
+          {
+            "name": "Broj fakture",
+            "dataType": "string",
+            "sourceColumn": "Broj fakture",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Status plaćanja",
+            "dataType": "string",
+            "sourceColumn": "Status plaćanja",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Ključ aktivnosti",
+            "dataType": "string",
+            "sourceColumn": "Ključ aktivnosti",
+            "summarizeBy": "none",
+            "isHidden": true
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Troskovi",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    TP = Tabela(\"TROSAK_PRODUKCIJE\"),",
+                "    AP = Tabela(\"AKTIVNOST_PRODUKCIJE\"),",
+                "    F = Tabela(\"FAKTURA\"),",
+                "    S1 = Table.NestedJoin(TP, {\"SIFRA_PROJEKTA\", \"RB_AKTIVNOSTI\"}, AP,",
+                "        {\"SIFRA_PROJEKTA\", \"RB_AKTIVNOSTI\"}, \"ap\", JoinKind.Inner),",
+                "    S2 = Table.ExpandTableColumn(S1, \"ap\", {\"NAZIV_AKTIVNOSTI\",",
+                "        \"VRSTA_AKTIVNOSTI\", \"LOKACIJA_SNIMANJA\", \"STATUS_AKTIVNOSTI\",",
+                "        \"DATUM_OD\", \"DATUM_DO\"}),",
+                "    S3 = Table.NestedJoin(S2, {\"BROJ_FAKTURE\"}, F, {\"BROJ_FAKTURE\"},",
+                "        \"f\", JoinKind.LeftOuter),",
+                "    S4 = Table.ExpandTableColumn(S3, \"f\", {\"STATUS_PLACANJA\"}),",
+                "    S5 = Table.AddColumn(S4, \"KLJUC_AKTIVNOSTI\",",
+                "        each [SIFRA_PROJEKTA] & \"-\" &",
+                "            Text.PadStart(Text.From([RB_AKTIVNOSTI]), 3, \"0\"), type text),",
+                "    Odabir = Table.SelectColumns(S5, {\"SIFRA_PROJEKTA\", \"RB_AKTIVNOSTI\", \"NAZIV_AKTIVNOSTI\", \"VRSTA_AKTIVNOSTI\", \"LOKACIJA_SNIMANJA\", \"STATUS_AKTIVNOSTI\", \"DATUM_OD\", \"DATUM_DO\", \"RB_TROSKA\", \"VRSTA_TROSKA\", \"OPIS_TROSKA\", \"DATUM_NASTANKA\", \"IZNOS\", \"BROJ_FAKTURE\", \"STATUS_PLACANJA\", \"KLJUC_AKTIVNOSTI\"}),",
+                "    Izlaz = Table.RenameColumns(Odabir, {{\"SIFRA_PROJEKTA\", \"Šifra projekta\"}, {\"RB_AKTIVNOSTI\", \"Rb aktivnosti\"}, {\"NAZIV_AKTIVNOSTI\", \"Aktivnost\"}, {\"VRSTA_AKTIVNOSTI\", \"Vrsta aktivnosti\"}, {\"LOKACIJA_SNIMANJA\", \"Lokacija snimanja\"}, {\"STATUS_AKTIVNOSTI\", \"Status aktivnosti\"}, {\"DATUM_OD\", \"Aktivnost od\"}, {\"DATUM_DO\", \"Aktivnost do\"}, {\"RB_TROSKA\", \"Rb troška\"}, {\"VRSTA_TROSKA\", \"Vrsta troška\"}, {\"OPIS_TROSKA\", \"Opis troška\"}, {\"DATUM_NASTANKA\", \"Datum nastanka\"}, {\"IZNOS\", \"Iznos\"}, {\"BROJ_FAKTURE\", \"Broj fakture\"}, {\"STATUS_PLACANJA\", \"Status plaćanja\"}, {\"KLJUC_AKTIVNOSTI\", \"Ključ aktivnosti\"}})",
+                "in",
+                "    Izlaz"
+              ]
+            }
+          }
+        ],
+        "description": "Izveštaj 4: troškovi po aktivnostima projekata produkcije.",
+        "measures": [
+          {
+            "name": "Ukupno troškova",
+            "expression": [
+              "SUM(Troskovi[Iznos])"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "#,##0.00"
+          },
+          {
+            "name": "Broj troškova",
+            "expression": [
+              "COUNTROWS(Troskovi)"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Broj aktivnosti",
+            "expression": [
+              "DISTINCTCOUNT(Troskovi[Ključ aktivnosti])"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Prosečan trošak",
+            "expression": [
+              "AVERAGE(Troskovi[Iznos])"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "#,##0.00"
+          }
+        ]
+      },
+      {
+        "name": "StavkeUgovora",
+        "columns": [
+          {
+            "name": "Broj ugovora",
+            "dataType": "string",
+            "sourceColumn": "Broj ugovora",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "Rb stavke",
+            "dataType": "int64",
+            "sourceColumn": "Rb stavke",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Opis stavke",
+            "dataType": "string",
+            "sourceColumn": "Opis stavke",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Ugovoreno sekundi",
+            "dataType": "int64",
+            "sourceColumn": "Ugovoreno sekundi",
+            "summarizeBy": "sum",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Jedinična cena",
+            "dataType": "decimal",
+            "sourceColumn": "Jedinična cena",
+            "summarizeBy": "sum",
+            "formatString": "#,##0.00"
+          },
+          {
+            "name": "Popust (%)",
+            "dataType": "double",
+            "sourceColumn": "Popust (%)",
+            "summarizeBy": "average",
+            "formatString": "0.0"
+          },
+          {
+            "name": "Vrednost stavke",
+            "dataType": "decimal",
+            "sourceColumn": "Vrednost stavke",
+            "summarizeBy": "sum",
+            "formatString": "#,##0.00"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "StavkeUgovora",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    SU = Tabela(\"STAVKA_UGOVORA\"),",
+                "    UO = Tabela(\"UGOVOR_O_OGLASAVANJU\"),",
+                "    S1 = Table.NestedJoin(SU, {\"BROJ_UGOVORA\"}, UO, {\"BROJ_UGOVORA\"},",
+                "        \"uo\", JoinKind.Inner),",
+                "    Odabir = Table.SelectColumns(S1, {\"BROJ_UGOVORA\", \"RB_STAVKE\", \"OPIS_STAVKE\", \"KOLICINA_SEKUNDE\", \"JEDINICNA_CENA\", \"POPUST\", \"VREDNOST_STAVKE\"}),",
+                "    Izlaz = Table.RenameColumns(Odabir, {{\"BROJ_UGOVORA\", \"Broj ugovora\"}, {\"RB_STAVKE\", \"Rb stavke\"}, {\"OPIS_STAVKE\", \"Opis stavke\"}, {\"KOLICINA_SEKUNDE\", \"Ugovoreno sekundi\"}, {\"JEDINICNA_CENA\", \"Jedinična cena\"}, {\"POPUST\", \"Popust (%)\"}, {\"VREDNOST_STAVKE\", \"Vrednost stavke\"}})",
+                "in",
+                "    Izlaz"
+              ]
+            }
+          }
+        ],
+        "description": "Izveštaj 6: ugovorene stavke (sekunde i vrednost).",
+        "measures": [
+          {
+            "name": "Ugovoreno sekundi",
+            "expression": [
+              "SUM(StavkeUgovora[Ugovoreno sekundi])"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Ugovorena vrednost",
+            "expression": [
+              "SUM(StavkeUgovora[Vrednost stavke])"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "#,##0.00"
+          },
+          {
+            "name": "Broj stavki ugovora",
+            "expression": [
+              "COUNTROWS(StavkeUgovora)"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "#,##0"
+          }
+        ]
+      },
+      {
+        "name": "EmitovanjaReklama",
+        "columns": [
+          {
+            "name": "Broj ugovora",
+            "dataType": "string",
+            "sourceColumn": "Broj ugovora",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "Rb stavke ugovora",
+            "dataType": "int64",
+            "sourceColumn": "Rb stavke ugovora",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Datum emitovanja",
+            "dataType": "dateTime",
+            "sourceColumn": "Datum emitovanja",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Vreme emitovanja",
+            "dataType": "dateTime",
+            "sourceColumn": "Vreme emitovanja",
+            "summarizeBy": "none",
+            "formatString": "hh:nn:ss"
+          },
+          {
+            "name": "Reklamni blok",
+            "dataType": "string",
+            "sourceColumn": "Reklamni blok",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Rb u bloku",
+            "dataType": "int64",
+            "sourceColumn": "Rb u bloku",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Termin",
+            "dataType": "string",
+            "sourceColumn": "Termin",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Zona",
+            "dataType": "string",
+            "sourceColumn": "Zona",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Cena po sekundi",
+            "dataType": "decimal",
+            "sourceColumn": "Cena po sekundi",
+            "summarizeBy": "sum",
+            "formatString": "#,##0.00"
+          },
+          {
+            "name": "Trajanje spota",
+            "dataType": "int64",
+            "sourceColumn": "Trajanje spota",
+            "summarizeBy": "sum",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Naplaćeni iznos",
+            "dataType": "decimal",
+            "sourceColumn": "Naplaćeni iznos",
+            "summarizeBy": "sum",
+            "formatString": "#,##0.00"
+          },
+          {
+            "name": "Status naplate",
+            "dataType": "string",
+            "sourceColumn": "Status naplate",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "EmitovanjaReklama",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    ER = Tabela(\"EMITOVANJE_REKLAME\"),",
+                "    RB = Tabela(\"REKLAMNI_BLOK\"),",
+                "    CN = Tabela(\"CENOVNIK_REKL_TERMINA\"),",
+                "    S1 = Table.NestedJoin(ER, {\"SIFRA_BLOKA\"}, RB, {\"SIFRA_BLOKA\"},",
+                "        \"rb\", JoinKind.LeftOuter),",
+                "    S2 = Table.ExpandTableColumn(S1, \"rb\",",
+                "        {\"SIFRA_TERMINA\", \"SIFRA_CENOVNIKA\"}),",
+                "    S3 = Table.NestedJoin(S2, {\"SIFRA_CENOVNIKA\"}, CN, {\"SIFRA_CENOVNIKA\"},",
+                "        \"cn\", JoinKind.LeftOuter),",
+                "    S4 = Table.ExpandTableColumn(S3, \"cn\", {\"ZONA\", \"CENA_PO_SEKUNDI\"}),",
+                "    Odabir = Table.SelectColumns(S4, {\"BROJ_UGOVORA\", \"RB_STAVKE_UGOVORA\", \"DATUM_EMITOVANJA\", \"VREME_EMITOVANJA\", \"SIFRA_BLOKA\", \"RB_U_BLOKU\", \"SIFRA_TERMINA\", \"ZONA\", \"CENA_PO_SEKUNDI\", \"TRAJANJE_SPOTA\", \"NAPLACENI_IZNOS\", \"STATUS_NAPLATE\"}),",
+                "    Izlaz = Table.RenameColumns(Odabir, {{\"BROJ_UGOVORA\", \"Broj ugovora\"}, {\"RB_STAVKE_UGOVORA\", \"Rb stavke ugovora\"}, {\"DATUM_EMITOVANJA\", \"Datum emitovanja\"}, {\"VREME_EMITOVANJA\", \"Vreme emitovanja\"}, {\"SIFRA_BLOKA\", \"Reklamni blok\"}, {\"RB_U_BLOKU\", \"Rb u bloku\"}, {\"SIFRA_TERMINA\", \"Termin\"}, {\"ZONA\", \"Zona\"}, {\"CENA_PO_SEKUNDI\", \"Cena po sekundi\"}, {\"TRAJANJE_SPOTA\", \"Trajanje spota\"}, {\"NAPLACENI_IZNOS\", \"Naplaćeni iznos\"}, {\"STATUS_NAPLATE\", \"Status naplate\"}})",
+                "in",
+                "    Izlaz"
+              ]
+            }
+          }
+        ],
+        "description": "Izveštaj 6: stvarno emitovani reklamni spotovi.",
+        "measures": [
+          {
+            "name": "Realizovano sekundi",
+            "expression": [
+              "SUM(EmitovanjaReklama[Trajanje spota])"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Naplaćeno",
+            "expression": [
+              "SUM(EmitovanjaReklama[Naplaćeni iznos])"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "#,##0.00"
+          },
+          {
+            "name": "Broj spotova",
+            "expression": [
+              "COUNTROWS(EmitovanjaReklama)"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "#,##0"
+          }
+        ]
+      },
+      {
+        "name": "StavkePlana",
+        "columns": [
+          {
+            "name": "Šifra plana",
+            "dataType": "string",
+            "sourceColumn": "Šifra plana",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "Rb stavke",
+            "dataType": "int64",
+            "sourceColumn": "Rb stavke",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Opis artikla",
+            "dataType": "string",
+            "sourceColumn": "Opis artikla",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Količina",
+            "dataType": "int64",
+            "sourceColumn": "Količina",
+            "summarizeBy": "sum",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Jedinica mere",
+            "dataType": "string",
+            "sourceColumn": "Jedinica mere",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Procenjena cena",
+            "dataType": "decimal",
+            "sourceColumn": "Procenjena cena",
+            "summarizeBy": "sum",
+            "formatString": "#,##0.00"
+          },
+          {
+            "name": "Planirani kvartal",
+            "dataType": "string",
+            "sourceColumn": "Planirani kvartal",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Izabrana ponuda",
+            "dataType": "string",
+            "sourceColumn": "Izabrana ponuda",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Ponuđena cena",
+            "dataType": "decimal",
+            "sourceColumn": "Ponuđena cena",
+            "summarizeBy": "sum",
+            "formatString": "#,##0.00"
+          },
+          {
+            "name": "Izabrani dobavljač",
+            "dataType": "string",
+            "sourceColumn": "Izabrani dobavljač",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Broj narudžbenice",
+            "dataType": "string",
+            "sourceColumn": "Broj narudžbenice",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Iznos narudžbenice",
+            "dataType": "decimal",
+            "sourceColumn": "Iznos narudžbenice",
+            "summarizeBy": "sum",
+            "formatString": "#,##0.00"
+          },
+          {
+            "name": "Odstupanje",
+            "dataType": "decimal",
+            "sourceColumn": "Odstupanje",
+            "summarizeBy": "sum",
+            "formatString": "#,##0.00"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "StavkePlana",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    SP = Tabela(\"STAVKA_PLANA_NABAVKE\"),",
+                "    PS = Tabela(\"PONUDJENA_STAVKA\"),",
+                "    PD = Tabela(\"PONUDA_DOBAVLJACA\"),",
+                "    Db = Tabela(\"DOBAVLJAC\"),",
+                "    Nr = Tabela(\"NARUDZBENICA\"),",
+                "    // izabrana ponuda po stavci plana",
+                "    I1 = Table.NestedJoin(PS, {\"BROJ_PONUDE\"}, PD, {\"BROJ_PONUDE\"},",
+                "        \"pd\", JoinKind.Inner),",
+                "    I2 = Table.ExpandTableColumn(I1, \"pd\",",
+                "        {\"SIFRA_DOBAVLJACA\", \"STATUS_PONUDE\"}),",
+                "    I3 = Table.SelectRows(I2, each [STATUS_PONUDE] = \"Izabrana\"),",
+                "    I4 = Table.Group(I3, {\"SIFRA_PLANA\", \"RB_STAVKE\"},",
+                "        {{\"BROJ_PONUDE\", each List.Min([BROJ_PONUDE]), type text},",
+                "         {\"SIFRA_DOBAVLJACA\", each List.Min([SIFRA_DOBAVLJACA]), type text},",
+                "         {\"PONUDJENA_CENA\", each List.Min([PONUDJENA_CENA]),",
+                "          Currency.Type}}),",
+                "    // narudzbenice po dobavljacu",
+                "    N1 = Table.Group(Nr, {\"SIFRA_DOBAVLJACA\"},",
+                "        {{\"BROJ_NARUDZBENICE\", each List.Min([BROJ_NARUDZBENICE]),",
+                "          type text},",
+                "         {\"IZNOS_NARUDZBENICA\", each List.Sum([UKUPAN_IZNOS]),",
+                "          Currency.Type}}),",
+                "    S1 = Table.NestedJoin(SP, {\"SIFRA_PLANA\", \"RB_STAVKE\"}, I4,",
+                "        {\"SIFRA_PLANA\", \"RB_STAVKE\"}, \"iz\", JoinKind.LeftOuter),",
+                "    S2 = Table.ExpandTableColumn(S1, \"iz\",",
+                "        {\"BROJ_PONUDE\", \"SIFRA_DOBAVLJACA\", \"PONUDJENA_CENA\"}),",
+                "    S3 = Table.NestedJoin(S2, {\"SIFRA_DOBAVLJACA\"}, Db,",
+                "        {\"SIFRA_DOBAVLJACA\"}, \"d\", JoinKind.LeftOuter),",
+                "    S4 = Table.ExpandTableColumn(S3, \"d\", {\"NAZIV_DOBAVLJACA\"}),",
+                "    S5 = Table.NestedJoin(S4, {\"SIFRA_DOBAVLJACA\"}, N1,",
+                "        {\"SIFRA_DOBAVLJACA\"}, \"n\", JoinKind.LeftOuter),",
+                "    S6 = Table.ExpandTableColumn(S5, \"n\",",
+                "        {\"BROJ_NARUDZBENICE\", \"IZNOS_NARUDZBENICA\"}),",
+                "    S7 = Table.AddColumn(S6, \"ODSTUPANJE\",",
+                "        each (if [IZNOS_NARUDZBENICA] = null then 0",
+                "            else [IZNOS_NARUDZBENICA])",
+                "            - (if [PROCENJENA_CENA] = null then 0",
+                "            else [PROCENJENA_CENA]), Currency.Type),",
+                "    Odabir = Table.SelectColumns(S7, {\"SIFRA_PLANA\", \"RB_STAVKE\", \"OPIS_ARTIKLA\", \"KOLICINA\", \"JEDINICA_MERE\", \"PROCENJENA_CENA\", \"PLANIRANI_KVARTAL\", \"BROJ_PONUDE\", \"PONUDJENA_CENA\", \"NAZIV_DOBAVLJACA\", \"BROJ_NARUDZBENICE\", \"IZNOS_NARUDZBENICA\", \"ODSTUPANJE\"}),",
+                "    Izlaz = Table.RenameColumns(Odabir, {{\"SIFRA_PLANA\", \"Šifra plana\"}, {\"RB_STAVKE\", \"Rb stavke\"}, {\"OPIS_ARTIKLA\", \"Opis artikla\"}, {\"KOLICINA\", \"Količina\"}, {\"JEDINICA_MERE\", \"Jedinica mere\"}, {\"PROCENJENA_CENA\", \"Procenjena cena\"}, {\"PLANIRANI_KVARTAL\", \"Planirani kvartal\"}, {\"BROJ_PONUDE\", \"Izabrana ponuda\"}, {\"PONUDJENA_CENA\", \"Ponuđena cena\"}, {\"NAZIV_DOBAVLJACA\", \"Izabrani dobavljač\"}, {\"BROJ_NARUDZBENICE\", \"Broj narudžbenice\"}, {\"IZNOS_NARUDZBENICA\", \"Iznos narudžbenice\"}, {\"ODSTUPANJE\", \"Odstupanje\"}})",
+                "in",
+                "    Izlaz"
+              ]
+            }
+          }
+        ],
+        "description": "Izveštaj 7: stavke plana nabavke i njihova realizacija.",
+        "measures": [
+          {
+            "name": "Ukupno planirano",
+            "expression": [
+              "SUM(StavkePlana[Procenjena cena])"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "#,##0.00"
+          },
+          {
+            "name": "Ukupno naručeno",
+            "expression": [
+              "SUM(StavkePlana[Iznos narudžbenice])"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "#,##0.00"
+          },
+          {
+            "name": "Odstupanje nabavke",
+            "expression": [
+              "[Ukupno naručeno] - [Ukupno planirano]"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "#,##0.00"
+          },
+          {
+            "name": "% izvršenja plana",
+            "expression": [
+              "DIVIDE([Ukupno naručeno], [Ukupno planirano])"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "0.0%"
+          },
+          {
+            "name": "Broj stavki plana",
+            "expression": [
+              "COUNTROWS(StavkePlana)"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "#,##0"
+          }
+        ]
+      },
+      {
+        "name": "VrednovanjePonuda",
+        "columns": [
+          {
+            "name": "Šifra plana",
+            "dataType": "string",
+            "sourceColumn": "Šifra plana",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "Rb stavke",
+            "dataType": "int64",
+            "sourceColumn": "Rb stavke",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Broj ponude",
+            "dataType": "string",
+            "sourceColumn": "Broj ponude",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Šifra dobavljača",
+            "dataType": "string",
+            "sourceColumn": "Šifra dobavljača",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "Dobavljač",
+            "dataType": "string",
+            "sourceColumn": "Dobavljač",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Datum prijema",
+            "dataType": "dateTime",
+            "sourceColumn": "Datum prijema",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Ukupna cena ponude",
+            "dataType": "decimal",
+            "sourceColumn": "Ukupna cena ponude",
+            "summarizeBy": "sum",
+            "formatString": "#,##0.00"
+          },
+          {
+            "name": "Ponuđena cena za stavku",
+            "dataType": "decimal",
+            "sourceColumn": "Ponuđena cena za stavku",
+            "summarizeBy": "sum",
+            "formatString": "#,##0.00"
+          },
+          {
+            "name": "Rok isporuke",
+            "dataType": "dateTime",
+            "sourceColumn": "Rok isporuke",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Uslovi plaćanja",
+            "dataType": "string",
+            "sourceColumn": "Uslovi plaćanja",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Ukupno bodova",
+            "dataType": "double",
+            "sourceColumn": "Ukupno bodova",
+            "summarizeBy": "sum",
+            "formatString": "0.00"
+          },
+          {
+            "name": "Status ponude",
+            "dataType": "string",
+            "sourceColumn": "Status ponude",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Kriterijum",
+            "dataType": "string",
+            "sourceColumn": "Kriterijum",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Način bodovanja",
+            "dataType": "string",
+            "sourceColumn": "Način bodovanja",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Bodovi",
+            "dataType": "double",
+            "sourceColumn": "Bodovi",
+            "summarizeBy": "sum",
+            "formatString": "0.00"
+          },
+          {
+            "name": "Komentar ocene",
+            "dataType": "string",
+            "sourceColumn": "Komentar ocene",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "VrednovanjePonuda",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    PS = Tabela(\"PONUDJENA_STAVKA\"),",
+                "    PD = Tabela(\"PONUDA_DOBAVLJACA\"),",
+                "    Db = Tabela(\"DOBAVLJAC\"),",
+                "    OP = Tabela(\"OCENA_PONUDE\"),",
+                "    KV = Tabela(\"KRITERIJUM_VREDNOVANJA\"),",
+                "    S1 = Table.NestedJoin(PS, {\"BROJ_PONUDE\"}, PD, {\"BROJ_PONUDE\"},",
+                "        \"pd\", JoinKind.Inner),",
+                "    S2 = Table.ExpandTableColumn(S1, \"pd\", {\"SIFRA_DOBAVLJACA\",",
+                "        \"DATUM_PRIJEMA\", \"UKUPNA_CENA\", \"ROK_ISPORUKE\",",
+                "        \"USLOVI_PLACANJA\", \"UKUPNO_BODOVA\", \"STATUS_PONUDE\"}),",
+                "    S3 = Table.NestedJoin(S2, {\"SIFRA_DOBAVLJACA\"}, Db,",
+                "        {\"SIFRA_DOBAVLJACA\"}, \"d\", JoinKind.Inner),",
+                "    S4 = Table.ExpandTableColumn(S3, \"d\", {\"NAZIV_DOBAVLJACA\"}),",
+                "    S5 = Table.NestedJoin(S4, {\"BROJ_PONUDE\"}, OP, {\"BROJ_PONUDE\"},",
+                "        \"op\", JoinKind.LeftOuter),",
+                "    S6 = Table.ExpandTableColumn(S5, \"op\",",
+                "        {\"SIFRA_KRITERIJUMA\", \"BROJ_BODOVA\", \"KOMENTAR_OCENE\"}),",
+                "    S7 = Table.NestedJoin(S6, {\"SIFRA_KRITERIJUMA\"}, KV,",
+                "        {\"SIFRA_KRITERIJUMA\"}, \"kv\", JoinKind.LeftOuter),",
+                "    S8 = Table.ExpandTableColumn(S7, \"kv\",",
+                "        {\"NAZIV_KRITERIJUMA\", \"NACIN_BODOVANJA\"}),",
+                "    Odabir = Table.SelectColumns(S8, {\"SIFRA_PLANA\", \"RB_STAVKE\", \"BROJ_PONUDE\", \"SIFRA_DOBAVLJACA\", \"NAZIV_DOBAVLJACA\", \"DATUM_PRIJEMA\", \"UKUPNA_CENA\", \"PONUDJENA_CENA\", \"ROK_ISPORUKE\", \"USLOVI_PLACANJA\", \"UKUPNO_BODOVA\", \"STATUS_PONUDE\", \"NAZIV_KRITERIJUMA\", \"NACIN_BODOVANJA\", \"BROJ_BODOVA\", \"KOMENTAR_OCENE\"}),",
+                "    Izlaz = Table.RenameColumns(Odabir, {{\"SIFRA_PLANA\", \"Šifra plana\"}, {\"RB_STAVKE\", \"Rb stavke\"}, {\"BROJ_PONUDE\", \"Broj ponude\"}, {\"SIFRA_DOBAVLJACA\", \"Šifra dobavljača\"}, {\"NAZIV_DOBAVLJACA\", \"Dobavljač\"}, {\"DATUM_PRIJEMA\", \"Datum prijema\"}, {\"UKUPNA_CENA\", \"Ukupna cena ponude\"}, {\"PONUDJENA_CENA\", \"Ponuđena cena za stavku\"}, {\"ROK_ISPORUKE\", \"Rok isporuke\"}, {\"USLOVI_PLACANJA\", \"Uslovi plaćanja\"}, {\"UKUPNO_BODOVA\", \"Ukupno bodova\"}, {\"STATUS_PONUDE\", \"Status ponude\"}, {\"NAZIV_KRITERIJUMA\", \"Kriterijum\"}, {\"NACIN_BODOVANJA\", \"Način bodovanja\"}, {\"BROJ_BODOVA\", \"Bodovi\"}, {\"KOMENTAR_OCENE\", \"Komentar ocene\"}})",
+                "in",
+                "    Izlaz"
+              ]
+            }
+          }
+        ],
+        "description": "Izveštaj 7: bodovanje ponuda po kriterijumima vrednovanja.",
+        "measures": [
+          {
+            "name": "Bodovi (zbir)",
+            "expression": [
+              "SUM(VrednovanjePonuda[Bodovi])"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "0.00"
+          },
+          {
+            "name": "Ukupno bodova ponude",
+            "expression": [
+              "MAX(VrednovanjePonuda[Ukupno bodova])"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "0.00"
+          },
+          {
+            "name": "Broj ponuda",
+            "expression": [
+              "DISTINCTCOUNT(VrednovanjePonuda[Broj ponude])"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Broj kriterijuma",
+            "expression": [
+              "DISTINCTCOUNT(VrednovanjePonuda[Kriterijum])"
+            ],
+            "displayFolder": "Mere",
+            "formatString": "#,##0"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "rel01_Kalendar_Playout",
+        "fromTable": "Playout",
+        "fromColumn": "Datum",
+        "toTable": "Kalendar",
+        "toColumn": "Datum"
+      },
+      {
+        "name": "rel02_Kalendar_Gledanost",
+        "fromTable": "Gledanost",
+        "fromColumn": "Datum merenja",
+        "toTable": "Kalendar",
+        "toColumn": "Datum"
+      },
+      {
+        "name": "rel03_Kalendar_Troskovi",
+        "fromTable": "Troskovi",
+        "fromColumn": "Datum nastanka",
+        "toTable": "Kalendar",
+        "toColumn": "Datum"
+      },
+      {
+        "name": "rel04_Kalendar_EmitovanjaReklama",
+        "fromTable": "EmitovanjaReklama",
+        "fromColumn": "Datum emitovanja",
+        "toTable": "Kalendar",
+        "toColumn": "Datum"
+      },
+      {
+        "name": "rel05_Kalendar_Planovi",
+        "fromTable": "Planovi",
+        "fromColumn": "Datum donošenja",
+        "toTable": "Kalendar",
+        "toColumn": "Datum"
+      },
+      {
+        "name": "rel06_Emisije_Playout",
+        "fromTable": "Playout",
+        "fromColumn": "Šifra emisije",
+        "toTable": "Emisije",
+        "toColumn": "Šifra emisije"
+      },
+      {
+        "name": "rel07_Emisije_Gledanost",
+        "fromTable": "Gledanost",
+        "fromColumn": "Šifra emisije",
+        "toTable": "Emisije",
+        "toColumn": "Šifra emisije"
+      },
+      {
+        "name": "rel08_Projekti_Troskovi",
+        "fromTable": "Troskovi",
+        "fromColumn": "Šifra projekta",
+        "toTable": "Projekti",
+        "toColumn": "Šifra projekta"
+      },
+      {
+        "name": "rel09_Ugovori_StavkeUgovora",
+        "fromTable": "StavkeUgovora",
+        "fromColumn": "Broj ugovora",
+        "toTable": "Ugovori",
+        "toColumn": "Broj ugovora"
+      },
+      {
+        "name": "rel10_Ugovori_EmitovanjaReklama",
+        "fromTable": "EmitovanjaReklama",
+        "fromColumn": "Broj ugovora",
+        "toTable": "Ugovori",
+        "toColumn": "Broj ugovora"
+      },
+      {
+        "name": "rel11_Planovi_StavkePlana",
+        "fromTable": "StavkePlana",
+        "fromColumn": "Šifra plana",
+        "toTable": "Planovi",
+        "toColumn": "Šifra plana"
+      },
+      {
+        "name": "rel12_Planovi_VrednovanjePonuda",
+        "fromTable": "VrednovanjePonuda",
+        "fromColumn": "Šifra plana",
+        "toTable": "Planovi",
+        "toColumn": "Šifra plana"
+      },
+      {
+        "name": "rel13_Dobavljaci_VrednovanjePonuda",
+        "fromTable": "VrednovanjePonuda",
+        "fromColumn": "Šifra dobavljača",
+        "toTable": "Dobavljaci",
+        "toColumn": "Šifra dobavljača"
+      }
+    ],
+    "expressions": [
+      {
+        "name": "Izvor",
+        "kind": "m",
+        "expression": "\"Access\" meta [IsParameterQuery=true, List={\"Access\", \"CSV\"}, DefaultValue=\"Access\", Type=\"Text\", IsParameterQueryRequired=true]",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Text"
+          }
+        ]
+      },
+      {
+        "name": "PutDoBaze",
+        "kind": "m",
+        "expression": "\"C:\\TV_Panorama\\Access_v1.accdb\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Text"
+          }
+        ]
+      },
+      {
+        "name": "PutDoCsv",
+        "kind": "m",
+        "expression": "\"C:\\TV_Panorama\\csv\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Text"
+          }
+        ]
+      },
+      {
+        "name": "Tipovi",
+        "kind": "m",
+        "expression": [
+          "let",
+          "    Tipovi = [",
+          "        ZAPIS_O_EMITOVANJU = {{\"SIFRA_TERMINA\", type text}, {\"RB_EMITOVANJA\", Int64.Type}, {\"SIFRA_SADRZAJA\", type text}, {\"STATUS_REALIZACIJE\", type text}, {\"STVARNO_VREME_POCETKA\", type time}, {\"STVARNO_TRAJANJE\", Int64.Type}, {\"NAPOMENA_O_SMETNJAMA\", type text}, {\"OPERATER_EMITOVANJA\", type text}},",
+          "        TERMIN_EMITOVANJA = {{\"SIFRA_TERMINA\", type text}, {\"SIFRA_SEME\", type text}, {\"RB_CELINE\", Int64.Type}, {\"SIFRA_EMISIJE\", type text}, {\"DATUM\", type date}, {\"VREME_POCETKA\", type time}, {\"TRAJANJE_TERMINA\", Int64.Type}, {\"TIP_TERMINA\", type text}, {\"ZONA_GLEDANOSTI\", type text}, {\"STATUS_TERMINA\", type text}, {\"REDNI_BROJ_REPRIZE\", Int64.Type}},",
+          "        EMISIJA = {{\"SIFRA_EMISIJE\", type text}, {\"NAZIV_EMISIJE\", type text}, {\"ZANR\", type text}, {\"FORMAT_EMISIJE\", type text}, {\"PREDVIDJENO_TRAJANJE\", Int64.Type}, {\"CILJNA_PUBLIKA\", type text}, {\"STATUS_EMISIJE\", type text}, {\"PROGRAMSKI_ELABORAT\", type text}},",
+          "        MEDIJSKI_SADRZAJ = {{\"SIFRA_SADRZAJA\", type text}, {\"NAZIV_SADRZAJA\", type text}, {\"TRAJANJE\", Int64.Type}, {\"FORMAT_ZAPISA\", type text}, {\"DATUM_ARHIVIRANJA\", type date}, {\"LOKACIJA_U_ARHIVI\", type text}},",
+          "        POKRIVENOST_PRAVOM = {{\"BROJ_LICENCE\", type text}, {\"SIFRA_SADRZAJA\", type text}, {\"OBLAST_POKRIVENOSTI\", type text}},",
+          "        PRAVO_KORISCENJA = {{\"BROJ_LICENCE\", type text}, {\"VRSTA_PRAVA\", type text}, {\"DATUM_OD\", type date}, {\"DATUM_DO\", type date}, {\"DOZVOLJENO_EMITOVANJA\", Int64.Type}, {\"ISKORISCENO_EMITOVANJA\", Int64.Type}, {\"TERITORIJA\", type text}, {\"NOSILAC_PRAVA\", type text}},",
+          "        MERENJE_EMISIJE = {{\"SIFRA_MERENJA\", type text}, {\"SIFRA_EMISIJE\", type text}, {\"OSTVARENI_RATING\", type number}, {\"UDEO_U_TERMINU\", type number}},",
+          "        MERENJE_GLEDANOSTI = {{\"SIFRA_MERENJA\", type text}, {\"DATUM_MERENJA\", type date}, {\"IZVOR_MERENJA\", type text}, {\"CILJNA_GRUPA\", type text}, {\"RATING\", type number}, {\"SHARE_UDEO\", type number}, {\"BROJ_GLEDALACA\", Int64.Type}, {\"PROSECNO_GLEDANJE\", Int64.Type}},",
+          "        PROJEKAT_PRODUKCIJE = {{\"SIFRA_PROJEKTA\", type text}, {\"SIFRA_UREDNIKA\", type text}, {\"SIFRA_EMISIJE\", type text}, {\"NAZIV_PROJEKTA\", type text}, {\"DATUM_POCETKA\", type date}, {\"DATUM_ZAVRSETKA\", type date}, {\"ODOBREN_BUDZET\", Currency.Type}, {\"STATUS_PROJEKTA\", type text}, {\"VRSTA_PRODUKCIJE\", type text}, {\"OPIS_PROJEKTA\", type text}},",
+          "        AKTIVNOST_PRODUKCIJE = {{\"SIFRA_PROJEKTA\", type text}, {\"RB_AKTIVNOSTI\", Int64.Type}, {\"NAZIV_AKTIVNOSTI\", type text}, {\"DATUM_OD\", type date}, {\"DATUM_DO\", type date}, {\"VRSTA_AKTIVNOSTI\", type text}, {\"LOKACIJA_SNIMANJA\", type text}, {\"STATUS_AKTIVNOSTI\", type text}},",
+          "        TROSAK_PRODUKCIJE = {{\"SIFRA_PROJEKTA\", type text}, {\"RB_AKTIVNOSTI\", Int64.Type}, {\"RB_TROSKA\", Int64.Type}, {\"BROJ_FAKTURE\", type text}, {\"VRSTA_TROSKA\", type text}, {\"IZNOS\", Currency.Type}, {\"DATUM_NASTANKA\", type date}, {\"OPIS_TROSKA\", type text}},",
+          "        FAKTURA = {{\"BROJ_FAKTURE\", type text}, {\"BROJ_UGOVORA\", type text}, {\"DATUM_IZDAVANJA\", type date}, {\"ROK_PLACANJA\", type date}, {\"SMER\", type text}, {\"OSNOVICA\", Currency.Type}, {\"IZNOS_PDV\", Currency.Type}, {\"STATUS_PLACANJA\", type text}, {\"IZNOS_ZA_PLACANJE\", Currency.Type}},",
+          "        ZAPOSLENI = {{\"SIFRA_ZAPOSLENOG\", type text}, {\"SIFRA_JEDINICE\", type text}, {\"JMBG\", type text}, {\"IME\", type text}, {\"PREZIME\", type text}, {\"RADNO_MESTO\", type text}, {\"DATUM_ZAPOSLENJA\", type date}, {\"OSNOVNA_ZARADA\", Currency.Type}, {\"STATUS_ZAPOSLENJA\", type text}},",
+          "        KLIJENT = {{\"SIFRA_KLIJENTA\", type text}, {\"NAZIV_KLIJENTA\", type text}, {\"PIB\", type text}, {\"MATICNI_BROJ\", type text}, {\"ULICA_I_BROJ\", type text}, {\"GRAD\", type text}, {\"POSTANSKI_BROJ\", type text}, {\"KONTAKT_OSOBA\", type text}},",
+          "        OGLASIVAC = {{\"SIFRA_KLIJENTA\", type text}, {\"BRANSA\", type text}, {\"GODISNJI_BUDZET\", Currency.Type}},",
+          "        UGOVOR = {{\"BROJ_UGOVORA\", type text}, {\"SIFRA_KLIJENTA\", type text}, {\"DATUM_SKLAPANJA\", type date}, {\"VAZI_OD\", type date}, {\"VAZI_DO\", type date}, {\"UKUPNA_VREDNOST\", Currency.Type}, {\"STATUS_UGOVORA\", type text}},",
+          "        UGOVOR_O_OGLASAVANJU = {{\"BROJ_UGOVORA\", type text}, {\"UGOVORENI_TERMINI\", type text}},",
+          "        STAVKA_UGOVORA = {{\"BROJ_UGOVORA\", type text}, {\"RB_STAVKE\", Int64.Type}, {\"OPIS_STAVKE\", type text}, {\"KOLICINA_SEKUNDE\", Int64.Type}, {\"JEDINICNA_CENA\", Currency.Type}, {\"POPUST\", type number}, {\"VREDNOST_STAVKE\", Currency.Type}},",
+          "        EMITOVANJE_REKLAME = {{\"SIFRA_BLOKA\", type text}, {\"RB_U_BLOKU\", Int64.Type}, {\"SIFRA_SADRZAJA\", type text}, {\"BROJ_UGOVORA\", type text}, {\"RB_STAVKE_UGOVORA\", Int64.Type}, {\"DATUM_EMITOVANJA\", type date}, {\"VREME_EMITOVANJA\", type time}, {\"TRAJANJE_SPOTA\", Int64.Type}, {\"NAPLACENI_IZNOS\", Currency.Type}, {\"STATUS_NAPLATE\", type text}},",
+          "        REKLAMNI_BLOK = {{\"SIFRA_BLOKA\", type text}, {\"SIFRA_TERMINA\", type text}, {\"SIFRA_CENOVNIKA\", type text}, {\"DATUM\", type date}, {\"VREME_POCETKA\", type time}, {\"TRAJANJE_BLOKA\", Int64.Type}, {\"ZAKUPLJENO_SEKUNDI\", Int64.Type}, {\"SLOBODNO_SEKUNDI\", Int64.Type}, {\"ISKORISCENOST\", type number}, {\"STATUS_BLOKA\", type text}},",
+          "        CENOVNIK_REKL_TERMINA = {{\"SIFRA_CENOVNIKA\", type text}, {\"VAZI_OD\", type date}, {\"VAZI_DO\", type date}, {\"ZONA\", type text}, {\"CENA_PO_SEKUNDI\", Currency.Type}, {\"TIP_CENOVNOG_PAKETA\", type text}, {\"OPIS_CENOVNOG_PAKETA\", type text}},",
+          "        PLAN_NABAVKE = {{\"SIFRA_PLANA\", type text}, {\"GODINA_PLANA\", Int64.Type}, {\"DATUM_DONOSENJA\", type date}, {\"STATUS_PLANA\", type text}, {\"UKUPNA_VREDNOST\", Currency.Type}, {\"DONOSILAC_PLANA\", type text}},",
+          "        STAVKA_PLANA_NABAVKE = {{\"SIFRA_PLANA\", type text}, {\"RB_STAVKE\", Int64.Type}, {\"OPIS_ARTIKLA\", type text}, {\"KOLICINA\", Int64.Type}, {\"JEDINICA_MERE\", type text}, {\"PROCENJENA_CENA\", Currency.Type}, {\"PLANIRANI_KVARTAL\", type text}},",
+          "        ZAHTEV_ZA_NABAVKU = {{\"BROJ_ZAHTEVA\", type text}, {\"SIFRA_JEDINICE\", type text}, {\"SIFRA_PLANA\", type text}, {\"DATUM_ZAHTEVA\", type date}, {\"VRSTA_NABAVKE\", type text}, {\"PREDMET_ZAHTEVA\", type text}, {\"OBRAZLOZENJE\", type text}, {\"STATUS_ZAHTEVA\", type text}, {\"PRIORITET\", type text}, {\"PROCENJENA_VREDNOST\", Currency.Type}},",
+          "        PONUDA_DOBAVLJACA = {{\"BROJ_PONUDE\", type text}, {\"SIFRA_DOBAVLJACA\", type text}, {\"DATUM_PRIJEMA\", type date}, {\"VAZI_DO\", type date}, {\"UKUPNA_CENA\", Currency.Type}, {\"ROK_ISPORUKE\", type date}, {\"USLOVI_PLACANJA\", type text}, {\"STATUS_PONUDE\", type text}, {\"UKUPNO_BODOVA\", type number}},",
+          "        PONUDJENA_STAVKA = {{\"SIFRA_PLANA\", type text}, {\"RB_STAVKE\", Int64.Type}, {\"BROJ_PONUDE\", type text}, {\"PONUDJENA_CENA\", Currency.Type}, {\"ROK_ZA_STAVKU\", type date}},",
+          "        OCENA_PONUDE = {{\"BROJ_PONUDE\", type text}, {\"SIFRA_KRITERIJUMA\", type text}, {\"BROJ_BODOVA\", type number}, {\"KOMENTAR_OCENE\", type text}},",
+          "        KRITERIJUM_VREDNOVANJA = {{\"SIFRA_KRITERIJUMA\", type text}, {\"NAZIV_KRITERIJUMA\", type text}, {\"NACIN_BODOVANJA\", type text}, {\"OPIS_KRITERIJUMA\", type text}},",
+          "        DOBAVLJAC = {{\"SIFRA_DOBAVLJACA\", type text}, {\"NAZIV_DOBAVLJACA\", type text}, {\"PIB\", type text}, {\"MATICNI_BROJ\", type text}, {\"ADRESA\", type text}, {\"OCENA_DOBAVLJACA\", type number}},",
+          "        NARUDZBENICA = {{\"BROJ_NARUDZBENICE\", type text}, {\"SIFRA_DOBAVLJACA\", type text}, {\"DATUM_IZDAVANJA\", type date}, {\"ROK_ISPORUKE\", type date}, {\"MESTO_ISPORUKE\", type text}, {\"UKUPAN_IZNOS\", Currency.Type}, {\"STATUS_NARUDZBINE\", type text}}",
+          "    ]",
+          "in",
+          "    Tipovi"
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Record"
+          }
+        ]
+      },
+      {
+        "name": "Tabela",
+        "kind": "m",
+        "expression": [
+          "// Čita jednu tabelu iz Access baze ili iz CSV izvoza i postavlja tipove.",
+          "(ime as text) as table =>",
+          "let",
+          "    sirovo =",
+          "        if Izvor = \"CSV\" then",
+          "            Table.PromoteHeaders(",
+          "                Csv.Document(File.Contents(PutDoCsv & \"\\\" & ime & \".csv\"),",
+          "                    [Delimiter=\";\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+          "                [PromoteAllScalars=true])",
+          "        else",
+          "            Access.Database(File.Contents(PutDoBaze),",
+          "                [CreateNavigationProperties=false]){[Name=ime]}[Data],",
+          "    trazeni = Record.FieldOrDefault(Tipovi, ime, {}),",
+          "    postojeci = Table.ColumnNames(sirovo),",
+          "    primenjivi = List.Select(trazeni, each List.Contains(postojeci, _{0})),",
+          "    rez = if List.IsEmpty(primenjivi) then sirovo",
+          "          else Table.TransformColumnTypes(sirovo, primenjivi, \"en-US\")",
+          "in",
+          "    rez"
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Function"
+          }
+        ]
+      }
+    ],
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Izvor\", \"PutDoBaze\", \"PutDoCsv\", \"Tipovi\", \"Tabela\", \"Kalendar\", \"Emisije\", \"Projekti\", \"Ugovori\", \"Planovi\", \"Dobavljaci\", \"Playout\", \"Gledanost\", \"Troskovi\", \"StavkeUgovora\", \"EmitovanjaReklama\", \"StavkePlana\", \"VrednovanjePonuda\"]"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ]
+  }
+}

@@ -1,0 +1,617 @@
+{
+  "config": "{\"version\": \"5.55\", \"activeSectionIndex\": 0, \"defaultDrillFilterOtherVisuals\": true, \"settings\": {\"useStylableVisualContainerHeader\": true, \"exportDataMode\": 1, \"useNewFilterPaneExperience\": true, \"allowChangeFilterTypes\": true, \"allowInlineExploration\": false, \"disableFilterPaneSearch\": false, \"useCrossReportDrillthrough\": false, \"allowDataPointLassoSelect\": false}}",
+  "layoutOptimization": 0,
+  "publicCustomVisuals": [],
+  "filters": "[]",
+  "sections": [
+    {
+      "name": "Strana1",
+      "displayName": "2 Playout log",
+      "ordinal": 0,
+      "config": "{}",
+      "filters": "[]",
+      "displayOption": 1,
+      "width": 1280.0,
+      "height": 720.0,
+      "visualContainers": [
+        {
+          "x": 16.0,
+          "y": 12.0,
+          "z": 0.0,
+          "width": 900.0,
+          "height": 44.0,
+          "config": "{\"name\": \"v0001\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 12, \"z\": 0, \"width\": 900, \"height\": 44, \"tabOrder\": 0}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"Izveštaj 2 - Evidencija emitovanog sadržaja (playout log)\", \"textStyle\": {\"fontSize\": \"16pt\", \"fontFamily\": \"Segoe UI\", \"fontWeight\": \"bold\", \"color\": \"#1B2A41\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 16.0,
+          "y": 58.0,
+          "z": 0.0,
+          "width": 900.0,
+          "height": 24.0,
+          "config": "{\"name\": \"v0002\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 58, \"z\": 0, \"width\": 900, \"height\": 24, \"tabOrder\": 0}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"Informacioni sistem TV stanice - TV Panorama  |  period se bira slajserom Datum\", \"textStyle\": {\"fontSize\": \"9pt\", \"fontFamily\": \"Segoe UI\", \"fontWeight\": \"normal\", \"color\": \"#5A6475\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 16.0,
+          "y": 92.0,
+          "z": 0.0,
+          "width": 220.0,
+          "height": 86.0,
+          "config": "{\"name\": \"v0003\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 92, \"z\": 0, \"width\": 220, \"height\": 86, \"tabOrder\": 200}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"Playout.Broj emitovanja\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Playout\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Broj emitovanja\"}, \"Name\": \"Playout.Broj emitovanja\", \"NativeReferenceName\": \"Broj emitovanja\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"19D\"}}}, \"labelPrecision\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Broj emitovanja'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 248.0,
+          "y": 92.0,
+          "z": 0.0,
+          "width": 220.0,
+          "height": 86.0,
+          "config": "{\"name\": \"v0004\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 248, \"y\": 92, \"z\": 0, \"width\": 220, \"height\": 86, \"tabOrder\": 300}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"Playout.Stvarno trajanje (min)\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Playout\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Stvarno trajanje (min)\"}, \"Name\": \"Playout.Stvarno trajanje (min)\", \"NativeReferenceName\": \"Stvarno trajanje (min)\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"19D\"}}}, \"labelPrecision\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Stvarno trajanje (min)'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 480.0,
+          "y": 92.0,
+          "z": 0.0,
+          "width": 220.0,
+          "height": 86.0,
+          "config": "{\"name\": \"v0005\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 480, \"y\": 92, \"z\": 0, \"width\": 220, \"height\": 86, \"tabOrder\": 400}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"Playout.Odstupanje (min)\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Playout\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Odstupanje (min)\"}, \"Name\": \"Playout.Odstupanje (min)\", \"NativeReferenceName\": \"Odstupanje (min)\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"19D\"}}}, \"labelPrecision\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Odstupanje (min)'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 712.0,
+          "y": 92.0,
+          "z": 0.0,
+          "width": 220.0,
+          "height": 86.0,
+          "config": "{\"name\": \"v0006\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 712, \"y\": 92, \"z\": 0, \"width\": 220, \"height\": 86, \"tabOrder\": 500}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"Playout.Emitovanja sa smetnjama\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Playout\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Emitovanja sa smetnjama\"}, \"Name\": \"Playout.Emitovanja sa smetnjama\", \"NativeReferenceName\": \"Emitovanja sa smetnjama\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"19D\"}}}, \"labelPrecision\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Sa smetnjama'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 940.0,
+          "y": 92.0,
+          "z": 0.0,
+          "width": 324.0,
+          "height": 86.0,
+          "config": "{\"name\": \"v0007\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 940, \"y\": 92, \"z\": 0, \"width\": 324, \"height\": 86, \"tabOrder\": 600}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"Kalendar.Datum\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Kalendar\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Datum\"}, \"Name\": \"Kalendar.Datum\", \"NativeReferenceName\": \"Datum\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Between'\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Datum emitovanja (od - do)'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 16.0,
+          "y": 190.0,
+          "z": 0.0,
+          "width": 456.0,
+          "height": 210.0,
+          "config": "{\"name\": \"v0008\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 190, \"z\": 0, \"width\": 456, \"height\": 210, \"tabOrder\": 700}}], \"singleVisual\": {\"visualType\": \"columnChart\", \"projections\": {\"Category\": [{\"queryRef\": \"Kalendar.Datum\"}], \"Y\": [{\"queryRef\": \"Playout.Stvarno trajanje (min)\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Kalendar\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"Playout\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Datum\"}, \"Name\": \"Kalendar.Datum\", \"NativeReferenceName\": \"Datum\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Stvarno trajanje (min)\"}, \"Name\": \"Playout.Stvarno trajanje (min)\", \"NativeReferenceName\": \"Stvarno trajanje (min)\"}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Emitovani minuti po danu'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 484.0,
+          "y": 190.0,
+          "z": 0.0,
+          "width": 444.0,
+          "height": 210.0,
+          "config": "{\"name\": \"v0009\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 484, \"y\": 190, \"z\": 0, \"width\": 444, \"height\": 210, \"tabOrder\": 800}}], \"singleVisual\": {\"visualType\": \"donutChart\", \"projections\": {\"Category\": [{\"queryRef\": \"Playout.Status realizacije\"}], \"Y\": [{\"queryRef\": \"Playout.Broj emitovanja\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Playout\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Status realizacije\"}, \"Name\": \"Playout.Status realizacije\", \"NativeReferenceName\": \"Status realizacije\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Broj emitovanja\"}, \"Name\": \"Playout.Broj emitovanja\", \"NativeReferenceName\": \"Broj emitovanja\"}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Emitovanja po statusu realizacije'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 940.0,
+          "y": 190.0,
+          "z": 0.0,
+          "width": 324.0,
+          "height": 100.0,
+          "config": "{\"name\": \"v0010\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 940, \"y\": 190, \"z\": 0, \"width\": 324, \"height\": 100, \"tabOrder\": 900}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"Playout.Status realizacije\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Playout\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Status realizacije\"}, \"Name\": \"Playout.Status realizacije\", \"NativeReferenceName\": \"Status realizacije\"}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Status realizacije'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 940.0,
+          "y": 298.0,
+          "z": 0.0,
+          "width": 324.0,
+          "height": 102.0,
+          "config": "{\"name\": \"v0011\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 940, \"y\": 298, \"z\": 0, \"width\": 324, \"height\": 102, \"tabOrder\": 1000}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"Emisije.Žanr\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Emisije\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Žanr\"}, \"Name\": \"Emisije.Žanr\", \"NativeReferenceName\": \"Žanr\"}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Žanr emisije'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 16.0,
+          "y": 412.0,
+          "z": 0.0,
+          "width": 1248.0,
+          "height": 292.0,
+          "config": "{\"name\": \"v0012\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 412, \"z\": 0, \"width\": 1248, \"height\": 292, \"tabOrder\": 1100}}], \"singleVisual\": {\"visualType\": \"tableEx\", \"projections\": {\"Values\": [{\"queryRef\": \"Playout.Datum\"}, {\"queryRef\": \"Playout.Stvarno vreme početka\"}, {\"queryRef\": \"Emisije.Naziv emisije\"}, {\"queryRef\": \"Playout.Medijski sadržaj\"}, {\"queryRef\": \"Playout.Planirano trajanje\"}, {\"queryRef\": \"Playout.Stvarno trajanje\"}, {\"queryRef\": \"Playout.Odstupanje\"}, {\"queryRef\": \"Playout.Status realizacije\"}, {\"queryRef\": \"Playout.Broj licence\"}, {\"queryRef\": \"Playout.Vrsta prava\"}, {\"queryRef\": \"Playout.Operater emitovanja\"}, {\"queryRef\": \"Playout.Napomena o smetnjama\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Playout\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"Emisije\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Datum\"}, \"Name\": \"Playout.Datum\", \"NativeReferenceName\": \"Datum\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Stvarno vreme početka\"}, \"Name\": \"Playout.Stvarno vreme početka\", \"NativeReferenceName\": \"Stvarno vreme početka\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Naziv emisije\"}, \"Name\": \"Emisije.Naziv emisije\", \"NativeReferenceName\": \"Naziv emisije\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Medijski sadržaj\"}, \"Name\": \"Playout.Medijski sadržaj\", \"NativeReferenceName\": \"Medijski sadržaj\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Planirano trajanje\"}, \"Name\": \"Playout.Planirano trajanje\", \"NativeReferenceName\": \"Planirano trajanje\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Stvarno trajanje\"}, \"Name\": \"Playout.Stvarno trajanje\", \"NativeReferenceName\": \"Stvarno trajanje\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Odstupanje\"}, \"Name\": \"Playout.Odstupanje\", \"NativeReferenceName\": \"Odstupanje\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Status realizacije\"}, \"Name\": \"Playout.Status realizacije\", \"NativeReferenceName\": \"Status realizacije\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Broj licence\"}, \"Name\": \"Playout.Broj licence\", \"NativeReferenceName\": \"Broj licence\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Vrsta prava\"}, \"Name\": \"Playout.Vrsta prava\", \"NativeReferenceName\": \"Vrsta prava\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Operater emitovanja\"}, \"Name\": \"Playout.Operater emitovanja\", \"NativeReferenceName\": \"Operater emitovanja\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Napomena o smetnjama\"}, \"Name\": \"Playout.Napomena o smetnjama\", \"NativeReferenceName\": \"Napomena o smetnjama\"}], \"OrderBy\": [{\"Direction\": 1, \"Expression\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Datum\"}}}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Hronološki pregled emitovanog sadržaja'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        }
+      ]
+    },
+    {
+      "name": "Strana2",
+      "displayName": "3 Gledanost po žanru",
+      "ordinal": 1,
+      "config": "{}",
+      "filters": "[]",
+      "displayOption": 1,
+      "width": 1280.0,
+      "height": 720.0,
+      "visualContainers": [
+        {
+          "x": 16.0,
+          "y": 12.0,
+          "z": 0.0,
+          "width": 900.0,
+          "height": 44.0,
+          "config": "{\"name\": \"v0013\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 12, \"z\": 0, \"width\": 900, \"height\": 44, \"tabOrder\": 0}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"Izveštaj 3 - Gledanost emisija po žanru\", \"textStyle\": {\"fontSize\": \"16pt\", \"fontFamily\": \"Segoe UI\", \"fontWeight\": \"bold\", \"color\": \"#1B2A41\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 16.0,
+          "y": 58.0,
+          "z": 0.0,
+          "width": 900.0,
+          "height": 24.0,
+          "config": "{\"name\": \"v0014\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 58, \"z\": 0, \"width\": 900, \"height\": 24, \"tabOrder\": 0}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"Informacioni sistem TV stanice - TV Panorama  |  grafički prikaz sa pratećom tabelom\", \"textStyle\": {\"fontSize\": \"9pt\", \"fontFamily\": \"Segoe UI\", \"fontWeight\": \"normal\", \"color\": \"#5A6475\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 16.0,
+          "y": 92.0,
+          "z": 0.0,
+          "width": 220.0,
+          "height": 86.0,
+          "config": "{\"name\": \"v0015\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 92, \"z\": 0, \"width\": 220, \"height\": 86, \"tabOrder\": 1400}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"Gledanost.Prosečan rejting\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Gledanost\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Prosečan rejting\"}, \"Name\": \"Gledanost.Prosečan rejting\", \"NativeReferenceName\": \"Prosečan rejting\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"19D\"}}}, \"labelPrecision\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Prosečan rejting'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 248.0,
+          "y": 92.0,
+          "z": 0.0,
+          "width": 220.0,
+          "height": 86.0,
+          "config": "{\"name\": \"v0016\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 248, \"y\": 92, \"z\": 0, \"width\": 220, \"height\": 86, \"tabOrder\": 1500}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"Gledanost.Prosečan udeo\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Gledanost\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Prosečan udeo\"}, \"Name\": \"Gledanost.Prosečan udeo\", \"NativeReferenceName\": \"Prosečan udeo\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"19D\"}}}, \"labelPrecision\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Prosečan udeo u terminu'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 480.0,
+          "y": 92.0,
+          "z": 0.0,
+          "width": 220.0,
+          "height": 86.0,
+          "config": "{\"name\": \"v0017\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 480, \"y\": 92, \"z\": 0, \"width\": 220, \"height\": 86, \"tabOrder\": 1600}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"Gledanost.Prosečno gledalaca\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Gledanost\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Prosečno gledalaca\"}, \"Name\": \"Gledanost.Prosečno gledalaca\", \"NativeReferenceName\": \"Prosečno gledalaca\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"19D\"}}}, \"labelPrecision\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Prosečno gledalaca'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 712.0,
+          "y": 92.0,
+          "z": 0.0,
+          "width": 220.0,
+          "height": 86.0,
+          "config": "{\"name\": \"v0018\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 712, \"y\": 92, \"z\": 0, \"width\": 220, \"height\": 86, \"tabOrder\": 1700}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"Gledanost.Broj merenja\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Gledanost\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Broj merenja\"}, \"Name\": \"Gledanost.Broj merenja\", \"NativeReferenceName\": \"Broj merenja\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"19D\"}}}, \"labelPrecision\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Broj merenja'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 940.0,
+          "y": 92.0,
+          "z": 0.0,
+          "width": 324.0,
+          "height": 86.0,
+          "config": "{\"name\": \"v0019\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 940, \"y\": 92, \"z\": 0, \"width\": 324, \"height\": 86, \"tabOrder\": 1800}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"Kalendar.Datum\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Kalendar\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Datum\"}, \"Name\": \"Kalendar.Datum\", \"NativeReferenceName\": \"Datum\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Between'\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Period merenja (od - do)'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 16.0,
+          "y": 190.0,
+          "z": 0.0,
+          "width": 456.0,
+          "height": 210.0,
+          "config": "{\"name\": \"v0020\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 190, \"z\": 0, \"width\": 456, \"height\": 210, \"tabOrder\": 1900}}], \"singleVisual\": {\"visualType\": \"clusteredColumnChart\", \"projections\": {\"Category\": [{\"queryRef\": \"Emisije.Žanr\"}], \"Y\": [{\"queryRef\": \"Gledanost.Prosečan rejting\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Emisije\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"Gledanost\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Žanr\"}, \"Name\": \"Emisije.Žanr\", \"NativeReferenceName\": \"Žanr\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Prosečan rejting\"}, \"Name\": \"Gledanost.Prosečan rejting\", \"NativeReferenceName\": \"Prosečan rejting\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Prosečan rejting\"}}}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Prosečan ostvareni rejting po žanru emisije'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 484.0,
+          "y": 190.0,
+          "z": 0.0,
+          "width": 444.0,
+          "height": 210.0,
+          "config": "{\"name\": \"v0021\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 484, \"y\": 190, \"z\": 0, \"width\": 444, \"height\": 210, \"tabOrder\": 2000}}], \"singleVisual\": {\"visualType\": \"lineChart\", \"projections\": {\"Category\": [{\"queryRef\": \"Gledanost.Datum merenja\"}], \"Y\": [{\"queryRef\": \"Gledanost.Prosečan rejting\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Gledanost\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Datum merenja\"}, \"Name\": \"Gledanost.Datum merenja\", \"NativeReferenceName\": \"Datum merenja\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Prosečan rejting\"}, \"Name\": \"Gledanost.Prosečan rejting\", \"NativeReferenceName\": \"Prosečan rejting\"}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Kretanje prosečnog rejtinga po datumu merenja'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 940.0,
+          "y": 190.0,
+          "z": 0.0,
+          "width": 324.0,
+          "height": 100.0,
+          "config": "{\"name\": \"v0022\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 940, \"y\": 190, \"z\": 0, \"width\": 324, \"height\": 100, \"tabOrder\": 2100}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"Gledanost.Izvor merenja\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Gledanost\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Izvor merenja\"}, \"Name\": \"Gledanost.Izvor merenja\", \"NativeReferenceName\": \"Izvor merenja\"}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Izvor merenja'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 940.0,
+          "y": 298.0,
+          "z": 0.0,
+          "width": 324.0,
+          "height": 102.0,
+          "config": "{\"name\": \"v0023\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 940, \"y\": 298, \"z\": 0, \"width\": 324, \"height\": 102, \"tabOrder\": 2200}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"Gledanost.Ciljna grupa\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Gledanost\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Ciljna grupa\"}, \"Name\": \"Gledanost.Ciljna grupa\", \"NativeReferenceName\": \"Ciljna grupa\"}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Ciljna grupa'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 16.0,
+          "y": 412.0,
+          "z": 0.0,
+          "width": 1248.0,
+          "height": 292.0,
+          "config": "{\"name\": \"v0024\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 412, \"z\": 0, \"width\": 1248, \"height\": 292, \"tabOrder\": 2300}}], \"singleVisual\": {\"visualType\": \"tableEx\", \"projections\": {\"Values\": [{\"queryRef\": \"Emisije.Naziv emisije\"}, {\"queryRef\": \"Emisije.Žanr\"}, {\"queryRef\": \"Gledanost.Broj merenja\"}, {\"queryRef\": \"Gledanost.Prosečan rejting\"}, {\"queryRef\": \"Gledanost.Prosečan udeo\"}, {\"queryRef\": \"Gledanost.Prosečno gledalaca\"}, {\"queryRef\": \"Gledanost.Prosečno gledanje (min)\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Emisije\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"Gledanost\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Naziv emisije\"}, \"Name\": \"Emisije.Naziv emisije\", \"NativeReferenceName\": \"Naziv emisije\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Žanr\"}, \"Name\": \"Emisije.Žanr\", \"NativeReferenceName\": \"Žanr\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Broj merenja\"}, \"Name\": \"Gledanost.Broj merenja\", \"NativeReferenceName\": \"Broj merenja\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Prosečan rejting\"}, \"Name\": \"Gledanost.Prosečan rejting\", \"NativeReferenceName\": \"Prosečan rejting\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Prosečan udeo\"}, \"Name\": \"Gledanost.Prosečan udeo\", \"NativeReferenceName\": \"Prosečan udeo\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Prosečno gledalaca\"}, \"Name\": \"Gledanost.Prosečno gledalaca\", \"NativeReferenceName\": \"Prosečno gledalaca\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Prosečno gledanje (min)\"}, \"Name\": \"Gledanost.Prosečno gledanje (min)\", \"NativeReferenceName\": \"Prosečno gledanje (min)\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Prosečan rejting\"}}}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Gledanost po emisiji - opadajuće po ostvarenom rejtingu'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        }
+      ]
+    },
+    {
+      "name": "Strana3",
+      "displayName": "4 Troškovi produkcije",
+      "ordinal": 2,
+      "config": "{}",
+      "filters": "[]",
+      "displayOption": 1,
+      "width": 1280.0,
+      "height": 720.0,
+      "visualContainers": [
+        {
+          "x": 16.0,
+          "y": 12.0,
+          "z": 0.0,
+          "width": 900.0,
+          "height": 44.0,
+          "config": "{\"name\": \"v0025\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 12, \"z\": 0, \"width\": 900, \"height\": 44, \"tabOrder\": 0}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"Izveštaj 4 - Realizacija i troškovi projekta produkcije\", \"textStyle\": {\"fontSize\": \"16pt\", \"fontFamily\": \"Segoe UI\", \"fontWeight\": \"bold\", \"color\": \"#1B2A41\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 16.0,
+          "y": 58.0,
+          "z": 0.0,
+          "width": 900.0,
+          "height": 24.0,
+          "config": "{\"name\": \"v0026\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 58, \"z\": 0, \"width\": 900, \"height\": 24, \"tabOrder\": 0}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"Informacioni sistem TV stanice - TV Panorama  |  zbirovi po projektu i aktivnosti, sa iskorišćenjem budžeta\", \"textStyle\": {\"fontSize\": \"9pt\", \"fontFamily\": \"Segoe UI\", \"fontWeight\": \"normal\", \"color\": \"#5A6475\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 16.0,
+          "y": 92.0,
+          "z": 0.0,
+          "width": 220.0,
+          "height": 86.0,
+          "config": "{\"name\": \"v0027\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 92, \"z\": 0, \"width\": 220, \"height\": 86, \"tabOrder\": 2600}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"Troskovi.Ukupno troškova\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Troskovi\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Ukupno troškova\"}, \"Name\": \"Troskovi.Ukupno troškova\", \"NativeReferenceName\": \"Ukupno troškova\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"19D\"}}}, \"labelPrecision\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Ukupno troškova'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 248.0,
+          "y": 92.0,
+          "z": 0.0,
+          "width": 220.0,
+          "height": 86.0,
+          "config": "{\"name\": \"v0028\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 248, \"y\": 92, \"z\": 0, \"width\": 220, \"height\": 86, \"tabOrder\": 2700}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"Projekti.Odobren budžet (ukupno)\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Projekti\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Odobren budžet (ukupno)\"}, \"Name\": \"Projekti.Odobren budžet (ukupno)\", \"NativeReferenceName\": \"Odobren budžet (ukupno)\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"19D\"}}}, \"labelPrecision\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Odobren budžet'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 480.0,
+          "y": 92.0,
+          "z": 0.0,
+          "width": 220.0,
+          "height": 86.0,
+          "config": "{\"name\": \"v0029\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 480, \"y\": 92, \"z\": 0, \"width\": 220, \"height\": 86, \"tabOrder\": 2800}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"Projekti.% iskorišćenja budžeta\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Projekti\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"% iskorišćenja budžeta\"}, \"Name\": \"Projekti.% iskorišćenja budžeta\", \"NativeReferenceName\": \"% iskorišćenja budžeta\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"19D\"}}}, \"labelPrecision\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'% iskorišćenja budžeta'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 712.0,
+          "y": 92.0,
+          "z": 0.0,
+          "width": 220.0,
+          "height": 86.0,
+          "config": "{\"name\": \"v0030\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 712, \"y\": 92, \"z\": 0, \"width\": 220, \"height\": 86, \"tabOrder\": 2900}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"Troskovi.Broj aktivnosti\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Troskovi\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Broj aktivnosti\"}, \"Name\": \"Troskovi.Broj aktivnosti\", \"NativeReferenceName\": \"Broj aktivnosti\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"19D\"}}}, \"labelPrecision\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Broj aktivnosti'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 940.0,
+          "y": 92.0,
+          "z": 0.0,
+          "width": 324.0,
+          "height": 86.0,
+          "config": "{\"name\": \"v0031\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 940, \"y\": 92, \"z\": 0, \"width\": 324, \"height\": 86, \"tabOrder\": 3000}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"Projekti.Naziv projekta\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Projekti\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Naziv projekta\"}, \"Name\": \"Projekti.Naziv projekta\", \"NativeReferenceName\": \"Naziv projekta\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Projekat produkcije'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 16.0,
+          "y": 190.0,
+          "z": 0.0,
+          "width": 456.0,
+          "height": 210.0,
+          "config": "{\"name\": \"v0032\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 190, \"z\": 0, \"width\": 456, \"height\": 210, \"tabOrder\": 3100}}], \"singleVisual\": {\"visualType\": \"columnChart\", \"projections\": {\"Category\": [{\"queryRef\": \"Troskovi.Vrsta troška\"}], \"Y\": [{\"queryRef\": \"Troskovi.Ukupno troškova\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Troskovi\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Vrsta troška\"}, \"Name\": \"Troskovi.Vrsta troška\", \"NativeReferenceName\": \"Vrsta troška\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Ukupno troškova\"}, \"Name\": \"Troskovi.Ukupno troškova\", \"NativeReferenceName\": \"Ukupno troškova\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Ukupno troškova\"}}}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Troškovi po vrsti troška'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 484.0,
+          "y": 190.0,
+          "z": 0.0,
+          "width": 444.0,
+          "height": 210.0,
+          "config": "{\"name\": \"v0033\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 484, \"y\": 190, \"z\": 0, \"width\": 444, \"height\": 210, \"tabOrder\": 3200}}], \"singleVisual\": {\"visualType\": \"barChart\", \"projections\": {\"Category\": [{\"queryRef\": \"Projekti.Naziv projekta\"}], \"Y\": [{\"queryRef\": \"Projekti.% iskorišćenja budžeta\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Projekti\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Naziv projekta\"}, \"Name\": \"Projekti.Naziv projekta\", \"NativeReferenceName\": \"Naziv projekta\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"% iskorišćenja budžeta\"}, \"Name\": \"Projekti.% iskorišćenja budžeta\", \"NativeReferenceName\": \"% iskorišćenja budžeta\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"% iskorišćenja budžeta\"}}}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Iskorišćenost odobrenog budžeta po projektu'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 940.0,
+          "y": 190.0,
+          "z": 0.0,
+          "width": 324.0,
+          "height": 100.0,
+          "config": "{\"name\": \"v0034\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 940, \"y\": 190, \"z\": 0, \"width\": 324, \"height\": 100, \"tabOrder\": 3300}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"Projekti.Vrsta produkcije\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Projekti\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Vrsta produkcije\"}, \"Name\": \"Projekti.Vrsta produkcije\", \"NativeReferenceName\": \"Vrsta produkcije\"}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Vrsta produkcije'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 940.0,
+          "y": 298.0,
+          "z": 0.0,
+          "width": 324.0,
+          "height": 102.0,
+          "config": "{\"name\": \"v0035\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 940, \"y\": 298, \"z\": 0, \"width\": 324, \"height\": 102, \"tabOrder\": 3400}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"Kalendar.Datum\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Kalendar\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Datum\"}, \"Name\": \"Kalendar.Datum\", \"NativeReferenceName\": \"Datum\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Between'\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Datum nastanka troška (od - do)'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 16.0,
+          "y": 412.0,
+          "z": 0.0,
+          "width": 1248.0,
+          "height": 292.0,
+          "config": "{\"name\": \"v0036\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 412, \"z\": 0, \"width\": 1248, \"height\": 292, \"tabOrder\": 3500}}], \"singleVisual\": {\"visualType\": \"pivotTable\", \"projections\": {\"Rows\": [{\"queryRef\": \"Projekti.Naziv projekta\"}, {\"queryRef\": \"Troskovi.Aktivnost\"}, {\"queryRef\": \"Troskovi.Vrsta troška\"}], \"Values\": [{\"queryRef\": \"Troskovi.Ukupno troškova\"}, {\"queryRef\": \"Troskovi.Broj troškova\"}, {\"queryRef\": \"Projekti.Odobren budžet (ukupno)\"}, {\"queryRef\": \"Projekti.% iskorišćenja budžeta\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Projekti\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"Troskovi\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Naziv projekta\"}, \"Name\": \"Projekti.Naziv projekta\", \"NativeReferenceName\": \"Naziv projekta\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Aktivnost\"}, \"Name\": \"Troskovi.Aktivnost\", \"NativeReferenceName\": \"Aktivnost\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Vrsta troška\"}, \"Name\": \"Troskovi.Vrsta troška\", \"NativeReferenceName\": \"Vrsta troška\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Ukupno troškova\"}, \"Name\": \"Troskovi.Ukupno troškova\", \"NativeReferenceName\": \"Ukupno troškova\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Broj troškova\"}, \"Name\": \"Troskovi.Broj troškova\", \"NativeReferenceName\": \"Broj troškova\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Odobren budžet (ukupno)\"}, \"Name\": \"Projekti.Odobren budžet (ukupno)\", \"NativeReferenceName\": \"Odobren budžet (ukupno)\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"% iskorišćenja budžeta\"}, \"Name\": \"Projekti.% iskorišćenja budžeta\", \"NativeReferenceName\": \"% iskorišćenja budžeta\"}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Projekat - aktivnost - trošak, sa zbirovima'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        }
+      ]
+    },
+    {
+      "name": "Strana4",
+      "displayName": "6 Kartica oglašivača",
+      "ordinal": 3,
+      "config": "{}",
+      "filters": "[]",
+      "displayOption": 1,
+      "width": 1280.0,
+      "height": 720.0,
+      "visualContainers": [
+        {
+          "x": 16.0,
+          "y": 12.0,
+          "z": 0.0,
+          "width": 900.0,
+          "height": 44.0,
+          "config": "{\"name\": \"v0037\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 12, \"z\": 0, \"width\": 900, \"height\": 44, \"tabOrder\": 0}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"Izveštaj 6 - Realizacija ugovora o oglašavanju po oglašivaču\", \"textStyle\": {\"fontSize\": \"16pt\", \"fontFamily\": \"Segoe UI\", \"fontWeight\": \"bold\", \"color\": \"#1B2A41\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 16.0,
+          "y": 58.0,
+          "z": 0.0,
+          "width": 900.0,
+          "height": 24.0,
+          "config": "{\"name\": \"v0038\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 58, \"z\": 0, \"width\": 900, \"height\": 24, \"tabOrder\": 0}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"Informacioni sistem TV stanice - TV Panorama  |  oglašivač se bira slajserom - zamena za parametar iz Access izveštaja\", \"textStyle\": {\"fontSize\": \"9pt\", \"fontFamily\": \"Segoe UI\", \"fontWeight\": \"normal\", \"color\": \"#5A6475\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 16.0,
+          "y": 92.0,
+          "z": 0.0,
+          "width": 220.0,
+          "height": 86.0,
+          "config": "{\"name\": \"v0039\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 92, \"z\": 0, \"width\": 220, \"height\": 86, \"tabOrder\": 3800}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"StavkeUgovora.Ugovoreno sekundi\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"StavkeUgovora\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Ugovoreno sekundi\"}, \"Name\": \"StavkeUgovora.Ugovoreno sekundi\", \"NativeReferenceName\": \"Ugovoreno sekundi\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"19D\"}}}, \"labelPrecision\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Ugovoreno sekundi'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 248.0,
+          "y": 92.0,
+          "z": 0.0,
+          "width": 220.0,
+          "height": 86.0,
+          "config": "{\"name\": \"v0040\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 248, \"y\": 92, \"z\": 0, \"width\": 220, \"height\": 86, \"tabOrder\": 3900}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"EmitovanjaReklama.Realizovano sekundi\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"EmitovanjaReklama\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Realizovano sekundi\"}, \"Name\": \"EmitovanjaReklama.Realizovano sekundi\", \"NativeReferenceName\": \"Realizovano sekundi\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"19D\"}}}, \"labelPrecision\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Realizovano sekundi'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 480.0,
+          "y": 92.0,
+          "z": 0.0,
+          "width": 220.0,
+          "height": 86.0,
+          "config": "{\"name\": \"v0041\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 480, \"y\": 92, \"z\": 0, \"width\": 220, \"height\": 86, \"tabOrder\": 4000}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"EmitovanjaReklama.Naplaćeno\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"EmitovanjaReklama\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Naplaćeno\"}, \"Name\": \"EmitovanjaReklama.Naplaćeno\", \"NativeReferenceName\": \"Naplaćeno\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"19D\"}}}, \"labelPrecision\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Naplaćeno'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 712.0,
+          "y": 92.0,
+          "z": 0.0,
+          "width": 220.0,
+          "height": 86.0,
+          "config": "{\"name\": \"v0042\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 712, \"y\": 92, \"z\": 0, \"width\": 220, \"height\": 86, \"tabOrder\": 4100}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"Ugovori.% naplate\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Ugovori\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"% naplate\"}, \"Name\": \"Ugovori.% naplate\", \"NativeReferenceName\": \"% naplate\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"19D\"}}}, \"labelPrecision\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'% naplate'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 940.0,
+          "y": 92.0,
+          "z": 0.0,
+          "width": 324.0,
+          "height": 86.0,
+          "config": "{\"name\": \"v0043\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 940, \"y\": 92, \"z\": 0, \"width\": 324, \"height\": 86, \"tabOrder\": 4200}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"Ugovori.Oglašivač\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Ugovori\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Oglašivač\"}, \"Name\": \"Ugovori.Oglašivač\", \"NativeReferenceName\": \"Oglašivač\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Oglašivač'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 16.0,
+          "y": 190.0,
+          "z": 0.0,
+          "width": 456.0,
+          "height": 210.0,
+          "config": "{\"name\": \"v0044\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 190, \"z\": 0, \"width\": 456, \"height\": 210, \"tabOrder\": 4300}}], \"singleVisual\": {\"visualType\": \"pivotTable\", \"projections\": {\"Rows\": [{\"queryRef\": \"Ugovori.Broj ugovora\"}, {\"queryRef\": \"StavkeUgovora.Opis stavke\"}], \"Values\": [{\"queryRef\": \"StavkeUgovora.Ugovoreno sekundi\"}, {\"queryRef\": \"StavkeUgovora.Ugovorena vrednost\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Ugovori\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"StavkeUgovora\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Broj ugovora\"}, \"Name\": \"Ugovori.Broj ugovora\", \"NativeReferenceName\": \"Broj ugovora\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Opis stavke\"}, \"Name\": \"StavkeUgovora.Opis stavke\", \"NativeReferenceName\": \"Opis stavke\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Ugovoreno sekundi\"}, \"Name\": \"StavkeUgovora.Ugovoreno sekundi\", \"NativeReferenceName\": \"Ugovoreno sekundi\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Ugovorena vrednost\"}, \"Name\": \"StavkeUgovora.Ugovorena vrednost\", \"NativeReferenceName\": \"Ugovorena vrednost\"}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Ugovorene stavke po ugovoru'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 484.0,
+          "y": 190.0,
+          "z": 0.0,
+          "width": 444.0,
+          "height": 210.0,
+          "config": "{\"name\": \"v0045\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 484, \"y\": 190, \"z\": 0, \"width\": 444, \"height\": 210, \"tabOrder\": 4400}}], \"singleVisual\": {\"visualType\": \"columnChart\", \"projections\": {\"Category\": [{\"queryRef\": \"Kalendar.Naziv meseca\"}], \"Y\": [{\"queryRef\": \"EmitovanjaReklama.Naplaćeno\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Kalendar\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"EmitovanjaReklama\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Naziv meseca\"}, \"Name\": \"Kalendar.Naziv meseca\", \"NativeReferenceName\": \"Naziv meseca\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Naplaćeno\"}, \"Name\": \"EmitovanjaReklama.Naplaćeno\", \"NativeReferenceName\": \"Naplaćeno\"}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Naplaćeni iznos po mesecu emitovanja'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 940.0,
+          "y": 190.0,
+          "z": 0.0,
+          "width": 324.0,
+          "height": 100.0,
+          "config": "{\"name\": \"v0046\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 940, \"y\": 190, \"z\": 0, \"width\": 324, \"height\": 100, \"tabOrder\": 4500}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"Ugovori.Status ugovora\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Ugovori\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Status ugovora\"}, \"Name\": \"Ugovori.Status ugovora\", \"NativeReferenceName\": \"Status ugovora\"}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Status ugovora'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 940.0,
+          "y": 298.0,
+          "z": 0.0,
+          "width": 324.0,
+          "height": 102.0,
+          "config": "{\"name\": \"v0047\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 940, \"y\": 298, \"z\": 0, \"width\": 324, \"height\": 102, \"tabOrder\": 4600}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"Kalendar.Datum\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Kalendar\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Datum\"}, \"Name\": \"Kalendar.Datum\", \"NativeReferenceName\": \"Datum\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Between'\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Datum emitovanja (od - do)'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 16.0,
+          "y": 412.0,
+          "z": 0.0,
+          "width": 1248.0,
+          "height": 292.0,
+          "config": "{\"name\": \"v0048\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 412, \"z\": 0, \"width\": 1248, \"height\": 292, \"tabOrder\": 4700}}], \"singleVisual\": {\"visualType\": \"tableEx\", \"projections\": {\"Values\": [{\"queryRef\": \"Ugovori.Broj ugovora\"}, {\"queryRef\": \"EmitovanjaReklama.Datum emitovanja\"}, {\"queryRef\": \"EmitovanjaReklama.Vreme emitovanja\"}, {\"queryRef\": \"EmitovanjaReklama.Reklamni blok\"}, {\"queryRef\": \"EmitovanjaReklama.Termin\"}, {\"queryRef\": \"EmitovanjaReklama.Zona\"}, {\"queryRef\": \"EmitovanjaReklama.Trajanje spota\"}, {\"queryRef\": \"EmitovanjaReklama.Naplaćeni iznos\"}, {\"queryRef\": \"EmitovanjaReklama.Status naplate\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Ugovori\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"EmitovanjaReklama\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Broj ugovora\"}, \"Name\": \"Ugovori.Broj ugovora\", \"NativeReferenceName\": \"Broj ugovora\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Datum emitovanja\"}, \"Name\": \"EmitovanjaReklama.Datum emitovanja\", \"NativeReferenceName\": \"Datum emitovanja\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Vreme emitovanja\"}, \"Name\": \"EmitovanjaReklama.Vreme emitovanja\", \"NativeReferenceName\": \"Vreme emitovanja\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Reklamni blok\"}, \"Name\": \"EmitovanjaReklama.Reklamni blok\", \"NativeReferenceName\": \"Reklamni blok\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Termin\"}, \"Name\": \"EmitovanjaReklama.Termin\", \"NativeReferenceName\": \"Termin\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Zona\"}, \"Name\": \"EmitovanjaReklama.Zona\", \"NativeReferenceName\": \"Zona\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Trajanje spota\"}, \"Name\": \"EmitovanjaReklama.Trajanje spota\", \"NativeReferenceName\": \"Trajanje spota\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Naplaćeni iznos\"}, \"Name\": \"EmitovanjaReklama.Naplaćeni iznos\", \"NativeReferenceName\": \"Naplaćeni iznos\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Status naplate\"}, \"Name\": \"EmitovanjaReklama.Status naplate\", \"NativeReferenceName\": \"Status naplate\"}], \"OrderBy\": [{\"Direction\": 1, \"Expression\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Datum emitovanja\"}}}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Stvarno emitovani reklamni spotovi'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        }
+      ]
+    },
+    {
+      "name": "Strana5",
+      "displayName": "7 Plan nabavke i ponude",
+      "ordinal": 4,
+      "config": "{}",
+      "filters": "[]",
+      "displayOption": 1,
+      "width": 1280.0,
+      "height": 720.0,
+      "visualContainers": [
+        {
+          "x": 16.0,
+          "y": 12.0,
+          "z": 0.0,
+          "width": 900.0,
+          "height": 44.0,
+          "config": "{\"name\": \"v0049\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 12, \"z\": 0, \"width\": 900, \"height\": 44, \"tabOrder\": 0}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"Izveštaj 7 - Realizacija plana nabavke sa vrednovanjem ponuda\", \"textStyle\": {\"fontSize\": \"16pt\", \"fontFamily\": \"Segoe UI\", \"fontWeight\": \"bold\", \"color\": \"#1B2A41\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 16.0,
+          "y": 58.0,
+          "z": 0.0,
+          "width": 900.0,
+          "height": 24.0,
+          "config": "{\"name\": \"v0050\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 58, \"z\": 0, \"width\": 900, \"height\": 24, \"tabOrder\": 0}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"Informacioni sistem TV stanice - TV Panorama  |  izvršenje plana po stavkama i bodovi po kriterijumima\", \"textStyle\": {\"fontSize\": \"9pt\", \"fontFamily\": \"Segoe UI\", \"fontWeight\": \"normal\", \"color\": \"#5A6475\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 16.0,
+          "y": 92.0,
+          "z": 0.0,
+          "width": 220.0,
+          "height": 86.0,
+          "config": "{\"name\": \"v0051\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 92, \"z\": 0, \"width\": 220, \"height\": 86, \"tabOrder\": 5000}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"StavkePlana.Ukupno planirano\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"StavkePlana\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Ukupno planirano\"}, \"Name\": \"StavkePlana.Ukupno planirano\", \"NativeReferenceName\": \"Ukupno planirano\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"19D\"}}}, \"labelPrecision\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Ukupno planirano'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 248.0,
+          "y": 92.0,
+          "z": 0.0,
+          "width": 220.0,
+          "height": 86.0,
+          "config": "{\"name\": \"v0052\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 248, \"y\": 92, \"z\": 0, \"width\": 220, \"height\": 86, \"tabOrder\": 5100}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"StavkePlana.Ukupno naručeno\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"StavkePlana\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Ukupno naručeno\"}, \"Name\": \"StavkePlana.Ukupno naručeno\", \"NativeReferenceName\": \"Ukupno naručeno\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"19D\"}}}, \"labelPrecision\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Ukupno naručeno'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 480.0,
+          "y": 92.0,
+          "z": 0.0,
+          "width": 220.0,
+          "height": 86.0,
+          "config": "{\"name\": \"v0053\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 480, \"y\": 92, \"z\": 0, \"width\": 220, \"height\": 86, \"tabOrder\": 5200}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"StavkePlana.% izvršenja plana\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"StavkePlana\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"% izvršenja plana\"}, \"Name\": \"StavkePlana.% izvršenja plana\", \"NativeReferenceName\": \"% izvršenja plana\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"19D\"}}}, \"labelPrecision\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'% izvršenja plana'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 712.0,
+          "y": 92.0,
+          "z": 0.0,
+          "width": 220.0,
+          "height": 86.0,
+          "config": "{\"name\": \"v0054\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 712, \"y\": 92, \"z\": 0, \"width\": 220, \"height\": 86, \"tabOrder\": 5300}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"StavkePlana.Broj stavki plana\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"StavkePlana\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Broj stavki plana\"}, \"Name\": \"StavkePlana.Broj stavki plana\", \"NativeReferenceName\": \"Broj stavki plana\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"19D\"}}}, \"labelPrecision\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Broj stavki plana'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 940.0,
+          "y": 92.0,
+          "z": 0.0,
+          "width": 324.0,
+          "height": 86.0,
+          "config": "{\"name\": \"v0055\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 940, \"y\": 92, \"z\": 0, \"width\": 324, \"height\": 86, \"tabOrder\": 5400}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"Planovi.Šifra plana\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Planovi\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Šifra plana\"}, \"Name\": \"Planovi.Šifra plana\", \"NativeReferenceName\": \"Šifra plana\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Plan nabavke'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 16.0,
+          "y": 190.0,
+          "z": 0.0,
+          "width": 456.0,
+          "height": 210.0,
+          "config": "{\"name\": \"v0056\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 190, \"z\": 0, \"width\": 456, \"height\": 210, \"tabOrder\": 5500}}], \"singleVisual\": {\"visualType\": \"columnChart\", \"projections\": {\"Category\": [{\"queryRef\": \"StavkePlana.Planirani kvartal\"}], \"Y\": [{\"queryRef\": \"StavkePlana.Ukupno planirano\"}, {\"queryRef\": \"StavkePlana.Ukupno naručeno\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"StavkePlana\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Planirani kvartal\"}, \"Name\": \"StavkePlana.Planirani kvartal\", \"NativeReferenceName\": \"Planirani kvartal\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Ukupno planirano\"}, \"Name\": \"StavkePlana.Ukupno planirano\", \"NativeReferenceName\": \"Ukupno planirano\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Ukupno naručeno\"}, \"Name\": \"StavkePlana.Ukupno naručeno\", \"NativeReferenceName\": \"Ukupno naručeno\"}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Planirano i naručeno po kvartalu'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 484.0,
+          "y": 190.0,
+          "z": 0.0,
+          "width": 444.0,
+          "height": 210.0,
+          "config": "{\"name\": \"v0057\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 484, \"y\": 190, \"z\": 0, \"width\": 444, \"height\": 210, \"tabOrder\": 5600}}], \"singleVisual\": {\"visualType\": \"barChart\", \"projections\": {\"Category\": [{\"queryRef\": \"VrednovanjePonuda.Dobavljač\"}], \"Y\": [{\"queryRef\": \"VrednovanjePonuda.Ukupno bodova ponude\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"VrednovanjePonuda\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Dobavljač\"}, \"Name\": \"VrednovanjePonuda.Dobavljač\", \"NativeReferenceName\": \"Dobavljač\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Ukupno bodova ponude\"}, \"Name\": \"VrednovanjePonuda.Ukupno bodova ponude\", \"NativeReferenceName\": \"Ukupno bodova ponude\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Ukupno bodova ponude\"}}}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Ukupan broj bodova po dobavljaču'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 940.0,
+          "y": 190.0,
+          "z": 0.0,
+          "width": 324.0,
+          "height": 100.0,
+          "config": "{\"name\": \"v0058\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 940, \"y\": 190, \"z\": 0, \"width\": 324, \"height\": 100, \"tabOrder\": 5700}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"Planovi.Status plana\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Planovi\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Status plana\"}, \"Name\": \"Planovi.Status plana\", \"NativeReferenceName\": \"Status plana\"}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Status plana'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 940.0,
+          "y": 298.0,
+          "z": 0.0,
+          "width": 324.0,
+          "height": 102.0,
+          "config": "{\"name\": \"v0059\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 940, \"y\": 298, \"z\": 0, \"width\": 324, \"height\": 102, \"tabOrder\": 5800}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"StavkePlana.Planirani kvartal\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"StavkePlana\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Planirani kvartal\"}, \"Name\": \"StavkePlana.Planirani kvartal\", \"NativeReferenceName\": \"Planirani kvartal\"}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Planirani kvartal'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 16.0,
+          "y": 412.0,
+          "z": 0.0,
+          "width": 616.0,
+          "height": 292.0,
+          "config": "{\"name\": \"v0060\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 412, \"z\": 0, \"width\": 616, \"height\": 292, \"tabOrder\": 5900}}], \"singleVisual\": {\"visualType\": \"pivotTable\", \"projections\": {\"Rows\": [{\"queryRef\": \"Planovi.Šifra plana\"}, {\"queryRef\": \"StavkePlana.Opis artikla\"}], \"Values\": [{\"queryRef\": \"StavkePlana.Ukupno planirano\"}, {\"queryRef\": \"StavkePlana.Ukupno naručeno\"}, {\"queryRef\": \"StavkePlana.Odstupanje nabavke\"}, {\"queryRef\": \"StavkePlana.% izvršenja plana\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"Planovi\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"StavkePlana\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Šifra plana\"}, \"Name\": \"Planovi.Šifra plana\", \"NativeReferenceName\": \"Šifra plana\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Opis artikla\"}, \"Name\": \"StavkePlana.Opis artikla\", \"NativeReferenceName\": \"Opis artikla\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Ukupno planirano\"}, \"Name\": \"StavkePlana.Ukupno planirano\", \"NativeReferenceName\": \"Ukupno planirano\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Ukupno naručeno\"}, \"Name\": \"StavkePlana.Ukupno naručeno\", \"NativeReferenceName\": \"Ukupno naručeno\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Odstupanje nabavke\"}, \"Name\": \"StavkePlana.Odstupanje nabavke\", \"NativeReferenceName\": \"Odstupanje nabavke\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"% izvršenja plana\"}, \"Name\": \"StavkePlana.% izvršenja plana\", \"NativeReferenceName\": \"% izvršenja plana\"}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Stavke plana i njihova realizacija'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 648.0,
+          "y": 412.0,
+          "z": 0.0,
+          "width": 616.0,
+          "height": 292.0,
+          "config": "{\"name\": \"v0061\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 648, \"y\": 412, \"z\": 0, \"width\": 616, \"height\": 292, \"tabOrder\": 6000}}], \"singleVisual\": {\"visualType\": \"pivotTable\", \"projections\": {\"Rows\": [{\"queryRef\": \"VrednovanjePonuda.Dobavljač\"}, {\"queryRef\": \"VrednovanjePonuda.Broj ponude\"}], \"Columns\": [{\"queryRef\": \"VrednovanjePonuda.Kriterijum\"}], \"Values\": [{\"queryRef\": \"VrednovanjePonuda.Bodovi (zbir)\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"VrednovanjePonuda\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Dobavljač\"}, \"Name\": \"VrednovanjePonuda.Dobavljač\", \"NativeReferenceName\": \"Dobavljač\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Broj ponude\"}, \"Name\": \"VrednovanjePonuda.Broj ponude\", \"NativeReferenceName\": \"Broj ponude\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Kriterijum\"}, \"Name\": \"VrednovanjePonuda.Kriterijum\", \"NativeReferenceName\": \"Kriterijum\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Bodovi (zbir)\"}, \"Name\": \"VrednovanjePonuda.Bodovi (zbir)\", \"NativeReferenceName\": \"Bodovi (zbir)\"}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Bodovi po kriterijumu vrednovanja'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"10D\"}}}, \"titleWrap\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}}}",
+          "filters": "[]"
+        }
+      ]
+    }
+  ]
+}

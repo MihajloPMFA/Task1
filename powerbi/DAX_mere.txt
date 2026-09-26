@@ -1,0 +1,175 @@
+DAX MERE - TV Panorama
+
+Mera se dodaje na tabelu koja je navedena u naslovu:
+desni klik na tabelu u oknu Data > New measure, pa nalepi izraz.
+U koloni "format" je format koji treba postaviti (Measure tools > Format).
+
+==============================================================================
+Tabela: Projekti
+==============================================================================
+
+-- Odobren budžet (ukupno)     [format: #,##0.00]
+Odobren budžet (ukupno) = SUM(Projekti[Odobren budžet])
+
+-- % iskorišćenja budžeta     [format: 0.0%]
+% iskorišćenja budžeta = DIVIDE([Ukupno troškova], [Odobren budžet (ukupno)])
+
+==============================================================================
+Tabela: Ugovori
+==============================================================================
+
+-- Fakturisano     [format: #,##0.00]
+Fakturisano = SUM(Ugovori[Fakturisano (iznos)])
+
+-- Broj ugovora (broj)     [format: #,##0]
+Broj ugovora (broj) = DISTINCTCOUNT(Ugovori[Broj ugovora])
+
+-- Razlika sekundi     [format: #,##0]
+Razlika sekundi = [Ugovoreno sekundi] - [Realizovano sekundi]
+
+-- % realizacije sekundi     [format: 0.0%]
+% realizacije sekundi = DIVIDE([Realizovano sekundi], [Ugovoreno sekundi])
+
+-- % naplate     [format: 0.0%]
+% naplate = DIVIDE([Naplaćeno], [Ugovorena vrednost])
+
+==============================================================================
+Tabela: Playout
+==============================================================================
+
+-- Broj emitovanja     [format: #,##0]
+Broj emitovanja = COUNTROWS(Playout)
+
+-- Stvarno trajanje (min)     [format: #,##0]
+Stvarno trajanje (min) = SUM(Playout[Stvarno trajanje])
+
+-- Planirano trajanje (min)     [format: #,##0]
+Planirano trajanje (min) = SUM(Playout[Planirano trajanje])
+
+-- Odstupanje (min)     [format: #,##0]
+Odstupanje (min) = SUM(Playout[Odstupanje])
+
+-- Emitovanja sa smetnjama     [format: #,##0]
+Emitovanja sa smetnjama = SUM(Playout[Ima smetnju])
+
+-- % realizovanih     [format: 0.0%]
+% realizovanih = DIVIDE(
+    CALCULATE(COUNTROWS(Playout), Playout[Status realizacije] = "Realizovano"),
+    COUNTROWS(Playout)
+)
+
+==============================================================================
+Tabela: Gledanost
+==============================================================================
+
+-- Broj merenja     [format: #,##0]
+Broj merenja = COUNTROWS(Gledanost)
+
+-- Prosečan rejting     [format: 0.00]
+Prosečan rejting = AVERAGE(Gledanost[Ostvareni rejting])
+
+-- Prosečan udeo     [format: 0.00]
+Prosečan udeo = AVERAGE(Gledanost[Udeo u terminu])
+
+-- Prosečno gledalaca     [format: #,##0]
+Prosečno gledalaca = AVERAGE(Gledanost[Broj gledalaca])
+
+-- Prosečno gledanje (min)     [format: 0.0]
+Prosečno gledanje (min) = AVERAGE(Gledanost[Prosečno gledanje])
+
+==============================================================================
+Tabela: Troskovi
+==============================================================================
+
+-- Ukupno troškova     [format: #,##0.00]
+Ukupno troškova = SUM(Troskovi[Iznos])
+
+-- Broj troškova     [format: #,##0]
+Broj troškova = COUNTROWS(Troskovi)
+
+-- Broj aktivnosti     [format: #,##0]
+Broj aktivnosti = DISTINCTCOUNT(Troskovi[Ključ aktivnosti])
+
+-- Prosečan trošak     [format: #,##0.00]
+Prosečan trošak = AVERAGE(Troskovi[Iznos])
+
+==============================================================================
+Tabela: StavkeUgovora
+==============================================================================
+
+-- Ugovoreno sekundi     [format: #,##0]
+Ugovoreno sekundi = SUM(StavkeUgovora[Ugovoreno sekundi])
+
+-- Ugovorena vrednost     [format: #,##0.00]
+Ugovorena vrednost = SUM(StavkeUgovora[Vrednost stavke])
+
+-- Broj stavki ugovora     [format: #,##0]
+Broj stavki ugovora = COUNTROWS(StavkeUgovora)
+
+==============================================================================
+Tabela: EmitovanjaReklama
+==============================================================================
+
+-- Realizovano sekundi     [format: #,##0]
+Realizovano sekundi = SUM(EmitovanjaReklama[Trajanje spota])
+
+-- Naplaćeno     [format: #,##0.00]
+Naplaćeno = SUM(EmitovanjaReklama[Naplaćeni iznos])
+
+-- Broj spotova     [format: #,##0]
+Broj spotova = COUNTROWS(EmitovanjaReklama)
+
+==============================================================================
+Tabela: StavkePlana
+==============================================================================
+
+-- Ukupno planirano     [format: #,##0.00]
+Ukupno planirano = SUM(StavkePlana[Procenjena cena])
+
+-- Ukupno naručeno     [format: #,##0.00]
+Ukupno naručeno = SUM(StavkePlana[Iznos narudžbenice])
+
+-- Odstupanje nabavke     [format: #,##0.00]
+Odstupanje nabavke = [Ukupno naručeno] - [Ukupno planirano]
+
+-- % izvršenja plana     [format: 0.0%]
+% izvršenja plana = DIVIDE([Ukupno naručeno], [Ukupno planirano])
+
+-- Broj stavki plana     [format: #,##0]
+Broj stavki plana = COUNTROWS(StavkePlana)
+
+==============================================================================
+Tabela: VrednovanjePonuda
+==============================================================================
+
+-- Bodovi (zbir)     [format: 0.00]
+Bodovi (zbir) = SUM(VrednovanjePonuda[Bodovi])
+
+-- Ukupno bodova ponude     [format: 0.00]
+Ukupno bodova ponude = MAX(VrednovanjePonuda[Ukupno bodova])
+
+-- Broj ponuda     [format: #,##0]
+Broj ponuda = DISTINCTCOUNT(VrednovanjePonuda[Broj ponude])
+
+-- Broj kriterijuma     [format: #,##0]
+Broj kriterijuma = DISTINCTCOUNT(VrednovanjePonuda[Kriterijum])
+
+==============================================================================
+RELACIJE (Model view - prevuci sa dimenzije na činjenicu)
+==============================================================================
+
+Sve su tipa jedan-prema-više (1:*), smer filtriranja: jedan.
+
+  Kalendar    [Datum             ]  1  ->  *  Playout             [Datum]
+  Kalendar    [Datum             ]  1  ->  *  Gledanost           [Datum merenja]
+  Kalendar    [Datum             ]  1  ->  *  Troskovi            [Datum nastanka]
+  Kalendar    [Datum             ]  1  ->  *  EmitovanjaReklama   [Datum emitovanja]
+  Kalendar    [Datum             ]  1  ->  *  Planovi             [Datum donošenja]
+  Emisije     [Šifra emisije     ]  1  ->  *  Playout             [Šifra emisije]
+  Emisije     [Šifra emisije     ]  1  ->  *  Gledanost           [Šifra emisije]
+  Projekti    [Šifra projekta    ]  1  ->  *  Troskovi            [Šifra projekta]
+  Ugovori     [Broj ugovora      ]  1  ->  *  StavkeUgovora       [Broj ugovora]
+  Ugovori     [Broj ugovora      ]  1  ->  *  EmitovanjaReklama   [Broj ugovora]
+  Planovi     [Šifra plana       ]  1  ->  *  StavkePlana         [Šifra plana]
+  Planovi     [Šifra plana       ]  1  ->  *  VrednovanjePonuda   [Šifra plana]
+  Dobavljaci  [Šifra dobavljača  ]  1  ->  *  VrednovanjePonuda   [Šifra dobavljača]

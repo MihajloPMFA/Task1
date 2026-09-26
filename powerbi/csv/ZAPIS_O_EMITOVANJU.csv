@@ -1,0 +1,41 @@
+RB_EMITOVANJA;STVARNO_VREME_POCETKA;STVARNO_TRAJANJE;SIFRA_TERMINA;SIFRA_SADRZAJA;STATUS_REALIZACIJE;NAPOMENA_O_SMETNJAMA;OPERATER_EMITOVANJA
+1;09:07:00;29;TR-001;MS-001;Realizovano;;Operater 1
+1;12:14:00;34;TR-002;MS-002;Realizovano;;Operater 2
+1;15:21:00;39;TR-003;MS-003;Realizovano;;Operater 3
+1;18:28:00;44;TR-004;MS-004;Otkazano;;Operater 4
+1;21:35:00;49;TR-005;MS-005;Realizovano;;Operater 5
+1;07:42:00;54;TR-006;MS-006;Realizovano;;Operater 6
+1;10:49:00;59;TR-007;MS-007;Realizovano;;Operater 7
+1;13:56:00;64;TR-008;MS-008;Otkazano;;Operater 8
+1;16:03:00;69;TR-009;MS-009;Realizovano;;Operater 9
+1;19:10:00;74;TR-010;MS-010;Realizovano;;Operater 10
+1;22:17:00;79;TR-011;MS-011;Realizovano;;Operater 11
+1;08:24:00;84;TR-012;MS-012;Otkazano;;Operater 12
+1;11:31:00;89;TR-013;MS-013;Realizovano;;Operater 13
+1;14:38:00;94;TR-014;MS-014;Realizovano;;Operater 14
+1;17:45:00;99;TR-015;MS-015;Realizovano;;Operater 15
+1;20:52:00;104;TR-016;MS-016;Otkazano;;Operater 16
+1;06:59:00;109;TR-017;MS-017;Realizovano;;Operater 17
+1;09:06:00;24;TR-018;MS-018;Realizovano;;Operater 18
+1;12:13:00;29;TR-019;MS-019;Realizovano;;Operater 19
+1;15:20:00;34;TR-020;MS-020;Otkazano;;Operater 20
+1;21:35:00;31;TR-021;MS-001;Realizovano;Napomena o smetnjama 1;Operater 1
+1;07:42:00;38;TR-022;MS-002;Realizovano;Napomena o smetnjama 2;Operater 2
+1;10:49:00;45;TR-023;MS-003;Realizovano;Napomena o smetnjama 3;Operater 3
+1;13:56:00;52;TR-024;MS-004;Realizovano;Napomena o smetnjama 4;Operater 4
+1;16:03:00;59;TR-025;MS-005;Realizovano;Napomena o smetnjama 5;Operater 5
+1;19:10:00;66;TR-026;MS-006;Realizovano;Napomena o smetnjama 6;Operater 6
+1;22:17:00;73;TR-027;MS-007;Realizovano;Napomena o smetnjama 7;Operater 7
+1;08:24:00;80;TR-028;MS-008;Realizovano;Napomena o smetnjama 8;Operater 8
+1;11:31:00;87;TR-029;MS-009;Realizovano;Napomena o smetnjama 9;Operater 9
+1;14:38:00;94;TR-030;MS-010;Realizovano;Napomena o smetnjama 10;Operater 10
+1;17:45:00;101;TR-031;MS-011;Realizovano;Napomena o smetnjama 11;Operater 11
+1;20:52:00;108;TR-032;MS-012;Realizovano;Napomena o smetnjama 12;Operater 12
+1;06:59:00;25;TR-033;MS-013;Realizovano;Napomena o smetnjama 13;Operater 13
+1;09:06:00;32;TR-034;MS-014;Realizovano;Napomena o smetnjama 14;Operater 14
+1;12:13:00;39;TR-035;MS-015;Realizovano;Napomena o smetnjama 15;Operater 15
+1;15:20:00;46;TR-036;MS-016;Realizovano;Napomena o smetnjama 16;Operater 16
+1;18:27:00;53;TR-037;MS-017;Realizovano;Napomena o smetnjama 17;Operater 17
+1;21:34:00;60;TR-038;MS-018;Realizovano;Napomena o smetnjama 18;Operater 18
+1;07:41:00;67;TR-039;MS-019;Realizovano;Napomena o smetnjama 19;Operater 19
+1;10:48:00;74;TR-040;MS-020;Realizovano;Napomena o smetnjama 20;Operater 20
