@@ -1,0 +1,1251 @@
+{
+ "AKTIVNOST_PRODUKCIJE": {
+  "kolone": [
+   "RB_AKTIVNOSTI",
+   "DATUM_OD",
+   "DATUM_DO",
+   "SIFRA_PROJEKTA",
+   "NAZIV_AKTIVNOSTI",
+   "VRSTA_AKTIVNOSTI",
+   "LOKACIJA_SNIMANJA",
+   "STATUS_AKTIVNOSTI"
+  ],
+  "redova": 40
+ },
+ "ANGAZOVANJE_NA_AKTIVNOSTI": {
+  "kolone": [
+   "RB_AKTIVNOSTI",
+   "DATUM_OD",
+   "DATUM_DO",
+   "BROJ_ANGAZOVANIH_SATI",
+   "SIFRA_PROJEKTA",
+   "SIFRA_ZAPOSLENOG",
+   "ULOGA_NA_SNIMANJU"
+  ],
+  "redova": 40
+ },
+ "AUDIO_OPREMA": {
+  "kolone": [
+   "INVENTARSKI_BROJ",
+   "TIP",
+   "FREKVENCIJA"
+  ],
+  "redova": 20
+ },
+ "CENOVNIK_REKL_TERMINA": {
+  "kolone": [
+   "VAZI_OD",
+   "VAZI_DO",
+   "CENA_PO_SEKUNDI",
+   "SIFRA_CENOVNIKA",
+   "ZONA",
+   "TIP_CENOVNOG_PAKETA",
+   "OPIS_CENOVNOG_PAKETA"
+  ],
+  "redova": 20
+ },
+ "DOBAVLJAC": {
+  "kolone": [
+   "OCENA_DOBAVLJACA",
+   "SIFRA_DOBAVLJACA",
+   "NAZIV_DOBAVLJACA",
+   "PIB",
+   "MATICNI_BROJ",
+   "ADRESA"
+  ],
+  "redova": 40
+ },
+ "DOBAVLJAC_OPREME_I_MATERIJALA": {
+  "kolone": [
+   "SIFRA_DOBAVLJACA",
+   "ASORTIMAN",
+   "OVLASCENI_SERVIS"
+  ],
+  "redova": 20
+ },
+ "DOBAVLJAC_TV_SADRZAJA": {
+  "kolone": [
+   "SIFRA_DOBAVLJACA",
+   "VRSTA_SADRZAJA",
+   "KATALOG_PONUDE"
+  ],
+  "redova": 20
+ },
+ "EMISIJA": {
+  "kolone": [
+   "PREDVIDJENO_TRAJANJE",
+   "SIFRA_EMISIJE",
+   "NAZIV_EMISIJE",
+   "ZANR",
+   "FORMAT_EMISIJE",
+   "CILJNA_PUBLIKA",
+   "STATUS_EMISIJE",
+   "PROGRAMSKI_ELABORAT"
+  ],
+  "redova": 20
+ },
+ "EMITOVANJE_REKLAME": {
+  "kolone": [
+   "RB_U_BLOKU",
+   "RB_STAVKE_UGOVORA",
+   "DATUM_EMITOVANJA",
+   "VREME_EMITOVANJA",
+   "TRAJANJE_SPOTA",
+   "NAPLACENI_IZNOS",
+   "SIFRA_BLOKA",
+   "SIFRA_SADRZAJA",
+   "BROJ_UGOVORA",
+   "STATUS_NAPLATE"
+  ],
+  "redova": 20
+ },
+ "FAKTURA": {
+  "kolone": [
+   "DATUM_IZDAVANJA",
+   "ROK_PLACANJA",
+   "OSNOVICA",
+   "IZNOS_PDV",
+   "IZNOS_ZA_PLACANJE",
+   "BROJ_FAKTURE",
+   "BROJ_UGOVORA",
+   "SMER",
+   "STATUS_PLACANJA"
+  ],
+  "redova": 20
+ },
+ "GRAFICKI_I_MUZICKI_ELEMENT": {
+  "kolone": [
+   "SIFRA_ELEMENTA",
+   "NAZIV_ELEMENTA",
+   "TIP_ELEMENTA",
+   "AUTOR",
+   "FORMAT_ELEMENTA",
+   "USLOV_KORISCENJA"
+  ],
+  "redova": 20
+ },
+ "KLIJENT": {
+  "kolone": [
+   "SIFRA_KLIJENTA",
+   "NAZIV_KLIJENTA",
+   "PIB",
+   "MATICNI_BROJ",
+   "ULICA_I_BROJ",
+   "GRAD",
+   "POSTANSKI_BROJ",
+   "KONTAKT_OSOBA"
+  ],
+  "redova": 40
+ },
+ "KRITERIJUM_VREDNOVANJA": {
+  "kolone": [
+   "SIFRA_KRITERIJUMA",
+   "NAZIV_KRITERIJUMA",
+   "NACIN_BODOVANJA",
+   "OPIS_KRITERIJUMA"
+  ],
+  "redova": 20
+ },
+ "KUPAC_SADRZAJA": {
+  "kolone": [
+   "SIFRA_KLIJENTA",
+   "TIP_MEDIJA",
+   "TERITORIJA_EMITOVANJA"
+  ],
+  "redova": 20
+ },
+ "MEDIJSKI_SADRZAJ": {
+  "kolone": [
+   "TRAJANJE",
+   "DATUM_ARHIVIRANJA",
+   "SIFRA_SADRZAJA",
+   "NAZIV_SADRZAJA",
+   "FORMAT_ZAPISA",
+   "LOKACIJA_U_ARHIVI"
+  ],
+  "redova": 60
+ },
+ "MERENJE_EMISIJE": {
+  "kolone": [
+   "OSTVARENI_RATING",
+   "UDEO_U_TERMINU",
+   "SIFRA_MERENJA",
+   "SIFRA_EMISIJE"
+  ],
+  "redova": 40
+ },
+ "MERENJE_GLEDANOSTI": {
+  "kolone": [
+   "DATUM_MERENJA",
+   "RATING",
+   "SHARE_UDEO",
+   "BROJ_GLEDALACA",
+   "PROSECNO_GLEDANJE",
+   "SIFRA_MERENJA",
+   "IZVOR_MERENJA",
+   "CILJNA_GRUPA"
+  ],
+  "redova": 20
+ },
+ "MONTAZA_SNIMKA": {
+  "kolone": [
+   "SIFRA_SADRZAJA",
+   "SIFRA_SNIMKA"
+  ],
+  "redova": 20
+ },
+ "NABAVLJENI_SADRZAJ": {
+  "kolone": [
+   "CENA_NABAVKE",
+   "DATUM_PREUZIMANJA",
+   "UGOVORENA_NAKNADA",
+   "SIFRA_SADRZAJA",
+   "BROJ_UGOVORA",
+   "ZEMLJA_POREKLA"
+  ],
+  "redova": 20
+ },
+ "NALOG_ZA_PLACANJE": {
+  "kolone": [
+   "DATUM_NALOGA",
+   "IZNOS_NALOGA",
+   "DATUM_REALIZACIJE",
+   "BROJ_NALOGA",
+   "BROJ_FAKTURE",
+   "SVRHA_PLACANJA",
+   "STATUS_NALOGA",
+   "RACUN_PRIMAOCA",
+   "ODOBRIO"
+  ],
+  "redova": 20
+ },
+ "NARUDZBENICA": {
+  "kolone": [
+   "DATUM_IZDAVANJA",
+   "ROK_ISPORUKE",
+   "UKUPAN_IZNOS",
+   "BROJ_NARUDZBENICE",
+   "SIFRA_DOBAVLJACA",
+   "MESTO_ISPORUKE",
+   "STATUS_NARUDZBINE"
+  ],
+  "redova": 20
+ },
+ "NOVINAR_REPORTER": {
+  "kolone": [
+   "SIFRA_ZAPOSLENOG",
+   "OBLAST_IZVESTAVANJA",
+   "BROJ_NOVINARSKE_LEGITIM"
+  ],
+  "redova": 20
+ },
+ "OCENA_PONUDE": {
+  "kolone": [
+   "BROJ_BODOVA",
+   "BROJ_PONUDE",
+   "SIFRA_KRITERIJUMA",
+   "KOMENTAR_OCENE"
+  ],
+  "redova": 20
+ },
+ "OGLASIVAC": {
+  "kolone": [
+   "GODISNJI_BUDZET",
+   "SIFRA_KLIJENTA",
+   "BRANSA"
+  ],
+  "redova": 20
+ },
+ "OPREMA": {
+  "kolone": [
+   "DATUM_NABAVKE",
+   "GARANCIJA_DO",
+   "NABAVNA_VREDNOST",
+   "INVENTARSKI_BROJ",
+   "NAZIV_OPREME",
+   "MODEL_OPREME",
+   "PROIZVODJAC",
+   "STATUS_OPREME"
+  ],
+  "redova": 80
+ },
+ "ORGANIZACIONA_JEDINICA": {
+  "kolone": [
+   "DATUM_OSNIVANJA",
+   "BROJ_ZAPOSLENIH",
+   "SIFRA_JEDINICE",
+   "SIFRA_NADREDJENE_JEDINICE",
+   "NAZIV_JEDINICE",
+   "TIP_JEDINICE",
+   "OPIS_DELATNOSTI"
+  ],
+  "redova": 20
+ },
+ "PLAN_NABAVKE": {
+  "kolone": [
+   "GODINA_PLANA",
+   "DATUM_DONOSENJA",
+   "UKUPNA_VREDNOST",
+   "SIFRA_PLANA",
+   "STATUS_PLANA",
+   "DONOSILAC_PLANA"
+  ],
+  "redova": 20
+ },
+ "POKRIVENOST_PRAVOM": {
+  "kolone": [
+   "BROJ_LICENCE",
+   "SIFRA_SADRZAJA",
+   "OBLAST_POKRIVENOSTI"
+  ],
+  "redova": 20
+ },
+ "PONUDA_DOBAVLJACA": {
+  "kolone": [
+   "DATUM_PRIJEMA",
+   "VAZI_DO",
+   "UKUPNA_CENA",
+   "ROK_ISPORUKE",
+   "UKUPNO_BODOVA",
+   "BROJ_PONUDE",
+   "SIFRA_DOBAVLJACA",
+   "USLOVI_PLACANJA",
+   "STATUS_PONUDE"
+  ],
+  "redova": 20
+ },
+ "PONUDJENA_STAVKA": {
+  "kolone": [
+   "RB_STAVKE",
+   "PONUDJENA_CENA",
+   "ROK_ZA_STAVKU",
+   "SIFRA_PLANA",
+   "BROJ_PONUDE"
+  ],
+  "redova": 20
+ },
+ "POVRATNA_INFO_GLEDALACA": {
+  "kolone": [
+   "DATUM_PRIJEMA",
+   "DATUM_ODGOVORA",
+   "BROJ_PRIJAVE",
+   "SIFRA_EMISIJE",
+   "VRSTA_PRIJAVE",
+   "KANAL_PRIJEMA",
+   "SADRZAJ_PRIJAVE",
+   "STATUS_OBRADE",
+   "PROFIL_GLEDAOCA"
+  ],
+  "redova": 20
+ },
+ "PRAVO_KORISCENJA": {
+  "kolone": [
+   "DATUM_OD",
+   "DATUM_DO",
+   "DOZVOLJENO_EMITOVANJA",
+   "ISKORISCENO_EMITOVANJA",
+   "BROJ_LICENCE",
+   "VRSTA_PRAVA",
+   "TERITORIJA",
+   "NOSILAC_PRAVA"
+  ],
+  "redova": 20
+ },
+ "PRIJEMNICA": {
+  "kolone": [
+   "DATUM_PRIJEMA",
+   "BROJ_PRIJEMNICE",
+   "BROJ_NARUDZBENICE",
+   "BROJ_FAKTURE",
+   "BROJ_OTPREMNICE",
+   "PRIMIO_MAGACIONER",
+   "ISPRAVNOST_ISPORUKE",
+   "NAPOMENA"
+  ],
+  "redova": 20
+ },
+ "PRIJEM_STAVKE": {
+  "kolone": [
+   "RB_STAVKE",
+   "PRIMLJENA_KOLICINA",
+   "BROJ_PRIJEMNICE",
+   "BROJ_NARUDZBENICE",
+   "UTVRDJENO_ODSTUPANJE"
+  ],
+  "redova": 20
+ },
+ "PRODUCIRANI_SADRZAJ": {
+  "kolone": [
+   "DATUM_PRODUKCIJE",
+   "SIFRA_SADRZAJA",
+   "VERZIJA_MASTERA"
+  ],
+  "redova": 20
+ },
+ "PROGRAMSKA_CELINA": {
+  "kolone": [
+   "RB_CELINE",
+   "DATUM",
+   "VREME_OD",
+   "VREME_DO",
+   "SIFRA_SEME",
+   "NAZIV_CELINE",
+   "TIP_CELINE"
+  ],
+  "redova": 40
+ },
+ "PROGRAMSKA_SEMA": {
+  "kolone": [
+   "DATUM_OD",
+   "DATUM_DO",
+   "DATUM_USVAJANJA",
+   "SIFRA_SEME",
+   "SIFRA_UREDNIKA",
+   "NAZIV_SEME",
+   "SEZONA",
+   "VERZIJA_SEME",
+   "STATUS_SEME"
+  ],
+  "redova": 20
+ },
+ "PROJEKAT_PRODUKCIJE": {
+  "kolone": [
+   "DATUM_POCETKA",
+   "DATUM_ZAVRSETKA",
+   "ODOBREN_BUDZET",
+   "SIFRA_PROJEKTA",
+   "SIFRA_UREDNIKA",
+   "SIFRA_EMISIJE",
+   "NAZIV_PROJEKTA",
+   "STATUS_PROJEKTA",
+   "VRSTA_PRODUKCIJE",
+   "OPIS_PROJEKTA"
+  ],
+  "redova": 20
+ },
+ "REFERENT": {
+  "kolone": [
+   "SIFRA_ZAPOSLENOG",
+   "TIP_REFERENTA",
+   "NIVO_OVLASCENJA"
+  ],
+  "redova": 20
+ },
+ "REKLAMACIJA": {
+  "kolone": [
+   "DATUM_REKLAMACIJE",
+   "DATUM_RESENJA",
+   "REKLAMIRANI_IZNOS",
+   "BROJ_REKLAMACIJE",
+   "BROJ_PRIJEMNICE",
+   "RAZLOG_REKLAMACIJE",
+   "OPIS_NEDOSTATKA",
+   "STATUS_REKLAMACIJE",
+   "NACIN_RESAVANJA"
+  ],
+  "redova": 20
+ },
+ "REKLAMIRANA_STAVKA": {
+  "kolone": [
+   "RB_STAVKE",
+   "BROJ_REKLAMACIJE",
+   "BROJ_NARUDZBENICE"
+  ],
+  "redova": 20
+ },
+ "REKLAMNI_BLOK": {
+  "kolone": [
+   "DATUM",
+   "VREME_POCETKA",
+   "TRAJANJE_BLOKA",
+   "ZAKUPLJENO_SEKUNDI",
+   "SLOBODNO_SEKUNDI",
+   "ISKORISCENOST",
+   "SIFRA_BLOKA",
+   "SIFRA_TERMINA",
+   "SIFRA_CENOVNIKA",
+   "STATUS_BLOKA"
+  ],
+  "redova": 20
+ },
+ "REKLAMNI_SADRZAJ": {
+  "kolone": [
+   "DATUM_PRIJEMA",
+   "SIFRA_SADRZAJA",
+   "SIFRA_OGLASIVACA",
+   "STATUS"
+  ],
+  "redova": 20
+ },
+ "REZERVACIJA_OPREME": {
+  "kolone": [
+   "RB_AKTIVNOSTI",
+   "DATUM_REZERVACIJE",
+   "TRAJANJE_ZADUZENJA",
+   "SIFRA_PROJEKTA",
+   "INVENTARSKI_BROJ"
+  ],
+  "redova": 40
+ },
+ "SADRZAJ_EMISIJE": {
+  "kolone": [
+   "REDNI_BROJ_U_EMISIJI",
+   "SIFRA_EMISIJE",
+   "SIFRA_SADRZAJA"
+  ],
+  "redova": 20
+ },
+ "SERVISERI": {
+  "kolone": [
+   "SIFRA_ZAPOSLENOG",
+   "LICENCA"
+  ],
+  "redova": 20
+ },
+ "SERVISIRANJE_OPREME": {
+  "kolone": [
+   "DATUM_SERVISA",
+   "TROSAK",
+   "SIFRA_ZAPOSLENOG",
+   "INVENTARSKI_BROJ",
+   "OPIS_RADOVA"
+  ],
+  "redova": 20
+ },
+ "SIROVI_SNIMAK": {
+  "kolone": [
+   "RB_AKTIVNOSTI",
+   "DATUM_SNIMANJA",
+   "TRAJANJE",
+   "SIFRA_SNIMKA",
+   "SIFRA_PROJEKTA",
+   "FORMAT_SNIMKA",
+   "LOKACIJA_SNIMKA",
+   "OCENA_KVALITETA"
+  ],
+  "redova": 20
+ },
+ "SNIMATELJSKA_OPREMA": {
+  "kolone": [
+   "INVENTARSKI_BROJ",
+   "TIP_MEMORIJSKOG_SKLADISTA",
+   "REZOLUCIJA",
+   "TIP_KAMERE"
+  ],
+  "redova": 20
+ },
+ "STAVKA_FAKTURE": {
+  "kolone": [
+   "RB_STAVKE",
+   "KOLICINA",
+   "JEDINICNA_CENA",
+   "STOPA_PDV",
+   "VREDNOST_STAVKE",
+   "BROJ_FAKTURE",
+   "OPIS_STAVKE"
+  ],
+  "redova": 20
+ },
+ "STAVKA_NARUDZBENICE": {
+  "kolone": [
+   "RB_STAVKE",
+   "KOLICINA",
+   "JEDINICNA_CENA",
+   "VREDNOST_STAVKE",
+   "BROJ_NARUDZBENICE",
+   "NAZIV_ARTIKLA",
+   "STATUS_STAVKE"
+  ],
+  "redova": 20
+ },
+ "STAVKA_PLANA_NABAVKE": {
+  "kolone": [
+   "RB_STAVKE",
+   "KOLICINA",
+   "PROCENJENA_CENA",
+   "SIFRA_PLANA",
+   "OPIS_ARTIKLA",
+   "JEDINICA_MERE",
+   "PLANIRANI_KVARTAL"
+  ],
+  "redova": 20
+ },
+ "STAVKA_UGOVORA": {
+  "kolone": [
+   "RB_STAVKE",
+   "KOLICINA_SEKUNDE",
+   "JEDINICNA_CENA",
+   "POPUST",
+   "VREDNOST_STAVKE",
+   "BROJ_UGOVORA",
+   "OPIS_STAVKE"
+  ],
+  "redova": 60
+ },
+ "STUDIJSKA_I_EMISIONA_OPREMA": {
+  "kolone": [
+   "INVENTARSKI_BROJ",
+   "LOKACIJA_U_STUDIJU"
+  ],
+  "redova": 40
+ },
+ "SVETLOSNA_OPREMA": {
+  "kolone": [
+   "INVENTARSKI_BROJ",
+   "SNAGA",
+   "TIP_SVETLOSTI"
+  ],
+  "redova": 20
+ },
+ "TEHNICKO_OSOBLJE": {
+  "kolone": [
+   "SIFRA_ZAPOSLENOG",
+   "SPECIJALIZACIJA",
+   "TIP_EKIPE"
+  ],
+  "redova": 20
+ },
+ "TERMIN_EMITOVANJA": {
+  "kolone": [
+   "RB_CELINE",
+   "DATUM",
+   "VREME_POCETKA",
+   "TRAJANJE_TERMINA",
+   "REDNI_BROJ_REPRIZE",
+   "SIFRA_TERMINA",
+   "SIFRA_SEME",
+   "SIFRA_EMISIJE",
+   "TIP_TERMINA",
+   "ZONA_GLEDANOSTI",
+   "STATUS_TERMINA"
+  ],
+  "redova": 40
+ },
+ "TROSAK_PRODUKCIJE": {
+  "kolone": [
+   "RB_AKTIVNOSTI",
+   "RB_TROSKA",
+   "IZNOS",
+   "DATUM_NASTANKA",
+   "SIFRA_PROJEKTA",
+   "BROJ_FAKTURE",
+   "VRSTA_TROSKA",
+   "OPIS_TROSKA"
+  ],
+  "redova": 40
+ },
+ "UGOVOR": {
+  "kolone": [
+   "DATUM_SKLAPANJA",
+   "VAZI_OD",
+   "VAZI_DO",
+   "UKUPNA_VREDNOST",
+   "BROJ_UGOVORA",
+   "SIFRA_KLIJENTA",
+   "STATUS_UGOVORA"
+  ],
+  "redova": 60
+ },
+ "UGOVOR_O_NABAVCI": {
+  "kolone": [
+   "ROK_ISPORUKE",
+   "BROJ_UGOVORA",
+   "SIFRA_DOBAVLJACA",
+   "VRSTA_REKLAMIRANJA",
+   "USLOVI_PLACANJA"
+  ],
+  "redova": 20
+ },
+ "UGOVOR_O_OGLASAVANJU": {
+  "kolone": [
+   "BROJ_UGOVORA",
+   "UGOVORENI_TERMINI"
+  ],
+  "redova": 20
+ },
+ "UGOVOR_O_PRODAJI_TV_SADRZAJA": {
+  "kolone": [
+   "BROJ_UGOVORA",
+   "PRENOS_VLASNISTVA",
+   "OBIM_USTUPLJENIH_PRAVA"
+  ],
+  "redova": 20
+ },
+ "UGRADNJA_ELEMENTA": {
+  "kolone": [
+   "VREME_POJAVLJIVANJA",
+   "SIFRA_SADRZAJA",
+   "SIFRA_ELEMENTA",
+   "NACIN_KORISCENJA"
+  ],
+  "redova": 20
+ },
+ "UREDNIK": {
+  "kolone": [
+   "SIFRA_ZAPOSLENOG",
+   "NIVO_OVLASCENJA",
+   "REDAKCIJA"
+  ],
+  "redova": 20
+ },
+ "USTUPANJE_SADRZAJA": {
+  "kolone": [
+   "UGOVORENA_CENA",
+   "BROJ_UGOVORA",
+   "SIFRA_SADRZAJA",
+   "OBIM_USTUPANJA"
+  ],
+  "redova": 20
+ },
+ "ZADUZENJE_OPREME": {
+  "kolone": [
+   "DATUM_ZADUZENJA",
+   "DATUM_RAZDUZENJA",
+   "SIFRA_ZAPOSLENOG",
+   "INVENTARSKI_BROJ",
+   "STANJE_PRI_VRACANJU"
+  ],
+  "redova": 20
+ },
+ "ZAHTEV_ZA_NABAVKU": {
+  "kolone": [
+   "DATUM_ZAHTEVA",
+   "PROCENJENA_VREDNOST",
+   "BROJ_ZAHTEVA",
+   "SIFRA_JEDINICE",
+   "SIFRA_PLANA",
+   "VRSTA_NABAVKE",
+   "PREDMET_ZAHTEVA",
+   "OBRAZLOZENJE",
+   "STATUS_ZAHTEVA",
+   "PRIORITET"
+  ],
+  "redova": 20
+ },
+ "ZAPIS_O_EMITOVANJU": {
+  "kolone": [
+   "RB_EMITOVANJA",
+   "STVARNO_VREME_POCETKA",
+   "STVARNO_TRAJANJE",
+   "SIFRA_TERMINA",
+   "SIFRA_SADRZAJA",
+   "STATUS_REALIZACIJE",
+   "NAPOMENA_O_SMETNJAMA",
+   "OPERATER_EMITOVANJA"
+  ],
+  "redova": 40
+ },
+ "ZAPOSLENI": {
+  "kolone": [
+   "DATUM_ZAPOSLENJA",
+   "OSNOVNA_ZARADA",
+   "SIFRA_ZAPOSLENOG",
+   "SIFRA_JEDINICE",
+   "JMBG",
+   "IME",
+   "PREZIME",
+   "RADNO_MESTO",
+   "STATUS_ZAPOSLENJA"
+  ],
+  "redova": 120
+ },
+ "_objekti": [
+  "AKTIVNOST_PRODUKCIJE",
+  "AKTIVNOST_PRODUKCIJE1",
+  "ANGAZOVANJE_NA_AKTIVNOSTI",
+  "AUDIO_OPREMA",
+  "Aktivnost_produkcije",
+  "Angazovanje_na_aktivnosti",
+  "Audio_oprema",
+  "CENOVNIK_REKL_TERMINA",
+  "Cenovnik_rekl_termina",
+  "DOBAVLJAC",
+  "DOBAVLJAC_OPREME_I_MATERIJALA",
+  "DOBAVLJAC_TV_SADRZAJA",
+  "Dobavljac",
+  "Dobavljac_opreme_i_materijala",
+  "Dobavljac_tv_sadrzaja",
+  "EMISIJA",
+  "EMITOVANJE_REKLAME",
+  "Emisija",
+  "Emitovanje_reklame",
+  "FAKTURA",
+  "FK_AKTIVNOST_PROJEKAT",
+  "FK_ANGAZ_AKTIVNOST",
+  "FK_ANGAZ_ZAPOSLENI",
+  "FK_AUDIOOPR_STUDOPR",
+  "FK_DOBOPR_DOBAVLJAC",
+  "FK_DOBTVSAD_DOBAVLJAC",
+  "FK_EMREK_PRIKAZUJE",
+  "FK_EMREK_SADRZI_SPOT",
+  "FK_EMREK_UGOVOREN",
+  "FK_FAKTURA_IZDATA_PO",
+  "FK_KUPACSAD_KLIJENT",
+  "FK_MERENJEEM_EMISIJA",
+  "FK_MERENJEEM_MERENJE",
+  "FK_MONTAZA_MSADRZAJ",
+  "FK_MONTAZA_SNIMAK",
+  "FK_MSNAB_MSADRZAJ",
+  "FK_MSNAB_NABAVLJEN_PO",
+  "FK_MSPROD_MSADRZAJ",
+  "FK_MSREK_DOSTAVLJA",
+  "FK_MSREK_MSADRZAJ",
+  "FK_NALOG_PLACENA",
+  "FK_NARUDZB_NARUCENO_OD",
+  "FK_NOVINAR_ZAPOSLENI",
+  "FK_OCENA_KRITERIJUM",
+  "FK_OCENA_PONUDA",
+  "FK_OGLASIVAC_KLIJENT",
+  "FK_ORGJED_PODREDJENA",
+  "FK_PCELINA_PSEMA",
+  "FK_POKRIV_MSADRZAJ",
+  "FK_POKRIV_PRAVO",
+  "FK_PONSTAV_PONUDA",
+  "FK_PONSTAV_STPLAN",
+  "FK_PONUDA_DOSTAVIO",
+  "FK_POVRINF_EMISIJA",
+  "FK_PRIJEMN_FAKTURISANA",
+  "FK_PRIJEMN_PRACENA",
+  "FK_PRIJSTAV_PRIJEMNICA",
+  "FK_PRIJSTAV_STNARUD",
+  "FK_PROJEKAT_PROIZVODI",
+  "FK_PROJEKAT_UREDJUJE",
+  "FK_PSEMA_ODOBRAVA",
+  "FK_RBLOK_TARIFIRAN",
+  "FK_RBLOK_ZAKUPLJEN_U",
+  "FK_REFERENT_ZAPOSLENI",
+  "FK_REKLAMAC_PRIJEMNICA",
+  "FK_REKSTAV_REKLAMACIJA",
+  "FK_REKSTAV_STNARUD",
+  "FK_REZERV_AKTIVNOST",
+  "FK_REZERV_OPREMA",
+  "FK_SADREM_EMISIJA",
+  "FK_SADREM_MSADRZAJ",
+  "FK_SERVISERI_ZAPOSLENI",
+  "FK_SERVIS_OPREMA",
+  "FK_SERVIS_SERVISERI",
+  "FK_SNIMAK_SNIMLJEN_NA",
+  "FK_SNIMOPR_OPREMA",
+  "FK_STFAKT_FAKTURA",
+  "FK_STNARUD_NARUDZBENICA",
+  "FK_STPLAN_PLAN",
+  "FK_STUDOPR_OPREMA",
+  "FK_STUGOV_PRECIZIRA",
+  "FK_SVETLOPR_STUDOPR",
+  "FK_TEHOSOB_ZAPOSLENI",
+  "FK_TERMIN_OBUHVATA",
+  "FK_TERMIN_PLANIRANA",
+  "FK_TROSAK_DOKUMENTOVAN",
+  "FK_TROSAK_IZAZIVA",
+  "FK_UGNAB_UGOVARA",
+  "FK_UGNAB_UGOVOR",
+  "FK_UGOGL_UGOVOR",
+  "FK_UGOVOR_SKLAPA",
+  "FK_UGPROD_UGOVOR",
+  "FK_UGRADNJA_ELEMENT",
+  "FK_UGRADNJA_MSADRZAJ",
+  "FK_UREDNIK_ZAPOSLENI",
+  "FK_USTUP_MSPROD",
+  "FK_USTUP_UGPROD",
+  "FK_ZADUZ_OPREMA",
+  "FK_ZADUZ_ZAPOSLENI",
+  "FK_ZAHNAB_PODNOSI",
+  "FK_ZAHNAB_UVRSTEN_U",
+  "FK_ZAPISEM_EVIDENTIRA",
+  "FK_ZAPISEM_REALIZOVAN",
+  "FK_ZAPOSLENI_RADI_U",
+  "Faktura",
+  "GRAFICKI_I_MUZICKI_ELEMENT",
+  "Graficki_i_muzicki",
+  "Izvestaj1",
+  "Izvestaj3",
+  "KLIJENT",
+  "KRITERIJUM_VREDNOVANJA",
+  "KUPAC_SADRZAJA",
+  "Klijent",
+  "Kriterijum_vrednovanja",
+  "Kupac_sadrzaja",
+  "MEDIJSKI_SADRZAJ",
+  "MERENJE_EMISIJE",
+  "MERENJE_GLEDANOSTI",
+  "MONTAZA_SNIMKA",
+  "Medijski_sadrzaj",
+  "Merenje_emisije",
+  "Merenje_gledanosti",
+  "Montaza_snimka",
+  "NABAVLJENI_SADRZAJ",
+  "NALOG_ZA_PLACANJE",
+  "NARUDZBENICA",
+  "NOVINAR_REPORTER",
+  "Nabavljeni_sadrzaj",
+  "Nalog_za_placanje",
+  "Narudzbenica",
+  "Novinar_reporter",
+  "OCENA_PONUDE",
+  "OGLASIVAC",
+  "OPREMA",
+  "ORGANIZACIONA_JEDINICA",
+  "Ocena_ponude",
+  "Oglasivac",
+  "Oprema",
+  "Organizaciona_jedinica",
+  "PLAN_NABAVKE",
+  "POKRIVENOST_PRAVOM",
+  "PONUDA_DOBAVLJACA",
+  "PONUDJENA_STAVKA",
+  "POVRATNA_INFO_GLEDALACA",
+  "PRAVO_KORISCENJA",
+  "PRIJEMNICA",
+  "PRIJEM_STAVKE",
+  "PRODUCIRANI_SADRZAJ",
+  "PROGRAMSKA_CELINA",
+  "PROGRAMSKA_SEMA",
+  "PROJEKAT_PRODUKCIJE",
+  "Plan_nabavke",
+  "PlayoutLog",
+  "Pokrivenost_pravom",
+  "Ponuda_dobavljaca",
+  "Ponudjena_stavka",
+  "Povratna_info_gledalaca",
+  "Pravo_koriscenja",
+  "Prijem_stavke",
+  "Prijemnica",
+  "Producirani_sadrzaj",
+  "Programska_celina",
+  "Programska_sema",
+  "Projekat_produkcije",
+  "REFERENT",
+  "REKLAMACIJA",
+  "REKLAMIRANA_STAVKA",
+  "REKLAMNI_BLOK",
+  "REKLAMNI_SADRZAJ",
+  "REZERVACIJA_OPREME",
+  "Referent",
+  "Reklamacija",
+  "Reklamirana_stavka",
+  "Reklamni_blok",
+  "Reklamni_sadrzaj",
+  "Rezervacija_opreme",
+  "SADRZAJ_EMISIJE",
+  "SERVISERI",
+  "SERVISIRANJE_OPREME",
+  "SIROVI_SNIMAK",
+  "SNIMATELJSKA_OPREMA",
+  "STAVKA_FAKTURE",
+  "STAVKA_NARUDZBENICE",
+  "STAVKA_PLANA_NABAVKE",
+  "STAVKA_UGOVORA",
+  "STUDIJSKA_I_EMISIONA_OPREMA",
+  "SVETLOSNA_OPREMA",
+  "Sadrzaj_emisije",
+  "Serveri",
+  "Servisiranje_opreme",
+  "Sirovi_snimak",
+  "Snimateljska_oprema",
+  "Stavka_fakture",
+  "Stavka_narudzbenice",
+  "Stavka_plana_nabavke",
+  "Stavka_ugovora",
+  "Studijska_i_emisiona_oprema",
+  "Svetlosna_oprema",
+  "TEHNICKO_OSOBLJE",
+  "TERMIN_EMITOVANJA",
+  "TROSAK_PRODUKCIJE",
+  "Tehnicko_osoblje",
+  "Termin_emitovanja",
+  "Trosak_produkcije",
+  "UGOVOR",
+  "UGOVOR_O_NABAVCI",
+  "UGOVOR_O_OGLASAVANJU",
+  "UGOVOR_O_PRODAJI_TV_SADRZAJA",
+  "UGRADNJA_ELEMENTA",
+  "UREDNIK",
+  "USTUPANJE_SADRZAJA",
+  "Ugovor",
+  "Ugovor_o_nabavci",
+  "Ugovor_o_oglasavanju",
+  "Ugovor_o_prodaji_tv_sadrzaja",
+  "Ugradnja_elementa",
+  "Urednik",
+  "Ustupanje_sadrzaja",
+  "ZADUZENJE_OPREME",
+  "ZAHTEV_ZA_NABAVKU",
+  "ZAPIS_O_EMITOVANJU",
+  "ZAPOSLENI",
+  "Zaduzenje_opreme",
+  "Zahtev_za_nabavku",
+  "Zapis_o_emitovanju",
+  "Zaposleni",
+  "qryAngazovanje",
+  "qryFaktureINalozi",
+  "qryGledanostEmisija",
+  "qryGledanostPoZanru",
+  "qryKarticaOglasivaca",
+  "qryKarticaOpreme",
+  "qryPlanNabavke",
+  "qryPlayoutLog",
+  "qryPravaKoriscenja",
+  "qryProgramskaSema",
+  "qryTroskoviProjekta",
+  "qryVrednovanjePonuda",
+  "qryZaduzenjeOpreme",
+  "qryZaposleniPoJedinicama"
+ ],
+ "_po_tipu": {
+  "forma": [
+   "Aktivnost_produkcije",
+   "Angazovanje_na_aktivnosti",
+   "Audio_oprema",
+   "Cenovnik_rekl_termina",
+   "Dobavljac",
+   "Dobavljac_opreme_i_materijala",
+   "Dobavljac_tv_sadrzaja",
+   "Emisija",
+   "Emitovanje_reklame",
+   "Faktura",
+   "Graficki_i_muzicki",
+   "Klijent",
+   "Kriterijum_vrednovanja",
+   "Kupac_sadrzaja",
+   "Medijski_sadrzaj",
+   "Merenje_emisije",
+   "Merenje_gledanosti",
+   "Montaza_snimka",
+   "Nabavljeni_sadrzaj",
+   "Nalog_za_placanje",
+   "Narudzbenica",
+   "Novinar_reporter",
+   "Ocena_ponude",
+   "Oglasivac",
+   "Oprema",
+   "Organizaciona_jedinica",
+   "Plan_nabavke",
+   "PlayoutLog",
+   "Pokrivenost_pravom",
+   "Ponuda_dobavljaca",
+   "Ponudjena_stavka",
+   "Povratna_info_gledalaca",
+   "Pravo_koriscenja",
+   "Prijem_stavke",
+   "Prijemnica",
+   "Producirani_sadrzaj",
+   "Programska_celina",
+   "Programska_sema",
+   "Projekat_produkcije",
+   "Referent",
+   "Reklamacija",
+   "Reklamirana_stavka",
+   "Reklamni_blok",
+   "Reklamni_sadrzaj",
+   "Rezervacija_opreme",
+   "Sadrzaj_emisije",
+   "Serveri",
+   "Servisiranje_opreme",
+   "Sirovi_snimak",
+   "Snimateljska_oprema",
+   "Stavka_fakture",
+   "Stavka_narudzbenice",
+   "Stavka_plana_nabavke",
+   "Stavka_ugovora",
+   "Studijska_i_emisiona_oprema",
+   "Svetlosna_oprema",
+   "Tehnicko_osoblje",
+   "Termin_emitovanja",
+   "Trosak_produkcije",
+   "Ugovor",
+   "Ugovor_o_nabavci",
+   "Ugovor_o_oglasavanju",
+   "Ugovor_o_prodaji_tv_sadrzaja",
+   "Ugradnja_elementa",
+   "Urednik",
+   "Ustupanje_sadrzaja",
+   "Zaduzenje_opreme",
+   "Zahtev_za_nabavku",
+   "Zapis_o_emitovanju",
+   "Zaposleni"
+  ],
+  "izvestaj": [
+   "AKTIVNOST_PRODUKCIJE",
+   "AKTIVNOST_PRODUKCIJE1",
+   "EMISIJA",
+   "Izvestaj3",
+   "qryGledanostPoZanru",
+   "qryPlayoutLog"
+  ],
+  "tabela": [
+   "AKTIVNOST_PRODUKCIJE",
+   "ANGAZOVANJE_NA_AKTIVNOSTI",
+   "AUDIO_OPREMA",
+   "CENOVNIK_REKL_TERMINA",
+   "DOBAVLJAC",
+   "DOBAVLJAC_OPREME_I_MATERIJALA",
+   "DOBAVLJAC_TV_SADRZAJA",
+   "EMISIJA",
+   "EMITOVANJE_REKLAME",
+   "FAKTURA",
+   "GRAFICKI_I_MUZICKI_ELEMENT",
+   "KLIJENT",
+   "KRITERIJUM_VREDNOVANJA",
+   "KUPAC_SADRZAJA",
+   "MEDIJSKI_SADRZAJ",
+   "MERENJE_EMISIJE",
+   "MERENJE_GLEDANOSTI",
+   "MONTAZA_SNIMKA",
+   "NABAVLJENI_SADRZAJ",
+   "NALOG_ZA_PLACANJE",
+   "NARUDZBENICA",
+   "NOVINAR_REPORTER",
+   "OCENA_PONUDE",
+   "OGLASIVAC",
+   "OPREMA",
+   "ORGANIZACIONA_JEDINICA",
+   "PLAN_NABAVKE",
+   "POKRIVENOST_PRAVOM",
+   "PONUDA_DOBAVLJACA",
+   "PONUDJENA_STAVKA",
+   "POVRATNA_INFO_GLEDALACA",
+   "PRAVO_KORISCENJA",
+   "PRIJEMNICA",
+   "PRIJEM_STAVKE",
+   "PRODUCIRANI_SADRZAJ",
+   "PROGRAMSKA_CELINA",
+   "PROGRAMSKA_SEMA",
+   "PROJEKAT_PRODUKCIJE",
+   "REFERENT",
+   "REKLAMACIJA",
+   "REKLAMIRANA_STAVKA",
+   "REKLAMNI_BLOK",
+   "REKLAMNI_SADRZAJ",
+   "REZERVACIJA_OPREME",
+   "SADRZAJ_EMISIJE",
+   "SERVISERI",
+   "SERVISIRANJE_OPREME",
+   "SIROVI_SNIMAK",
+   "SNIMATELJSKA_OPREMA",
+   "STAVKA_FAKTURE",
+   "STAVKA_NARUDZBENICE",
+   "STAVKA_PLANA_NABAVKE",
+   "STAVKA_UGOVORA",
+   "STUDIJSKA_I_EMISIONA_OPREMA",
+   "SVETLOSNA_OPREMA",
+   "TEHNICKO_OSOBLJE",
+   "TERMIN_EMITOVANJA",
+   "TROSAK_PRODUKCIJE",
+   "UGOVOR",
+   "UGOVOR_O_NABAVCI",
+   "UGOVOR_O_OGLASAVANJU",
+   "UGOVOR_O_PRODAJI_TV_SADRZAJA",
+   "UGRADNJA_ELEMENTA",
+   "UREDNIK",
+   "USTUPANJE_SADRZAJA",
+   "ZADUZENJE_OPREME",
+   "ZAHTEV_ZA_NABAVKU",
+   "ZAPIS_O_EMITOVANJU",
+   "ZAPOSLENI"
+  ],
+  "upit": [
+   "Izvestaj1",
+   "Izvestaj3",
+   "qryAngazovanje",
+   "qryFaktureINalozi",
+   "qryGledanostEmisija",
+   "qryGledanostPoZanru",
+   "qryKarticaOglasivaca",
+   "qryKarticaOpreme",
+   "qryPlanNabavke",
+   "qryPlayoutLog",
+   "qryPravaKoriscenja",
+   "qryProgramskaSema",
+   "qryTroskoviProjekta",
+   "qryVrednovanjePonuda",
+   "qryZaduzenjeOpreme",
+   "qryZaposleniPoJedinicama"
+  ],
+  "veza": [
+   "FK_AKTIVNOST_PROJEKAT",
+   "FK_ANGAZ_AKTIVNOST",
+   "FK_ANGAZ_ZAPOSLENI",
+   "FK_AUDIOOPR_STUDOPR",
+   "FK_DOBOPR_DOBAVLJAC",
+   "FK_DOBTVSAD_DOBAVLJAC",
+   "FK_EMREK_PRIKAZUJE",
+   "FK_EMREK_SADRZI_SPOT",
+   "FK_EMREK_UGOVOREN",
+   "FK_FAKTURA_IZDATA_PO",
+   "FK_KUPACSAD_KLIJENT",
+   "FK_MERENJEEM_EMISIJA",
+   "FK_MERENJEEM_MERENJE",
+   "FK_MONTAZA_MSADRZAJ",
+   "FK_MONTAZA_SNIMAK",
+   "FK_MSNAB_MSADRZAJ",
+   "FK_MSNAB_NABAVLJEN_PO",
+   "FK_MSPROD_MSADRZAJ",
+   "FK_MSREK_DOSTAVLJA",
+   "FK_MSREK_MSADRZAJ",
+   "FK_NALOG_PLACENA",
+   "FK_NARUDZB_NARUCENO_OD",
+   "FK_NOVINAR_ZAPOSLENI",
+   "FK_OCENA_KRITERIJUM",
+   "FK_OCENA_PONUDA",
+   "FK_OGLASIVAC_KLIJENT",
+   "FK_ORGJED_PODREDJENA",
+   "FK_PCELINA_PSEMA",
+   "FK_POKRIV_MSADRZAJ",
+   "FK_POKRIV_PRAVO",
+   "FK_PONSTAV_PONUDA",
+   "FK_PONSTAV_STPLAN",
+   "FK_PONUDA_DOSTAVIO",
+   "FK_POVRINF_EMISIJA",
+   "FK_PRIJEMN_FAKTURISANA",
+   "FK_PRIJEMN_PRACENA",
+   "FK_PRIJSTAV_PRIJEMNICA",
+   "FK_PRIJSTAV_STNARUD",
+   "FK_PROJEKAT_PROIZVODI",
+   "FK_PROJEKAT_UREDJUJE",
+   "FK_PSEMA_ODOBRAVA",
+   "FK_RBLOK_TARIFIRAN",
+   "FK_RBLOK_ZAKUPLJEN_U",
+   "FK_REFERENT_ZAPOSLENI",
+   "FK_REKLAMAC_PRIJEMNICA",
+   "FK_REKSTAV_REKLAMACIJA",
+   "FK_REKSTAV_STNARUD",
+   "FK_REZERV_AKTIVNOST",
+   "FK_REZERV_OPREMA",
+   "FK_SADREM_EMISIJA",
+   "FK_SADREM_MSADRZAJ",
+   "FK_SERVISERI_ZAPOSLENI",
+   "FK_SERVIS_OPREMA",
+   "FK_SERVIS_SERVISERI",
+   "FK_SNIMAK_SNIMLJEN_NA",
+   "FK_SNIMOPR_OPREMA",
+   "FK_STFAKT_FAKTURA",
+   "FK_STNARUD_NARUDZBENICA",
+   "FK_STPLAN_PLAN",
+   "FK_STUDOPR_OPREMA",
+   "FK_STUGOV_PRECIZIRA",
+   "FK_SVETLOPR_STUDOPR",
+   "FK_TEHOSOB_ZAPOSLENI",
+   "FK_TERMIN_OBUHVATA",
+   "FK_TERMIN_PLANIRANA",
+   "FK_TROSAK_DOKUMENTOVAN",
+   "FK_TROSAK_IZAZIVA",
+   "FK_UGNAB_UGOVARA",
+   "FK_UGNAB_UGOVOR",
+   "FK_UGOGL_UGOVOR",
+   "FK_UGOVOR_SKLAPA",
+   "FK_UGPROD_UGOVOR",
+   "FK_UGRADNJA_ELEMENT",
+   "FK_UGRADNJA_MSADRZAJ",
+   "FK_UREDNIK_ZAPOSLENI",
+   "FK_USTUP_MSPROD",
+   "FK_USTUP_UGPROD",
+   "FK_ZADUZ_OPREMA",
+   "FK_ZADUZ_ZAPOSLENI",
+   "FK_ZAHNAB_PODNOSI",
+   "FK_ZAHNAB_UVRSTEN_U",
+   "FK_ZAPISEM_EVIDENTIRA",
+   "FK_ZAPISEM_REALIZOVAN",
+   "FK_ZAPOSLENI_RADI_U"
+  ]
+ }
+}

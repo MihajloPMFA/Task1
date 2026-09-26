@@ -1,5 +1,76 @@
 # Access baza - TV Panorama
 
+U ovoj fascikli su dva VBA modula. Koji ti treba zavisi od toga da li već imaš bazu:
+
+| Fajl | Kada se koristi | Šta radi |
+|---|---|---|
+| **`TV_Stanica_Izvestaji.bas`** | imaš bazu sa tabelama, podacima i formama (npr. `Access_v1.accdb`) | dodaje **osam izveštaja iz Specifikacije izveštaja** i upite koji im trebaju; ne menja ništa postojeće |
+| `TV_Stanica_Access.bas` | praviš bazu od nule, u prazan `.accdb` | kreira celu bazu: 69 tabela, 84 veze, upite, formu za svaku tabelu, izveštaje i demo podatke |
+
+Analiza postojeće baze i spisak svega što je dodato: **`ANALIZA_Access_v1.md`**.
+
+---
+
+# 1. Izveštaji za postojeću bazu - `TV_Stanica_Izvestaji.bas`
+
+Modul `modIzvestaji` se uvozi u **postojeću** bazu i dodaje samo nove objekte:
+
+| Prefiks | Broj | Šta je |
+|---|---|---|
+| `qIzv...` | 16 | upiti kao izvor podataka za izveštaje (12 glavnih + 4 pomoćna) |
+| `rptIzv1` - `rptIzv8` | 8 | izveštaji iz specifikacije (2 parametarska, 1 sa grafičkim prikazom) |
+| `rptIzv5_Oprema`, `rptIzv7_Ponude` | 2 | podizveštaji |
+| `frmIzvestaji` | 1 | forma-meni sa dugmadima za svih osam izveštaja |
+
+**Postojeće tabele, forme, upiti i izveštaji se ne menjaju.** Procedure koje brišu
+proveravaju prefiks imena i odbijaju sve što nije `qIzv`/`rptIzv`/`frmIzvestaji`,
+pa se modul može pokretati više puta bez rizika.
+
+## Uvoz
+
+1. Otvori svoju bazu (`Access_v1.accdb`).
+2. `Alt+F11` → **File → Import File...** → izaberi `TV_Stanica_Izvestaji.bas`.
+3. **Tools → References...** → uključi *Microsoft Office x.0 Access database
+   engine Object Library* (DAO), ako već nije uključena.
+4. Klikni bilo gde u proceduru **`KreirajIzvestaje`** i pritisni **F5**.
+
+Na kraju iskoči poruka sa brojem dodatih objekata. Dnevnik (uključujući
+eventualna upozorenja) je u *Immediate* prozoru (`Ctrl+G`), a može se ponovo
+prikazati procedurom `Dnevnik`. Izveštaji se posle pokreću dvoklikom u oknu
+objekata ili preko forme `frmIzvestaji`.
+
+## Izveštaji
+
+| # | Izveštaj | Tip | Izvor |
+|---|---|---|---|
+| 1 | Programska šema sa terminima emitovanja | tabelarni, grupisan po šemi i celini | `qIzv1_Sema` |
+| 2 | Evidencija emitovanog sadržaja (playout log) | **parametarski** (datum od - do) | `qIzv2_Playout` |
+| 3 | Gledanost emisija po žanru | **grafički** (2 grafikona) + prateća tabela | `qIzv3_Emisije` |
+| 4 | Realizacija i troškovi projekta produkcije | grupisan po projektu i aktivnosti, sa zbirovima i % budžeta | `qIzv4_Troskovi` |
+| 5 | Angažovanje zaposlenih i zaduženje opreme | dva dela, drugi je podizveštaj | `qIzv5_Angazovanje` |
+| 6 | Realizacija ugovora o oglašavanju po oglašivaču | **parametarski** (šifra ili naziv) | `qIzv6_Kartica` |
+| 7 | Realizacija plana nabavke sa vrednovanjem ponuda | sa vezanim podizveštajem ponuda | `qIzv7_Stavke` |
+| 8 | Prava korišćenja medijskog sadržaja i rokovi važenja | tabelarni, prava na isteku prva | `qIzv8_Prava` |
+
+Na podacima koji su već u bazi: za izveštaj 2 unesi `1.1.2026.` i `31.8.2026.`,
+za izveštaj 6 `KL-001` (ili deo naziva, npr. `Market`).
+
+## Generisanje i provera
+
+```
+python3 access/gen_izv_access.py                      # pravi TV_Stanica_Izvestaji.bas
+python3 access/check_izv.py                           # sadrzaj, raspored, bezbednost
+python3 access/check_vba.py TV_Stanica_Izvestaji.bas  # VBA identifikatori
+```
+
+Izvori: `gen_izv_access.py` (raspored izveštaja), `izv_lib.py` (pomoćne VBA
+procedure), `izv_upiti.py` (SQL upita), `sema_accdb.json` (snimak strukture
+analizirane baze).
+
+---
+
+# 2. Cela baza od nule - `TV_Stanica_Access.bas`
+
 `TV_Stanica_Access.bas` je VBA modul koji se uveze u prazan Access fajl i
 jednim pokretanjem napravi celu bazu: tabele, veze, upite, forme i izveštaje.
 Sve je izvedeno iz ER dijagrama ovog projekta (`er/ER_TV_stanica.sql`,

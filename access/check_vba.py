@@ -4,7 +4,8 @@ deklarisan (Dim/Const/parametar), globalna promenljiva, druga procedura ovog
 modula ili poznata VBA/Access ugradjena rec."""
 import io, re, sys, os
 BASE = os.path.dirname(os.path.abspath(__file__))
-txt = io.open(os.path.join(BASE, 'TV_Stanica_Access.bas'), encoding='latin-1').read()
+FAJL = sys.argv[1] if len(sys.argv) > 1 else 'TV_Stanica_Access.bas'
+txt = io.open(os.path.join(BASE, FAJL), encoding='latin-1').read()
 txt = txt.replace('\r\n', '\n')
 
 # spoj nastavke linija
@@ -24,6 +25,7 @@ Application CurrentDb CurrentProject DoCmd Forms Reports Screen CreateObject Get
 CreateForm CreateReport CreateControl CreateReportControl CreateGroupLevel DeleteControl
 vbCrLf vbCr vbLf vbTab vbNullString vbInformation vbCritical vbExclamation vbQuestion vbOKOnly
 vbYesNo vbYes vbNo vbBinaryCompare vbTextCompare vbDatabaseCompare
+DMin DMax Loop Do Until Wend Environ CurrentUser Nz Round
 acForm acReport acTable acQuery acDetail acHeader acFooter acPageHeader acPageFooter
 acGroupLevel1Header acGroupLevel1Footer acGroupLevel2Header acGroupLevel2Footer
 acLabel acTextBox acCommandButton acLine acObjectFrame acSubform acRectangle
@@ -85,4 +87,4 @@ if greske:
     for g in greske[:60]:
         print('  ' + g)
     sys.exit(1)
-print('Option Explicit: svi identifikatori prepoznati')
+print('Option Explicit: svi identifikatori prepoznati (%s)' % FAJL)
