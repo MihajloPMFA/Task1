@@ -121,7 +121,8 @@ def main():
             for f in sorted(fajlovi):
                 p = os.path.join(koren, f)
                 z.write(p, os.path.relpath(p, IZLAZ))
-        for d in ('UPUTSTVO.md', 'M_upiti.txt', 'DAX_mere.txt'):
+        for d in ('UPUTSTVO.md', 'M_upiti.txt', 'DAX_mere.txt',
+                  NAZIV + '.pbit', NAZIV + '_bez_BOM.pbit'):
             p = os.path.join(BASE, d)
             if os.path.exists(p):
                 z.write(p, d)

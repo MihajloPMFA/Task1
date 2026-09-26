@@ -15,38 +15,58 @@ Parametri iz Access izveštaja 2 i 6 (period, oglašivač) u Power BI-ju su
 **slajseri**, jer se tako parametri i rade u BI alatima - filtriraju sve
 vizuale na strani odjednom.
 
-## Put 1 - otvaranje gotovog projekta (najkraće)
+## Kako do jednog .pbix fajla
 
-1. Raspakuj `TV_Panorama_PowerBI.zip` u folder, npr. `C:\TV_Panorama`.
-2. Dvoklik na **`TV_Panorama.pbip`** (ili u Power BI Desktop-u
-   *File → Open report → Browse* i izaberi taj fajl).
-   Ako Power BI traži da uključiš podršku za `.pbip`:
-   *File → Options and settings → Options → Preview features →*
-   **Power BI Project (.pbip) save option**, pa restartuj Power BI.
-3. *Home → Transform data → Manage parameters* i postavi:
-   - **Izvor** = `Access` (čita direktno tvoj `.accdb`) ili `CSV`
-   - **PutDoBaze** = puna putanja do `Access_v1.accdb`
-   - **PutDoCsv** = putanja do raspakovanog `csv` foldera
-4. *Home → Refresh*.
+`.pbix` se ne može napraviti van Power BI Desktop-a: u njemu model stoji u
+delu `DataModel`, a to je binarni Analysis Services (VertiPaq) stream koji
+ume da zapiše samo sam Power BI. U `.pbit` fajlu (Power BI šablon) isti model
+stoji kao **tekst** (`DataModelSchema`, TMSL JSON), pa se `.pbit` može
+napraviti spolja. Zato ide ovako - `.pbit` je jedan fajl i iz njega se u tri
+klika dobije jedan `.pbix` sa svih pet izveštaja:
+
+1. Dvoklik na **`TV_Panorama.pbit`** (ili u Power BI Desktop-u
+   *File → Open report → Browse*).
+2. Power BI pita za tri parametra:
+   - **Izvor** - `Access` (čita direktno tvoj `.accdb`) ili `CSV`
+   - **PutDoBaze** - puna putanja do `Access_v1.accdb`,
+     npr. `C:\TV_Panorama\Access_v1.accdb`
+   - **PutDoCsv** - putanja do `csv` foldera iz zip-a
+   Popuni i klikni **Load**. Podaci se učitaju sami.
+3. **File → Save as → Power BI files (*.pbix)** i sačuvaj kao
+   `TV_Panorama.pbix`. Tu su sve pet strana u jednom fajlu.
 
 Ako Power BI prijavi grešku pri čitanju `.accdb` (najčešće 32/64-bit
-neusklađenost Office-a i Power BI-ja), prebaci **Izvor** na `CSV` -
-u zip-u su izvezeni podaci iz tvoje baze, pa sve radi bez Access drajvera.
+neusklađenost Office-a i Power BI-ja), u *Transform data → Manage parameters*
+prebaci **Izvor** na `CSV` i osveži - u zip-u je izvoz podataka iz tvoje baze,
+pa sve radi bez Access drajvera.
 
-## Put 2 - ručno sastavljanje (ako Put 1 ne uspe)
+> Ako prvi `.pbit` javi da fajl nije ispravan, probaj
+> **`TV_Panorama_bez_BOM.pbit`** - isti sadržaj, samo drugo kodiranje
+> tekstualnih delova paketa. Jedan od dva prolazi.
 
-Ovo je siguran put i traje oko pola sata:
+## Rezervni put 1 - .pbip projekat
+
+U zip-u je i isti model i izveštaj kao Power BI projekat (folder
+`TV_Panorama.SemanticModel` + `TV_Panorama.Report` i fajl `TV_Panorama.pbip`).
+Otvori `TV_Panorama.pbip`, postavi parametre u *Manage parameters*, *Refresh*,
+pa **File → Save as → .pbix**. Ako Power BI traži da uključiš podršku:
+*File → Options and settings → Options → Preview features →*
+**Power BI Project (.pbip) save option**, pa restart.
+
+## Rezervni put 2 - ručno sastavljanje
+
+Siguran put, traje oko pola sata:
 
 1. Novi prazan fajl u Power BI Desktop-u.
 2. Iz `M_upiti.txt` prenesi tri parametra, pa upite `Tipovi` i `Tabela`,
    pa 13 tabela modela (*Blank Query → Advanced Editor → nalepi → preimenuj*).
 3. *Close & Apply*.
-4. U *Model view* napravi 13 relacija iz `DAX_mere.txt` (na kraju fajla).
+4. U *Model view* napravi 13 relacija iz `DAX_mere.txt` (na kraju fajla) i
+   označi `Kalendar` kao tabelu datuma (desni klik → *Mark as date table* →
+   kolona `Datum`).
 5. Iz `DAX_mere.txt` dodaj 37 mera na tabele koje su tamo navedene.
 6. Napravi pet strana i na svaku stavi vizuale iz tabela ispod.
-
-U *Model view* označi tabelu `Kalendar` kao tabelu datuma:
-desni klik na `Kalendar` → *Mark as date table* → kolona `Datum`.
+7. Sačuvaj kao `.pbix`.
 
 ## Vizuali po stranama
 

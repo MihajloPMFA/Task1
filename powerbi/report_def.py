@@ -354,6 +354,7 @@ STRANE = [strana_playout, strana_gledanost, strana_troskovi,
 
 
 def izvestaj():
+    _brojac[0] = 0                      # imena vizuala moraju biti determinisana
     sekcije = [f() for f in STRANE]
     cfg = {'version': '5.55', 'activeSectionIndex': 0,
            'defaultDrillFilterOtherVisuals': True,
