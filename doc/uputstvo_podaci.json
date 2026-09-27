@@ -1,0 +1,7266 @@
+{
+ "izvestaji": [
+  {
+   "upit": "qIzv1_Sema",
+   "ime": "rptIzv1",
+   "naslov": "Izveštaj 1 - Programska šema sa terminima emitovanja",
+   "sirina": 14600,
+   "pejzaz": true,
+   "grupe": [
+    {
+     "polje": "SIFRA_SEME",
+     "zaglavlje": true,
+     "podnozje": true
+    },
+    {
+     "polje": "CELINA_KLJUC",
+     "zaglavlje": true,
+     "podnozje": true
+    },
+    {
+     "polje": "VREME_POCETKA",
+     "zaglavlje": false,
+     "podnozje": false
+    }
+   ],
+   "visine": {
+    "acHeader": {
+     "visina": 820,
+     "raste": false
+    },
+    "acPageHeader": {
+     "visina": 420,
+     "raste": false
+    },
+    "acGroupLevel1Header": {
+     "visina": 780,
+     "raste": false
+    },
+    "acGroupLevel2Header": {
+     "visina": 500,
+     "raste": false
+    },
+    "acDetail": {
+     "visina": 300,
+     "raste": false
+    },
+    "acGroupLevel2Footer": {
+     "visina": 400,
+     "raste": false
+    },
+    "acGroupLevel1Footer": {
+     "visina": 480,
+     "raste": false
+    },
+    "acFooter": {
+     "visina": 500,
+     "raste": false
+    },
+    "acPageFooter": {
+     "visina": 360,
+     "raste": false
+    }
+   },
+   "kontrole": {
+    "acHeader": [
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Izveštaj 1 - Programska šema sa terminima emitovanja",
+      "x": 0,
+      "y": 60,
+      "w": 14600,
+      "h": 400,
+      "vel": 15,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Informacioni sistem TV stanice - TV Panorama",
+      "x": 0,
+      "y": 480,
+      "w": 14600,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 780,
+      "w": 14600,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     }
+    ],
+    "acPageHeader": [
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Vreme",
+      "x": 0,
+      "y": 90,
+      "w": 1020,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "centar",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Datum",
+      "x": 1100,
+      "y": 90,
+      "w": 1320,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "centar",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Šifra termina",
+      "x": 2500,
+      "y": 90,
+      "w": 1120,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Emisija",
+      "x": 3700,
+      "y": 90,
+      "w": 3220,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Žanr",
+      "x": 7000,
+      "y": 90,
+      "w": 1620,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Trajanje (min)",
+      "x": 8700,
+      "y": 90,
+      "w": 1020,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Tip termina",
+      "x": 9800,
+      "y": 90,
+      "w": 1320,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Zona",
+      "x": 11200,
+      "y": 90,
+      "w": 820,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "centar",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Repriza",
+      "x": 12100,
+      "y": 90,
+      "w": 920,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Status",
+      "x": 13100,
+      "y": 90,
+      "w": 1420,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 380,
+      "w": 14600,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     }
+    ],
+    "acGroupLevel1Header": [
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Programska šema:",
+      "x": 0,
+      "y": 90,
+      "w": 1500,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "NAZIV_SEME",
+      "x": 1500,
+      "y": 60,
+      "w": 3000,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Sezona:",
+      "x": 4660,
+      "y": 90,
+      "w": 900,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "SEZONA",
+      "x": 5560,
+      "y": 60,
+      "w": 1500,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Verzija:",
+      "x": 7220,
+      "y": 90,
+      "w": 900,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "VERZIJA_SEME",
+      "x": 8120,
+      "y": 60,
+      "w": 1100,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Status:",
+      "x": 9380,
+      "y": 90,
+      "w": 800,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "STATUS_SEME",
+      "x": 10180,
+      "y": 60,
+      "w": 1600,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Važi od:",
+      "x": 0,
+      "y": 410,
+      "w": 1000,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "SEMA_OD",
+      "x": 1000,
+      "y": 380,
+      "w": 1300,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "dd.mm.yyyy"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "do:",
+      "x": 2460,
+      "y": 410,
+      "w": 500,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "SEMA_DO",
+      "x": 2960,
+      "y": 380,
+      "w": 1300,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "dd.mm.yyyy"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Usvojena:",
+      "x": 4420,
+      "y": 410,
+      "w": 1100,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "DATUM_USVAJANJA",
+      "x": 5520,
+      "y": 380,
+      "w": 1300,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "dd.mm.yyyy"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Urednik:",
+      "x": 6980,
+      "y": 410,
+      "w": 900,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "UREDNIK_NAZIV",
+      "x": 7880,
+      "y": 380,
+      "w": 2400,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Redakcija:",
+      "x": 10440,
+      "y": 410,
+      "w": 1100,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "REDAKCIJA",
+      "x": 11540,
+      "y": 380,
+      "w": 2600,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 720,
+      "w": 14600,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     }
+    ],
+    "acGroupLevel2Header": [
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Programska celina:",
+      "x": 0,
+      "y": 110,
+      "w": 1700,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "NAZIV_CELINE",
+      "x": 1700,
+      "y": 80,
+      "w": 3000,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Tip:",
+      "x": 4860,
+      "y": 110,
+      "w": 600,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "TIP_CELINE",
+      "x": 5460,
+      "y": 80,
+      "w": 1500,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Datum:",
+      "x": 7120,
+      "y": 110,
+      "w": 800,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "DATUM_CELINE",
+      "x": 7920,
+      "y": 80,
+      "w": 1300,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "dd.mm.yyyy"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Vreme od:",
+      "x": 9380,
+      "y": 110,
+      "w": 1000,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "VREME_OD",
+      "x": 10380,
+      "y": 80,
+      "w": 900,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "hh:nn"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "do:",
+      "x": 11440,
+      "y": 110,
+      "w": 500,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "VREME_DO",
+      "x": 11940,
+      "y": 80,
+      "w": 900,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "hh:nn"
+     },
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 420,
+      "w": 14600,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     }
+    ],
+    "acDetail": [
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "VREME_POCETKA",
+      "x": 0,
+      "y": 30,
+      "w": 1020,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "centar",
+      "fmt": "hh:nn"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "DATUM_TERMINA",
+      "x": 1100,
+      "y": 30,
+      "w": 1320,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "centar",
+      "fmt": "dd.mm.yyyy"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "SIFRA_TERMINA",
+      "x": 2500,
+      "y": 30,
+      "w": 1120,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "NAZIV_EMISIJE",
+      "x": 3700,
+      "y": 30,
+      "w": 3220,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "ZANR",
+      "x": 7000,
+      "y": 30,
+      "w": 1620,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "TRAJANJE_TERMINA",
+      "x": 8700,
+      "y": 30,
+      "w": 1020,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "desno",
+      "fmt": "0"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "TIP_TERMINA",
+      "x": 9800,
+      "y": 30,
+      "w": 1320,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "ZONA_GLEDANOSTI",
+      "x": 11200,
+      "y": 30,
+      "w": 820,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "centar",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "REDNI_BROJ_REPRIZE",
+      "x": 12100,
+      "y": 30,
+      "w": 920,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "desno",
+      "fmt": "0"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "STATUS_TERMINA",
+      "x": 13100,
+      "y": 30,
+      "w": 1420,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     }
+    ],
+    "acGroupLevel2Footer": [
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 20,
+      "w": 14600,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Ukupno u celini:",
+      "x": 0,
+      "y": 80,
+      "w": 2800,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Count([SIFRA_TERMINA]) & \" termina\"",
+      "x": 2850,
+      "y": 80,
+      "w": 2200,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Sum([TRAJANJE_TERMINA])",
+      "x": 8700,
+      "y": 80,
+      "w": 1020,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": "0"
+     }
+    ],
+    "acGroupLevel1Footer": [
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 20,
+      "w": 14600,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "UKUPNO PO ŠEMI:",
+      "x": 0,
+      "y": 90,
+      "w": 2800,
+      "h": 260,
+      "vel": 10,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Count([SIFRA_TERMINA]) & \" termina\"",
+      "x": 2850,
+      "y": 90,
+      "w": 2200,
+      "h": 260,
+      "vel": 10,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Sum([TRAJANJE_TERMINA])",
+      "x": 8700,
+      "y": 90,
+      "w": 1020,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": "0"
+     }
+    ],
+    "acFooter": [
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 40,
+      "w": 14600,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "UKUPNO (sve šeme):",
+      "x": 0,
+      "y": 120,
+      "w": 2800,
+      "h": 280,
+      "vel": 11,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Count([SIFRA_TERMINA]) & \" termina\"",
+      "x": 2850,
+      "y": 120,
+      "w": 2200,
+      "h": 280,
+      "vel": 11,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Sum([TRAJANJE_TERMINA])",
+      "x": 8700,
+      "y": 120,
+      "w": 1020,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": "0"
+     }
+    ],
+    "acPageFooter": [
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 40,
+      "w": 14600,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Now()",
+      "x": 0,
+      "y": 100,
+      "w": 3400,
+      "h": 240,
+      "vel": 8,
+      "bold": false,
+      "por": "levo",
+      "fmt": "dd.mm.yyyy. hh:nn"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=\"Izradio: \" & CurrentUser()",
+      "x": 3500,
+      "y": 100,
+      "w": 4600,
+      "h": 240,
+      "vel": 8,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=\"Strana \" & [Page] & \" od \" & [Pages]",
+      "x": 11500,
+      "y": 100,
+      "w": 3000,
+      "h": 240,
+      "vel": 8,
+      "bold": false,
+      "por": "desno",
+      "fmt": ""
+     }
+    ]
+   },
+   "grafikoni": [],
+   "podizvestaji": [],
+   "broj": 1,
+   "spec": {
+    "ID izveštaja": "1",
+    "Naziv": "Programska šema sa terminima emitovanja",
+    "Tip izveštaja": "Tabelarni (grupisani)",
+    "Svrha": "Prikaz usvojene programske šeme za izabranu sezonu: programske celine i svi termini emitovanja u njima, sa emisijom, trajanjem, zonom gledanosti i rednim brojem reprize. Redakciji i tehničkoj službi služi kao radni raspored, a upravi kao dokaz o usvojenoj šemi programa.",
+    "Izvor podataka": "Tabele „Programska šema“, „Programska celina“, „Termin emitovanja“, „Emisija“ i „Urednik“ iz baze podataka informacionog sistema.",
+    "Parametri": "—",
+    "Učestalost i raspodela": "Izveštaj se kreira pri svakom usvajanju ili izmeni programske šeme, obavezno pre početka sezone, kao i po zahtevu.",
+    "Zaglavlje i podnožje": "U zaglavlju se nalaze naziv izveštaja, naziv i sezona šeme, period važenja (datum od – datum do), verzija i status šeme, kao i ime urednika koji je šemu odobrio. U podnožju su datum kreiranja, ime zaposlenog koji je izveštaj generisao i broj strane.",
+    "Telo izveštaja": "Tabelarni prikaz grupisan po programskoj celini (naziv celine, tip celine, datum, vreme od – vreme do). Unutar svake celine, za svaki termin: vreme početka, naziv emisije, žanr, trajanje termina, tip termina, zona gledanosti, redni broj reprize i status termina. U podnožju grupe zbir minuta po celini, a na kraju ukupan broj termina i ukupno minuta po šemi.",
+    "Pristup izveštaju": "Urednici programa, redakcija, tehnička služba i uprava stanice."
+   },
+   "sql": "SELECT PS.SIFRA_SEME, PS.NAZIV_SEME, PS.SEZONA, PS.VERZIJA_SEME, PS.STATUS_SEME,\n PS.DATUM_OD AS SEMA_OD, PS.DATUM_DO AS SEMA_DO, PS.DATUM_USVAJANJA,\n (Z.PREZIME & \" \" & Z.IME) AS UREDNIK_NAZIV, UR.REDAKCIJA,\n PC.RB_CELINE, PC.NAZIV_CELINE, PC.TIP_CELINE, PC.DATUM AS DATUM_CELINE,\n PC.VREME_OD, PC.VREME_DO,\n (PS.SIFRA_SEME & \"-\" & Format(PC.RB_CELINE,\"000\")) AS CELINA_KLJUC,\n TE.SIFRA_TERMINA, TE.DATUM AS DATUM_TERMINA, TE.VREME_POCETKA,\n E.NAZIV_EMISIJE, E.ZANR, TE.TRAJANJE_TERMINA, TE.TIP_TERMINA,\n TE.ZONA_GLEDANOSTI, TE.REDNI_BROJ_REPRIZE, TE.STATUS_TERMINA\nFROM ((((PROGRAMSKA_SEMA AS PS\n INNER JOIN PROGRAMSKA_CELINA AS PC ON PS.SIFRA_SEME = PC.SIFRA_SEME)\n INNER JOIN TERMIN_EMITOVANJA AS TE ON (PC.SIFRA_SEME = TE.SIFRA_SEME) AND (PC.RB_CELINE = TE.RB_CELINE))\n INNER JOIN EMISIJA AS E ON TE.SIFRA_EMISIJE = E.SIFRA_EMISIJE)\n INNER JOIN UREDNIK AS UR ON PS.SIFRA_UREDNIKA = UR.SIFRA_ZAPOSLENOG)\n INNER JOIN ZAPOSLENI AS Z ON UR.SIFRA_ZAPOSLENOG = Z.SIFRA_ZAPOSLENOG\nORDER BY PS.SIFRA_SEME, PC.RB_CELINE, TE.VREME_POCETKA;",
+   "pod": null
+  },
+  {
+   "upit": "qIzv2_Playout",
+   "ime": "rptIzv2",
+   "naslov": "Izveštaj 2 - Evidencija emitovanog sadržaja (playout log)",
+   "sirina": 15400,
+   "pejzaz": true,
+   "grupe": [
+    {
+     "polje": "DATUM",
+     "zaglavlje": true,
+     "podnozje": true
+    },
+    {
+     "polje": "STVARNO_VREME_POCETKA",
+     "zaglavlje": false,
+     "podnozje": false
+    }
+   ],
+   "visine": {
+    "acHeader": {
+     "visina": 1120,
+     "raste": false
+    },
+    "acPageHeader": {
+     "visina": 420,
+     "raste": false
+    },
+    "acGroupLevel1Header": {
+     "visina": 460,
+     "raste": false
+    },
+    "acDetail": {
+     "visina": 290,
+     "raste": false
+    },
+    "acGroupLevel1Footer": {
+     "visina": 420,
+     "raste": false
+    },
+    "acFooter": {
+     "visina": 500,
+     "raste": false
+    },
+    "acPageFooter": {
+     "visina": 360,
+     "raste": false
+    }
+   },
+   "kontrole": {
+    "acHeader": [
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Izveštaj 2 - Evidencija emitovanog sadržaja (playout log)",
+      "x": 0,
+      "y": 60,
+      "w": 15400,
+      "h": 400,
+      "vel": 15,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Informacioni sistem TV stanice - TV Panorama",
+      "x": 0,
+      "y": 480,
+      "w": 15400,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 1080,
+      "w": 15400,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Period od:",
+      "x": 0,
+      "y": 790,
+      "w": 1000,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "PAR_OD",
+      "x": 1000,
+      "y": 760,
+      "w": 1400,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "dd.mm.yyyy"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "do:",
+      "x": 2560,
+      "y": 790,
+      "w": 500,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "PAR_DO",
+      "x": 3060,
+      "y": 760,
+      "w": 1400,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "dd.mm.yyyy"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Stanje na dan:",
+      "x": 4620,
+      "y": 790,
+      "w": 1300,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Date()",
+      "x": 5920,
+      "y": 760,
+      "w": 1400,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "dd.mm.yyyy"
+     }
+    ],
+    "acPageHeader": [
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Stvarno vreme",
+      "x": 0,
+      "y": 90,
+      "w": 1020,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "centar",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Emisija",
+      "x": 1100,
+      "y": 90,
+      "w": 2220,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Medijski sadržaj",
+      "x": 3400,
+      "y": 90,
+      "w": 2220,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Plan (min)",
+      "x": 5700,
+      "y": 90,
+      "w": 920,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Stvarno (min)",
+      "x": 6700,
+      "y": 90,
+      "w": 920,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Odstupanje",
+      "x": 7700,
+      "y": 90,
+      "w": 920,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Status realizacije",
+      "x": 8700,
+      "y": 90,
+      "w": 1220,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Broj licence",
+      "x": 10000,
+      "y": 90,
+      "w": 1120,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Vrsta prava",
+      "x": 11200,
+      "y": 90,
+      "w": 1420,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Operater",
+      "x": 12700,
+      "y": 90,
+      "w": 1120,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Napomena o smetnjama",
+      "x": 13900,
+      "y": 90,
+      "w": 1420,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 380,
+      "w": 15400,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     }
+    ],
+    "acGroupLevel1Header": [
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Datum emitovanja:",
+      "x": 0,
+      "y": 90,
+      "w": 1600,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "DATUM",
+      "x": 1600,
+      "y": 60,
+      "w": 1600,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "dd.mm.yyyy"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "dan:",
+      "x": 3360,
+      "y": 90,
+      "w": 500,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "DATUM",
+      "x": 3860,
+      "y": 60,
+      "w": 1800,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "dddd"
+     },
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 390,
+      "w": 15400,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     }
+    ],
+    "acDetail": [
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "STVARNO_VREME_POCETKA",
+      "x": 0,
+      "y": 30,
+      "w": 1020,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "centar",
+      "fmt": "hh:nn"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "NAZIV_EMISIJE",
+      "x": 1100,
+      "y": 30,
+      "w": 2220,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "NAZIV_SADRZAJA",
+      "x": 3400,
+      "y": 30,
+      "w": 2220,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "TRAJANJE_TERMINA",
+      "x": 5700,
+      "y": 30,
+      "w": 920,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "desno",
+      "fmt": "0"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "STVARNO_TRAJANJE",
+      "x": 6700,
+      "y": 30,
+      "w": 920,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "desno",
+      "fmt": "0"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "ODSTUPANJE",
+      "x": 7700,
+      "y": 30,
+      "w": 920,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "desno",
+      "fmt": "0"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "STATUS_REALIZACIJE",
+      "x": 8700,
+      "y": 30,
+      "w": 1220,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "BROJ_LICENCE",
+      "x": 10000,
+      "y": 30,
+      "w": 1120,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "VRSTA_PRAVA",
+      "x": 11200,
+      "y": 30,
+      "w": 1420,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "OPERATER_EMITOVANJA",
+      "x": 12700,
+      "y": 30,
+      "w": 1120,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "NAPOMENA_O_SMETNJAMA",
+      "x": 13900,
+      "y": 30,
+      "w": 1420,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     }
+    ],
+    "acGroupLevel1Footer": [
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 20,
+      "w": 15400,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Ukupno za dan:",
+      "x": 0,
+      "y": 80,
+      "w": 2200,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Count([NAZIV_EMISIJE]) & \" emitovanja\"",
+      "x": 2250,
+      "y": 80,
+      "w": 2000,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Sum([STVARNO_TRAJANJE])",
+      "x": 6700,
+      "y": 80,
+      "w": 920,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": "0"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Sum([IMA_SMETNJU]) & \" sa zabeleženim smetnjama\"",
+      "x": 8700,
+      "y": 80,
+      "w": 3400,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     }
+    ],
+    "acFooter": [
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 40,
+      "w": 15400,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "UKUPNO ZA PERIOD:",
+      "x": 0,
+      "y": 120,
+      "w": 2200,
+      "h": 280,
+      "vel": 11,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Count([NAZIV_EMISIJE]) & \" emitovanja\"",
+      "x": 2250,
+      "y": 120,
+      "w": 2000,
+      "h": 280,
+      "vel": 11,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Sum([STVARNO_TRAJANJE])",
+      "x": 6700,
+      "y": 120,
+      "w": 920,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": "0"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Sum([IMA_SMETNJU]) & \" sa zabeleženim smetnjama\"",
+      "x": 8700,
+      "y": 120,
+      "w": 3400,
+      "h": 280,
+      "vel": 10,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     }
+    ],
+    "acPageFooter": [
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 40,
+      "w": 15400,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Now()",
+      "x": 0,
+      "y": 100,
+      "w": 3400,
+      "h": 240,
+      "vel": 8,
+      "bold": false,
+      "por": "levo",
+      "fmt": "dd.mm.yyyy. hh:nn"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=\"Izradio: \" & CurrentUser()",
+      "x": 3500,
+      "y": 100,
+      "w": 4600,
+      "h": 240,
+      "vel": 8,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=\"Strana \" & [Page] & \" od \" & [Pages]",
+      "x": 12300,
+      "y": 100,
+      "w": 3000,
+      "h": 240,
+      "vel": 8,
+      "bold": false,
+      "por": "desno",
+      "fmt": ""
+     }
+    ]
+   },
+   "grafikoni": [],
+   "podizvestaji": [],
+   "broj": 2,
+   "spec": {
+    "ID izveštaja": "2",
+    "Naziv": "Evidencija emitovanog sadržaja (playout log)",
+    "Tip izveštaja": "Parametarski (tabelarni)",
+    "Svrha": "Hronološka evidencija stvarno emitovanog sadržaja za period koji korisnik unese: šta je, kada i koliko dugo emitovano, po kom pravu korišćenja i uz koje smetnje. Osnova za izveštavanje regulatornom telu i za dokazivanje osnova za emitovanje.",
+    "Izvor podataka": "Tabele „Zapis o emitovanju“, „Termin emitovanja“, „Emisija“, „Medijski sadržaj“, „Pokrivenost pravom“ i „Pravo korišćenja“ iz baze podataka informacionog sistema.",
+    "Parametri": "Datum od i datum do (obavezni parametri, unose se pri pokretanju izveštaja). Opciono se može zadati i status realizacije radi izdvajanja samo neuspelih emitovanja.",
+    "Učestalost i raspodela": "Izveštaj se kreira automatski na dnevnom nivou, kao i po zahtevu pravne službe i ovlašćenih regulatornih tela.",
+    "Zaglavlje i podnožje": "U zaglavlju su naziv izveštaja i period koji je korisnik uneo kao parametar. U podnožju su datum i vreme kreiranja, ime odgovornog lica i broj strane.",
+    "Telo izveštaja": "Hronološki tabelarni prikaz, sortiran po datumu i stvarnom vremenu početka: datum, stvarno vreme početka, naziv emisije, naziv medijskog sadržaja, planirano trajanje termina, stvarno trajanje i odstupanje, status realizacije, broj licence i vrsta prava, operater emitovanja i napomena o smetnjama. Po danu se prikazuju zbir emitovanih minuta i broj emitovanja sa zabeleženim smetnjama.",
+    "Pristup izveštaju": "Uprava stanice, urednici programa, tehnička služba, pravna služba i ovlašćena regulatorna tela."
+   },
+   "sql": "PARAMETERS [Datum od:] DateTime, [Datum do:] DateTime;\nSELECT TE.DATUM, ZE.RB_EMITOVANJA, ZE.STVARNO_VREME_POCETKA,\n E.NAZIV_EMISIJE, MS.NAZIV_SADRZAJA, TE.TRAJANJE_TERMINA, ZE.STVARNO_TRAJANJE,\n (Nz(ZE.STVARNO_TRAJANJE,0) - Nz(TE.TRAJANJE_TERMINA,0)) AS ODSTUPANJE,\n ZE.STATUS_REALIZACIJE, PK.BROJ_LICENCE, PK.VRSTA_PRAVA,\n ZE.OPERATER_EMITOVANJA, ZE.NAPOMENA_O_SMETNJAMA,\n IIf(Len(Nz(ZE.NAPOMENA_O_SMETNJAMA,\"\")) > 0, 1, 0) AS IMA_SMETNJU,\n [Datum od:] AS PAR_OD, [Datum do:] AS PAR_DO\nFROM ((((ZAPIS_O_EMITOVANJU AS ZE\n INNER JOIN TERMIN_EMITOVANJA AS TE ON ZE.SIFRA_TERMINA = TE.SIFRA_TERMINA)\n INNER JOIN EMISIJA AS E ON TE.SIFRA_EMISIJE = E.SIFRA_EMISIJE)\n INNER JOIN MEDIJSKI_SADRZAJ AS MS ON ZE.SIFRA_SADRZAJA = MS.SIFRA_SADRZAJA)\n LEFT JOIN POKRIVENOST_PRAVOM AS PP ON MS.SIFRA_SADRZAJA = PP.SIFRA_SADRZAJA)\n LEFT JOIN PRAVO_KORISCENJA AS PK ON PP.BROJ_LICENCE = PK.BROJ_LICENCE\nWHERE TE.DATUM BETWEEN [Datum od:] AND [Datum do:]\nORDER BY TE.DATUM, ZE.STVARNO_VREME_POCETKA;",
+   "pod": null
+  },
+  {
+   "upit": "qIzv3_Emisije",
+   "ime": "rptIzv3",
+   "naslov": "Izveštaj 3 - Gledanost emisija po žanru",
+   "sirina": 10700,
+   "pejzaz": false,
+   "grupe": [],
+   "visine": {
+    "acHeader": {
+     "visina": 8000,
+     "raste": false
+    },
+    "acPageHeader": {
+     "visina": 420,
+     "raste": false
+    },
+    "acDetail": {
+     "visina": 300,
+     "raste": false
+    },
+    "acFooter": {
+     "visina": 520,
+     "raste": false
+    },
+    "acPageFooter": {
+     "visina": 360,
+     "raste": false
+    }
+   },
+   "kontrole": {
+    "acHeader": [
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Izveštaj 3 - Gledanost emisija po žanru",
+      "x": 0,
+      "y": 60,
+      "w": 10700,
+      "h": 400,
+      "vel": 15,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Informacioni sistem TV stanice - TV Panorama",
+      "x": 0,
+      "y": 480,
+      "w": 10700,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Zaglavlje3()",
+      "x": 0,
+      "y": 760,
+      "w": 10700,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 7960,
+      "w": 10700,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Prosečan ostvareni rejting po žanru emisije",
+      "x": 0,
+      "y": 1120,
+      "w": 10700,
+      "h": 280,
+      "vel": 10,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Kretanje prosečnog rejtinga po datumu merenja",
+      "x": 0,
+      "y": 4420,
+      "w": 10700,
+      "h": 280,
+      "vel": 10,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Prateći tabelarni prikaz - sortirano opadajuće po ostvarenom rejtingu",
+      "x": 0,
+      "y": 7680,
+      "w": 10700,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     }
+    ],
+    "acPageHeader": [
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Emisija",
+      "x": 0,
+      "y": 90,
+      "w": 2520,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Žanr",
+      "x": 2600,
+      "y": 90,
+      "w": 1520,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Merenja",
+      "x": 4200,
+      "y": 90,
+      "w": 820,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Prosečan rejting",
+      "x": 5100,
+      "y": 90,
+      "w": 1120,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Prosečan udeo (%)",
+      "x": 6300,
+      "y": 90,
+      "w": 1120,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Prosečno gledalaca",
+      "x": 7500,
+      "y": 90,
+      "w": 1620,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Prosečno gledanje (min)",
+      "x": 9200,
+      "y": 90,
+      "w": 1420,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 380,
+      "w": 10700,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     }
+    ],
+    "acDetail": [
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "NAZIV_EMISIJE",
+      "x": 0,
+      "y": 30,
+      "w": 2520,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "ZANR",
+      "x": 2600,
+      "y": 30,
+      "w": 1520,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "BROJ_MERENJA",
+      "x": 4200,
+      "y": 30,
+      "w": 820,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "desno",
+      "fmt": "0"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "PROSECAN_REJTING",
+      "x": 5100,
+      "y": 30,
+      "w": 1120,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "desno",
+      "fmt": "0.00"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "PROSECAN_UDEO",
+      "x": 6300,
+      "y": 30,
+      "w": 1120,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "desno",
+      "fmt": "0.00"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "PROSECAN_BROJ_GLEDALACA",
+      "x": 7500,
+      "y": 30,
+      "w": 1620,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "desno",
+      "fmt": "#,##0"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "PROSECNO_GLEDANJE",
+      "x": 9200,
+      "y": 30,
+      "w": 1420,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "desno",
+      "fmt": "0.0"
+     }
+    ],
+    "acFooter": [
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 40,
+      "w": 10700,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "UKUPNO:",
+      "x": 0,
+      "y": 120,
+      "w": 1400,
+      "h": 280,
+      "vel": 11,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Count([NAZIV_EMISIJE]) & \" emisija\"",
+      "x": 1450,
+      "y": 120,
+      "w": 2700,
+      "h": 280,
+      "vel": 11,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Sum([BROJ_MERENJA])",
+      "x": 4200,
+      "y": 120,
+      "w": 820,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": "0"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Avg([PROSECAN_REJTING])",
+      "x": 5100,
+      "y": 120,
+      "w": 1120,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": "0.00"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Avg([PROSECAN_UDEO])",
+      "x": 6300,
+      "y": 120,
+      "w": 1120,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": "0.00"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Avg([PROSECAN_BROJ_GLEDALACA])",
+      "x": 7500,
+      "y": 120,
+      "w": 1620,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": "#,##0"
+     }
+    ],
+    "acPageFooter": [
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 40,
+      "w": 10700,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Now()",
+      "x": 0,
+      "y": 100,
+      "w": 3400,
+      "h": 240,
+      "vel": 8,
+      "bold": false,
+      "por": "levo",
+      "fmt": "dd.mm.yyyy. hh:nn"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=\"Izradio: \" & CurrentUser()",
+      "x": 3500,
+      "y": 100,
+      "w": 4600,
+      "h": 240,
+      "vel": 8,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=\"Strana \" & [Page] & \" od \" & [Pages]",
+      "x": 7600,
+      "y": 100,
+      "w": 3000,
+      "h": 240,
+      "vel": 8,
+      "bold": false,
+      "por": "desno",
+      "fmt": ""
+     }
+    ]
+   },
+   "grafikoni": [
+    {
+     "sek": "acHeader",
+     "x": 0,
+     "y": 1420,
+     "w": 10700,
+     "h": 2900,
+     "upit": "qIzv3_RejtingPoZanru",
+     "sql": "SELECT E.ZANR, Round(Avg(ME.OSTVARENI_RATING),2) AS PROSECAN_REJTING\nFROM EMISIJA AS E INNER JOIN MERENJE_EMISIJE AS ME\n ON E.SIFRA_EMISIJE = ME.SIFRA_EMISIJE\nGROUP BY E.ZANR\nORDER BY E.ZANR;"
+    },
+    {
+     "sek": "acHeader",
+     "x": 0,
+     "y": 4720,
+     "w": 10700,
+     "h": 2900,
+     "upit": "qIzv3_RejtingPoDatumu",
+     "sql": "SELECT MG.DATUM_MERENJA, Round(Avg(ME.OSTVARENI_RATING),2) AS PROSECAN_REJTING\nFROM MERENJE_GLEDANOSTI AS MG INNER JOIN MERENJE_EMISIJE AS ME\n ON MG.SIFRA_MERENJA = ME.SIFRA_MERENJA\nGROUP BY MG.DATUM_MERENJA\nORDER BY MG.DATUM_MERENJA;"
+    }
+   ],
+   "podizvestaji": [],
+   "broj": 3,
+   "spec": {
+    "ID izveštaja": "3",
+    "Naziv": "Gledanost emisija po žanru",
+    "Tip izveštaja": "Grafički (sa pratećom tabelom)",
+    "Svrha": "Prikaz ostvarenog rejtinga i udela u terminu po emisiji i po žanru za izabrani period, radi ocene uspešnosti programa i donošenja odluka o izmeni programske šeme.",
+    "Izvor podataka": "Tabele „Merenje gledanosti“, veza „Merena“ (ostvareni rejting i udeo u terminu), „Emisija“ i „Termin emitovanja“ iz baze podataka informacionog sistema.",
+    "Parametri": "—",
+    "Učestalost i raspodela": "Izveštaj se kreira na mesečnom nivou i po završetku sezone, kao i po zahtevu sektora marketinga.",
+    "Zaglavlje i podnožje": "U zaglavlju su naziv izveštaja, period merenja, izvor merenja i ciljna grupa na koju se merenja odnose. U podnožju su datum kreiranja, ime zaposlenog koji je izveštaj generisao i broj strane.",
+    "Telo izveštaja": "Grafički prikaz: stubasti grafikon prosečnog ostvarenog rejtinga po žanru emisije i linijski grafikon kretanja prosečnog rejtinga po datumu merenja. Ispod grafikona prateći tabelarni prikaz: naziv emisije, žanr, broj merenja, prosečan ostvareni rejting, prosečan udeo u terminu, prosečan broj gledalaca i prosečno vreme gledanja, sortirano opadajuće po rejtingu.",
+    "Pristup izveštaju": "Uprava stanice, urednici programa i sektor marketinga i prodaje."
+   },
+   "sql": "SELECT E.NAZIV_EMISIJE, E.ZANR, Count(ME.SIFRA_MERENJA) AS BROJ_MERENJA,\n Round(Avg(ME.OSTVARENI_RATING),2) AS PROSECAN_REJTING,\n Round(Avg(ME.UDEO_U_TERMINU),2) AS PROSECAN_UDEO,\n Round(Avg(MG.BROJ_GLEDALACA),0) AS PROSECAN_BROJ_GLEDALACA,\n Round(Avg(MG.PROSECNO_GLEDANJE),1) AS PROSECNO_GLEDANJE\nFROM (EMISIJA AS E\n INNER JOIN MERENJE_EMISIJE AS ME ON E.SIFRA_EMISIJE = ME.SIFRA_EMISIJE)\n INNER JOIN MERENJE_GLEDANOSTI AS MG ON ME.SIFRA_MERENJA = MG.SIFRA_MERENJA\nGROUP BY E.NAZIV_EMISIJE, E.ZANR\nORDER BY Avg(ME.OSTVARENI_RATING) DESC;",
+   "pod": null
+  },
+  {
+   "upit": "qIzv4_Troskovi",
+   "ime": "rptIzv4",
+   "naslov": "Izveštaj 4 - Realizacija i troškovi projekta produkcije",
+   "sirina": 13200,
+   "pejzaz": true,
+   "grupe": [
+    {
+     "polje": "SIFRA_PROJEKTA",
+     "zaglavlje": true,
+     "podnozje": true
+    },
+    {
+     "polje": "AKT_KLJUC",
+     "zaglavlje": true,
+     "podnozje": true
+    },
+    {
+     "polje": "RB_TROSKA",
+     "zaglavlje": false,
+     "podnozje": false
+    }
+   ],
+   "visine": {
+    "acHeader": {
+     "visina": 820,
+     "raste": false
+    },
+    "acPageHeader": {
+     "visina": 420,
+     "raste": false
+    },
+    "acGroupLevel1Header": {
+     "visina": 760,
+     "raste": false
+    },
+    "acGroupLevel2Header": {
+     "visina": 680,
+     "raste": false
+    },
+    "acDetail": {
+     "visina": 300,
+     "raste": false
+    },
+    "acGroupLevel2Footer": {
+     "visina": 360,
+     "raste": false
+    },
+    "acGroupLevel1Footer": {
+     "visina": 700,
+     "raste": false
+    },
+    "acFooter": {
+     "visina": 520,
+     "raste": false
+    },
+    "acPageFooter": {
+     "visina": 360,
+     "raste": false
+    }
+   },
+   "kontrole": {
+    "acHeader": [
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Izveštaj 4 - Realizacija i troškovi projekta produkcije",
+      "x": 0,
+      "y": 60,
+      "w": 13200,
+      "h": 400,
+      "vel": 15,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Informacioni sistem TV stanice - TV Panorama",
+      "x": 0,
+      "y": 480,
+      "w": 13200,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 780,
+      "w": 13200,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     }
+    ],
+    "acPageHeader": [
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "RB",
+      "x": 800,
+      "y": 90,
+      "w": 620,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Vrsta troška",
+      "x": 1500,
+      "y": 90,
+      "w": 1920,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Opis troška",
+      "x": 3500,
+      "y": 90,
+      "w": 3320,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Datum nastanka",
+      "x": 6900,
+      "y": 90,
+      "w": 1320,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "centar",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Iznos",
+      "x": 8300,
+      "y": 90,
+      "w": 1720,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Broj fakture",
+      "x": 10100,
+      "y": 90,
+      "w": 1320,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Status plaćanja",
+      "x": 11500,
+      "y": 90,
+      "w": 1620,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 380,
+      "w": 13200,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     }
+    ],
+    "acGroupLevel1Header": [
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Projekat:",
+      "x": 0,
+      "y": 90,
+      "w": 900,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "SIFRA_PROJEKTA",
+      "x": 900,
+      "y": 60,
+      "w": 1400,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Naziv:",
+      "x": 2460,
+      "y": 90,
+      "w": 700,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "NAZIV_PROJEKTA",
+      "x": 3160,
+      "y": 60,
+      "w": 3000,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Vrsta produkcije:",
+      "x": 6320,
+      "y": 90,
+      "w": 1500,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "VRSTA_PRODUKCIJE",
+      "x": 7820,
+      "y": 60,
+      "w": 1800,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Status:",
+      "x": 9780,
+      "y": 90,
+      "w": 800,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "STATUS_PROJEKTA",
+      "x": 10580,
+      "y": 60,
+      "w": 1600,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Urednik:",
+      "x": 0,
+      "y": 410,
+      "w": 900,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "UREDNIK_NAZIV",
+      "x": 900,
+      "y": 380,
+      "w": 2000,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Emisija:",
+      "x": 3060,
+      "y": 410,
+      "w": 800,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "NAZIV_EMISIJE",
+      "x": 3860,
+      "y": 380,
+      "w": 2000,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Period:",
+      "x": 6020,
+      "y": 410,
+      "w": 700,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "DATUM_POCETKA",
+      "x": 6720,
+      "y": 380,
+      "w": 1300,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "dd.mm.yyyy"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "-",
+      "x": 8180,
+      "y": 410,
+      "w": 200,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "DATUM_ZAVRSETKA",
+      "x": 8380,
+      "y": 380,
+      "w": 1300,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "dd.mm.yyyy"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Odobren budžet:",
+      "x": 9840,
+      "y": 410,
+      "w": 1500,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "ODOBREN_BUDZET",
+      "x": 11340,
+      "y": 380,
+      "w": 1800,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "#,##0.00"
+     },
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 700,
+      "w": 13200,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     }
+    ],
+    "acGroupLevel2Header": [
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Aktivnost:",
+      "x": 400,
+      "y": 90,
+      "w": 900,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "RB_AKTIVNOSTI",
+      "x": 1300,
+      "y": 60,
+      "w": 500,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Naziv:",
+      "x": 1960,
+      "y": 90,
+      "w": 700,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "NAZIV_AKTIVNOSTI",
+      "x": 2660,
+      "y": 60,
+      "w": 3000,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Vrsta:",
+      "x": 5820,
+      "y": 90,
+      "w": 600,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "VRSTA_AKTIVNOSTI",
+      "x": 6420,
+      "y": 60,
+      "w": 1800,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Status:",
+      "x": 8380,
+      "y": 90,
+      "w": 700,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "STATUS_AKTIVNOSTI",
+      "x": 9080,
+      "y": 60,
+      "w": 1500,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Lokacija:",
+      "x": 400,
+      "y": 360,
+      "w": 900,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "LOKACIJA_SNIMANJA",
+      "x": 1300,
+      "y": 330,
+      "w": 2400,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Period:",
+      "x": 3860,
+      "y": 360,
+      "w": 700,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "DATUM_OD",
+      "x": 4560,
+      "y": 330,
+      "w": 1200,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "dd.mm.yyyy"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "-",
+      "x": 5920,
+      "y": 360,
+      "w": 200,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "DATUM_DO",
+      "x": 6120,
+      "y": 330,
+      "w": 1200,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "dd.mm.yyyy"
+     },
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 400,
+      "y": 640,
+      "w": 12800,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     }
+    ],
+    "acDetail": [
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "RB_TROSKA",
+      "x": 800,
+      "y": 30,
+      "w": 620,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "desno",
+      "fmt": "0"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "VRSTA_TROSKA",
+      "x": 1500,
+      "y": 30,
+      "w": 1920,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "OPIS_TROSKA",
+      "x": 3500,
+      "y": 30,
+      "w": 3320,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "DATUM_NASTANKA",
+      "x": 6900,
+      "y": 30,
+      "w": 1320,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "centar",
+      "fmt": "dd.mm.yyyy"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "IZNOS",
+      "x": 8300,
+      "y": 30,
+      "w": 1720,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "desno",
+      "fmt": "#,##0.00"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "BROJ_FAKTURE",
+      "x": 10100,
+      "y": 30,
+      "w": 1320,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "STATUS_PLACANJA",
+      "x": 11500,
+      "y": 30,
+      "w": 1620,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     }
+    ],
+    "acGroupLevel2Footer": [
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 400,
+      "y": 20,
+      "w": 12800,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Ukupno za aktivnost:",
+      "x": 400,
+      "y": 60,
+      "w": 3000,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Sum([IZNOS])",
+      "x": 8300,
+      "y": 60,
+      "w": 1720,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": "#,##0.00"
+     }
+    ],
+    "acGroupLevel1Footer": [
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 20,
+      "w": 13200,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "UKUPNO ZA PROJEKAT:",
+      "x": 0,
+      "y": 80,
+      "w": 2600,
+      "h": 260,
+      "vel": 10,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Sum([IZNOS])",
+      "x": 8300,
+      "y": 80,
+      "w": 1720,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": "#,##0.00"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Odobren budžet:",
+      "x": 0,
+      "y": 360,
+      "w": 2600,
+      "h": 250,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Max([ODOBREN_BUDZET])",
+      "x": 2650,
+      "y": 360,
+      "w": 1800,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": "#,##0.00"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Iskorišćeno budžeta:",
+      "x": 4600,
+      "y": 360,
+      "w": 2000,
+      "h": 250,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=IIf(Max([ODOBREN_BUDZET])>0,Sum([IZNOS])/Max([ODOBREN_BUDZET]),0)",
+      "x": 6650,
+      "y": 360,
+      "w": 1200,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "0.0%"
+     }
+    ],
+    "acFooter": [
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 40,
+      "w": 13200,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "UKUPNO (svi projekti):",
+      "x": 0,
+      "y": 120,
+      "w": 3400,
+      "h": 280,
+      "vel": 11,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Sum([IZNOS])",
+      "x": 8300,
+      "y": 120,
+      "w": 1720,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": "#,##0.00"
+     }
+    ],
+    "acPageFooter": [
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 40,
+      "w": 13200,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Now()",
+      "x": 0,
+      "y": 100,
+      "w": 3400,
+      "h": 240,
+      "vel": 8,
+      "bold": false,
+      "por": "levo",
+      "fmt": "dd.mm.yyyy. hh:nn"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=\"Izradio: \" & CurrentUser()",
+      "x": 3500,
+      "y": 100,
+      "w": 4600,
+      "h": 240,
+      "vel": 8,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=\"Strana \" & [Page] & \" od \" & [Pages]",
+      "x": 10100,
+      "y": 100,
+      "w": 3000,
+      "h": 240,
+      "vel": 8,
+      "bold": false,
+      "por": "desno",
+      "fmt": ""
+     }
+    ]
+   },
+   "grafikoni": [],
+   "podizvestaji": [],
+   "broj": 4,
+   "spec": {
+    "ID izveštaja": "4",
+    "Naziv": "Realizacija i troškovi projekta produkcije",
+    "Tip izveštaja": "Tabelarni (grupisani, sa zbirovima)",
+    "Svrha": "Pregled projekata produkcije sa pripadajućim aktivnostima i nastalim troškovima, uz poređenje sa odobrenim budžetom, radi kontrole trošenja i planiranja narednih projekata.",
+    "Izvor podataka": "Tabele „Projekat produkcije“, „Aktivnost produkcije“, „Trošak produkcije“, „Faktura“, „Emisija“ i „Urednik“ iz baze podataka informacionog sistema.",
+    "Parametri": "—",
+    "Učestalost i raspodela": "Izveštaj se kreira na mesečnom nivou i obavezno po završetku svakog projekta produkcije.",
+    "Zaglavlje i podnožje": "U zaglavlju su naziv izveštaja i period na koji se odnosi. U podnožju su datum kreiranja, ime zaposlenog koji je izveštaj generisao i broj strane.",
+    "Telo izveštaja": "Tabelarni prikaz grupisan po projektu (šifra i naziv projekta, vrsta produkcije, urednik, datum početka i završetka, odobren budžet, status projekta). Unutar projekta prikazuju se aktivnosti (redni broj, naziv, vrsta, lokacija snimanja, datum od – datum do, status), a ispod svake aktivnosti pripadajući troškovi (vrsta troška, opis, datum nastanka, iznos i broj fakture kojom je trošak dokumentovan). Zbir troškova daje se po aktivnosti i po projektu, uz iznos i procenat iskorišćenja odobrenog budžeta.",
+    "Pristup izveštaju": "Urednici, rukovodilac produkcije, finansijska služba i uprava stanice."
+   },
+   "sql": "SELECT PP.SIFRA_PROJEKTA, PP.NAZIV_PROJEKTA, PP.VRSTA_PRODUKCIJE,\n PP.STATUS_PROJEKTA, PP.DATUM_POCETKA, PP.DATUM_ZAVRSETKA, PP.ODOBREN_BUDZET,\n (Z.PREZIME & \" \" & Z.IME) AS UREDNIK_NAZIV, E.NAZIV_EMISIJE,\n AP.RB_AKTIVNOSTI, AP.NAZIV_AKTIVNOSTI, AP.VRSTA_AKTIVNOSTI,\n AP.LOKACIJA_SNIMANJA, AP.DATUM_OD, AP.DATUM_DO, AP.STATUS_AKTIVNOSTI,\n (PP.SIFRA_PROJEKTA & \"-\" & Format(AP.RB_AKTIVNOSTI,\"000\")) AS AKT_KLJUC,\n TP.RB_TROSKA, TP.VRSTA_TROSKA, TP.OPIS_TROSKA, TP.DATUM_NASTANKA,\n TP.IZNOS, TP.BROJ_FAKTURE, FA.STATUS_PLACANJA\nFROM ((((PROJEKAT_PRODUKCIJE AS PP\n INNER JOIN AKTIVNOST_PRODUKCIJE AS AP ON PP.SIFRA_PROJEKTA = AP.SIFRA_PROJEKTA)\n INNER JOIN ZAPOSLENI AS Z ON PP.SIFRA_UREDNIKA = Z.SIFRA_ZAPOSLENOG)\n LEFT JOIN EMISIJA AS E ON PP.SIFRA_EMISIJE = E.SIFRA_EMISIJE)\n LEFT JOIN TROSAK_PRODUKCIJE AS TP ON (AP.SIFRA_PROJEKTA = TP.SIFRA_PROJEKTA) AND (AP.RB_AKTIVNOSTI = TP.RB_AKTIVNOSTI))\n LEFT JOIN FAKTURA AS FA ON TP.BROJ_FAKTURE = FA.BROJ_FAKTURE\nORDER BY PP.SIFRA_PROJEKTA, AP.RB_AKTIVNOSTI, TP.RB_TROSKA;",
+   "pod": null
+  },
+  {
+   "upit": "qIzv5_Angazovanje",
+   "ime": "rptIzv5",
+   "naslov": "Izveštaj 5 - Angažovanje zaposlenih i zaduženje opreme",
+   "sirina": 14000,
+   "pejzaz": true,
+   "grupe": [
+    {
+     "polje": "ZAPOSLENI_KLJUC",
+     "zaglavlje": true,
+     "podnozje": true
+    },
+    {
+     "polje": "DATUM_OD",
+     "zaglavlje": false,
+     "podnozje": false
+    }
+   ],
+   "visine": {
+    "acHeader": {
+     "visina": 1080,
+     "raste": false
+    },
+    "acPageHeader": {
+     "visina": 420,
+     "raste": false
+    },
+    "acGroupLevel1Header": {
+     "visina": 500,
+     "raste": false
+    },
+    "acDetail": {
+     "visina": 290,
+     "raste": false
+    },
+    "acGroupLevel1Footer": {
+     "visina": 380,
+     "raste": false
+    },
+    "acFooter": {
+     "visina": 4600,
+     "raste": true
+    },
+    "acPageFooter": {
+     "visina": 360,
+     "raste": false
+    }
+   },
+   "kontrole": {
+    "acHeader": [
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Izveštaj 5 - Angažovanje zaposlenih i zaduženje opreme na produkciji",
+      "x": 0,
+      "y": 60,
+      "w": 14000,
+      "h": 400,
+      "vel": 15,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Informacioni sistem TV stanice - TV Panorama",
+      "x": 0,
+      "y": 480,
+      "w": 14000,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Prvi deo - angažovanje zaposlenih na aktivnostima produkcije",
+      "x": 0,
+      "y": 760,
+      "w": 14000,
+      "h": 260,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 1040,
+      "w": 14000,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     }
+    ],
+    "acPageHeader": [
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Projekat",
+      "x": 600,
+      "y": 90,
+      "w": 2920,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "RB",
+      "x": 3600,
+      "y": 90,
+      "w": 620,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Aktivnost",
+      "x": 4300,
+      "y": 90,
+      "w": 2920,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Uloga na snimanju",
+      "x": 7300,
+      "y": 90,
+      "w": 2320,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Datum od",
+      "x": 9700,
+      "y": 90,
+      "w": 1320,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "centar",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Datum do",
+      "x": 11100,
+      "y": 90,
+      "w": 1320,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "centar",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Sati",
+      "x": 12500,
+      "y": 90,
+      "w": 1420,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 380,
+      "w": 14000,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     }
+    ],
+    "acGroupLevel1Header": [
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Zaposleni:",
+      "x": 0,
+      "y": 90,
+      "w": 1100,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "ZAPOSLENI_KLJUC",
+      "x": 1100,
+      "y": 60,
+      "w": 3200,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Radno mesto:",
+      "x": 4460,
+      "y": 90,
+      "w": 1300,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "RADNO_MESTO",
+      "x": 5760,
+      "y": 60,
+      "w": 2400,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Organizaciona jedinica:",
+      "x": 8320,
+      "y": 90,
+      "w": 2000,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "NAZIV_JEDINICE",
+      "x": 10320,
+      "y": 60,
+      "w": 2600,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 440,
+      "w": 14000,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     }
+    ],
+    "acDetail": [
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "NAZIV_PROJEKTA",
+      "x": 600,
+      "y": 30,
+      "w": 2920,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "RB_AKTIVNOSTI",
+      "x": 3600,
+      "y": 30,
+      "w": 620,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "desno",
+      "fmt": "0"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "NAZIV_AKTIVNOSTI",
+      "x": 4300,
+      "y": 30,
+      "w": 2920,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "ULOGA_NA_SNIMANJU",
+      "x": 7300,
+      "y": 30,
+      "w": 2320,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "DATUM_OD",
+      "x": 9700,
+      "y": 30,
+      "w": 1320,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "centar",
+      "fmt": "dd.mm.yyyy"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "DATUM_DO",
+      "x": 11100,
+      "y": 30,
+      "w": 1320,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "centar",
+      "fmt": "dd.mm.yyyy"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "BROJ_ANGAZOVANIH_SATI",
+      "x": 12500,
+      "y": 30,
+      "w": 1420,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "desno",
+      "fmt": "0"
+     }
+    ],
+    "acGroupLevel1Footer": [
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 600,
+      "y": 20,
+      "w": 13400,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Ukupno za zaposlenog:",
+      "x": 600,
+      "y": 60,
+      "w": 3000,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Count([NAZIV_AKTIVNOSTI]) & \" angažovanja\"",
+      "x": 3650,
+      "y": 60,
+      "w": 2400,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Sum([BROJ_ANGAZOVANIH_SATI])",
+      "x": 12500,
+      "y": 60,
+      "w": 1420,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": "0"
+     }
+    ],
+    "acFooter": [
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 40,
+      "w": 14000,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "UKUPNO SATI (svi zaposleni):",
+      "x": 0,
+      "y": 110,
+      "w": 3400,
+      "h": 280,
+      "vel": 11,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Sum([BROJ_ANGAZOVANIH_SATI])",
+      "x": 12500,
+      "y": 110,
+      "w": 1420,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": "0"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Drugi deo - zaduženje opreme na aktivnostima produkcije",
+      "x": 0,
+      "y": 520,
+      "w": 14000,
+      "h": 320,
+      "vel": 12,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     }
+    ],
+    "acPageFooter": [
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 40,
+      "w": 14000,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Now()",
+      "x": 0,
+      "y": 100,
+      "w": 3400,
+      "h": 240,
+      "vel": 8,
+      "bold": false,
+      "por": "levo",
+      "fmt": "dd.mm.yyyy. hh:nn"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=\"Izradio: \" & CurrentUser()",
+      "x": 3500,
+      "y": 100,
+      "w": 4600,
+      "h": 240,
+      "vel": 8,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=\"Strana \" & [Page] & \" od \" & [Pages]",
+      "x": 10900,
+      "y": 100,
+      "w": 3000,
+      "h": 240,
+      "vel": 8,
+      "bold": false,
+      "por": "desno",
+      "fmt": ""
+     }
+    ]
+   },
+   "grafikoni": [],
+   "podizvestaji": [
+    {
+     "sek": "acFooter",
+     "x": 0,
+     "y": 880,
+     "w": 13800,
+     "h": 3500,
+     "izvestaj": "rptIzv5_Oprema",
+     "master": "",
+     "dete": ""
+    }
+   ],
+   "broj": 5,
+   "spec": {
+    "ID izveštaja": "5",
+    "Naziv": "Angažovanje zaposlenih i zaduženje opreme na produkciji",
+    "Tip izveštaja": "Tabelarni (grupisani, sa zbirovima)",
+    "Svrha": "Pregled angažovanja zaposlenih na aktivnostima produkcije i opreme rezervisane za te aktivnosti, radi obračuna angažovanja, raspodele posla i planiranja tehničkih resursa.",
+    "Izvor podataka": "Tabele „Zaposleni“, „Organizaciona jedinica“, „Aktivnost produkcije“, „Projekat produkcije“, „Oprema“, veza „Angažuje“ (uloga na snimanju i broj angažovanih sati) i veza „Zadužuje“ (datum rezervacije i trajanje zaduženja) iz baze podataka informacionog sistema.",
+    "Parametri": "—",
+    "Učestalost i raspodela": "Izveštaj se kreira na mesečnom nivou i po zahtevu službe za kadrove i tehničke službe.",
+    "Zaglavlje i podnožje": "U zaglavlju su naziv izveštaja i period na koji se odnosi. U podnožju su datum kreiranja, ime zaposlenog koji je izveštaj generisao i broj strane.",
+    "Telo izveštaja": "Izveštaj ima dva dela. Prvi deo — angažovanje zaposlenih, grupisano po zaposlenom (ime, prezime, radno mesto i organizaciona jedinica), sa redovima: projekat i aktivnost, uloga na snimanju, datum od – datum do i broj angažovanih sati; zbir sati daje se po zaposlenom i ukupno. Drugi deo — zaduženja opreme: inventarski broj, naziv i model opreme, aktivnost za koju je rezervisana, datum rezervacije i trajanje zaduženja, sa ukupnim brojem dana zaduženja po komadu opreme.",
+    "Pristup izveštaju": "Rukovodilac produkcije, tehnička služba, služba za kadrove i uprava stanice."
+   },
+   "sql": "SELECT Z.SIFRA_ZAPOSLENOG, Z.IME, Z.PREZIME, Z.RADNO_MESTO,\n OJ.NAZIV_JEDINICE,\n (Z.PREZIME & \" \" & Z.IME & \" (\" & Z.SIFRA_ZAPOSLENOG & \")\") AS ZAPOSLENI_KLJUC,\n PP.SIFRA_PROJEKTA, PP.NAZIV_PROJEKTA, AP.RB_AKTIVNOSTI, AP.NAZIV_AKTIVNOSTI,\n AN.ULOGA_NA_SNIMANJU, AN.DATUM_OD, AN.DATUM_DO, AN.BROJ_ANGAZOVANIH_SATI\nFROM (((ANGAZOVANJE_NA_AKTIVNOSTI AS AN\n INNER JOIN ZAPOSLENI AS Z ON AN.SIFRA_ZAPOSLENOG = Z.SIFRA_ZAPOSLENOG)\n INNER JOIN ORGANIZACIONA_JEDINICA AS OJ ON Z.SIFRA_JEDINICE = OJ.SIFRA_JEDINICE)\n INNER JOIN AKTIVNOST_PRODUKCIJE AS AP ON (AN.SIFRA_PROJEKTA = AP.SIFRA_PROJEKTA) AND (AN.RB_AKTIVNOSTI = AP.RB_AKTIVNOSTI))\n INNER JOIN PROJEKAT_PRODUKCIJE AS PP ON AP.SIFRA_PROJEKTA = PP.SIFRA_PROJEKTA\nORDER BY Z.PREZIME, Z.IME, AN.DATUM_OD;",
+   "pod": {
+    "upit": "qIzv5_Oprema",
+    "ime": "rptIzv5_Oprema",
+    "naslov": "Zaduženje opreme na aktivnostima produkcije",
+    "sirina": 10700,
+    "pejzaz": true,
+    "grupe": [
+     {
+      "polje": "INVENTARSKI_BROJ",
+      "zaglavlje": true,
+      "podnozje": true
+     },
+     {
+      "polje": "DATUM_REZERVACIJE",
+      "zaglavlje": false,
+      "podnozje": false
+     }
+    ],
+    "visine": {
+     "acHeader": {
+      "visina": 340,
+      "raste": false
+     },
+     "acGroupLevel1Header": {
+      "visina": 460,
+      "raste": false
+     },
+     "acDetail": {
+      "visina": 290,
+      "raste": false
+     },
+     "acGroupLevel1Footer": {
+      "visina": 340,
+      "raste": false
+     },
+     "acFooter": {
+      "visina": 420,
+      "raste": false
+     }
+    },
+    "kontrole": {
+     "acHeader": [
+      {
+       "vrsta": "Natpis",
+       "sadrzaj": "Projekat",
+       "x": 600,
+       "y": 40,
+       "w": 2920,
+       "h": 240,
+       "vel": 9,
+       "bold": true,
+       "por": "levo",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Natpis",
+       "sadrzaj": "RB",
+       "x": 3600,
+       "y": 40,
+       "w": 620,
+       "h": 240,
+       "vel": 9,
+       "bold": true,
+       "por": "desno",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Natpis",
+       "sadrzaj": "Aktivnost",
+       "x": 4300,
+       "y": 40,
+       "w": 2920,
+       "h": 240,
+       "vel": 9,
+       "bold": true,
+       "por": "levo",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Natpis",
+       "sadrzaj": "Datum rezervacije",
+       "x": 7300,
+       "y": 40,
+       "w": 1520,
+       "h": 240,
+       "vel": 9,
+       "bold": true,
+       "por": "centar",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Natpis",
+       "sadrzaj": "Trajanje (dana)",
+       "x": 8900,
+       "y": 40,
+       "w": 1720,
+       "h": 240,
+       "vel": 9,
+       "bold": true,
+       "por": "desno",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Linija",
+       "sadrzaj": "-",
+       "x": 0,
+       "y": 300,
+       "w": 10700,
+       "h": 0,
+       "vel": "",
+       "bold": false,
+       "por": "",
+       "fmt": ""
+      }
+     ],
+     "acGroupLevel1Header": [
+      {
+       "vrsta": "Natpis",
+       "sadrzaj": "Oprema:",
+       "x": 0,
+       "y": 70,
+       "w": 900,
+       "h": 220,
+       "vel": 9,
+       "bold": false,
+       "por": "levo",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Polje",
+       "sadrzaj": "INVENTARSKI_BROJ",
+       "x": 900,
+       "y": 40,
+       "w": 1400,
+       "h": 260,
+       "vel": 9,
+       "bold": true,
+       "por": "levo",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Natpis",
+       "sadrzaj": "Naziv:",
+       "x": 2460,
+       "y": 70,
+       "w": 700,
+       "h": 220,
+       "vel": 9,
+       "bold": false,
+       "por": "levo",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Polje",
+       "sadrzaj": "NAZIV_OPREME",
+       "x": 3160,
+       "y": 40,
+       "w": 2400,
+       "h": 260,
+       "vel": 9,
+       "bold": true,
+       "por": "levo",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Natpis",
+       "sadrzaj": "Model:",
+       "x": 5720,
+       "y": 70,
+       "w": 700,
+       "h": 220,
+       "vel": 9,
+       "bold": false,
+       "por": "levo",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Polje",
+       "sadrzaj": "MODEL_OPREME",
+       "x": 6420,
+       "y": 40,
+       "w": 2000,
+       "h": 260,
+       "vel": 9,
+       "bold": true,
+       "por": "levo",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Natpis",
+       "sadrzaj": "Status:",
+       "x": 8580,
+       "y": 70,
+       "w": 700,
+       "h": 220,
+       "vel": 9,
+       "bold": false,
+       "por": "levo",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Polje",
+       "sadrzaj": "STATUS_OPREME",
+       "x": 9280,
+       "y": 40,
+       "w": 1400,
+       "h": 260,
+       "vel": 9,
+       "bold": true,
+       "por": "levo",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Linija",
+       "sadrzaj": "-",
+       "x": 0,
+       "y": 400,
+       "w": 10700,
+       "h": 0,
+       "vel": "",
+       "bold": false,
+       "por": "",
+       "fmt": ""
+      }
+     ],
+     "acDetail": [
+      {
+       "vrsta": "Polje",
+       "sadrzaj": "NAZIV_PROJEKTA",
+       "x": 600,
+       "y": 30,
+       "w": 2920,
+       "h": 240,
+       "vel": 9,
+       "bold": false,
+       "por": "levo",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Polje",
+       "sadrzaj": "RB_AKTIVNOSTI",
+       "x": 3600,
+       "y": 30,
+       "w": 620,
+       "h": 240,
+       "vel": 9,
+       "bold": false,
+       "por": "desno",
+       "fmt": "0"
+      },
+      {
+       "vrsta": "Polje",
+       "sadrzaj": "NAZIV_AKTIVNOSTI",
+       "x": 4300,
+       "y": 30,
+       "w": 2920,
+       "h": 240,
+       "vel": 9,
+       "bold": false,
+       "por": "levo",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Polje",
+       "sadrzaj": "DATUM_REZERVACIJE",
+       "x": 7300,
+       "y": 30,
+       "w": 1520,
+       "h": 240,
+       "vel": 9,
+       "bold": false,
+       "por": "centar",
+       "fmt": "dd.mm.yyyy"
+      },
+      {
+       "vrsta": "Polje",
+       "sadrzaj": "TRAJANJE_ZADUZENJA",
+       "x": 8900,
+       "y": 30,
+       "w": 1720,
+       "h": 240,
+       "vel": 9,
+       "bold": false,
+       "por": "desno",
+       "fmt": "0"
+      }
+     ],
+     "acGroupLevel1Footer": [
+      {
+       "vrsta": "Linija",
+       "sadrzaj": "-",
+       "x": 600,
+       "y": 20,
+       "w": 10100,
+       "h": 0,
+       "vel": "",
+       "bold": false,
+       "por": "",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Natpis",
+       "sadrzaj": "Ukupno dana zaduženja:",
+       "x": 600,
+       "y": 50,
+       "w": 3000,
+       "h": 250,
+       "vel": 9,
+       "bold": true,
+       "por": "levo",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Polje",
+       "sadrzaj": "=Sum([TRAJANJE_ZADUZENJA])",
+       "x": 8900,
+       "y": 50,
+       "w": 1720,
+       "h": 260,
+       "vel": 9,
+       "bold": true,
+       "por": "desno",
+       "fmt": "0"
+      }
+     ],
+     "acFooter": [
+      {
+       "vrsta": "Linija",
+       "sadrzaj": "-",
+       "x": 0,
+       "y": 40,
+       "w": 10700,
+       "h": 0,
+       "vel": "",
+       "bold": false,
+       "por": "",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Natpis",
+       "sadrzaj": "UKUPNO dana zaduženja:",
+       "x": 0,
+       "y": 100,
+       "w": 3400,
+       "h": 260,
+       "vel": 10,
+       "bold": true,
+       "por": "levo",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Polje",
+       "sadrzaj": "=Sum([TRAJANJE_ZADUZENJA])",
+       "x": 8900,
+       "y": 100,
+       "w": 1720,
+       "h": 260,
+       "vel": 9,
+       "bold": true,
+       "por": "desno",
+       "fmt": "0"
+      }
+     ]
+    },
+    "grafikoni": [],
+    "podizvestaji": [],
+    "sql": "SELECT O.INVENTARSKI_BROJ, O.NAZIV_OPREME, O.MODEL_OPREME, O.STATUS_OPREME,\n PP.NAZIV_PROJEKTA, AP.RB_AKTIVNOSTI, AP.NAZIV_AKTIVNOSTI,\n RO.DATUM_REZERVACIJE, RO.TRAJANJE_ZADUZENJA\nFROM ((REZERVACIJA_OPREME AS RO\n INNER JOIN OPREMA AS O ON RO.INVENTARSKI_BROJ = O.INVENTARSKI_BROJ)\n INNER JOIN AKTIVNOST_PRODUKCIJE AS AP ON (RO.SIFRA_PROJEKTA = AP.SIFRA_PROJEKTA) AND (RO.RB_AKTIVNOSTI = AP.RB_AKTIVNOSTI))\n INNER JOIN PROJEKAT_PRODUKCIJE AS PP ON AP.SIFRA_PROJEKTA = PP.SIFRA_PROJEKTA\nORDER BY O.INVENTARSKI_BROJ, RO.DATUM_REZERVACIJE;"
+   }
+  },
+  {
+   "upit": "qIzv6_Kartica",
+   "ime": "rptIzv6",
+   "naslov": "Izveštaj 6 - Realizacija ugovora o oglašavanju po oglašivaču",
+   "sirina": 14000,
+   "pejzaz": true,
+   "grupe": [
+    {
+     "polje": "BROJ_UGOVORA",
+     "zaglavlje": true,
+     "podnozje": true
+    },
+    {
+     "polje": "STAVKA_KLJUC",
+     "zaglavlje": true,
+     "podnozje": true
+    },
+    {
+     "polje": "DATUM_EMITOVANJA",
+     "zaglavlje": false,
+     "podnozje": false
+    }
+   ],
+   "visine": {
+    "acHeader": {
+     "visina": 1440,
+     "raste": false
+    },
+    "acPageHeader": {
+     "visina": 420,
+     "raste": false
+    },
+    "acGroupLevel1Header": {
+     "visina": 700,
+     "raste": false
+    },
+    "acGroupLevel2Header": {
+     "visina": 680,
+     "raste": false
+    },
+    "acDetail": {
+     "visina": 290,
+     "raste": false
+    },
+    "acGroupLevel2Footer": {
+     "visina": 360,
+     "raste": false
+    },
+    "acGroupLevel1Footer": {
+     "visina": 960,
+     "raste": false
+    },
+    "acFooter": {
+     "visina": 520,
+     "raste": false
+    },
+    "acPageFooter": {
+     "visina": 360,
+     "raste": false
+    }
+   },
+   "kontrole": {
+    "acHeader": [
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Izveštaj 6 - Realizacija ugovora o oglašavanju i naplata po oglašivaču",
+      "x": 0,
+      "y": 60,
+      "w": 14000,
+      "h": 400,
+      "vel": 15,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Informacioni sistem TV stanice - TV Panorama",
+      "x": 0,
+      "y": 480,
+      "w": 14000,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 1400,
+      "w": 14000,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Oglašivač:",
+      "x": 0,
+      "y": 790,
+      "w": 1200,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "NAZIV_KLIJENTA",
+      "x": 1200,
+      "y": 760,
+      "w": 3000,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Šifra:",
+      "x": 4360,
+      "y": 790,
+      "w": 700,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "SIFRA_KLIJENTA",
+      "x": 5060,
+      "y": 760,
+      "w": 1300,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "PIB:",
+      "x": 6520,
+      "y": 790,
+      "w": 500,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "PIB",
+      "x": 7020,
+      "y": 760,
+      "w": 1200,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Kontakt osoba:",
+      "x": 8380,
+      "y": 790,
+      "w": 1500,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "KONTAKT_OSOBA",
+      "x": 9880,
+      "y": 760,
+      "w": 2200,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Branša:",
+      "x": 0,
+      "y": 1070,
+      "w": 800,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "BRANSA",
+      "x": 800,
+      "y": 1040,
+      "w": 2200,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Grad:",
+      "x": 3160,
+      "y": 1070,
+      "w": 600,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "GRAD",
+      "x": 3760,
+      "y": 1040,
+      "w": 1800,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Godišnji budžet:",
+      "x": 5720,
+      "y": 1070,
+      "w": 1500,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "GODISNJI_BUDZET",
+      "x": 7220,
+      "y": 1040,
+      "w": 2000,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "#,##0.00"
+     }
+    ],
+    "acPageHeader": [
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Datum emitovanja",
+      "x": 800,
+      "y": 90,
+      "w": 1320,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "centar",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Vreme",
+      "x": 2200,
+      "y": 90,
+      "w": 1020,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "centar",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Reklamni blok",
+      "x": 3300,
+      "y": 90,
+      "w": 1320,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Termin",
+      "x": 4700,
+      "y": 90,
+      "w": 1320,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Zona",
+      "x": 6100,
+      "y": 90,
+      "w": 820,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "centar",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Trajanje (s)",
+      "x": 7000,
+      "y": 90,
+      "w": 1120,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Naplaćeni iznos",
+      "x": 8200,
+      "y": 90,
+      "w": 1820,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Status naplate",
+      "x": 10100,
+      "y": 90,
+      "w": 1720,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 380,
+      "w": 14000,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     }
+    ],
+    "acGroupLevel1Header": [
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Ugovor:",
+      "x": 0,
+      "y": 90,
+      "w": 800,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "BROJ_UGOVORA",
+      "x": 800,
+      "y": 60,
+      "w": 1400,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Sklopljen:",
+      "x": 2360,
+      "y": 90,
+      "w": 1000,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "DATUM_SKLAPANJA",
+      "x": 3360,
+      "y": 60,
+      "w": 1300,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "dd.mm.yyyy"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Važi od:",
+      "x": 4820,
+      "y": 90,
+      "w": 900,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "VAZI_OD",
+      "x": 5720,
+      "y": 60,
+      "w": 1300,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "dd.mm.yyyy"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "do:",
+      "x": 7180,
+      "y": 90,
+      "w": 500,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "VAZI_DO",
+      "x": 7680,
+      "y": 60,
+      "w": 1300,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "dd.mm.yyyy"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Status:",
+      "x": 9140,
+      "y": 90,
+      "w": 700,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "STATUS_UGOVORA",
+      "x": 9840,
+      "y": 60,
+      "w": 1500,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Vrednost ugovora:",
+      "x": 0,
+      "y": 370,
+      "w": 1700,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "UKUPNA_VREDNOST",
+      "x": 1700,
+      "y": 340,
+      "w": 1900,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "#,##0.00"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Ugovoreni termini:",
+      "x": 3760,
+      "y": 370,
+      "w": 1700,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "UGOVORENI_TERMINI",
+      "x": 5460,
+      "y": 340,
+      "w": 3000,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 660,
+      "w": 14000,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     }
+    ],
+    "acGroupLevel2Header": [
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Stavka:",
+      "x": 400,
+      "y": 90,
+      "w": 700,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "RB_STAVKE",
+      "x": 1100,
+      "y": 60,
+      "w": 400,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Opis:",
+      "x": 1660,
+      "y": 90,
+      "w": 600,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "OPIS_STAVKE",
+      "x": 2260,
+      "y": 60,
+      "w": 3200,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Ugovoreno (s):",
+      "x": 5620,
+      "y": 90,
+      "w": 1300,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "KOLICINA_SEKUNDE",
+      "x": 6920,
+      "y": 60,
+      "w": 900,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "0"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Jed. cena:",
+      "x": 7980,
+      "y": 90,
+      "w": 1000,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "JEDINICNA_CENA",
+      "x": 8980,
+      "y": 60,
+      "w": 1500,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "#,##0.00"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Popust (%):",
+      "x": 10640,
+      "y": 90,
+      "w": 1100,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "POPUST",
+      "x": 11740,
+      "y": 60,
+      "w": 700,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "0.0"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Vrednost stavke:",
+      "x": 400,
+      "y": 360,
+      "w": 1600,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "VREDNOST_STAVKE",
+      "x": 2000,
+      "y": 330,
+      "w": 1800,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "#,##0.00"
+     },
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 400,
+      "y": 640,
+      "w": 13600,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     }
+    ],
+    "acDetail": [
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "DATUM_EMITOVANJA",
+      "x": 800,
+      "y": 30,
+      "w": 1320,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "centar",
+      "fmt": "dd.mm.yyyy"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "VREME_EMITOVANJA",
+      "x": 2200,
+      "y": 30,
+      "w": 1020,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "centar",
+      "fmt": "hh:nn"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "SIFRA_BLOKA",
+      "x": 3300,
+      "y": 30,
+      "w": 1320,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "SIFRA_TERMINA",
+      "x": 4700,
+      "y": 30,
+      "w": 1320,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "ZONA",
+      "x": 6100,
+      "y": 30,
+      "w": 820,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "centar",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "TRAJANJE_SPOTA",
+      "x": 7000,
+      "y": 30,
+      "w": 1120,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "desno",
+      "fmt": "0"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "NAPLACENI_IZNOS",
+      "x": 8200,
+      "y": 30,
+      "w": 1820,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "desno",
+      "fmt": "#,##0.00"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "STATUS_NAPLATE",
+      "x": 10100,
+      "y": 30,
+      "w": 1720,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     }
+    ],
+    "acGroupLevel2Footer": [
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 800,
+      "y": 20,
+      "w": 13200,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Realizovano po stavci:",
+      "x": 800,
+      "y": 50,
+      "w": 2600,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Sum([TRAJANJE_SPOTA])",
+      "x": 7000,
+      "y": 50,
+      "w": 1120,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": "0"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Sum([NAPLACENI_IZNOS])",
+      "x": 8200,
+      "y": 50,
+      "w": 1820,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": "#,##0.00"
+     }
+    ],
+    "acGroupLevel1Footer": [
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 20,
+      "w": 14000,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "REALIZACIJA UGOVORA",
+      "x": 0,
+      "y": 70,
+      "w": 3000,
+      "h": 260,
+      "vel": 10,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Ugovoreno:",
+      "x": 0,
+      "y": 350,
+      "w": 1900,
+      "h": 250,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Max([UGOVORENO_SEKUNDI])",
+      "x": 1950,
+      "y": 350,
+      "w": 1200,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": "0"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "s",
+      "x": 3200,
+      "y": 350,
+      "w": 300,
+      "h": 250,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Max([UGOVORENA_VREDNOST])",
+      "x": 3550,
+      "y": 350,
+      "w": 1900,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": "#,##0.00"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Realizovano:",
+      "x": 0,
+      "y": 620,
+      "w": 1900,
+      "h": 250,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Sum([TRAJANJE_SPOTA])",
+      "x": 1950,
+      "y": 620,
+      "w": 1200,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": "0"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "s",
+      "x": 3200,
+      "y": 620,
+      "w": 300,
+      "h": 250,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Sum([NAPLACENI_IZNOS])",
+      "x": 3550,
+      "y": 620,
+      "w": 1900,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": "#,##0.00"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Razlika (sekundi):",
+      "x": 5700,
+      "y": 350,
+      "w": 1700,
+      "h": 250,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Nz(Max([UGOVORENO_SEKUNDI]),0)-Nz(Sum([TRAJANJE_SPOTA]),0)",
+      "x": 7450,
+      "y": 350,
+      "w": 1200,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": "0"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Fakturisano:",
+      "x": 5700,
+      "y": 620,
+      "w": 1700,
+      "h": 250,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Max([FAKTURISANO])",
+      "x": 7450,
+      "y": 620,
+      "w": 1900,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": "#,##0.00"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Status fakture:",
+      "x": 9600,
+      "y": 620,
+      "w": 1700,
+      "h": 250,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Max([STATUS_FAKTURE])",
+      "x": 11350,
+      "y": 620,
+      "w": 2200,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     }
+    ],
+    "acFooter": [
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 40,
+      "w": 14000,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "UKUPNO PO OGLAŠIVAČU:",
+      "x": 0,
+      "y": 120,
+      "w": 3400,
+      "h": 280,
+      "vel": 11,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Sum([TRAJANJE_SPOTA])",
+      "x": 7000,
+      "y": 120,
+      "w": 1120,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": "0"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Sum([NAPLACENI_IZNOS])",
+      "x": 8200,
+      "y": 120,
+      "w": 1820,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": "#,##0.00"
+     }
+    ],
+    "acPageFooter": [
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 40,
+      "w": 14000,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Now()",
+      "x": 0,
+      "y": 100,
+      "w": 3400,
+      "h": 240,
+      "vel": 8,
+      "bold": false,
+      "por": "levo",
+      "fmt": "dd.mm.yyyy. hh:nn"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=\"Izradio: \" & CurrentUser()",
+      "x": 3500,
+      "y": 100,
+      "w": 4600,
+      "h": 240,
+      "vel": 8,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=\"Strana \" & [Page] & \" od \" & [Pages]",
+      "x": 10900,
+      "y": 100,
+      "w": 3000,
+      "h": 240,
+      "vel": 8,
+      "bold": false,
+      "por": "desno",
+      "fmt": ""
+     }
+    ]
+   },
+   "grafikoni": [],
+   "podizvestaji": [],
+   "broj": 6,
+   "spec": {
+    "ID izveštaja": "6",
+    "Naziv": "Realizacija ugovora o oglašavanju i naplata po oglašivaču",
+    "Tip izveštaja": "Parametarski (tabelarni, sa zbirovima)",
+    "Svrha": "Kartica jednog oglašivača koga korisnik bira pri pokretanju izveštaja: svi njegovi ugovori o oglašavanju, ugovorene stavke, stvarno emitovani spotovi i stanje naplate. Koristi se u pregovorima, pri produženju ugovora i kao osnova za opomenu.",
+    "Izvor podataka": "Tabele „Klijent“, „Oglašivač“, „Ugovor“, „Ugovor o oglašavanju“, „Stavka ugovora“, „Reklamni sadržaj“, „Reklamni blok“, „Emitovanje reklame“, „Cenovnik reklamnih termina“ i „Faktura“ iz baze podataka informacionog sistema.",
+    "Parametri": "Šifra ili naziv oglašivača (obavezan parametar, bira se pri pokretanju izveštaja). Opciono se zadaje i period od – do radi ograničenja na jednu kampanju.",
+    "Učestalost i raspodela": "Izveštaj se kreira po zahtevu, po završetku svake kampanje i na mesečnom nivou za sve aktivne ugovore.",
+    "Zaglavlje i podnožje": "U zaglavlju su naziv izveštaja, naziv izabranog oglašivača sa PIB-om i kontakt osobom, branša i godišnji budžet oglašivača. U podnožju su datum kreiranja, ime zaposlenog koji je izveštaj generisao i broj strane.",
+    "Telo izveštaja": "Tabelarni prikaz grupisan po ugovoru (broj ugovora, datum sklapanja, važi od – važi do, status i ukupna vrednost ugovora). Unutar ugovora prikazuju se stavke (opis stavke, ugovorena količina u sekundama, jedinična cena, popust i vrednost stavke), a ispod njih emitovani spotovi (datum i vreme emitovanja, reklamni blok i termin, zona iz cenovnika, trajanje spota, naplaćeni iznos i status naplate). Zbirovi po ugovoru: ugovoreno i realizovano u sekundama i u dinarima, razlika, fakturisan i naplaćen iznos sa statusom plaćanja fakture.",
+    "Pristup izveštaju": "Sektor marketinga i prodaje, finansijska služba i uprava stanice."
+   },
+   "sql": "PARAMETERS [Šifra ili naziv oglašivača:] Text ( 255 );\nSELECT K.SIFRA_KLIJENTA, K.NAZIV_KLIJENTA, K.PIB, K.KONTAKT_OSOBA, K.GRAD,\n OG.BRANSA, OG.GODISNJI_BUDZET,\n U.BROJ_UGOVORA, U.DATUM_SKLAPANJA, U.VAZI_OD, U.VAZI_DO, U.STATUS_UGOVORA,\n U.UKUPNA_VREDNOST, UO.UGOVORENI_TERMINI,\n SU.RB_STAVKE, SU.OPIS_STAVKE, SU.KOLICINA_SEKUNDE, SU.JEDINICNA_CENA,\n SU.POPUST, SU.VREDNOST_STAVKE,\n (U.BROJ_UGOVORA & \"-\" & Format(SU.RB_STAVKE,\"000\")) AS STAVKA_KLJUC,\n ER.DATUM_EMITOVANJA, ER.VREME_EMITOVANJA, ER.SIFRA_BLOKA, RB.SIFRA_TERMINA,\n CN.ZONA, ER.TRAJANJE_SPOTA, ER.NAPLACENI_IZNOS, ER.STATUS_NAPLATE,\n (SELECT Sum(S2.KOLICINA_SEKUNDE) FROM STAVKA_UGOVORA AS S2\n  WHERE S2.BROJ_UGOVORA = U.BROJ_UGOVORA) AS UGOVORENO_SEKUNDI,\n (SELECT Sum(S2.VREDNOST_STAVKE) FROM STAVKA_UGOVORA AS S2\n  WHERE S2.BROJ_UGOVORA = U.BROJ_UGOVORA) AS UGOVORENA_VREDNOST,\n FK.FAKTURISANO, FK.STATUS_FAKTURE\nFROM (((((((KLIJENT AS K\n INNER JOIN OGLASIVAC AS OG ON K.SIFRA_KLIJENTA = OG.SIFRA_KLIJENTA)\n INNER JOIN UGOVOR AS U ON K.SIFRA_KLIJENTA = U.SIFRA_KLIJENTA)\n INNER JOIN UGOVOR_O_OGLASAVANJU AS UO ON U.BROJ_UGOVORA = UO.BROJ_UGOVORA)\n INNER JOIN STAVKA_UGOVORA AS SU ON U.BROJ_UGOVORA = SU.BROJ_UGOVORA)\n LEFT JOIN EMITOVANJE_REKLAME AS ER ON (SU.BROJ_UGOVORA = ER.BROJ_UGOVORA) AND (SU.RB_STAVKE = ER.RB_STAVKE_UGOVORA))\n LEFT JOIN REKLAMNI_BLOK AS RB ON ER.SIFRA_BLOKA = RB.SIFRA_BLOKA)\n LEFT JOIN CENOVNIK_REKL_TERMINA AS CN ON RB.SIFRA_CENOVNIKA = CN.SIFRA_CENOVNIKA)\n LEFT JOIN [qIzv6_Fakture] AS FK ON U.BROJ_UGOVORA = FK.BROJ_UGOVORA\nWHERE K.SIFRA_KLIJENTA = [Šifra ili naziv oglašivača:]\n OR K.NAZIV_KLIJENTA LIKE \"*\" & [Šifra ili naziv oglašivača:] & \"*\"\nORDER BY U.BROJ_UGOVORA, SU.RB_STAVKE, ER.DATUM_EMITOVANJA;",
+   "pod": null
+  },
+  {
+   "upit": "qIzv7_Stavke",
+   "ime": "rptIzv7",
+   "naslov": "Izveštaj 7 - Realizacija plana nabavke sa vrednovanjem ponuda",
+   "sirina": 14700,
+   "pejzaz": true,
+   "grupe": [
+    {
+     "polje": "SIFRA_PLANA",
+     "zaglavlje": true,
+     "podnozje": true
+    },
+    {
+     "polje": "RB_STAVKE",
+     "zaglavlje": false,
+     "podnozje": false
+    }
+   ],
+   "visine": {
+    "acHeader": {
+     "visina": 820,
+     "raste": false
+    },
+    "acPageHeader": {
+     "visina": 420,
+     "raste": false
+    },
+    "acGroupLevel1Header": {
+     "visina": 760,
+     "raste": false
+    },
+    "acDetail": {
+     "visina": 3300,
+     "raste": true
+    },
+    "acGroupLevel1Footer": {
+     "visina": 700,
+     "raste": false
+    },
+    "acFooter": {
+     "visina": 700,
+     "raste": false
+    },
+    "acPageFooter": {
+     "visina": 360,
+     "raste": false
+    }
+   },
+   "kontrole": {
+    "acHeader": [
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Izveštaj 7 - Realizacija plana nabavke sa vrednovanjem ponuda",
+      "x": 0,
+      "y": 60,
+      "w": 14700,
+      "h": 400,
+      "vel": 15,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Informacioni sistem TV stanice - TV Panorama",
+      "x": 0,
+      "y": 480,
+      "w": 14700,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 780,
+      "w": 14700,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     }
+    ],
+    "acPageHeader": [
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "RB",
+      "x": 0,
+      "y": 90,
+      "w": 520,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Opis artikla",
+      "x": 600,
+      "y": 90,
+      "w": 2320,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Kol.",
+      "x": 3000,
+      "y": 90,
+      "w": 620,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "JM",
+      "x": 3700,
+      "y": 90,
+      "w": 720,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Procenjena cena",
+      "x": 4500,
+      "y": 90,
+      "w": 1420,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Kvartal",
+      "x": 6000,
+      "y": 90,
+      "w": 820,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "centar",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Zahtev",
+      "x": 6900,
+      "y": 90,
+      "w": 1120,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Status zahteva",
+      "x": 8100,
+      "y": 90,
+      "w": 1120,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Izabrana ponuda",
+      "x": 9300,
+      "y": 90,
+      "w": 1120,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Narudžbenica",
+      "x": 10500,
+      "y": 90,
+      "w": 1220,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Iznos narudžbenice",
+      "x": 11800,
+      "y": 90,
+      "w": 1420,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Odstupanje",
+      "x": 13300,
+      "y": 90,
+      "w": 1320,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 380,
+      "w": 14700,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     }
+    ],
+    "acGroupLevel1Header": [
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Plan nabavke:",
+      "x": 0,
+      "y": 90,
+      "w": 1300,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "SIFRA_PLANA",
+      "x": 1300,
+      "y": 60,
+      "w": 1400,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Godina:",
+      "x": 2860,
+      "y": 90,
+      "w": 800,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "GODINA_PLANA",
+      "x": 3660,
+      "y": 60,
+      "w": 800,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "0"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Donet:",
+      "x": 4620,
+      "y": 90,
+      "w": 700,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "DATUM_DONOSENJA",
+      "x": 5320,
+      "y": 60,
+      "w": 1300,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "dd.mm.yyyy"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Status:",
+      "x": 6780,
+      "y": 90,
+      "w": 700,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "STATUS_PLANA",
+      "x": 7480,
+      "y": 60,
+      "w": 1500,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Ukupna vrednost:",
+      "x": 9140,
+      "y": 90,
+      "w": 1600,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "UKUPNA_VREDNOST",
+      "x": 10740,
+      "y": 60,
+      "w": 1900,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "#,##0.00"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Donosilac:",
+      "x": 0,
+      "y": 410,
+      "w": 1000,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "DONOSILAC_PLANA",
+      "x": 1000,
+      "y": 380,
+      "w": 2400,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Zahtev za nabavku:",
+      "x": 3560,
+      "y": 410,
+      "w": 1700,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "BROJ_ZAHTEVA",
+      "x": 5260,
+      "y": 380,
+      "w": 1400,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Status zahteva:",
+      "x": 6820,
+      "y": 410,
+      "w": 1400,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "STATUS_ZAHTEVA",
+      "x": 8220,
+      "y": 380,
+      "w": 1400,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Prioritet:",
+      "x": 9780,
+      "y": 410,
+      "w": 900,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "PRIORITET",
+      "x": 10680,
+      "y": 380,
+      "w": 1200,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 720,
+      "w": 14700,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     }
+    ],
+    "acDetail": [
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "RB_STAVKE",
+      "x": 0,
+      "y": 30,
+      "w": 520,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "desno",
+      "fmt": "0"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "OPIS_ARTIKLA",
+      "x": 600,
+      "y": 30,
+      "w": 2320,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "KOLICINA",
+      "x": 3000,
+      "y": 30,
+      "w": 620,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "desno",
+      "fmt": "0"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "JEDINICA_MERE",
+      "x": 3700,
+      "y": 30,
+      "w": 720,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "PROCENJENA_CENA",
+      "x": 4500,
+      "y": 30,
+      "w": 1420,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "desno",
+      "fmt": "#,##0.00"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "PLANIRANI_KVARTAL",
+      "x": 6000,
+      "y": 30,
+      "w": 820,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "centar",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "BROJ_ZAHTEVA",
+      "x": 6900,
+      "y": 30,
+      "w": 1120,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "STATUS_ZAHTEVA",
+      "x": 8100,
+      "y": 30,
+      "w": 1120,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "IZABRANA_PONUDA",
+      "x": 9300,
+      "y": 30,
+      "w": 1120,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "BROJ_NARUDZBENICE",
+      "x": 10500,
+      "y": 30,
+      "w": 1220,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "IZNOS_NARUDZBENICA",
+      "x": 11800,
+      "y": 30,
+      "w": 1420,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "desno",
+      "fmt": "#,##0.00"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "ODSTUPANJE",
+      "x": 13300,
+      "y": 30,
+      "w": 1320,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "desno",
+      "fmt": "#,##0.00"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Prikupljene ponude i vrednovanje:",
+      "x": 400,
+      "y": 340,
+      "w": 5000,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     }
+    ],
+    "acGroupLevel1Footer": [
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 20,
+      "w": 14700,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "UKUPNO ZA PLAN:",
+      "x": 0,
+      "y": 70,
+      "w": 2800,
+      "h": 260,
+      "vel": 10,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Sum([PROCENJENA_CENA])",
+      "x": 4500,
+      "y": 70,
+      "w": 1420,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": "#,##0.00"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Sum([IZNOS_NARUDZBENICA])",
+      "x": 11800,
+      "y": 70,
+      "w": 1420,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": "#,##0.00"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Izvršenje plana:",
+      "x": 0,
+      "y": 360,
+      "w": 2800,
+      "h": 250,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=IIf(Sum([PROCENJENA_CENA])>0,Sum([IZNOS_NARUDZBENICA])/Sum([PROCENJENA_CENA]),0)",
+      "x": 2850,
+      "y": 360,
+      "w": 1400,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "0.0%"
+     }
+    ],
+    "acFooter": [
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 40,
+      "w": 14700,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "UKUPNO (svi planovi):",
+      "x": 0,
+      "y": 110,
+      "w": 3400,
+      "h": 280,
+      "vel": 11,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Sum([PROCENJENA_CENA])",
+      "x": 4500,
+      "y": 110,
+      "w": 1420,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": "#,##0.00"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Sum([IZNOS_NARUDZBENICA])",
+      "x": 11800,
+      "y": 110,
+      "w": 1420,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": "#,##0.00"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Izvršenje plana - ukupno:",
+      "x": 0,
+      "y": 400,
+      "w": 3400,
+      "h": 250,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=IIf(Sum([PROCENJENA_CENA])>0,Sum([IZNOS_NARUDZBENICA])/Sum([PROCENJENA_CENA]),0)",
+      "x": 3450,
+      "y": 400,
+      "w": 1400,
+      "h": 250,
+      "vel": 10,
+      "bold": true,
+      "por": "levo",
+      "fmt": "0.0%"
+     }
+    ],
+    "acPageFooter": [
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 40,
+      "w": 14700,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Now()",
+      "x": 0,
+      "y": 100,
+      "w": 3400,
+      "h": 240,
+      "vel": 8,
+      "bold": false,
+      "por": "levo",
+      "fmt": "dd.mm.yyyy. hh:nn"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=\"Izradio: \" & CurrentUser()",
+      "x": 3500,
+      "y": 100,
+      "w": 4600,
+      "h": 240,
+      "vel": 8,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=\"Strana \" & [Page] & \" od \" & [Pages]",
+      "x": 11600,
+      "y": 100,
+      "w": 3000,
+      "h": 240,
+      "vel": 8,
+      "bold": false,
+      "por": "desno",
+      "fmt": ""
+     }
+    ]
+   },
+   "grafikoni": [],
+   "podizvestaji": [
+    {
+     "sek": "acDetail",
+     "x": 400,
+     "y": 620,
+     "w": 13900,
+     "h": 2500,
+     "izvestaj": "rptIzv7_Ponude",
+     "master": "SIFRA_PLANA;RB_STAVKE",
+     "dete": "SIFRA_PLANA;RB_STAVKE"
+    }
+   ],
+   "broj": 7,
+   "spec": {
+    "ID izveštaja": "7",
+    "Naziv": "Realizacija plana nabavke sa vrednovanjem ponuda",
+    "Tip izveštaja": "Tabelarni (grupisani, sa zbirovima)",
+    "Svrha": "Pregled izvršenja godišnjeg plana nabavke po stavkama i prikaz načina na koji su ponude bodovane pri izboru dobavljača — istovremeno kontrola trošenja i dokaz o transparentnosti postupka nabavke.",
+    "Izvor podataka": "Tabele „Plan nabavke“, „Stavka plana nabavke“, „Zahtev za nabavku“, „Ponuda dobavljača“, „Dobavljač“, „Kriterijum vrednovanja“, „Narudžbenica“, veza „Ponuđena“ i veza „Vrednuje se“ (broj bodova i komentar ocene) iz baze podataka informacionog sistema.",
+    "Parametri": "—",
+    "Učestalost i raspodela": "Izveštaj se kreira na kvartalnom nivou i obavezno na kraju kalendarske godine, kao i po zahtevu uprave.",
+    "Zaglavlje i podnožje": "U zaglavlju su naziv izveštaja, oznaka i godina plana nabavke, donosilac plana i status plana. U podnožju su datum kreiranja, ime zaposlenog koji je izveštaj generisao i broj strane.",
+    "Telo izveštaja": "Tabelarni prikaz po stavci plana: redni broj, opis artikla, količina i jedinica mere, procenjena cena, planirani kvartal, povezani zahtev za nabavku sa statusom, iznos izdate narudžbenice i odstupanje realizovanog od procenjenog iznosa. Za stavke za koje su prikupljene ponude dodaje se pododeljak sa svim ponudama: broj ponude, naziv dobavljača, ukupna cena, rok isporuke, uslovi plaćanja, bodovi po svakom kriterijumu vrednovanja i ukupan broj bodova, uz oznaku izabrane ponude. Na kraju: ukupno planirano, ukupno naručeno i procenat izvršenja plana.",
+    "Pristup izveštaju": "Referenti nabavke, komisija za vrednovanje ponuda, finansijska služba i uprava stanice."
+   },
+   "sql": "SELECT PN.SIFRA_PLANA, PN.GODINA_PLANA, PN.DATUM_DONOSENJA, PN.STATUS_PLANA,\n PN.DONOSILAC_PLANA, PN.UKUPNA_VREDNOST,\n SP.RB_STAVKE, SP.OPIS_ARTIKLA, SP.KOLICINA, SP.JEDINICA_MERE,\n SP.PROCENJENA_CENA, SP.PLANIRANI_KVARTAL,\n ZH.BROJ_ZAHTEVA, ZH.STATUS_ZAHTEVA, ZH.PRIORITET,\n IZ.BROJ_PONUDE AS IZABRANA_PONUDA, IZ.PONUDJENA_CENA, D.NAZIV_DOBAVLJACA,\n NB.BROJ_NARUDZBENICE, NB.IZNOS_NARUDZBENICA,\n (Nz(NB.IZNOS_NARUDZBENICA,0) - Nz(SP.PROCENJENA_CENA,0)) AS ODSTUPANJE\nFROM ((((PLAN_NABAVKE AS PN\n INNER JOIN STAVKA_PLANA_NABAVKE AS SP ON PN.SIFRA_PLANA = SP.SIFRA_PLANA)\n LEFT JOIN [qIzv7_Zahtev] AS ZH ON PN.SIFRA_PLANA = ZH.SIFRA_PLANA)\n LEFT JOIN [qIzv7_Izabrana] AS IZ ON (SP.SIFRA_PLANA = IZ.SIFRA_PLANA) AND (SP.RB_STAVKE = IZ.RB_STAVKE))\n LEFT JOIN DOBAVLJAC AS D ON IZ.SIFRA_DOBAVLJACA = D.SIFRA_DOBAVLJACA)\n LEFT JOIN [qIzv7_Narudzbe] AS NB ON IZ.SIFRA_DOBAVLJACA = NB.SIFRA_DOBAVLJACA\nORDER BY PN.SIFRA_PLANA, SP.RB_STAVKE;",
+   "pod": {
+    "upit": "qIzv7_Ponude",
+    "ime": "rptIzv7_Ponude",
+    "naslov": "Vrednovanje prikupljenih ponuda",
+    "sirina": 13800,
+    "pejzaz": true,
+    "grupe": [
+     {
+      "polje": "PONUDA_KLJUC",
+      "zaglavlje": true,
+      "podnozje": true
+     },
+     {
+      "polje": "NAZIV_KRITERIJUMA",
+      "zaglavlje": false,
+      "podnozje": false
+     }
+    ],
+    "visine": {
+     "acHeader": {
+      "visina": 330,
+      "raste": false
+     },
+     "acGroupLevel1Header": {
+      "visina": 660,
+      "raste": false
+     },
+     "acDetail": {
+      "visina": 280,
+      "raste": false
+     },
+     "acGroupLevel1Footer": {
+      "visina": 160,
+      "raste": false
+     }
+    },
+    "kontrole": {
+     "acHeader": [
+      {
+       "vrsta": "Natpis",
+       "sadrzaj": "Kriterijum vrednovanja",
+       "x": 500,
+       "y": 40,
+       "w": 3320,
+       "h": 240,
+       "vel": 9,
+       "bold": true,
+       "por": "levo",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Natpis",
+       "sadrzaj": "Način bodovanja",
+       "x": 3900,
+       "y": 40,
+       "w": 1720,
+       "h": 240,
+       "vel": 9,
+       "bold": true,
+       "por": "levo",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Natpis",
+       "sadrzaj": "Bodovi",
+       "x": 5700,
+       "y": 40,
+       "w": 1020,
+       "h": 240,
+       "vel": 9,
+       "bold": true,
+       "por": "desno",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Natpis",
+       "sadrzaj": "Komentar ocene",
+       "x": 6800,
+       "y": 40,
+       "w": 3320,
+       "h": 240,
+       "vel": 9,
+       "bold": true,
+       "por": "levo",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Linija",
+       "sadrzaj": "-",
+       "x": 0,
+       "y": 300,
+       "w": 13800,
+       "h": 0,
+       "vel": "",
+       "bold": false,
+       "por": "",
+       "fmt": ""
+      }
+     ],
+     "acGroupLevel1Header": [
+      {
+       "vrsta": "Natpis",
+       "sadrzaj": "Ponuda:",
+       "x": 0,
+       "y": 70,
+       "w": 800,
+       "h": 220,
+       "vel": 9,
+       "bold": false,
+       "por": "levo",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Polje",
+       "sadrzaj": "BROJ_PONUDE",
+       "x": 800,
+       "y": 40,
+       "w": 1300,
+       "h": 260,
+       "vel": 9,
+       "bold": true,
+       "por": "levo",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Natpis",
+       "sadrzaj": "Dobavljač:",
+       "x": 2260,
+       "y": 70,
+       "w": 1000,
+       "h": 220,
+       "vel": 9,
+       "bold": false,
+       "por": "levo",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Polje",
+       "sadrzaj": "NAZIV_DOBAVLJACA",
+       "x": 3260,
+       "y": 40,
+       "w": 2000,
+       "h": 260,
+       "vel": 9,
+       "bold": true,
+       "por": "levo",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Natpis",
+       "sadrzaj": "Ukupna cena:",
+       "x": 5420,
+       "y": 70,
+       "w": 1300,
+       "h": 220,
+       "vel": 9,
+       "bold": false,
+       "por": "levo",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Polje",
+       "sadrzaj": "UKUPNA_CENA",
+       "x": 6720,
+       "y": 40,
+       "w": 1600,
+       "h": 260,
+       "vel": 9,
+       "bold": true,
+       "por": "levo",
+       "fmt": "#,##0.00"
+      },
+      {
+       "vrsta": "Natpis",
+       "sadrzaj": "Cena za stavku:",
+       "x": 8480,
+       "y": 70,
+       "w": 1400,
+       "h": 220,
+       "vel": 9,
+       "bold": false,
+       "por": "levo",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Polje",
+       "sadrzaj": "PONUDJENA_CENA",
+       "x": 9880,
+       "y": 40,
+       "w": 1500,
+       "h": 260,
+       "vel": 9,
+       "bold": true,
+       "por": "levo",
+       "fmt": "#,##0.00"
+      },
+      {
+       "vrsta": "Natpis",
+       "sadrzaj": "Status:",
+       "x": 11540,
+       "y": 70,
+       "w": 700,
+       "h": 220,
+       "vel": 9,
+       "bold": false,
+       "por": "levo",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Polje",
+       "sadrzaj": "STATUS_PONUDE",
+       "x": 12240,
+       "y": 40,
+       "w": 1500,
+       "h": 260,
+       "vel": 9,
+       "bold": true,
+       "por": "levo",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Natpis",
+       "sadrzaj": "Rok isporuke:",
+       "x": 0,
+       "y": 350,
+       "w": 1300,
+       "h": 220,
+       "vel": 9,
+       "bold": false,
+       "por": "levo",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Polje",
+       "sadrzaj": "ROK_ISPORUKE",
+       "x": 1300,
+       "y": 320,
+       "w": 1300,
+       "h": 260,
+       "vel": 9,
+       "bold": true,
+       "por": "levo",
+       "fmt": "dd.mm.yyyy"
+      },
+      {
+       "vrsta": "Natpis",
+       "sadrzaj": "Uslovi plaćanja:",
+       "x": 2760,
+       "y": 350,
+       "w": 1500,
+       "h": 220,
+       "vel": 9,
+       "bold": false,
+       "por": "levo",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Polje",
+       "sadrzaj": "USLOVI_PLACANJA",
+       "x": 4260,
+       "y": 320,
+       "w": 2600,
+       "h": 260,
+       "vel": 9,
+       "bold": true,
+       "por": "levo",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Natpis",
+       "sadrzaj": "Ukupno bodova:",
+       "x": 7020,
+       "y": 350,
+       "w": 1400,
+       "h": 220,
+       "vel": 9,
+       "bold": false,
+       "por": "levo",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Polje",
+       "sadrzaj": "UKUPNO_BODOVA",
+       "x": 8420,
+       "y": 320,
+       "w": 900,
+       "h": 260,
+       "vel": 9,
+       "bold": true,
+       "por": "levo",
+       "fmt": "0.00"
+      },
+      {
+       "vrsta": "Linija",
+       "sadrzaj": "-",
+       "x": 0,
+       "y": 620,
+       "w": 13800,
+       "h": 0,
+       "vel": "",
+       "bold": false,
+       "por": "",
+       "fmt": ""
+      }
+     ],
+     "acDetail": [
+      {
+       "vrsta": "Polje",
+       "sadrzaj": "NAZIV_KRITERIJUMA",
+       "x": 500,
+       "y": 20,
+       "w": 3320,
+       "h": 240,
+       "vel": 9,
+       "bold": false,
+       "por": "levo",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Polje",
+       "sadrzaj": "NACIN_BODOVANJA",
+       "x": 3900,
+       "y": 20,
+       "w": 1720,
+       "h": 240,
+       "vel": 9,
+       "bold": false,
+       "por": "levo",
+       "fmt": ""
+      },
+      {
+       "vrsta": "Polje",
+       "sadrzaj": "BROJ_BODOVA",
+       "x": 5700,
+       "y": 20,
+       "w": 1020,
+       "h": 240,
+       "vel": 9,
+       "bold": false,
+       "por": "desno",
+       "fmt": "0.00"
+      },
+      {
+       "vrsta": "Polje",
+       "sadrzaj": "KOMENTAR_OCENE",
+       "x": 6800,
+       "y": 20,
+       "w": 3320,
+       "h": 240,
+       "vel": 9,
+       "bold": false,
+       "por": "levo",
+       "fmt": ""
+      }
+     ],
+     "acGroupLevel1Footer": [
+      {
+       "vrsta": "Linija",
+       "sadrzaj": "-",
+       "x": 500,
+       "y": 40,
+       "w": 13300,
+       "h": 0,
+       "vel": "",
+       "bold": false,
+       "por": "",
+       "fmt": ""
+      }
+     ]
+    },
+    "grafikoni": [],
+    "podizvestaji": [],
+    "sql": "SELECT PS.SIFRA_PLANA, PS.RB_STAVKE, PD.BROJ_PONUDE, D.NAZIV_DOBAVLJACA,\n PD.DATUM_PRIJEMA, PD.UKUPNA_CENA, PS.PONUDJENA_CENA, PD.ROK_ISPORUKE,\n PD.USLOVI_PLACANJA, PD.UKUPNO_BODOVA, PD.STATUS_PONUDE,\n (PS.SIFRA_PLANA & \"-\" & Format(PS.RB_STAVKE,\"000\") & \"-\" & PD.BROJ_PONUDE)\n  AS PONUDA_KLJUC,\n KV.NAZIV_KRITERIJUMA, KV.NACIN_BODOVANJA, OP.BROJ_BODOVA, OP.KOMENTAR_OCENE\nFROM (((PONUDJENA_STAVKA AS PS\n INNER JOIN PONUDA_DOBAVLJACA AS PD ON PS.BROJ_PONUDE = PD.BROJ_PONUDE)\n INNER JOIN DOBAVLJAC AS D ON PD.SIFRA_DOBAVLJACA = D.SIFRA_DOBAVLJACA)\n LEFT JOIN OCENA_PONUDE AS OP ON PD.BROJ_PONUDE = OP.BROJ_PONUDE)\n LEFT JOIN KRITERIJUM_VREDNOVANJA AS KV ON OP.SIFRA_KRITERIJUMA = KV.SIFRA_KRITERIJUMA\nORDER BY PS.SIFRA_PLANA, PS.RB_STAVKE, PD.BROJ_PONUDE, KV.NAZIV_KRITERIJUMA;"
+   }
+  },
+  {
+   "upit": "qIzv8_Prava",
+   "ime": "rptIzv8",
+   "naslov": "Izveštaj 8 - Prava korišćenja medijskog sadržaja i rokovi važenja",
+   "sirina": 14600,
+   "pejzaz": true,
+   "grupe": [
+    {
+     "polje": "PRIORITET_STATUSA",
+     "zaglavlje": true,
+     "podnozje": true
+    },
+    {
+     "polje": "LICENCA_KLJUC",
+     "zaglavlje": true,
+     "podnozje": true
+    },
+    {
+     "polje": "NAZIV_SADRZAJA",
+     "zaglavlje": false,
+     "podnozje": false
+    }
+   ],
+   "visine": {
+    "acHeader": {
+     "visina": 1080,
+     "raste": false
+    },
+    "acPageHeader": {
+     "visina": 420,
+     "raste": false
+    },
+    "acGroupLevel1Header": {
+     "visina": 520,
+     "raste": false
+    },
+    "acGroupLevel2Header": {
+     "visina": 920,
+     "raste": false
+    },
+    "acDetail": {
+     "visina": 290,
+     "raste": false
+    },
+    "acGroupLevel2Footer": {
+     "visina": 340,
+     "raste": false
+    },
+    "acGroupLevel1Footer": {
+     "visina": 420,
+     "raste": false
+    },
+    "acFooter": {
+     "visina": 520,
+     "raste": false
+    },
+    "acPageFooter": {
+     "visina": 360,
+     "raste": false
+    }
+   },
+   "kontrole": {
+    "acHeader": [
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Izveštaj 8 - Prava korišćenja medijskog sadržaja i rokovi važenja",
+      "x": 0,
+      "y": 60,
+      "w": 14600,
+      "h": 400,
+      "vel": 15,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Informacioni sistem TV stanice - TV Panorama",
+      "x": 0,
+      "y": 480,
+      "w": 14600,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 1040,
+      "w": 14600,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Stanje prava na dan:",
+      "x": 0,
+      "y": 790,
+      "w": 1900,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Date()",
+      "x": 1900,
+      "y": 760,
+      "w": 1400,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "dd.mm.yyyy"
+     }
+    ],
+    "acPageHeader": [
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Šifra sadržaja",
+      "x": 800,
+      "y": 90,
+      "w": 1320,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Medijski sadržaj",
+      "x": 2200,
+      "y": 90,
+      "w": 3520,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Format zapisa",
+      "x": 5800,
+      "y": 90,
+      "w": 1420,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Oblast pokrivenosti",
+      "x": 7300,
+      "y": 90,
+      "w": 2520,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Zemlja porekla",
+      "x": 9900,
+      "y": 90,
+      "w": 1520,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Ugovor o nabavci",
+      "x": 11500,
+      "y": 90,
+      "w": 1420,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Emitovanja",
+      "x": 13000,
+      "y": 90,
+      "w": 1520,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 380,
+      "w": 14600,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     }
+    ],
+    "acGroupLevel1Header": [
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "GRUPA_STATUSA",
+      "x": 0,
+      "y": 80,
+      "w": 11000,
+      "h": 320,
+      "vel": 12,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 460,
+      "w": 14600,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     }
+    ],
+    "acGroupLevel2Header": [
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Licenca:",
+      "x": 400,
+      "y": 90,
+      "w": 800,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "BROJ_LICENCE",
+      "x": 1200,
+      "y": 60,
+      "w": 1400,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Vrsta prava:",
+      "x": 2760,
+      "y": 90,
+      "w": 1200,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "VRSTA_PRAVA",
+      "x": 3960,
+      "y": 60,
+      "w": 2200,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Nosilac prava:",
+      "x": 6320,
+      "y": 90,
+      "w": 1400,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "NOSILAC_PRAVA",
+      "x": 7720,
+      "y": 60,
+      "w": 2400,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Teritorija:",
+      "x": 10280,
+      "y": 90,
+      "w": 1000,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "TERITORIJA",
+      "x": 11280,
+      "y": 60,
+      "w": 2000,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Važi od:",
+      "x": 400,
+      "y": 370,
+      "w": 900,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "DATUM_OD",
+      "x": 1300,
+      "y": 340,
+      "w": 1300,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "dd.mm.yyyy"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "do:",
+      "x": 2760,
+      "y": 370,
+      "w": 400,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "DATUM_DO",
+      "x": 3160,
+      "y": 340,
+      "w": 1300,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "dd.mm.yyyy"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Dana do isteka:",
+      "x": 4620,
+      "y": 370,
+      "w": 1400,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "DANA_DO_ISTEKA",
+      "x": 6020,
+      "y": 340,
+      "w": 900,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "0"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Status prava:",
+      "x": 7080,
+      "y": 370,
+      "w": 1200,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "STATUS_PRAVA",
+      "x": 8280,
+      "y": 340,
+      "w": 1900,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Dozvoljeno emitovanja:",
+      "x": 400,
+      "y": 650,
+      "w": 2200,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "DOZVOLJENO_EMITOVANJA",
+      "x": 2600,
+      "y": 620,
+      "w": 700,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "0"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Iskorišćeno:",
+      "x": 3460,
+      "y": 650,
+      "w": 1200,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "ISKORISCENO_EMITOVANJA",
+      "x": 4660,
+      "y": 620,
+      "w": 700,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "0"
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Preostalo:",
+      "x": 5520,
+      "y": 650,
+      "w": 1100,
+      "h": 220,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "PREOSTALO_EMITOVANJA",
+      "x": 6620,
+      "y": 620,
+      "w": 700,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "0"
+     },
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 400,
+      "y": 880,
+      "w": 14200,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     }
+    ],
+    "acDetail": [
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "SIFRA_SADRZAJA",
+      "x": 800,
+      "y": 30,
+      "w": 1320,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "NAZIV_SADRZAJA",
+      "x": 2200,
+      "y": 30,
+      "w": 3520,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "FORMAT_ZAPISA",
+      "x": 5800,
+      "y": 30,
+      "w": 1420,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "OBLAST_POKRIVENOSTI",
+      "x": 7300,
+      "y": 30,
+      "w": 2520,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "ZEMLJA_POREKLA",
+      "x": 9900,
+      "y": 30,
+      "w": 1520,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "UGOVOR_NABAVKE",
+      "x": 11500,
+      "y": 30,
+      "w": 1420,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "BROJ_EMITOVANJA",
+      "x": 13000,
+      "y": 30,
+      "w": 1520,
+      "h": 240,
+      "vel": 9,
+      "bold": false,
+      "por": "desno",
+      "fmt": "0"
+     }
+    ],
+    "acGroupLevel2Footer": [
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 800,
+      "y": 20,
+      "w": 13800,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Broj pokrivenih sadržaja:",
+      "x": 800,
+      "y": 50,
+      "w": 3000,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Count([SIFRA_SADRZAJA])",
+      "x": 3850,
+      "y": 50,
+      "w": 900,
+      "h": 250,
+      "vel": 9,
+      "bold": true,
+      "por": "levo",
+      "fmt": "0"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Sum([BROJ_EMITOVANJA])",
+      "x": 13000,
+      "y": 50,
+      "w": 1520,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": "0"
+     }
+    ],
+    "acGroupLevel1Footer": [
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 20,
+      "w": 14600,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "Ukupno u grupi:",
+      "x": 0,
+      "y": 80,
+      "w": 3400,
+      "h": 260,
+      "vel": 10,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Count([BROJ_LICENCE]) & \" redova (pravo x sadržaj)\"",
+      "x": 3450,
+      "y": 80,
+      "w": 3000,
+      "h": 260,
+      "vel": 10,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Sum([BROJ_EMITOVANJA])",
+      "x": 13000,
+      "y": 80,
+      "w": 1520,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": "0"
+     }
+    ],
+    "acFooter": [
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 40,
+      "w": 14600,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Natpis",
+      "sadrzaj": "UKUPNO:",
+      "x": 0,
+      "y": 120,
+      "w": 3400,
+      "h": 280,
+      "vel": 11,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Count([BROJ_LICENCE]) & \" redova (pravo x sadržaj)\"",
+      "x": 3450,
+      "y": 120,
+      "w": 3000,
+      "h": 280,
+      "vel": 11,
+      "bold": true,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Sum([BROJ_EMITOVANJA])",
+      "x": 13000,
+      "y": 120,
+      "w": 1520,
+      "h": 260,
+      "vel": 9,
+      "bold": true,
+      "por": "desno",
+      "fmt": "0"
+     }
+    ],
+    "acPageFooter": [
+     {
+      "vrsta": "Linija",
+      "sadrzaj": "-",
+      "x": 0,
+      "y": 40,
+      "w": 14600,
+      "h": 0,
+      "vel": "",
+      "bold": false,
+      "por": "",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=Now()",
+      "x": 0,
+      "y": 100,
+      "w": 3400,
+      "h": 240,
+      "vel": 8,
+      "bold": false,
+      "por": "levo",
+      "fmt": "dd.mm.yyyy. hh:nn"
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=\"Izradio: \" & CurrentUser()",
+      "x": 3500,
+      "y": 100,
+      "w": 4600,
+      "h": 240,
+      "vel": 8,
+      "bold": false,
+      "por": "levo",
+      "fmt": ""
+     },
+     {
+      "vrsta": "Polje",
+      "sadrzaj": "=\"Strana \" & [Page] & \" od \" & [Pages]",
+      "x": 11500,
+      "y": 100,
+      "w": 3000,
+      "h": 240,
+      "vel": 8,
+      "bold": false,
+      "por": "desno",
+      "fmt": ""
+     }
+    ]
+   },
+   "grafikoni": [],
+   "podizvestaji": [],
+   "broj": 8,
+   "spec": {
+    "ID izveštaja": "8",
+    "Naziv": "Prava korišćenja medijskog sadržaja i rokovi važenja",
+    "Tip izveštaja": "Tabelarni",
+    "Svrha": "Pregled svih prava korišćenja sa rokovima važenja i iskorišćenošću dozvoljenog broja emitovanja, radi blagovremene obnove prava i sprečavanja emitovanja sadržaja bez važećeg osnova.",
+    "Izvor podataka": "Tabele „Pravo korišćenja“, „Pokrivenost pravom“, „Medijski sadržaj“, „Nabavljeni sadržaj“, „Ugovor o nabavci“ i „Zapis o emitovanju“ iz baze podataka informacionog sistema.",
+    "Parametri": "—",
+    "Učestalost i raspodela": "Izveštaj se kreira na mesečnom nivou, kao i automatski kada je do isteka nekog prava ostalo manje od 30 dana.",
+    "Zaglavlje i podnožje": "U zaglavlju su naziv izveštaja i datum na koji se stanje prava prikazuje. U podnožju su datum kreiranja, ime zaposlenog koji je izveštaj generisao i broj strane.",
+    "Telo izveštaja": "Tabelarni prikaz sortiran rastuće po datumu isteka: broj licence, vrsta prava, nosilac prava, teritorija, važi od – važi do, broj dana do isteka, dozvoljen broj emitovanja, iskorišćen broj emitovanja i preostalo, spisak pokrivenih medijskih sadržaja sa oblašću pokrivenosti, kao i status prava (važeće, uskoro ističe, isteklo ili iskorišćeno). Prava kojima ističe rok ili je iskorišćen dozvoljen broj emitovanja izdvajaju se na početku izveštaja.",
+    "Pristup izveštaju": "Pravna služba, urednici programa, arhiva medijskog sadržaja i uprava stanice."
+   },
+   "sql": "SELECT PK.BROJ_LICENCE, PK.VRSTA_PRAVA, PK.NOSILAC_PRAVA, PK.TERITORIJA,\n PK.DATUM_OD, PK.DATUM_DO, DateDiff(\"d\", Date(), PK.DATUM_DO) AS DANA_DO_ISTEKA,\n PK.DOZVOLJENO_EMITOVANJA, PK.ISKORISCENO_EMITOVANJA,\n (Nz(PK.DOZVOLJENO_EMITOVANJA,0) - Nz(PK.ISKORISCENO_EMITOVANJA,0))\n  AS PREOSTALO_EMITOVANJA,\n IIf(PK.DATUM_DO < Date(), \"Isteklo\",\n  IIf(Nz(PK.ISKORISCENO_EMITOVANJA,0) >= Nz(PK.DOZVOLJENO_EMITOVANJA,0),\n   \"Iskoriščeno\",\n   IIf(DateDiff(\"d\", Date(), PK.DATUM_DO) <= 30, \"Uskoro ističe\", \"Važeče\")))\n  AS STATUS_PRAVA,\n IIf(PK.DATUM_DO < Date() OR Nz(PK.ISKORISCENO_EMITOVANJA,0) >= Nz(PK.DOZVOLJENO_EMITOVANJA,0) OR DateDiff(\"d\", Date(), PK.DATUM_DO) <= 30, 0, 1) AS PRIORITET_STATUSA,\n IIf(PK.DATUM_DO < Date() OR Nz(PK.ISKORISCENO_EMITOVANJA,0) >= Nz(PK.DOZVOLJENO_EMITOVANJA,0) OR DateDiff(\"d\", Date(), PK.DATUM_DO) <= 30, \"1. Prava kojima je rok istekao, uskoro ističe ili je iskoriščen\"\n  & \" dozvoljen broj emitovanja\", \"2. Važeča prava\") AS GRUPA_STATUSA,\n (Format(PK.DATUM_DO,\"yyyymmdd\") & \"-\" & PK.BROJ_LICENCE) AS LICENCA_KLJUC,\n MS.SIFRA_SADRZAJA, MS.NAZIV_SADRZAJA, MS.FORMAT_ZAPISA, PP.OBLAST_POKRIVENOSTI,\n NS.ZEMLJA_POREKLA, UN.BROJ_UGOVORA AS UGOVOR_NABAVKE,\n (SELECT Count(*) FROM ZAPIS_O_EMITOVANJU AS ZE\n  WHERE ZE.SIFRA_SADRZAJA = MS.SIFRA_SADRZAJA) AS BROJ_EMITOVANJA\nFROM (((PRAVO_KORISCENJA AS PK\n LEFT JOIN POKRIVENOST_PRAVOM AS PP ON PK.BROJ_LICENCE = PP.BROJ_LICENCE)\n LEFT JOIN MEDIJSKI_SADRZAJ AS MS ON PP.SIFRA_SADRZAJA = MS.SIFRA_SADRZAJA)\n LEFT JOIN NABAVLJENI_SADRZAJ AS NS ON MS.SIFRA_SADRZAJA = NS.SIFRA_SADRZAJA)\n LEFT JOIN UGOVOR_O_NABAVCI AS UN ON NS.BROJ_UGOVORA = UN.BROJ_UGOVORA\nORDER BY IIf(PK.DATUM_DO < Date() OR Nz(PK.ISKORISCENO_EMITOVANJA,0) >= Nz(PK.DOZVOLJENO_EMITOVANJA,0) OR DateDiff(\"d\", Date(), PK.DATUM_DO) <= 30, 0, 1), PK.DATUM_DO, PK.BROJ_LICENCE, MS.NAZIV_SADRZAJA;",
+   "pod": null
+  }
+ ],
+ "pomocni": [
+  [
+   "qIzv6_Fakture",
+   "SELECT F.BROJ_UGOVORA, Sum(F.IZNOS_ZA_PLACANJE) AS FAKTURISANO,\n Count(F.BROJ_FAKTURE) AS BROJ_FAKTURA, Min(F.STATUS_PLACANJA) AS STATUS_FAKTURE\nFROM FAKTURA AS F\nWHERE F.BROJ_UGOVORA Is Not Null\nGROUP BY F.BROJ_UGOVORA;"
+  ],
+  [
+   "qIzv7_Zahtev",
+   "SELECT Z.SIFRA_PLANA, Z.BROJ_ZAHTEVA, Z.DATUM_ZAHTEVA, Z.VRSTA_NABAVKE,\n Z.STATUS_ZAHTEVA, Z.PRIORITET, Z.PROCENJENA_VREDNOST\nFROM ZAHTEV_ZA_NABAVKU AS Z\nWHERE Z.SIFRA_PLANA Is Not Null\n AND Z.BROJ_ZAHTEVA = (SELECT Min(Z2.BROJ_ZAHTEVA) FROM ZAHTEV_ZA_NABAVKU AS Z2\n  WHERE Z2.SIFRA_PLANA = Z.SIFRA_PLANA);"
+  ],
+  [
+   "qIzv7_Narudzbe",
+   "SELECT N.SIFRA_DOBAVLJACA, Min(N.BROJ_NARUDZBENICE) AS BROJ_NARUDZBENICE,\n Sum(N.UKUPAN_IZNOS) AS IZNOS_NARUDZBENICA,\n Count(N.BROJ_NARUDZBENICE) AS BROJ_NARUDZBENICA\nFROM NARUDZBENICA AS N\nGROUP BY N.SIFRA_DOBAVLJACA;"
+  ],
+  [
+   "qIzv7_Izabrana",
+   "SELECT PS.SIFRA_PLANA, PS.RB_STAVKE, Min(PD.BROJ_PONUDE) AS BROJ_PONUDE,\n Min(PD.SIFRA_DOBAVLJACA) AS SIFRA_DOBAVLJACA,\n Min(PS.PONUDJENA_CENA) AS PONUDJENA_CENA\nFROM PONUDJENA_STAVKA AS PS INNER JOIN PONUDA_DOBAVLJACA AS PD\n ON PS.BROJ_PONUDE = PD.BROJ_PONUDE\nWHERE PD.STATUS_PONUDE = \"Izabrana\"\nGROUP BY PS.SIFRA_PLANA, PS.RB_STAVKE;"
+  ]
+ ],
+ "sekcije": {
+  "acHeader": [
+   "Zaglavlje izveštaja",
+   "Report Header"
+  ],
+  "acPageHeader": [
+   "Zaglavlje strane",
+   "Page Header"
+  ],
+  "acGroupLevel1Header": [
+   "Zaglavlje grupe 1",
+   "Group Header 1"
+  ],
+  "acGroupLevel2Header": [
+   "Zaglavlje grupe 2",
+   "Group Header 2"
+  ],
+  "acDetail": [
+   "Detalji",
+   "Detail"
+  ],
+  "acGroupLevel2Footer": [
+   "Podnožje grupe 2",
+   "Group Footer 2"
+  ],
+  "acGroupLevel1Footer": [
+   "Podnožje grupe 1",
+   "Group Footer 1"
+  ],
+  "acFooter": [
+   "Podnožje izveštaja",
+   "Report Footer"
+  ],
+  "acPageFooter": [
+   "Podnožje strane",
+   "Page Footer"
+  ]
+ },
+ "red": [
+  "acHeader",
+  "acPageHeader",
+  "acGroupLevel1Header",
+  "acGroupLevel2Header",
+  "acDetail",
+  "acGroupLevel2Footer",
+  "acGroupLevel1Footer",
+  "acFooter",
+  "acPageFooter"
+ ],
+ "twip_cm": 567.0
+}

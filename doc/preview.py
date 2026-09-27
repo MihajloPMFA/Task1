@@ -12,7 +12,11 @@ def runs(el):
         if t is not None and t.text:
             bel = r.find(W + 'rPr/' + W + 'b')
             b = bel is not None and bel.get(W + 'val') not in ('false', '0')
-            out.append(('<b>%s</b>' if b else '%s') % html.escape(t.text))
+            fel = r.find(W + 'rPr/' + W + 'rFonts')
+            mono = fel is not None and (fel.get(W + 'ascii') or '') == 'Consolas'
+            x = html.escape(t.text)
+            if mono: x = '<code>%s</code>' % x
+            out.append(('<b>%s</b>' if b else '%s') % x)
     return ''.join(out)
 
 def para(pel):
@@ -22,6 +26,7 @@ def para(pel):
     if not txt.strip(): return ''
     if s.startswith('Heading1'): return '<h1>%s</h1>' % txt
     if s.startswith('Heading2'): return '<h2>%s</h2>' % txt
+    if s.startswith('Heading3'): return '<h3>%s</h3>' % txt
     if pel.find(W + 'pPr/' + W + 'numPr') is not None: return '<p class="b">%s</p>' % txt
     return '<p>%s</p>' % txt
 
@@ -58,6 +63,8 @@ def build(src, out_html):
     h1{font-size:19px;margin:22px 0 10px;color:#1f3864}
     h1:first-child{margin-top:0}
     h2{font-size:15px;margin:20px 0 8px;color:#2f5496}
+    h3{font-size:13px;margin:16px 0 6px;color:#2f5496}
+    code{font-family:'Liberation Mono',Consolas,monospace;font-size:9.5pt}
     p{font-size:11pt;line-height:1.5;margin:0 0 8px;text-align:justify}
     table{border-collapse:collapse;width:100%;margin:6px 0 4px;table-layout:fixed}
     td{border:1px solid #aab4c4;padding:5px 7px;vertical-align:top}
