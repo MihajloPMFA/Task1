@@ -122,7 +122,8 @@ def main():
                 p = os.path.join(koren, f)
                 z.write(p, os.path.relpath(p, IZLAZ))
         for d in ('UPUTSTVO.md', 'M_upiti.txt', 'DAX_mere.txt',
-                  NAZIV + '.pbit', NAZIV + '_bez_BOM.pbit'):
+                  NAZIV + '.pbit', NAZIV + '_bez_BOM.pbit',
+                  NAZIV + '_v2.pbit', NAZIV + '_v3.pbit'):
             p = os.path.join(BASE, d)
             if os.path.exists(p):
                 z.write(p, d)
