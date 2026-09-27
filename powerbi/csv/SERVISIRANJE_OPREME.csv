@@ -1,0 +1,21 @@
+﻿SIFRA_ZAPOSLENOG;INVENTARSKI_BROJ;DATUM_SERVISA;OPIS_RADOVA;TROSAK;Godina;Kvartal;Mesec;MesecBr;SERVISER
+ZAP-081;INV-001;2026-02-04;Zamena baterije;11137.0;2026;K1;Februar;2;Marko Simović
+ZAP-082;INV-002;2026-02-15;Čišćenje senzora;14274.0;2026;K1;Februar;2;Jelena Petrović
+ZAP-083;INV-003;2026-02-26;Zamena kabla;17411.0;2026;K1;Februar;2;Nikola Jovanović
+ZAP-084;INV-004;2026-03-09;Kalibracija;20548.0;2026;K1;Mart;3;Ana Nikolić
+ZAP-085;INV-005;2026-03-20;Popravka napajanja;23685.0;2026;K1;Mart;3;Stefan Marković
+ZAP-086;INV-006;2026-03-31;Zamena sijalice;26822.0;2026;K1;Mart;3;Milica Ilić
+ZAP-087;INV-007;2026-04-11;Softverska nadogradnja;29959.0;2026;K2;April;4;Dušan Pavlović
+ZAP-088;INV-008;2026-04-22;Zamena konektora;33096.0;2026;K2;April;4;Ivana Stanković
+ZAP-089;INV-009;2026-05-03;Zamena baterije;36233.0;2026;K2;Maj;5;Nemanja Lukić
+ZAP-090;INV-010;2026-05-14;Čišćenje senzora;39370.0;2026;K2;Maj;5;Sara Ristić
+ZAP-091;INV-011;2026-05-25;Zamena kabla;42507.0;2026;K2;Maj;5;Luka Todorović
+ZAP-092;INV-012;2026-06-05;Kalibracija;45644.0;2026;K2;Jun;6;Katarina Milošević
+ZAP-093;INV-013;2026-06-16;Popravka napajanja;48781.0;2026;K2;Jun;6;Vuk Živković
+ZAP-094;INV-014;2026-06-27;Zamena sijalice;51918.0;2026;K2;Jun;6;Teodora Krstić
+ZAP-095;INV-015;2026-07-08;Softverska nadogradnja;55055.0;2026;K3;Jul;7;Filip Savić
+ZAP-096;INV-016;2026-07-19;Zamena konektora;58192.0;2026;K3;Jul;7;Jovana Đorđević
+ZAP-097;INV-017;2026-07-30;Zamena baterije;61329.0;2026;K3;Jul;7;Uroš Anđelković
+ZAP-098;INV-018;2026-08-10;Čišćenje senzora;64466.0;2026;K3;Avgust;8;Tijana Davčić
+ZAP-099;INV-019;2026-08-21;Zamena kabla;67603.0;2026;K3;Avgust;8;Aleksa Mirković
+ZAP-100;INV-020;2026-09-01;Kalibracija;70740.0;2026;K3;Septembar;9;Marija Simović

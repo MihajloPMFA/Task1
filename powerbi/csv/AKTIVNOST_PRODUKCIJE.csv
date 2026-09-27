@@ -1,0 +1,41 @@
+﻿SIFRA_PROJEKTA;RB_AKTIVNOSTI;NAZIV_AKTIVNOSTI;DATUM_OD;DATUM_DO;VRSTA_AKTIVNOSTI;LOKACIJA_SNIMANJA;STATUS_AKTIVNOSTI;KLJUC_AKTIVNOSTI
+PRJ-001;1;Snimanje u studiju;2026-01-10;2026-01-22;Snimanje;Studio A;U toku;PRJ-001-1
+PRJ-001;2;Snimanje na terenu;2026-01-15;2026-01-27;Snimanje;Studio A;Završena;PRJ-001-2
+PRJ-002;1;Snimanje na terenu;2026-01-21;2026-02-02;Snimanje;Studio B;Završena;PRJ-002-1
+PRJ-002;2;Montaža;2026-01-26;2026-02-07;Postprodukcija;Studio B;Završena;PRJ-002-2
+PRJ-003;1;Montaža;2026-02-01;2026-02-13;Postprodukcija;Teren - Kragujevac;Završena;PRJ-003-1
+PRJ-003;2;Grafička obrada;2026-02-06;2026-02-18;Postprodukcija;Teren - Kragujevac;Planirana;PRJ-003-2
+PRJ-004;1;Grafička obrada;2026-02-12;2026-02-24;Postprodukcija;Teren - Beograd;Planirana;PRJ-004-1
+PRJ-004;2;Ozvučenje;2026-02-17;2026-03-01;Postprodukcija;Teren - Beograd;U toku;PRJ-004-2
+PRJ-005;1;Ozvučenje;2026-02-23;2026-03-07;Postprodukcija;Teren - Čačak;U toku;PRJ-005-1
+PRJ-005;2;Kontrola kvaliteta;2026-02-28;2026-03-12;Kontrola;Teren - Čačak;Završena;PRJ-005-2
+PRJ-006;1;Kontrola kvaliteta;2026-03-06;2026-03-18;Kontrola;Studio A;Završena;PRJ-006-1
+PRJ-006;2;Arhiviranje;2026-03-11;2026-03-23;Kontrola;Studio A;Završena;PRJ-006-2
+PRJ-007;1;Arhiviranje;2026-03-17;2026-03-29;Kontrola;Studio B;Završena;PRJ-007-1
+PRJ-007;2;Priprema scenarija;2026-03-22;2026-04-03;Priprema;Studio B;Planirana;PRJ-007-2
+PRJ-008;1;Priprema scenarija;2026-03-28;2026-04-09;Priprema;Teren - Kragujevac;Planirana;PRJ-008-1
+PRJ-008;2;Snimanje u studiju;2026-04-02;2026-04-14;Snimanje;Teren - Kragujevac;U toku;PRJ-008-2
+PRJ-009;1;Snimanje u studiju;2026-04-08;2026-04-20;Snimanje;Teren - Beograd;U toku;PRJ-009-1
+PRJ-009;2;Snimanje na terenu;2026-04-13;2026-04-25;Snimanje;Teren - Beograd;Završena;PRJ-009-2
+PRJ-010;1;Snimanje na terenu;2026-04-19;2026-05-01;Snimanje;Teren - Čačak;Završena;PRJ-010-1
+PRJ-010;2;Montaža;2026-04-24;2026-05-06;Postprodukcija;Teren - Čačak;Završena;PRJ-010-2
+PRJ-011;1;Montaža;2026-04-30;2026-05-12;Postprodukcija;Studio A;Završena;PRJ-011-1
+PRJ-011;2;Grafička obrada;2026-05-05;2026-05-17;Postprodukcija;Studio A;Planirana;PRJ-011-2
+PRJ-012;1;Grafička obrada;2026-05-11;2026-05-23;Postprodukcija;Studio B;Planirana;PRJ-012-1
+PRJ-012;2;Ozvučenje;2026-05-16;2026-05-28;Postprodukcija;Studio B;U toku;PRJ-012-2
+PRJ-013;1;Ozvučenje;2026-05-22;2026-06-03;Postprodukcija;Teren - Kragujevac;U toku;PRJ-013-1
+PRJ-013;2;Kontrola kvaliteta;2026-05-27;2026-06-08;Kontrola;Teren - Kragujevac;Završena;PRJ-013-2
+PRJ-014;1;Kontrola kvaliteta;2026-06-02;2026-06-14;Kontrola;Teren - Beograd;Završena;PRJ-014-1
+PRJ-014;2;Arhiviranje;2026-06-07;2026-06-19;Kontrola;Teren - Beograd;Završena;PRJ-014-2
+PRJ-015;1;Arhiviranje;2026-06-13;2026-06-25;Kontrola;Teren - Čačak;Završena;PRJ-015-1
+PRJ-015;2;Priprema scenarija;2026-06-18;2026-06-30;Priprema;Teren - Čačak;Planirana;PRJ-015-2
+PRJ-016;1;Priprema scenarija;2026-06-24;2026-07-06;Priprema;Studio A;Planirana;PRJ-016-1
+PRJ-016;2;Snimanje u studiju;2026-06-29;2026-07-11;Snimanje;Studio A;U toku;PRJ-016-2
+PRJ-017;1;Snimanje u studiju;2026-07-05;2026-07-17;Snimanje;Studio B;U toku;PRJ-017-1
+PRJ-017;2;Snimanje na terenu;2026-07-10;2026-07-22;Snimanje;Studio B;Završena;PRJ-017-2
+PRJ-018;1;Snimanje na terenu;2026-07-16;2026-07-28;Snimanje;Teren - Kragujevac;Završena;PRJ-018-1
+PRJ-018;2;Montaža;2026-07-21;2026-08-02;Postprodukcija;Teren - Kragujevac;Završena;PRJ-018-2
+PRJ-019;1;Montaža;2026-07-27;2026-08-08;Postprodukcija;Teren - Beograd;Završena;PRJ-019-1
+PRJ-019;2;Grafička obrada;2026-08-01;2026-08-13;Postprodukcija;Teren - Beograd;Planirana;PRJ-019-2
+PRJ-020;1;Grafička obrada;2026-08-07;2026-08-19;Postprodukcija;Teren - Čačak;Planirana;PRJ-020-1
+PRJ-020;2;Ozvučenje;2026-08-12;2026-08-24;Postprodukcija;Teren - Čačak;U toku;PRJ-020-2

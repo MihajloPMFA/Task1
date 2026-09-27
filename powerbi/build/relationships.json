@@ -1,0 +1,205 @@
+[
+ {
+  "fromTable": "MERENJE_EMISIJE",
+  "fromColumn": "SIFRA_EMISIJE",
+  "toTable": "EMISIJA",
+  "toColumn": "SIFRA_EMISIJE",
+  "isActive": true
+ },
+ {
+  "fromTable": "MERENJE_EMISIJE",
+  "fromColumn": "SIFRA_MERENJA",
+  "toTable": "MERENJE_GLEDANOSTI",
+  "toColumn": "SIFRA_MERENJA",
+  "isActive": true
+ },
+ {
+  "fromTable": "MERENJE_GLEDANOSTI",
+  "fromColumn": "DATUM_MERENJA",
+  "toTable": "Kalendar",
+  "toColumn": "Datum",
+  "isActive": true
+ },
+ {
+  "fromTable": "TERMIN_EMITOVANJA",
+  "fromColumn": "SIFRA_EMISIJE",
+  "toTable": "EMISIJA",
+  "toColumn": "SIFRA_EMISIJE",
+  "isActive": true
+ },
+ {
+  "fromTable": "POVRATNA_INFO_GLEDALACA",
+  "fromColumn": "SIFRA_EMISIJE",
+  "toTable": "EMISIJA",
+  "toColumn": "SIFRA_EMISIJE",
+  "isActive": true
+ },
+ {
+  "fromTable": "TERMIN_EMITOVANJA",
+  "fromColumn": "DATUM",
+  "toTable": "Kalendar",
+  "toColumn": "Datum",
+  "isActive": false
+ },
+ {
+  "fromTable": "OGLASIVAC",
+  "fromColumn": "SIFRA_KLIJENTA",
+  "toTable": "KLIJENT",
+  "toColumn": "SIFRA_KLIJENTA",
+  "isActive": true
+ },
+ {
+  "fromTable": "REKLAMNI_SADRZAJ",
+  "fromColumn": "SIFRA_OGLASIVACA",
+  "toTable": "OGLASIVAC",
+  "toColumn": "SIFRA_KLIJENTA",
+  "isActive": true
+ },
+ {
+  "fromTable": "EMITOVANJE_REKLAME",
+  "fromColumn": "SIFRA_SADRZAJA",
+  "toTable": "REKLAMNI_SADRZAJ",
+  "toColumn": "SIFRA_SADRZAJA",
+  "isActive": true
+ },
+ {
+  "fromTable": "EMITOVANJE_REKLAME",
+  "fromColumn": "SIFRA_BLOKA",
+  "toTable": "REKLAMNI_BLOK",
+  "toColumn": "SIFRA_BLOKA",
+  "isActive": true
+ },
+ {
+  "fromTable": "EMITOVANJE_REKLAME",
+  "fromColumn": "DATUM_EMITOVANJA",
+  "toTable": "Kalendar",
+  "toColumn": "Datum",
+  "isActive": true
+ },
+ {
+  "fromTable": "UGOVOR",
+  "fromColumn": "DATUM_SKLAPANJA",
+  "toTable": "Kalendar",
+  "toColumn": "Datum",
+  "isActive": true
+ },
+ {
+  "fromTable": "STAVKA_UGOVORA",
+  "fromColumn": "BROJ_UGOVORA",
+  "toTable": "UGOVOR",
+  "toColumn": "BROJ_UGOVORA",
+  "isActive": true
+ },
+ {
+  "fromTable": "FAKTURA",
+  "fromColumn": "DATUM_IZDAVANJA",
+  "toTable": "Kalendar",
+  "toColumn": "Datum",
+  "isActive": true
+ },
+ {
+  "fromTable": "STAVKA_FAKTURE",
+  "fromColumn": "BROJ_FAKTURE",
+  "toTable": "FAKTURA",
+  "toColumn": "BROJ_FAKTURE",
+  "isActive": true
+ },
+ {
+  "fromTable": "NALOG_ZA_PLACANJE",
+  "fromColumn": "BROJ_FAKTURE",
+  "toTable": "FAKTURA",
+  "toColumn": "BROJ_FAKTURE",
+  "isActive": true
+ },
+ {
+  "fromTable": "ZAPOSLENI",
+  "fromColumn": "SIFRA_JEDINICE",
+  "toTable": "ORGANIZACIONA_JEDINICA",
+  "toColumn": "SIFRA_JEDINICE",
+  "isActive": true
+ },
+ {
+  "fromTable": "ANGAZOVANJE_NA_AKTIVNOSTI",
+  "fromColumn": "SIFRA_ZAPOSLENOG",
+  "toTable": "ZAPOSLENI",
+  "toColumn": "SIFRA_ZAPOSLENOG",
+  "isActive": true
+ },
+ {
+  "fromTable": "ANGAZOVANJE_NA_AKTIVNOSTI",
+  "fromColumn": "KLJUC_AKTIVNOSTI",
+  "toTable": "AKTIVNOST_PRODUKCIJE",
+  "toColumn": "KLJUC_AKTIVNOSTI",
+  "isActive": true
+ },
+ {
+  "fromTable": "AKTIVNOST_PRODUKCIJE",
+  "fromColumn": "SIFRA_PROJEKTA",
+  "toTable": "PROJEKAT_PRODUKCIJE",
+  "toColumn": "SIFRA_PROJEKTA",
+  "isActive": true
+ },
+ {
+  "fromTable": "TROSAK_PRODUKCIJE",
+  "fromColumn": "SIFRA_PROJEKTA",
+  "toTable": "PROJEKAT_PRODUKCIJE",
+  "toColumn": "SIFRA_PROJEKTA",
+  "isActive": true
+ },
+ {
+  "fromTable": "TROSAK_PRODUKCIJE",
+  "fromColumn": "DATUM_NASTANKA",
+  "toTable": "Kalendar",
+  "toColumn": "Datum",
+  "isActive": true
+ },
+ {
+  "fromTable": "SERVISIRANJE_OPREME",
+  "fromColumn": "INVENTARSKI_BROJ",
+  "toTable": "OPREMA",
+  "toColumn": "INVENTARSKI_BROJ",
+  "isActive": true
+ },
+ {
+  "fromTable": "ZADUZENJE_OPREME",
+  "fromColumn": "INVENTARSKI_BROJ",
+  "toTable": "OPREMA",
+  "toColumn": "INVENTARSKI_BROJ",
+  "isActive": true
+ },
+ {
+  "fromTable": "SERVISIRANJE_OPREME",
+  "fromColumn": "DATUM_SERVISA",
+  "toTable": "Kalendar",
+  "toColumn": "Datum",
+  "isActive": true
+ },
+ {
+  "fromTable": "NARUDZBENICA",
+  "fromColumn": "SIFRA_DOBAVLJACA",
+  "toTable": "DOBAVLJAC",
+  "toColumn": "SIFRA_DOBAVLJACA",
+  "isActive": true
+ },
+ {
+  "fromTable": "PONUDA_DOBAVLJACA",
+  "fromColumn": "SIFRA_DOBAVLJACA",
+  "toTable": "DOBAVLJAC",
+  "toColumn": "SIFRA_DOBAVLJACA",
+  "isActive": true
+ },
+ {
+  "fromTable": "NARUDZBENICA",
+  "fromColumn": "DATUM_IZDAVANJA",
+  "toTable": "Kalendar",
+  "toColumn": "Datum",
+  "isActive": true
+ },
+ {
+  "fromTable": "REKLAMACIJA",
+  "fromColumn": "DATUM_REKLAMACIJE",
+  "toTable": "Kalendar",
+  "toColumn": "Datum",
+  "isActive": true
+ }
+]

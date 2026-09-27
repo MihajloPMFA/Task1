@@ -1,0 +1,21 @@
+﻿SIFRA_PROJEKTA;SIFRA_UREDNIKA;SIFRA_EMISIJE;NAZIV_PROJEKTA;DATUM_POCETKA;DATUM_ZAVRSETKA;ODOBREN_BUDZET;STATUS_PROJEKTA;VRSTA_PRODUKCIJE;OPIS_PROJEKTA
+PRJ-001;ZAP-001;EM-001;Jutarnji program;2026-01-05;2026-04-05;537119.0;U pripremi;Sopstvena;Opis projekta produkcije broj 1
+PRJ-002;ZAP-002;EM-002;Vesti u 19h;2026-01-16;2026-04-16;674238.0;U realizaciji;Koprodukcija;Opis projekta produkcije broj 2
+PRJ-003;ZAP-003;EM-003;Dokumentarac o Šumadiji;2026-01-27;2026-04-27;811357.0;Završen;Naručena;Opis projekta produkcije broj 3
+PRJ-004;ZAP-004;EM-004;Sportski pregled;2026-02-07;2026-05-08;948476.0;Završen;Sopstvena;Opis projekta produkcije broj 4
+PRJ-005;ZAP-005;EM-005;Kulturni magazin;2026-02-18;2026-05-19;1085595.0;Obustavljen;Koprodukcija;Opis projekta produkcije broj 5
+PRJ-006;ZAP-006;EM-006;Intervju nedelje;2026-03-01;2026-05-30;1222714.0;U pripremi;Naručena;Opis projekta produkcije broj 6
+PRJ-007;ZAP-007;EM-007;Emisija o zdravlju;2026-03-12;2026-06-10;1359833.0;U realizaciji;Sopstvena;Opis projekta produkcije broj 7
+PRJ-008;ZAP-008;EM-008;Kviz znanja;2026-03-23;2026-06-21;1496952.0;Završen;Koprodukcija;Opis projekta produkcije broj 8
+PRJ-009;ZAP-009;EM-009;Muzički spot;2026-04-03;2026-07-02;1634071.0;Završen;Naručena;Opis projekta produkcije broj 9
+PRJ-010;ZAP-010;EM-010;Reklamni spot za klijenta;2026-04-14;2026-07-13;1771190.0;Obustavljen;Sopstvena;Opis projekta produkcije broj 10
+PRJ-011;ZAP-011;EM-011;Školski program;2026-04-25;2026-07-24;1908309.0;U pripremi;Koprodukcija;Opis projekta produkcije broj 11
+PRJ-012;ZAP-012;EM-012;Turistička reportaža;2026-05-06;2026-08-04;2045428.0;U realizaciji;Naručena;Opis projekta produkcije broj 12
+PRJ-013;ZAP-013;EM-013;Politički duel;2026-05-17;2026-08-15;2182547.0;Završen;Sopstvena;Opis projekta produkcije broj 13
+PRJ-014;ZAP-014;EM-014;Novogodišnji program;2026-05-28;2026-08-26;2319666.0;Završen;Koprodukcija;Opis projekta produkcije broj 14
+PRJ-015;ZAP-015;EM-015;Humanitarna emisija;2026-06-08;2026-09-06;2456785.0;Obustavljen;Naručena;Opis projekta produkcije broj 15
+PRJ-016;ZAP-016;EM-016;Emisija o poljoprivredi;2026-06-19;2026-09-17;2593904.0;U pripremi;Sopstvena;Opis projekta produkcije broj 16
+PRJ-017;ZAP-017;EM-017;Naučni magazin;2026-06-30;2026-09-28;2731023.0;U realizaciji;Koprodukcija;Opis projekta produkcije broj 17
+PRJ-018;ZAP-018;EM-018;Serijal o istoriji;2026-07-11;2026-10-09;2868142.0;Završen;Naručena;Opis projekta produkcije broj 18
+PRJ-019;ZAP-019;EM-019;Dečji program;2026-07-22;2026-10-20;505261.0;Završen;Sopstvena;Opis projekta produkcije broj 19
+PRJ-020;ZAP-020;EM-020;Vremenska prognoza;2026-08-02;2026-10-31;642380.0;Obustavljen;Koprodukcija;Opis projekta produkcije broj 20

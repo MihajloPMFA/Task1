@@ -1,0 +1,21 @@
+﻿SIFRA_JEDINICE;SIFRA_NADREDJENE_JEDINICE;NAZIV_JEDINICE;TIP_JEDINICE;OPIS_DELATNOSTI;DATUM_OSNIVANJA;BROJ_ZAPOSLENIH
+OJ-001;;Uprava stanice;Uprava;Delatnost organizacione jedinice broj 1;2026-01-05;5
+OJ-002;OJ-001;Sektor produkcije;Sektor;Delatnost organizacione jedinice broj 2;2026-01-16;6
+OJ-003;OJ-001;Sektor emitovanja;Sektor;Delatnost organizacione jedinice broj 3;2026-01-27;7
+OJ-004;OJ-001;Pravna služba;Služba;Delatnost organizacione jedinice broj 4;2026-02-07;8
+OJ-005;OJ-001;Finansijska služba;Služba;Delatnost organizacione jedinice broj 5;2026-02-18;9
+OJ-006;OJ-001;Služba nabavke;Služba;Delatnost organizacione jedinice broj 6;2026-03-01;10
+OJ-007;OJ-001;Kadrovska služba;Služba;Delatnost organizacione jedinice broj 7;2026-03-12;11
+OJ-008;OJ-001;Marketing i oglašavanje;Sektor;Delatnost organizacione jedinice broj 8;2026-03-23;12
+OJ-009;OJ-001;Informativna redakcija;Redakcija;Delatnost organizacione jedinice broj 9;2026-04-03;13
+OJ-010;OJ-001;Sportska redakcija;Redakcija;Delatnost organizacione jedinice broj 10;2026-04-14;14
+OJ-011;OJ-001;Redakcija kulture;Uprava;Delatnost organizacione jedinice broj 11;2026-04-25;15
+OJ-012;OJ-001;Dečja redakcija;Sektor;Delatnost organizacione jedinice broj 12;2026-05-06;16
+OJ-013;OJ-001;Tehnički sektor;Sektor;Delatnost organizacione jedinice broj 13;2026-05-17;17
+OJ-014;OJ-001;Studio A;Služba;Delatnost organizacione jedinice broj 14;2026-05-28;18
+OJ-015;OJ-001;Studio B;Služba;Delatnost organizacione jedinice broj 15;2026-06-08;19
+OJ-016;OJ-001;Montaža;Služba;Delatnost organizacione jedinice broj 16;2026-06-19;20
+OJ-017;OJ-001;Arhiva;Služba;Delatnost organizacione jedinice broj 17;2026-06-30;21
+OJ-018;OJ-001;IT služba;Sektor;Delatnost organizacione jedinice broj 18;2026-07-11;22
+OJ-019;OJ-001;Magacin;Redakcija;Delatnost organizacione jedinice broj 19;2026-07-22;23
+OJ-020;OJ-001;Služba održavanja;Redakcija;Delatnost organizacione jedinice broj 20;2026-08-02;24

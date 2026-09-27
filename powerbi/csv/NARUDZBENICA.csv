@@ -1,0 +1,21 @@
+﻿BROJ_NARUDZBENICE;SIFRA_DOBAVLJACA;DATUM_IZDAVANJA;ROK_ISPORUKE;MESTO_ISPORUKE;UKUPAN_IZNOS;STATUS_NARUDZBINE;Godina;Kvartal;Mesec;MesecBr
+NR-001;DOB-021;2026-01-20;2026-02-19;TV Panorama, Kragujevac;339933.0;Poslata;2026;K1;Januar;1
+NR-002;DOB-022;2026-01-31;2026-03-02;TV Panorama, Kragujevac;539866.0;Realizovana;2026;K1;Januar;1
+NR-003;DOB-023;2026-02-11;2026-03-13;TV Panorama, Kragujevac;739799.0;Delimično realizovan;2026;K1;Februar;2
+NR-004;DOB-024;2026-02-22;2026-03-24;TV Panorama, Kragujevac;939732.0;Otkazana;2026;K1;Februar;2
+NR-005;DOB-025;2026-03-05;2026-04-04;TV Panorama, Kragujevac;1139665.0;Poslata;2026;K1;Mart;3
+NR-006;DOB-026;2026-03-16;2026-04-15;TV Panorama, Kragujevac;1339598.0;Realizovana;2026;K1;Mart;3
+NR-007;DOB-027;2026-03-27;2026-04-26;TV Panorama, Kragujevac;1539531.0;Delimično realizovan;2026;K1;Mart;3
+NR-008;DOB-028;2026-04-07;2026-05-07;TV Panorama, Kragujevac;1739464.0;Otkazana;2026;K2;April;4
+NR-009;DOB-029;2026-04-18;2026-05-18;TV Panorama, Kragujevac;1939397.0;Poslata;2026;K2;April;4
+NR-010;DOB-030;2026-04-29;2026-05-29;TV Panorama, Kragujevac;2139330.0;Realizovana;2026;K2;April;4
+NR-011;DOB-031;2026-05-10;2026-06-09;TV Panorama, Kragujevac;2339263.0;Delimično realizovan;2026;K2;Maj;5
+NR-012;DOB-032;2026-05-21;2026-06-20;TV Panorama, Kragujevac;2539196.0;Otkazana;2026;K2;Maj;5
+NR-013;DOB-033;2026-06-01;2026-07-01;TV Panorama, Kragujevac;2739129.0;Poslata;2026;K2;Jun;6
+NR-014;DOB-034;2026-06-12;2026-07-12;TV Panorama, Kragujevac;2939062.0;Realizovana;2026;K2;Jun;6
+NR-015;DOB-035;2026-06-23;2026-07-23;TV Panorama, Kragujevac;3138995.0;Delimično realizovan;2026;K2;Jun;6
+NR-016;DOB-036;2026-07-04;2026-08-03;TV Panorama, Kragujevac;3338928.0;Otkazana;2026;K3;Jul;7
+NR-017;DOB-037;2026-07-15;2026-08-14;TV Panorama, Kragujevac;3538861.0;Poslata;2026;K3;Jul;7
+NR-018;DOB-038;2026-07-26;2026-08-25;TV Panorama, Kragujevac;3738794.0;Realizovana;2026;K3;Jul;7
+NR-019;DOB-039;2026-08-06;2026-09-05;TV Panorama, Kragujevac;3938727.0;Delimično realizovan;2026;K3;Avgust;8
+NR-020;DOB-040;2026-08-17;2026-09-16;TV Panorama, Kragujevac;4138660.0;Otkazana;2026;K3;Avgust;8

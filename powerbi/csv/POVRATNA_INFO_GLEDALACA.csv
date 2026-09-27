@@ -1,0 +1,21 @@
+﻿BROJ_PRIJAVE;SIFRA_EMISIJE;DATUM_PRIJEMA;VRSTA_PRIJAVE;KANAL_PRIJEMA;SADRZAJ_PRIJAVE;STATUS_OBRADE;DATUM_ODGOVORA;PROFIL_GLEDAOCA
+PRI-001;EM-001;2026-01-07;Pohvala;Telefon;Sadržaj prijave gledaoca broj 1;Primljeno;2026-01-10;Profil gledaoca 1
+PRI-002;EM-002;2026-01-18;Žalba;Email;Sadržaj prijave gledaoca broj 2;U obradi;2026-01-21;Profil gledaoca 2
+PRI-003;EM-003;2026-01-29;Sugestija;Društvene mreže;Sadržaj prijave gledaoca broj 3;Rešeno;2026-02-01;Profil gledaoca 3
+PRI-004;EM-004;2026-02-09;Upit;Web forma;Sadržaj prijave gledaoca broj 4;Rešeno;2026-02-12;Profil gledaoca 4
+PRI-005;EM-005;2026-02-20;Pohvala;Telefon;Sadržaj prijave gledaoca broj 5;Primljeno;2026-02-23;Profil gledaoca 5
+PRI-006;EM-006;2026-03-03;Žalba;Email;Sadržaj prijave gledaoca broj 6;U obradi;2026-03-06;Profil gledaoca 6
+PRI-007;EM-007;2026-03-14;Sugestija;Društvene mreže;Sadržaj prijave gledaoca broj 7;Rešeno;2026-03-17;Profil gledaoca 7
+PRI-008;EM-008;2026-03-25;Upit;Web forma;Sadržaj prijave gledaoca broj 8;Rešeno;2026-03-28;Profil gledaoca 8
+PRI-009;EM-009;2026-04-05;Pohvala;Telefon;Sadržaj prijave gledaoca broj 9;Primljeno;2026-04-08;Profil gledaoca 9
+PRI-010;EM-010;2026-04-16;Žalba;Email;Sadržaj prijave gledaoca broj 10;U obradi;2026-04-19;Profil gledaoca 10
+PRI-011;EM-011;2026-04-27;Sugestija;Društvene mreže;Sadržaj prijave gledaoca broj 11;Rešeno;2026-04-30;Profil gledaoca 11
+PRI-012;EM-012;2026-05-08;Upit;Web forma;Sadržaj prijave gledaoca broj 12;Rešeno;2026-05-11;Profil gledaoca 12
+PRI-013;EM-013;2026-05-19;Pohvala;Telefon;Sadržaj prijave gledaoca broj 13;Primljeno;2026-05-22;Profil gledaoca 13
+PRI-014;EM-014;2026-05-30;Žalba;Email;Sadržaj prijave gledaoca broj 14;U obradi;2026-06-02;Profil gledaoca 14
+PRI-015;EM-015;2026-06-10;Sugestija;Društvene mreže;Sadržaj prijave gledaoca broj 15;Rešeno;2026-06-13;Profil gledaoca 15
+PRI-016;EM-016;2026-06-21;Upit;Web forma;Sadržaj prijave gledaoca broj 16;Rešeno;2026-06-24;Profil gledaoca 16
+PRI-017;EM-017;2026-07-02;Pohvala;Telefon;Sadržaj prijave gledaoca broj 17;Primljeno;2026-07-05;Profil gledaoca 17
+PRI-018;EM-018;2026-07-13;Žalba;Email;Sadržaj prijave gledaoca broj 18;U obradi;2026-07-16;Profil gledaoca 18
+PRI-019;EM-019;2026-07-24;Sugestija;Društvene mreže;Sadržaj prijave gledaoca broj 19;Rešeno;2026-07-27;Profil gledaoca 19
+PRI-020;EM-020;2026-08-04;Upit;Web forma;Sadržaj prijave gledaoca broj 20;Rešeno;2026-08-07;Profil gledaoca 20

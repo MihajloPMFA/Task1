@@ -1,0 +1,121 @@
+﻿SIFRA_ZAPOSLENOG;SIFRA_JEDINICE;JMBG;IME;PREZIME;RADNO_MESTO;DATUM_ZAPOSLENJA;OSNOVNA_ZARADA;STATUS_ZAPOSLENJA;PUNO_IME
+ZAP-001;OJ-010;1010985700001;Marko;Anđelković;Glavni urednik;2026-01-05;62917.0;Aktivan;Marko Anđelković
+ZAP-002;OJ-011;1010985700002;Jelena;Davčić;Odgovorni urednik;2026-01-16;63834.0;Aktivan;Jelena Davčić
+ZAP-003;OJ-012;1010985700003;Nikola;Mirković;Urednik rubrike;2026-01-27;64751.0;Aktivan;Nikola Mirković
+ZAP-004;OJ-009;1010985700004;Ana;Kojić;Urednik redakcije;2026-02-07;65668.0;Aktivan;Ana Kojić
+ZAP-005;OJ-010;1010985700005;Stefan;Simović;Glavni urednik;2026-02-18;66585.0;Na bolovanju;Stefan Simović
+ZAP-006;OJ-011;1010985700006;Milica;Petrović;Odgovorni urednik;2026-03-01;67502.0;Honorarni;Milica Petrović
+ZAP-007;OJ-012;1010985700007;Dušan;Jovanović;Urednik rubrike;2026-03-12;68419.0;Aktivan;Dušan Jovanović
+ZAP-008;OJ-009;1010985700008;Ivana;Nikolić;Urednik redakcije;2026-03-23;69336.0;Aktivan;Ivana Nikolić
+ZAP-009;OJ-010;1010985700009;Nemanja;Marković;Glavni urednik;2026-04-03;70253.0;Aktivan;Nemanja Marković
+ZAP-010;OJ-011;1010985700010;Sara;Ilić;Odgovorni urednik;2026-04-14;71170.0;Aktivan;Sara Ilić
+ZAP-011;OJ-012;1010985700011;Luka;Pavlović;Urednik rubrike;2026-04-25;72087.0;Na bolovanju;Luka Pavlović
+ZAP-012;OJ-009;1010985700012;Katarina;Stanković;Urednik redakcije;2026-05-06;73004.0;Honorarni;Katarina Stanković
+ZAP-013;OJ-010;1010985700013;Vuk;Lukić;Glavni urednik;2026-05-17;73921.0;Aktivan;Vuk Lukić
+ZAP-014;OJ-011;1010985700014;Teodora;Ristić;Odgovorni urednik;2026-05-28;74838.0;Aktivan;Teodora Ristić
+ZAP-015;OJ-012;1010985700015;Filip;Todorović;Urednik rubrike;2026-06-08;75755.0;Aktivan;Filip Todorović
+ZAP-016;OJ-009;1010985700016;Jovana;Milošević;Urednik redakcije;2026-06-19;76672.0;Aktivan;Jovana Milošević
+ZAP-017;OJ-010;1010985700017;Uroš;Živković;Glavni urednik;2026-06-30;77589.0;Na bolovanju;Uroš Živković
+ZAP-018;OJ-011;1010985700018;Tijana;Krstić;Odgovorni urednik;2026-07-11;78506.0;Honorarni;Tijana Krstić
+ZAP-019;OJ-012;1010985700019;Aleksa;Savić;Urednik rubrike;2026-07-22;79423.0;Aktivan;Aleksa Savić
+ZAP-020;OJ-009;1010985700020;Marija;Anđelković;Urednik redakcije;2026-08-02;80340.0;Aktivan;Marija Anđelković
+ZAP-021;OJ-010;1010985700021;Marko;Davčić;Novinar;2026-08-13;81257.0;Aktivan;Marko Davčić
+ZAP-022;OJ-011;1010985700022;Jelena;Mirković;Reporter;2026-08-24;82174.0;Aktivan;Jelena Mirković
+ZAP-023;OJ-012;1010985700023;Nikola;Kojić;Dopisnik;2026-09-04;83091.0;Na bolovanju;Nikola Kojić
+ZAP-024;OJ-009;1010985700024;Ana;Simović;Novinar saradnik;2026-09-15;84008.0;Honorarni;Ana Simović
+ZAP-025;OJ-010;1010985700025;Stefan;Petrović;Novinar;2026-09-26;84925.0;Aktivan;Stefan Petrović
+ZAP-026;OJ-011;1010985700026;Milica;Jovanović;Reporter;2026-10-07;85842.0;Aktivan;Milica Jovanović
+ZAP-027;OJ-012;1010985700027;Dušan;Nikolić;Dopisnik;2026-10-18;86759.0;Aktivan;Dušan Nikolić
+ZAP-028;OJ-009;1010985700028;Ivana;Marković;Novinar saradnik;2026-10-29;87676.0;Aktivan;Ivana Marković
+ZAP-029;OJ-010;1010985700029;Nemanja;Ilić;Novinar;2026-11-09;88593.0;Na bolovanju;Nemanja Ilić
+ZAP-030;OJ-011;1010985700030;Sara;Pavlović;Reporter;2026-11-20;89510.0;Honorarni;Sara Pavlović
+ZAP-031;OJ-012;1010985700031;Luka;Stanković;Dopisnik;2026-12-01;90427.0;Aktivan;Luka Stanković
+ZAP-032;OJ-009;1010985700032;Katarina;Lukić;Novinar saradnik;2026-12-12;91344.0;Aktivan;Katarina Lukić
+ZAP-033;OJ-010;1010985700033;Vuk;Ristić;Novinar;2026-12-23;92261.0;Aktivan;Vuk Ristić
+ZAP-034;OJ-011;1010985700034;Teodora;Todorović;Reporter;2027-01-03;93178.0;Aktivan;Teodora Todorović
+ZAP-035;OJ-012;1010985700035;Filip;Milošević;Dopisnik;2027-01-14;94095.0;Na bolovanju;Filip Milošević
+ZAP-036;OJ-009;1010985700036;Jovana;Živković;Novinar saradnik;2027-01-25;95012.0;Honorarni;Jovana Živković
+ZAP-037;OJ-010;1010985700037;Uroš;Krstić;Novinar;2027-02-05;95929.0;Aktivan;Uroš Krstić
+ZAP-038;OJ-011;1010985700038;Tijana;Savić;Reporter;2027-02-16;96846.0;Aktivan;Tijana Savić
+ZAP-039;OJ-012;1010985700039;Aleksa;Đorđević;Dopisnik;2027-02-27;97763.0;Aktivan;Aleksa Đorđević
+ZAP-040;OJ-009;1010985700040;Marija;Davčić;Novinar saradnik;2027-03-10;98680.0;Aktivan;Marija Davčić
+ZAP-041;OJ-014;1010985700041;Marko;Mirković;Tehničar emitovanja;2027-03-21;99597.0;Na bolovanju;Marko Mirković
+ZAP-042;OJ-015;1010985700042;Jelena;Kojić;Kamerman;2027-04-01;100514.0;Honorarni;Jelena Kojić
+ZAP-043;OJ-016;1010985700043;Nikola;Simović;Snimatelj;2027-04-12;101431.0;Aktivan;Nikola Simović
+ZAP-044;OJ-013;1010985700044;Ana;Petrović;Ton majstor;2027-04-23;102348.0;Aktivan;Ana Petrović
+ZAP-045;OJ-014;1010985700045;Stefan;Jovanović;Montažer;2027-05-04;103265.0;Aktivan;Stefan Jovanović
+ZAP-046;OJ-015;1010985700046;Milica;Nikolić;Rasvetljivač;2027-05-15;104182.0;Aktivan;Milica Nikolić
+ZAP-047;OJ-016;1010985700047;Dušan;Marković;Tehničar emitovanja;2027-05-26;105099.0;Na bolovanju;Dušan Marković
+ZAP-048;OJ-013;1010985700048;Ivana;Ilić;Kamerman;2027-06-06;106016.0;Honorarni;Ivana Ilić
+ZAP-049;OJ-014;1010985700049;Nemanja;Pavlović;Snimatelj;2027-06-17;106933.0;Aktivan;Nemanja Pavlović
+ZAP-050;OJ-015;1010985700050;Sara;Stanković;Ton majstor;2027-06-28;107850.0;Aktivan;Sara Stanković
+ZAP-051;OJ-016;1010985700051;Luka;Lukić;Montažer;2027-07-09;108767.0;Aktivan;Luka Lukić
+ZAP-052;OJ-013;1010985700052;Katarina;Ristić;Rasvetljivač;2027-07-20;109684.0;Aktivan;Katarina Ristić
+ZAP-053;OJ-014;1010985700053;Vuk;Todorović;Tehničar emitovanja;2027-07-31;110601.0;Na bolovanju;Vuk Todorović
+ZAP-054;OJ-015;1010985700054;Teodora;Milošević;Kamerman;2027-08-11;111518.0;Honorarni;Teodora Milošević
+ZAP-055;OJ-016;1010985700055;Filip;Živković;Snimatelj;2027-08-22;112435.0;Aktivan;Filip Živković
+ZAP-056;OJ-013;1010985700056;Jovana;Krstić;Ton majstor;2027-09-02;113352.0;Aktivan;Jovana Krstić
+ZAP-057;OJ-014;1010985700057;Uroš;Savić;Montažer;2027-09-13;114269.0;Aktivan;Uroš Savić
+ZAP-058;OJ-015;1010985700058;Tijana;Đorđević;Rasvetljivač;2027-09-24;115186.0;Aktivan;Tijana Đorđević
+ZAP-059;OJ-016;1010985700059;Aleksa;Anđelković;Tehničar emitovanja;2027-10-05;116103.0;Na bolovanju;Aleksa Anđelković
+ZAP-060;OJ-013;1010985700060;Marija;Mirković;Kamerman;2027-10-16;117020.0;Honorarni;Marija Mirković
+ZAP-061;OJ-005;1010985700061;Marko;Kojić;Referent nabavke;2027-10-27;117937.0;Aktivan;Marko Kojić
+ZAP-062;OJ-006;1010985700062;Jelena;Simović;Referent finansija;2027-11-07;118854.0;Aktivan;Jelena Simović
+ZAP-063;OJ-007;1010985700063;Nikola;Petrović;Referent kadrova;2027-11-18;119771.0;Aktivan;Nikola Petrović
+ZAP-064;OJ-008;1010985700064;Ana;Jovanović;Referent marketinga;2027-11-29;120688.0;Aktivan;Ana Jovanović
+ZAP-065;OJ-004;1010985700065;Stefan;Nikolić;Referent nabavke;2027-12-10;121605.0;Na bolovanju;Stefan Nikolić
+ZAP-066;OJ-005;1010985700066;Milica;Marković;Referent finansija;2027-12-21;122522.0;Honorarni;Milica Marković
+ZAP-067;OJ-006;1010985700067;Dušan;Ilić;Referent kadrova;2028-01-01;123439.0;Aktivan;Dušan Ilić
+ZAP-068;OJ-007;1010985700068;Ivana;Pavlović;Referent marketinga;2028-01-12;124356.0;Aktivan;Ivana Pavlović
+ZAP-069;OJ-008;1010985700069;Nemanja;Stanković;Referent nabavke;2028-01-23;125273.0;Aktivan;Nemanja Stanković
+ZAP-070;OJ-004;1010985700070;Sara;Lukić;Referent finansija;2028-02-03;126190.0;Aktivan;Sara Lukić
+ZAP-071;OJ-005;1010985700071;Luka;Ristić;Referent kadrova;2028-02-14;127107.0;Na bolovanju;Luka Ristić
+ZAP-072;OJ-006;1010985700072;Katarina;Todorović;Referent marketinga;2028-02-25;128024.0;Honorarni;Katarina Todorović
+ZAP-073;OJ-007;1010985700073;Vuk;Milošević;Referent nabavke;2028-03-07;128941.0;Aktivan;Vuk Milošević
+ZAP-074;OJ-008;1010985700074;Teodora;Živković;Referent finansija;2028-03-18;129858.0;Aktivan;Teodora Živković
+ZAP-075;OJ-004;1010985700075;Filip;Krstić;Referent kadrova;2028-03-29;130775.0;Aktivan;Filip Krstić
+ZAP-076;OJ-005;1010985700076;Jovana;Savić;Referent marketinga;2028-04-09;131692.0;Aktivan;Jovana Savić
+ZAP-077;OJ-006;1010985700077;Uroš;Đorđević;Referent nabavke;2028-04-20;132609.0;Na bolovanju;Uroš Đorđević
+ZAP-078;OJ-007;1010985700078;Tijana;Anđelković;Referent finansija;2028-05-01;133526.0;Honorarni;Tijana Anđelković
+ZAP-079;OJ-008;1010985700079;Aleksa;Davčić;Referent kadrova;2028-05-12;134443.0;Aktivan;Aleksa Davčić
+ZAP-080;OJ-004;1010985700080;Marija;Kojić;Referent marketinga;2028-05-23;135360.0;Aktivan;Marija Kojić
+ZAP-081;OJ-013;1010985700081;Marko;Simović;Serviser rasvete;2028-06-03;136277.0;Aktivan;Marko Simović
+ZAP-082;OJ-020;1010985700082;Jelena;Petrović;Serviser opreme;2028-06-14;137194.0;Aktivan;Jelena Petrović
+ZAP-083;OJ-013;1010985700083;Nikola;Jovanović;Serviser elektronike;2028-06-25;138111.0;Na bolovanju;Nikola Jovanović
+ZAP-084;OJ-020;1010985700084;Ana;Nikolić;Serviser rasvete;2028-07-06;139028.0;Honorarni;Ana Nikolić
+ZAP-085;OJ-013;1010985700085;Stefan;Marković;Serviser opreme;2028-07-17;139945.0;Aktivan;Stefan Marković
+ZAP-086;OJ-020;1010985700086;Milica;Ilić;Serviser elektronike;2028-07-28;140862.0;Aktivan;Milica Ilić
+ZAP-087;OJ-013;1010985700087;Dušan;Pavlović;Serviser rasvete;2028-08-08;141779.0;Aktivan;Dušan Pavlović
+ZAP-088;OJ-020;1010985700088;Ivana;Stanković;Serviser opreme;2028-08-19;142696.0;Aktivan;Ivana Stanković
+ZAP-089;OJ-013;1010985700089;Nemanja;Lukić;Serviser elektronike;2028-08-30;143613.0;Na bolovanju;Nemanja Lukić
+ZAP-090;OJ-020;1010985700090;Sara;Ristić;Serviser rasvete;2028-09-10;144530.0;Honorarni;Sara Ristić
+ZAP-091;OJ-013;1010985700091;Luka;Todorović;Serviser opreme;2028-09-21;145447.0;Aktivan;Luka Todorović
+ZAP-092;OJ-020;1010985700092;Katarina;Milošević;Serviser elektronike;2028-10-02;146364.0;Aktivan;Katarina Milošević
+ZAP-093;OJ-013;1010985700093;Vuk;Živković;Serviser rasvete;2028-10-13;147281.0;Aktivan;Vuk Živković
+ZAP-094;OJ-020;1010985700094;Teodora;Krstić;Serviser opreme;2028-10-24;148198.0;Aktivan;Teodora Krstić
+ZAP-095;OJ-013;1010985700095;Filip;Savić;Serviser elektronike;2028-11-04;149115.0;Na bolovanju;Filip Savić
+ZAP-096;OJ-020;1010985700096;Jovana;Đorđević;Serviser rasvete;2028-11-15;150032.0;Honorarni;Jovana Đorđević
+ZAP-097;OJ-013;1010985700097;Uroš;Anđelković;Serviser opreme;2028-11-26;150949.0;Aktivan;Uroš Anđelković
+ZAP-098;OJ-020;1010985700098;Tijana;Davčić;Serviser elektronike;2028-12-07;151866.0;Aktivan;Tijana Davčić
+ZAP-099;OJ-013;1010985700099;Aleksa;Mirković;Serviser rasvete;2028-12-18;152783.0;Aktivan;Aleksa Mirković
+ZAP-100;OJ-020;1010985700100;Marija;Simović;Serviser opreme;2028-12-29;153700.0;Aktivan;Marija Simović
+ZAP-101;OJ-006;1010985700101;Marko;Petrović;Producent;2029-01-09;154617.0;Na bolovanju;Marko Petrović
+ZAP-102;OJ-007;1010985700102;Jelena;Jovanović;Voditelj;2029-01-20;155534.0;Honorarni;Jelena Jovanović
+ZAP-103;OJ-008;1010985700103;Nikola;Nikolić;Režiser;2029-01-31;156451.0;Aktivan;Nikola Nikolić
+ZAP-104;OJ-001;1010985700104;Ana;Marković;Lektor;2029-02-11;157368.0;Aktivan;Ana Marković
+ZAP-105;OJ-002;1010985700105;Stefan;Ilić;Sekretar;2029-02-22;158285.0;Aktivan;Stefan Ilić
+ZAP-106;OJ-003;1010985700106;Milica;Pavlović;Magacioner;2029-03-05;159202.0;Aktivan;Milica Pavlović
+ZAP-107;OJ-004;1010985700107;Dušan;Stanković;Analitičar;2029-03-16;160119.0;Na bolovanju;Dušan Stanković
+ZAP-108;OJ-005;1010985700108;Ivana;Lukić;Dizajner;2029-03-27;161036.0;Honorarni;Ivana Lukić
+ZAP-109;OJ-006;1010985700109;Nemanja;Ristić;Pravnik;2029-04-07;161953.0;Aktivan;Nemanja Ristić
+ZAP-110;OJ-007;1010985700110;Sara;Todorović;Knjigovođa;2029-04-18;162870.0;Aktivan;Sara Todorović
+ZAP-111;OJ-008;1010985700111;Luka;Milošević;Producent;2029-04-29;163787.0;Aktivan;Luka Milošević
+ZAP-112;OJ-001;1010985700112;Katarina;Živković;Voditelj;2029-05-10;164704.0;Aktivan;Katarina Živković
+ZAP-113;OJ-002;1010985700113;Vuk;Krstić;Režiser;2029-05-21;165621.0;Na bolovanju;Vuk Krstić
+ZAP-114;OJ-003;1010985700114;Teodora;Savić;Lektor;2029-06-01;166538.0;Honorarni;Teodora Savić
+ZAP-115;OJ-004;1010985700115;Filip;Đorđević;Sekretar;2029-06-12;167455.0;Aktivan;Filip Đorđević
+ZAP-116;OJ-005;1010985700116;Jovana;Anđelković;Magacioner;2029-06-23;168372.0;Aktivan;Jovana Anđelković
+ZAP-117;OJ-006;1010985700117;Uroš;Davčić;Analitičar;2029-07-04;169289.0;Aktivan;Uroš Davčić
+ZAP-118;OJ-007;1010985700118;Tijana;Mirković;Dizajner;2029-07-15;170206.0;Aktivan;Tijana Mirković
+ZAP-119;OJ-008;1010985700119;Aleksa;Kojić;Pravnik;2029-07-26;171123.0;Na bolovanju;Aleksa Kojić
+ZAP-120;OJ-001;1010985700120;Marija;Petrović;Knjigovođa;2029-08-06;172040.0;Honorarni;Marija Petrović

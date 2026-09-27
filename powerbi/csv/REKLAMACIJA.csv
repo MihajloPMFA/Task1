@@ -1,0 +1,21 @@
+﻿BROJ_REKLAMACIJE;BROJ_PRIJEMNICE;DATUM_REKLAMACIJE;RAZLOG_REKLAMACIJE;OPIS_NEDOSTATKA;STATUS_REKLAMACIJE;DATUM_RESENJA;REKLAMIRANI_IZNOS;NACIN_RESAVANJA;Godina;Kvartal;Mesec;MesecBr
+REK-001;PRM-001;2026-02-24;Oštećena roba;Opis nedostatka 1;Podneta;2026-03-11;25113.0;Zamena;2026;K1;Februar;2
+REK-002;PRM-002;2026-03-07;Pogrešna količina;Opis nedostatka 2;Prihvaćena;2026-03-22;30226.0;Popust;2026;K1;Mart;3
+REK-003;PRM-003;2026-03-18;Neodgovarajuči model;Opis nedostatka 3;Odbijena;2026-04-02;35339.0;Povraćaj sredstava;2026;K1;Mart;3
+REK-004;PRM-004;2026-03-29;Kašnjenje isporuke;Opis nedostatka 4;Rešena;2026-04-13;40452.0;Dopunska isporuka;2026;K1;Mart;3
+REK-005;PRM-005;2026-04-09;Oštećena roba;Opis nedostatka 5;Podneta;2026-04-24;45565.0;Zamena;2026;K2;April;4
+REK-006;PRM-006;2026-04-20;Pogrešna količina;Opis nedostatka 6;Prihvaćena;2026-05-05;50678.0;Popust;2026;K2;April;4
+REK-007;PRM-007;2026-05-01;Neodgovarajuči model;Opis nedostatka 7;Odbijena;2026-05-16;55791.0;Povraćaj sredstava;2026;K2;Maj;5
+REK-008;PRM-008;2026-05-12;Kašnjenje isporuke;Opis nedostatka 8;Rešena;2026-05-27;60904.0;Dopunska isporuka;2026;K2;Maj;5
+REK-009;PRM-009;2026-05-23;Oštećena roba;Opis nedostatka 9;Podneta;2026-06-07;66017.0;Zamena;2026;K2;Maj;5
+REK-010;PRM-010;2026-06-03;Pogrešna količina;Opis nedostatka 10;Prihvaćena;2026-06-18;71130.0;Popust;2026;K2;Jun;6
+REK-011;PRM-011;2026-06-14;Neodgovarajuči model;Opis nedostatka 11;Odbijena;2026-06-29;76243.0;Povraćaj sredstava;2026;K2;Jun;6
+REK-012;PRM-012;2026-06-25;Kašnjenje isporuke;Opis nedostatka 12;Rešena;2026-07-10;81356.0;Dopunska isporuka;2026;K2;Jun;6
+REK-013;PRM-013;2026-07-06;Oštećena roba;Opis nedostatka 13;Podneta;2026-07-21;86469.0;Zamena;2026;K3;Jul;7
+REK-014;PRM-014;2026-07-17;Pogrešna količina;Opis nedostatka 14;Prihvaćena;2026-08-01;91582.0;Popust;2026;K3;Jul;7
+REK-015;PRM-015;2026-07-28;Neodgovarajuči model;Opis nedostatka 15;Odbijena;2026-08-12;96695.0;Povraćaj sredstava;2026;K3;Jul;7
+REK-016;PRM-016;2026-08-08;Kašnjenje isporuke;Opis nedostatka 16;Rešena;2026-08-23;101808.0;Dopunska isporuka;2026;K3;Avgust;8
+REK-017;PRM-017;2026-08-19;Oštećena roba;Opis nedostatka 17;Podneta;2026-09-03;106921.0;Zamena;2026;K3;Avgust;8
+REK-018;PRM-018;2026-08-30;Pogrešna količina;Opis nedostatka 18;Prihvaćena;2026-09-14;112034.0;Popust;2026;K3;Avgust;8
+REK-019;PRM-019;2026-09-10;Neodgovarajuči model;Opis nedostatka 19;Odbijena;2026-09-25;117147.0;Povraćaj sredstava;2026;K3;Septembar;9
+REK-020;PRM-020;2026-09-21;Kašnjenje isporuke;Opis nedostatka 20;Rešena;2026-10-06;122260.0;Dopunska isporuka;2026;K3;Septembar;9

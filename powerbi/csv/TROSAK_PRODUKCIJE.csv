@@ -1,0 +1,41 @@
+﻿SIFRA_PROJEKTA;RB_AKTIVNOSTI;RB_TROSKA;BROJ_FAKTURE;VRSTA_TROSKA;IZNOS;DATUM_NASTANKA;OPIS_TROSKA;Godina;Kvartal;Mesec;MesecBr;KLJUC_AKTIVNOSTI
+PRJ-001;1;1;FA-001;Najam opreme;76740.0;2026-01-12;Trošak produkcije 1/1;2026;K1;Januar;1;PRJ-001-1
+PRJ-001;2;1;;Putni troškovi;76753.0;2026-01-19;Trošak produkcije 1/2;2026;K1;Januar;1;PRJ-001-2
+PRJ-002;1;1;FA-002;Putni troškovi;108467.0;2026-01-23;Trošak produkcije 2/1;2026;K1;Januar;1;PRJ-002-1
+PRJ-002;2;1;;Materijal;108480.0;2026-01-30;Trošak produkcije 2/2;2026;K1;Januar;1;PRJ-002-2
+PRJ-003;1;1;FA-003;Materijal;140194.0;2026-02-03;Trošak produkcije 3/1;2026;K1;Februar;2;PRJ-003-1
+PRJ-003;2;1;;Usluge;140207.0;2026-02-10;Trošak produkcije 3/2;2026;K1;Februar;2;PRJ-003-2
+PRJ-004;1;1;FA-004;Usluge;171921.0;2026-02-14;Trošak produkcije 4/1;2026;K1;Februar;2;PRJ-004-1
+PRJ-004;2;1;;Licenca;171934.0;2026-02-21;Trošak produkcije 4/2;2026;K1;Februar;2;PRJ-004-2
+PRJ-005;1;1;FA-005;Licenca;203648.0;2026-02-25;Trošak produkcije 5/1;2026;K1;Februar;2;PRJ-005-1
+PRJ-005;2;1;;Scenografija;203661.0;2026-03-04;Trošak produkcije 5/2;2026;K1;Mart;3;PRJ-005-2
+PRJ-006;1;1;FA-006;Scenografija;235375.0;2026-03-08;Trošak produkcije 6/1;2026;K1;Mart;3;PRJ-006-1
+PRJ-006;2;1;;Honorar;235388.0;2026-03-15;Trošak produkcije 6/2;2026;K1;Mart;3;PRJ-006-2
+PRJ-007;1;1;FA-007;Honorar;267102.0;2026-03-19;Trošak produkcije 7/1;2026;K1;Mart;3;PRJ-007-1
+PRJ-007;2;1;;Najam opreme;267115.0;2026-03-26;Trošak produkcije 7/2;2026;K1;Mart;3;PRJ-007-2
+PRJ-008;1;1;FA-008;Najam opreme;298829.0;2026-03-30;Trošak produkcije 8/1;2026;K1;Mart;3;PRJ-008-1
+PRJ-008;2;1;;Putni troškovi;298842.0;2026-04-06;Trošak produkcije 8/2;2026;K2;April;4;PRJ-008-2
+PRJ-009;1;1;FA-009;Putni troškovi;330556.0;2026-04-10;Trošak produkcije 9/1;2026;K2;April;4;PRJ-009-1
+PRJ-009;2;1;;Materijal;330569.0;2026-04-17;Trošak produkcije 9/2;2026;K2;April;4;PRJ-009-2
+PRJ-010;1;1;FA-010;Materijal;362283.0;2026-04-21;Trošak produkcije 10/1;2026;K2;April;4;PRJ-010-1
+PRJ-010;2;1;;Usluge;362296.0;2026-04-28;Trošak produkcije 10/2;2026;K2;April;4;PRJ-010-2
+PRJ-011;1;1;FA-011;Usluge;394010.0;2026-05-02;Trošak produkcije 11/1;2026;K2;Maj;5;PRJ-011-1
+PRJ-011;2;1;;Licenca;394023.0;2026-05-09;Trošak produkcije 11/2;2026;K2;Maj;5;PRJ-011-2
+PRJ-012;1;1;FA-012;Licenca;425737.0;2026-05-13;Trošak produkcije 12/1;2026;K2;Maj;5;PRJ-012-1
+PRJ-012;2;1;;Scenografija;425750.0;2026-05-20;Trošak produkcije 12/2;2026;K2;Maj;5;PRJ-012-2
+PRJ-013;1;1;FA-013;Scenografija;457464.0;2026-05-24;Trošak produkcije 13/1;2026;K2;Maj;5;PRJ-013-1
+PRJ-013;2;1;;Honorar;457477.0;2026-05-31;Trošak produkcije 13/2;2026;K2;Maj;5;PRJ-013-2
+PRJ-014;1;1;FA-014;Honorar;489191.0;2026-06-04;Trošak produkcije 14/1;2026;K2;Jun;6;PRJ-014-1
+PRJ-014;2;1;;Najam opreme;489204.0;2026-06-11;Trošak produkcije 14/2;2026;K2;Jun;6;PRJ-014-2
+PRJ-015;1;1;FA-015;Najam opreme;520918.0;2026-06-15;Trošak produkcije 15/1;2026;K2;Jun;6;PRJ-015-1
+PRJ-015;2;1;;Putni troškovi;520931.0;2026-06-22;Trošak produkcije 15/2;2026;K2;Jun;6;PRJ-015-2
+PRJ-016;1;1;FA-016;Putni troškovi;52645.0;2026-06-26;Trošak produkcije 16/1;2026;K2;Jun;6;PRJ-016-1
+PRJ-016;2;1;;Materijal;52658.0;2026-07-03;Trošak produkcije 16/2;2026;K3;Jul;7;PRJ-016-2
+PRJ-017;1;1;FA-017;Materijal;84372.0;2026-07-07;Trošak produkcije 17/1;2026;K3;Jul;7;PRJ-017-1
+PRJ-017;2;1;;Usluge;84385.0;2026-07-14;Trošak produkcije 17/2;2026;K3;Jul;7;PRJ-017-2
+PRJ-018;1;1;FA-018;Usluge;116099.0;2026-07-18;Trošak produkcije 18/1;2026;K3;Jul;7;PRJ-018-1
+PRJ-018;2;1;;Licenca;116112.0;2026-07-25;Trošak produkcije 18/2;2026;K3;Jul;7;PRJ-018-2
+PRJ-019;1;1;FA-019;Licenca;147826.0;2026-07-29;Trošak produkcije 19/1;2026;K3;Jul;7;PRJ-019-1
+PRJ-019;2;1;;Scenografija;147839.0;2026-08-05;Trošak produkcije 19/2;2026;K3;Avgust;8;PRJ-019-2
+PRJ-020;1;1;FA-020;Scenografija;179553.0;2026-08-09;Trošak produkcije 20/1;2026;K3;Avgust;8;PRJ-020-1
+PRJ-020;2;1;;Honorar;179566.0;2026-08-16;Trošak produkcije 20/2;2026;K3;Avgust;8;PRJ-020-2
